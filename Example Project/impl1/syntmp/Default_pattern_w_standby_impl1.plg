@@ -1,0 +1,25 @@
+@P:  Worst Slack : 472.081
+@P:  Default_w_standby_top|osc_clk_inferred_clock - Estimated Frequency : 159.3 MHz
+@P:  Default_w_standby_top|osc_clk_inferred_clock - Requested Frequency : 2.1 MHz
+@P:  Default_w_standby_top|osc_clk_inferred_clock - Estimated Period : 6.279
+@P:  Default_w_standby_top|osc_clk_inferred_clock - Requested Period : 480.769
+@P:  Default_w_standby_top|osc_clk_inferred_clock - Slack : 474.491
+@P:  System - Estimated Frequency : 165.6 MHz
+@P:  System - Requested Frequency : 1.0 MHz
+@P:  System - Estimated Period : 6.040
+@P:  System - Requested Period : 1000.000
+@P:  System - Slack : 993.960
+@P:  Worst Slack(min analysis) : 0.000
+@P:  Default_w_standby_top|osc_clk_inferred_clock - Estimated Frequency(min analysis) : 159.3 MHz
+@P:  Default_w_standby_top|osc_clk_inferred_clock - Requested Frequency(min analysis) : 2.1 MHz
+@P:  Default_w_standby_top|osc_clk_inferred_clock - Estimated Period(min analysis) : 6.279
+@P:  Default_w_standby_top|osc_clk_inferred_clock - Requested Period(min analysis) : 480.769
+@P:  Default_w_standby_top|osc_clk_inferred_clock - Slack(min analysis) : 474.491
+@P:  System - Estimated Frequency(min analysis) : 165.6 MHz
+@P:  System - Requested Frequency(min analysis) : 1.0 MHz
+@P:  System - Estimated Period(min analysis) : 6.040
+@P:  System - Requested Period(min analysis) : 1000.000
+@P:  System - Slack(min analysis) : 993.960
+@P:  Total Area : 30.0
+@P:  Total Area : 0.0
+@P:  CPU Time : 0h:00m:00s

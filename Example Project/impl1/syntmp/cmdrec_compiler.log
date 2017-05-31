@@ -1,0 +1,10 @@
+C:\lscc\diamond\3.7_x64\synpbase\bin64\c_hdl.exe  -osyn  F:\MachXO2_Breakout_board\impl1\synwork\Default_pattern_w_standby_impl1_comp.srs  -top  Default_w_standby_top  -hdllog  F:\MachXO2_Breakout_board\impl1\synlog\Default_pattern_w_standby_impl1_compiler.srr  -encrypt  -mp  4  -verilog  -prodtype  synplify_pro  -dspmac -fixsmult -infer_seqShift -nram -sdff_counter -divnmod -nostructver   -I F:\MachXO2_Breakout_board  -I F:\MachXO2_Breakout_board\impl1\  -I C:\lscc\diamond\3.7_x64\synpbase\lib   -v2001  -devicelib  C:\lscc\diamond\3.7_x64\synpbase\lib\lucent\machxo2.v  -devicelib  C:\lscc\diamond\3.7_x64\synpbase\lib\lucent\pmi_def.v  -encrypt  -pro  -dmgen  F:\MachXO2_Breakout_board\impl1\dm  -ui -fid2 -ram -sharing on -ll 2000 -autosm  -D_MULTIPLE_FILE_COMPILATION_UNIT_  -lib work F:\MachXO2_Breakout_board\impl1\source\pwr_cntrllr.v -lib work F:\MachXO2_Breakout_board\pseudo_adc.v 
+rc:0 success:1 runtime:3
+F:\MachXO2_Breakout_board\impl1\synwork\Default_pattern_w_standby_impl1_comp.srs|o|1496213892|6346
+F:\MachXO2_Breakout_board\impl1\synlog\Default_pattern_w_standby_impl1_compiler.srr|o|1496213892|3769
+C:\lscc\diamond\3.7_x64\synpbase\lib\lucent\machxo2.v|i|1449737382|54295
+C:\lscc\diamond\3.7_x64\synpbase\lib\lucent\pmi_def.v|i|1449737382|40584
+F:\MachXO2_Breakout_board\impl1\source\pwr_cntrllr.v|i|1492403958|1141
+F:\MachXO2_Breakout_board\pseudo_adc.v|i|1493251426|2550
+C:\lscc\diamond\3.7_x64\synpbase\bin\c_hdl.exe|i|1449741380|1311232
+C:\lscc\diamond\3.7_x64\synpbase\bin64\c_hdl.exe|i|1449741582|1936896

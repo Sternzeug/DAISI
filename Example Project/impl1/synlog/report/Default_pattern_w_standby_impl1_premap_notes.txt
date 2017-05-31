@@ -1,0 +1,4 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled 
+@N: MF203 |Set autoconstraint_io 
+@N: MO111 :"f:\machxo2_breakout_board\pseudo_adc.v":12:7:12:10|Tristate driver trig (in view: work.Default_w_standby_top(verilog)) on net trig (in view: work.Default_w_standby_top(verilog)) has its enable tied to GND.

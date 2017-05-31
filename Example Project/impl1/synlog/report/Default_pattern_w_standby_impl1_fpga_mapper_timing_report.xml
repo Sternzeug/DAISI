@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *************************************************************************************
+FILE DESCRIPTION
+Max Top 5 critical clocks will be reported. For rest user needs to refer to Detailed report
+*******************************************************************************************-->
+<report_table display_priority="2" name="Timing Summary">
+<report_link name="Detailed report">
+<data>F:\MachXO2_Breakout_board\impl1\synlog\Default_pattern_w_standby_impl1_fpga_mapper.srr</data>
+<title>START OF TIMING REPORT</title>
+</report_link>
+<row>
+<data tcl_name="clock_name">Clock Name</data>
+<data tcl_name="req_freq">Req Freq</data>
+<data tcl_name="est_freq">Est Freq</data>
+<data tcl_name="slack">Slack</data>
+</row>
+<row>
+<data>Default_w_standby_top|osc_clk_inferred_clock</data>
+<data>2.1 MHz</data>
+<data>159.3 MHz</data>
+<data>474.491</data>
+</row>
+<row>
+<data>System</data>
+<data>1.0 MHz</data>
+<data>165.6 MHz</data>
+<data>993.960</data>
+</row>
+</report_table>

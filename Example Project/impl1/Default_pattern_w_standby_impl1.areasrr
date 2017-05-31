@@ -1,0 +1,37 @@
+----------------------------------------------------------------------
+Report for cell Default_w_standby_top.verilog
+
+Register bits: 33 of 6864 (0%)
+PIC Latch:       0
+I/O cells:       14
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                                 BB        1       100.0
+                              CCU2D       20       100.0
+                            FD1P3DX       20       100.0
+                            FD1S3DX       12       100.0
+                                GSR        1       100.0
+                                 IB        1       100.0
+                           IFS1P3DX        1       100.0
+                                INV        1       100.0
+                                 OB       11       100.0
+                                OBZ        1       100.0
+                           ORCALUT4       29       100.0
+                               OSCH        1       100.0
+                              PCNTR        1       100.0
+                                PUR        1       100.0
+                                VHI        1       100.0
+                                VLO        2       100.0
+SUB MODULES 
+                        pwr_cntrllr        1       100.0
+                            
+                         TOTAL           105           
+----------------------------------------------------------------------
+Report for cell pwr_cntrllr.netlist
+     Instance path:  pcm1
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              PCNTR        1       100.0
+                                VLO        1        50.0
+                            
+                         TOTAL             2           

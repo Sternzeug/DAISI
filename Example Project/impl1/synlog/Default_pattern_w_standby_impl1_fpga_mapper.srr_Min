@@ -1,0 +1,94 @@
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Tue May 30 23:58:19 2017
+#
+
+
+Top view:               Default_w_standby_top
+Requested Frequency:    2.1 MHz
+Wire load mode:         top
+Paths requested:        3
+Constraint File(s):    
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: 0.000
+
+                                                 Requested     Estimated     Requested     Estimated                 Clock        Clock              
+Starting Clock                                   Frequency     Frequency     Period        Period        Slack       Type         Group              
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Default_w_standby_top|osc_clk_inferred_clock     2.1 MHz       159.3 MHz     480.769       6.279         474.491     inferred     Inferred_clkgroup_0
+System                                           1.0 MHz       165.6 MHz     1000.000      6.040         993.960     system       system_clkgroup    
+=====================================================================================================================================================
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                                                      |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                                      Ending                                        |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                        System                                        |  0.000       0.000  |  No paths    -      |  No paths    -      |  No paths    -    
+System                                        Default_w_standby_top|osc_clk_inferred_clock  |  0.000       0.914  |  No paths    -      |  No paths    -      |  No paths    -    
+Default_w_standby_top|osc_clk_inferred_clock  System                                        |  0.000       0.000  |  No paths    -      |  No paths    -      |  No paths    -    
+Default_w_standby_top|osc_clk_inferred_clock  Default_w_standby_top|osc_clk_inferred_clock  |  0.000       1.294  |  No paths    -      |  No paths    -      |  No paths    -    
+==================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+
+
+Input Ports: 
+
+Port         Starting            User           Arrival     Required          
+Name         Reference           Constraint     Time        Time         Slack
+             Clock                                                            
+------------------------------------------------------------------------------
+echo         NA                  NA             NA          NA           NA   
+io_adc       System (rising)     NA             0.000       -0.914       0.914
+stdby_in     System (rising)     NA             0.000       -1.643       1.643
+switch0      NA                  NA             NA          NA           NA   
+switch1      NA                  NA             NA          NA           NA   
+switch2      NA                  NA             NA          NA           NA   
+switch3      NA                  NA             NA          NA           NA   
+==============================================================================
+
+
+Output Ports: 
+
+Port            Starting                                                  User           Arrival     Required          
+Name            Reference                                                 Constraint     Time        Time         Slack
+                Clock                                                                                                  
+-----------------------------------------------------------------------------------------------------------------------
+io_adc          Default_w_standby_top|osc_clk_inferred_clock (rising)     NA             4.212       0.000        4.212
+led0            Default_w_standby_top|osc_clk_inferred_clock (rising)     NA             3.266       0.000        3.266
+led1            Default_w_standby_top|osc_clk_inferred_clock (rising)     NA             3.266       0.000        3.266
+led2            Default_w_standby_top|osc_clk_inferred_clock (rising)     NA             3.266       0.000        3.266
+led3            Default_w_standby_top|osc_clk_inferred_clock (rising)     NA             3.266       0.000        3.266
+led4            Default_w_standby_top|osc_clk_inferred_clock (rising)     NA             3.266       0.000        3.266
+led5            Default_w_standby_top|osc_clk_inferred_clock (rising)     NA             3.266       0.000        3.266
+led6            Default_w_standby_top|osc_clk_inferred_clock (rising)     NA             3.266       0.000        3.266
+led7            NA                                                        NA             NA          NA           NA   
+osc_clk         NA                                                        NA             NA          NA           NA   
+stdby1          System (rising)                                           NA             1.873       0.000        1.873
+switch3_gnd     NA                                                        NA             NA          NA           NA   
+trig            NA                                                        NA             NA          NA           NA   
+=======================================================================================================================
+
+
+##### END OF TIMING REPORT #####]
+
+Constraints that could not be applied
+None

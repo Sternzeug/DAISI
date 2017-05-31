@@ -1,0 +1,251 @@
+Synopsys Lattice Technology Mapper, Version maplat, Build 1368R, Built Jan  8 2016 09:37:50
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version K-2015.09L-2
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 114MB)
+
+@N: MF203 |Set autoconstraint_io 
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 140MB)
+
+@N: MO111 :"f:\machxo2_breakout_board\pseudo_adc.v":12:7:12:10|Tristate driver trig (in view: work.Default_w_standby_top(verilog)) on net trig (in view: work.Default_w_standby_top(verilog)) has its enable tied to GND.
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 140MB)
+
+@N:"f:\machxo2_breakout_board\pseudo_adc.v":51:0:51:5|Found updn counter in view:work.Default_w_standby_top(verilog) inst adc_result[10:0] 
+@N:"f:\machxo2_breakout_board\pseudo_adc.v":51:0:51:5|Found counter in view:work.Default_w_standby_top(verilog) inst counter[8:0]
+@N:"f:\machxo2_breakout_board\pseudo_adc.v":51:0:51:5|Found counter in view:work.Default_w_standby_top(verilog) inst divider[4:0]
+@W: MO129 :"f:\machxo2_breakout_board\pseudo_adc.v":51:0:51:5|Sequential instance display[7] reduced to a combinational gate by constant propagation
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 140MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 140MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 140MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 140MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 140MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 140MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 140MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 140MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 140MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:00s		   472.48ns		  30 /        33
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 140MB)
+
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+@N: MO111 :"f:\machxo2_breakout_board\pseudo_adc.v":12:7:12:10|Tristate driver trig_obuft.un1[0] (in view: work.Default_w_standby_top(verilog)) on net trig (in view: work.Default_w_standby_top(verilog)) has its enable tied to GND.
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 140MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+1 gated/generated clock tree(s) driving 33 clock pin(s) of sequential element(s)
+0 instances converted, 33 sequential instances remain driven by gated/generated clocks
+
+================================================================= Gated/Generated Clocks =================================================================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance     Explanation                                                   
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       OSCH_inst           OSCH                   33         adc_reg_0io         No gated clock conversion method for cell cell:LUCENT.IFS1P3DX
+==========================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 106MB peak: 140MB)
+
+Writing Analyst data base F:\MachXO2_Breakout_board\impl1\synwork\Default_pattern_w_standby_impl1_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 140MB)
+
+Writing EDIF Netlist and constraint files
+@N: FX1056 |Writing EDF file: F:\MachXO2_Breakout_board\impl1\Default_pattern_w_standby_impl1.edi
+K-2015.09L-2
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 144MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 144MB)
+
+@W: MT246 :"f:\machxo2_breakout_board\impl1\source\pwr_cntrllr.v":24:10:24:20|Blackbox PCNTR is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT420 |Found inferred clock Default_w_standby_top|osc_clk_inferred_clock with period 480.77ns. Please declare a user-defined clock on object "n:osc_clk"
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Tue May 30 23:58:18 2017
+#
+
+
+Top view:               Default_w_standby_top
+Requested Frequency:    2.1 MHz
+Wire load mode:         top
+Paths requested:        3
+Constraint File(s):    
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: 472.081
+
+                                                 Requested     Estimated     Requested     Estimated                 Clock        Clock              
+Starting Clock                                   Frequency     Frequency     Period        Period        Slack       Type         Group              
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Default_w_standby_top|osc_clk_inferred_clock     2.1 MHz       159.3 MHz     480.769       6.279         474.491     inferred     Inferred_clkgroup_0
+System                                           1.0 MHz       165.6 MHz     1000.000      6.040         993.960     system       system_clkgroup    
+=====================================================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                                                      |    rise  to  rise     |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                                      Ending                                        |  constraint  slack    |  constraint  slack  |  constraint  slack  |  constraint  slack
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                        System                                        |  1000.000    993.960  |  No paths    -      |  No paths    -      |  No paths    -    
+System                                        Default_w_standby_top|osc_clk_inferred_clock  |  480.769     479.252  |  No paths    -      |  No paths    -      |  No paths    -    
+Default_w_standby_top|osc_clk_inferred_clock  System                                        |  480.769     472.081  |  No paths    -      |  No paths    -      |  No paths    -    
+Default_w_standby_top|osc_clk_inferred_clock  Default_w_standby_top|osc_clk_inferred_clock  |  480.769     474.491  |  No paths    -      |  No paths    -      |  No paths    -    
+====================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+
+
+Input Ports: 
+
+Port         Starting            User           Arrival     Required            
+Name         Reference           Constraint     Time        Time         Slack  
+             Clock                                                              
+--------------------------------------------------------------------------------
+echo         NA                  NA             NA          NA           NA     
+io_adc       System (rising)     NA             0.000       479.252      479.252
+stdby_in     System (rising)     NA             0.000       993.960      993.960
+switch0      NA                  NA             NA          NA           NA     
+switch1      NA                  NA             NA          NA           NA     
+switch2      NA                  NA             NA          NA           NA     
+switch3      NA                  NA             NA          NA           NA     
+================================================================================
+
+
+Output Ports: 
+
+Port            Starting                                                  User           Arrival     Required            
+Name            Reference                                                 Constraint     Time        Time         Slack  
+                Clock                                                                                                    
+-------------------------------------------------------------------------------------------------------------------------
+io_adc          Default_w_standby_top|osc_clk_inferred_clock (rising)     NA             8.688       480.769      472.081
+led0            Default_w_standby_top|osc_clk_inferred_clock (rising)     NA             4.665       480.769      476.104
+led1            Default_w_standby_top|osc_clk_inferred_clock (rising)     NA             4.665       480.769      476.104
+led2            Default_w_standby_top|osc_clk_inferred_clock (rising)     NA             4.665       480.769      476.104
+led3            Default_w_standby_top|osc_clk_inferred_clock (rising)     NA             4.665       480.769      476.104
+led4            Default_w_standby_top|osc_clk_inferred_clock (rising)     NA             4.665       480.769      476.104
+led5            Default_w_standby_top|osc_clk_inferred_clock (rising)     NA             4.665       480.769      476.104
+led6            Default_w_standby_top|osc_clk_inferred_clock (rising)     NA             4.665       480.769      476.104
+led7            NA                                                        NA             NA          NA           NA     
+osc_clk         NA                                                        NA             NA          NA           NA     
+stdby1          System (rising)                                           NA             2.676       1000.000     997.324
+switch3_gnd     NA                                                        NA             NA          NA           NA     
+trig            NA                                                        NA             NA          NA           NA     
+=========================================================================================================================
+
+
+##### END OF TIMING REPORT #####]
+
+Constraints that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 144MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 144MB)
+
+---------------------------------------
+Resource Usage Report
+Part: lcmxo2_7000he-4
+
+Register bits: 33 of 6864 (0%)
+PIC Latch:       0
+I/O cells:       14
+
+
+Details:
+BB:             1
+CCU2D:          20
+FD1P3DX:        20
+FD1S3DX:        12
+GSR:            1
+IB:             1
+IFS1P3DX:       1
+INV:            1
+OB:             11
+OBZ:            1
+ORCALUT4:       29
+OSCH:           1
+PCNTR:          1
+PUR:            1
+VHI:            1
+VLO:            2
+true:           1
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 53MB peak: 144MB)
+
+Process took 0h:00m:03s realtime, 0h:00m:01s cputime
+# Tue May 30 23:58:19 2017
+
+###########################################################]

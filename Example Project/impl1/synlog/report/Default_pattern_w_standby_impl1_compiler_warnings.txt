@@ -1,0 +1,3 @@
+@W: CG289 :"F:\MachXO2_Breakout_board\pseudo_adc.v":65:14:65:24|Specified digits overflow the number's size
+@W: CL157 :"F:\MachXO2_Breakout_board\pseudo_adc.v":12:7:12:10|*Output trig has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+

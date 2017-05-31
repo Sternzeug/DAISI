@@ -1,0 +1,22 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Tue May 30 23:58:43 2017 *
+NOTE DESIGN NAME: Default_w_standby_top *
+NOTE DEVICE NAME: LCMXO2-7000HE-4TQFP144 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS io_adc : 28 : inout *
+NOTE PINS trig : 33 : out *
+NOTE PINS stdby1 : 38 : out *
+NOTE PINS stdby_in : 69 : in *
+NOTE PINS led7 : 107 : out *
+NOTE PINS led6 : 106 : out *
+NOTE PINS led5 : 105 : out *
+NOTE PINS led4 : 104 : out *
+NOTE PINS led3 : 100 : out *
+NOTE PINS led2 : 99 : out *
+NOTE PINS led1 : 98 : out *
+NOTE PINS led0 : 97 : out *
+NOTE PINS osc_clk : 40 : out *
+NOTE PINS switch3_gnd : 62 : out *
+NOTE CONFIGURATION MODE: NONE *
+NOTE COMPRESSION: on *

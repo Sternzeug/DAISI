@@ -1,0 +1,17 @@
+Selecting top level module Default_w_standby_top
+@N: CG364 :"C:\lscc\diamond\3.7_x64\synpbase\lib\lucent\machxo2.v":1793:7:1793:10|Synthesizing module OSCH.
+
+@N: CG364 :"C:\lscc\diamond\3.7_x64\synpbase\lib\lucent\machxo2.v":1124:7:1124:9|Synthesizing module VLO.
+
+@N: CG364 :"C:\lscc\diamond\3.7_x64\synpbase\lib\lucent\machxo2.v":1694:7:1694:11|Synthesizing module PCNTR.
+
+@N: CG364 :"F:\MachXO2_Breakout_board\impl1\source\pwr_cntrllr.v":8:7:8:17|Synthesizing module pwr_cntrllr.
+
+@N: CG364 :"F:\MachXO2_Breakout_board\pseudo_adc.v":1:7:1:27|Synthesizing module Default_w_standby_top.
+
+@W: CL157 :"F:\MachXO2_Breakout_board\pseudo_adc.v":12:7:12:10|*Output trig has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@N: CL159 :"F:\MachXO2_Breakout_board\pseudo_adc.v":7:6:7:12|Input switch0 is unused.
+@N: CL159 :"F:\MachXO2_Breakout_board\pseudo_adc.v":7:15:7:21|Input switch1 is unused.
+@N: CL159 :"F:\MachXO2_Breakout_board\pseudo_adc.v":7:24:7:30|Input switch2 is unused.
+@N: CL159 :"F:\MachXO2_Breakout_board\pseudo_adc.v":7:33:7:39|Input switch3 is unused.
+@N: CL159 :"F:\MachXO2_Breakout_board\pseudo_adc.v":11:6:11:9|Input echo is unused.

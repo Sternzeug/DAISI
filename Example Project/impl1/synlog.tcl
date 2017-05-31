@@ -1,0 +1,1 @@
+run_tcl -fg Default_pattern_w_standby_impl1_synplify.tcl

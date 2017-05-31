@@ -1,0 +1,22 @@
+---------------------------------------------------
+Report for cell Default_w_standby_top
+   Instance path: Default_w_standby_top
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      37.00        100.0
+                                 IOLGC	       1.00        100.0
+                                  LUT4	      33.00        100.0
+                                 IOREG	          1        100.0
+                                 IOBUF	         14        100.0
+                                PFUREG	         32        100.0
+                                RIPPLE	         20        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                           pwr_cntrllr	          1         1.4
+---------------------------------------------------
+Report for cell pwr_cntrllr
+   Instance path: Default_w_standby_top/pcm1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         1.4
+                                  LUT4	       1.00         3.0

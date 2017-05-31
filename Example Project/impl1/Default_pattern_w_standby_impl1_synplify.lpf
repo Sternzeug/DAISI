@@ -1,0 +1,22 @@
+#
+# Logical Preferences generated for Lattice by Synplify maplat, Build 1368R.
+#
+
+# Period Constraints 
+#FREQUENCY NET "osc_clk_c" 2.1 MHz;
+
+
+# Output Constraints 
+
+# Input Constraints 
+#INPUT_SETUP "io_adc" 480.8 NS CLKNET  = "osc_clk_c";
+
+# Point-to-point Delay Constraints 
+
+
+
+# Block Path Constraints 
+
+BLOCK ASYNCPATHS;
+
+# End of generated Logical Preferences.

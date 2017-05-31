@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "Default_pattern_w_standby_impl1.log"
+-o "Default_pattern_w_standby_impl1.csv"
+-pr "Default_pattern_w_standby_impl1.prf"

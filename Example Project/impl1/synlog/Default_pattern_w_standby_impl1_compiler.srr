@@ -1,0 +1,66 @@
+Synopsys HDL Compiler, version comp201509p1, Build 145R, built Dec  9 2015
+@N|Running in 64-bit mode
+Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp201509p1, Build 145R, built Dec  9 2015
+@N|Running in 64-bit mode
+Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@I::"C:\lscc\diamond\3.7_x64\synpbase\lib\lucent\machxo2.v"
+@I::"C:\lscc\diamond\3.7_x64\synpbase\lib\lucent\pmi_def.v"
+@I::"C:\lscc\diamond\3.7_x64\synpbase\lib\vlog\hypermods.v"
+@I::"C:\lscc\diamond\3.7_x64\synpbase\lib\vlog\umr_capim.v"
+@I::"C:\lscc\diamond\3.7_x64\synpbase\lib\vlog\scemi_objects.v"
+@I::"C:\lscc\diamond\3.7_x64\synpbase\lib\vlog\scemi_pipes.svh"
+@I::"F:\MachXO2_Breakout_board\impl1\source\pwr_cntrllr.v"
+@I::"F:\MachXO2_Breakout_board\pseudo_adc.v"
+@W: CG289 :"F:\MachXO2_Breakout_board\pseudo_adc.v":65:14:65:24|Specified digits overflow the number's size
+Verilog syntax check successful!
+Options changed - recompiling
+Selecting top level module Default_w_standby_top
+@N: CG364 :"C:\lscc\diamond\3.7_x64\synpbase\lib\lucent\machxo2.v":1793:7:1793:10|Synthesizing module OSCH.
+
+@N: CG364 :"C:\lscc\diamond\3.7_x64\synpbase\lib\lucent\machxo2.v":1124:7:1124:9|Synthesizing module VLO.
+
+@N: CG364 :"C:\lscc\diamond\3.7_x64\synpbase\lib\lucent\machxo2.v":1694:7:1694:11|Synthesizing module PCNTR.
+
+@N: CG364 :"F:\MachXO2_Breakout_board\impl1\source\pwr_cntrllr.v":8:7:8:17|Synthesizing module pwr_cntrllr.
+
+@N: CG364 :"F:\MachXO2_Breakout_board\pseudo_adc.v":1:7:1:27|Synthesizing module Default_w_standby_top.
+
+@W: CL157 :"F:\MachXO2_Breakout_board\pseudo_adc.v":12:7:12:10|*Output trig has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@N: CL159 :"F:\MachXO2_Breakout_board\pseudo_adc.v":7:6:7:12|Input switch0 is unused.
+@N: CL159 :"F:\MachXO2_Breakout_board\pseudo_adc.v":7:15:7:21|Input switch1 is unused.
+@N: CL159 :"F:\MachXO2_Breakout_board\pseudo_adc.v":7:24:7:30|Input switch2 is unused.
+@N: CL159 :"F:\MachXO2_Breakout_board\pseudo_adc.v":7:33:7:39|Input switch3 is unused.
+@N: CL159 :"F:\MachXO2_Breakout_board\pseudo_adc.v":11:6:11:9|Input echo is unused.
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 72MB peak: 72MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue May 30 23:58:10 2017
+
+###########################################################]
+Synopsys Netlist Linker, version comp201509p1, Build 145R, built Dec  9 2015
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue May 30 23:58:10 2017
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue May 30 23:58:10 2017
+
+###########################################################]

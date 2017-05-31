@@ -1,0 +1,100 @@
+Running in Lattice mode
+
+sourcing C:\lscc\diamond\3.7_x64\synpbase\lib\message_override.tcl
+
+
+Starting:    C:\lscc\diamond\3.7_x64\synpbase\bin64\mbin\synbatch.exe
+Install:     C:\lscc\diamond\3.7_x64\synpbase
+Hostname:    RK-WENG-LT-03
+Date:        Wed Apr 26 17:01:48 2017
+Version:     K-2015.09L-2
+
+Arguments:   -product synplify_pro -batch Default_pattern_w_standby_impl1_synplify.tcl
+ProductType: synplify_pro
+
+
+
+
+
+log file: "C:\Users\jforrester\Downloads\MachXO27000HEBreakoutBoardDemoDesignSource10\MachXO2_Breakout_board\impl1\Default_pattern_w_standby_impl1.srr"
+
+Running: impl1 in foreground
+
+
+
+Running proj_1|impl1
+
+
+Running: compile (Compile) on proj_1|impl1
+
+
+Running: compile_flow (Compile Process) on proj_1|impl1
+
+
+Running: compiler (Compile Input) on proj_1|impl1
+
+Copied C:\Users\jforrester\Downloads\MachXO27000HEBreakoutBoardDemoDesignSource10\MachXO2_Breakout_board\impl1\synwork\Default_pattern_w_standby_impl1_comp.srs to C:\Users\jforrester\Downloads\MachXO27000HEBreakoutBoardDemoDesignSource10\MachXO2_Breakout_board\impl1\Default_pattern_w_standby_impl1.srs
+
+
+compiler Completed
+Return Code: 0
+Run Time:0h:00m:02s
+
+
+Running: multi_srs_gen (Multi-srs Generator) on proj_1|impl1
+
+Copied C:\Users\jforrester\Downloads\MachXO27000HEBreakoutBoardDemoDesignSource10\MachXO2_Breakout_board\impl1\synwork\Default_pattern_w_standby_impl1_comp.srs to C:\Users\jforrester\Downloads\MachXO27000HEBreakoutBoardDemoDesignSource10\MachXO2_Breakout_board\impl1\synwork\Default_pattern_w_standby_impl1_s.srs
+
+
+multi_srs_gen Completed
+Return Code: 0
+Run Time:0h:00m:00s
+
+Copied C:\Users\jforrester\Downloads\MachXO27000HEBreakoutBoardDemoDesignSource10\MachXO2_Breakout_board\impl1\Default_pattern_w_standby_impl1.srr to C:\Users\jforrester\Downloads\MachXO27000HEBreakoutBoardDemoDesignSource10\MachXO2_Breakout_board\impl1\Default_pattern_w_standby_impl1.srf
+
+Complete: Compile Process on proj_1|impl1
+
+
+Running: premap (Pre-mapping) on proj_1|impl1
+
+Copied C:\Users\jforrester\Downloads\MachXO27000HEBreakoutBoardDemoDesignSource10\MachXO2_Breakout_board\impl1\Default_pattern_w_standby_impl1.fse to C:\Users\jforrester\Downloads\MachXO27000HEBreakoutBoardDemoDesignSource10\MachXO2_Breakout_board\impl1\synwork\Default_pattern_w_standby_impl1_s.fse
+
+
+premap Completed with warnings
+Return Code: 1
+Run Time:0h:00m:01s
+
+Complete: Compile on proj_1|impl1
+
+
+Running: map (Map) on proj_1|impl1
+
+License granted for 4 parallel jobs
+
+
+Running: fpga_mapper (Map & Optimize) on proj_1|impl1
+
+Copied C:\Users\jforrester\Downloads\MachXO27000HEBreakoutBoardDemoDesignSource10\MachXO2_Breakout_board\impl1\synwork\Default_pattern_w_standby_impl1_m.srm to C:\Users\jforrester\Downloads\MachXO27000HEBreakoutBoardDemoDesignSource10\MachXO2_Breakout_board\impl1\Default_pattern_w_standby_impl1.srm
+
+
+fpga_mapper Completed with warnings
+Return Code: 1
+Run Time:0h:00m:01s
+
+Complete: Map on proj_1|impl1
+
+Copied C:\Users\jforrester\Downloads\MachXO27000HEBreakoutBoardDemoDesignSource10\MachXO2_Breakout_board\impl1\Default_pattern_w_standby_impl1.srr to C:\Users\jforrester\Downloads\MachXO27000HEBreakoutBoardDemoDesignSource10\MachXO2_Breakout_board\impl1\Default_pattern_w_standby_impl1.srf
+
+Complete: Logic Synthesis on proj_1|impl1
+
+TCL script complete: "Default_pattern_w_standby_impl1_synplify.tcl"
+
+exit status=0
+
+exit status=0
+
+Save changes for project:
+C:\Users\jforrester\Downloads\MachXO27000HEBreakoutBoardDemoDesignSource10\MachXO2_Breakout_board\impl1\proj_1.prj
+
+batch mode default:no
+
