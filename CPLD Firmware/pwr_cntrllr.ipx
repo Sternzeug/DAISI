@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiamondModule name="pwr_cntrllr" module="Power Controller" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2013 01 18 15:58:17.139" version="1.1" type="Module" synthesis="" source_format="Verilog">
+  <Package>
+		<File name="pwr_cntrllr.lpc" type="lpc" modified="2013 01 18 15:58:14.628"/>
+		<File name="pwr_cntrllr.v" type="top_level_verilog" modified="2013 01 18 15:58:14.686"/>
+		<File name="pwr_cntrllr_tmpl.v" type="template_verilog" modified="2013 01 18 15:58:14.686"/>
+  </Package>
+</DiamondModule>

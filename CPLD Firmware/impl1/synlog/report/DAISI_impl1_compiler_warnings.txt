@@ -1,0 +1,2 @@
+@W: CS133 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/pwr_cntrllr.v":8:76:8:87|Ignoring property NGD_DRC_MASK
+

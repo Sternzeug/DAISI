@@ -1,0 +1,4 @@
+@W: BN132 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v":17:14:17:20|Removing user instance spi_controller_inst.signal_2 because it is equivalent to instance spi_interface_inst.signal_2. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_interface.v":9:0:9:5|Removing sequential instance spi_interface_inst.signal because it is equivalent to instance spi_controller_inst.signal. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: MT246 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/pwr_cntrllr.v":24:10:24:20|Blackbox PCNTR is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT420 |Found inferred clock top|osc_clk_inferred_clock with period 480.77ns. Please declare a user-defined clock on object "n:osc_clk"

@@ -1,0 +1,42 @@
+----------------------------------------------------------------------
+Report for cell top.verilog
+
+Register bits: 1 of 6864 (0%)
+PIC Latch:       0
+I/O cells:       12
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FD1S3BX        1       100.0
+                                GSR        1       100.0
+                                 IB        2       100.0
+                                INV        2       100.0
+                                 OB       10       100.0
+                               OSCH        1       100.0
+                              PCNTR        1       100.0
+                                PUR        1       100.0
+                                VHI        2       100.0
+                                VLO        2       100.0
+SUB MODULES 
+                        pwr_cntrllr        1       100.0
+                     spi_controller        1       100.0
+                            
+                         TOTAL            25           
+----------------------------------------------------------------------
+Report for cell spi_controller.netlist
+     Instance path:  spi_controller_inst
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FD1S3BX        1       100.0
+                                INV        1        50.0
+                                VHI        1        50.0
+                            
+                         TOTAL             3           
+----------------------------------------------------------------------
+Report for cell pwr_cntrllr.netlist
+     Instance path:  pcm1
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              PCNTR        1       100.0
+                                VLO        1        50.0
+                            
+                         TOTAL             2           

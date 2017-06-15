@@ -1,0 +1,1 @@
+@W: MT529 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_interface.v":9:0:9:5|Found inferred clock top|osc_clk_inferred_clock which controls 2 sequential elements including spi_interface_inst.signal. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Map">
+        <Message>
+            <ID>51001030</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>switch0_c</Dynamic>
+        </Message>
+        <Message>
+            <ID>52101145</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>OSCH_inst</Dynamic>
+            <Dynamic>pcm1/PCNTR_Inst0</Dynamic>
+        </Message>
+        <Message>
+            <ID>52101147</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>pcm1/PCNTR_Inst0</Dynamic>
+        </Message>
+        <Message>
+            <ID>52101151</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>pcm1/PCNTR_Inst0</Dynamic>
+        </Message>
+        <Message>
+            <ID>52101174</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>pcm1/PCNTR_Inst0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=osc_clk_c loads=2 clock_loads=1
+   Signal=pcm1/GND loads=1 clock_loads=1</Dynamic>
+        </Message>
+        <Message>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=osc_clk_c loads=2 clock_loads=1
+   Signal=pcm1/GND loads=1 clock_loads=1</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Jedecgen">
+        <Message>
+            <ID>71061116</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>OSCH_inst</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Translate">
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>OSCH_inst_SEDSTDBY</Dynamic>
+            <Navigation>OSCH_inst_SEDSTDBY</Navigation>
+        </Message>
+        <Message>
+            <ID>1163101</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>1</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Synplify_Synthesis">
+        <Message>
+            <ID>2011000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT529 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_interface.v&quot;:9:0:9:5|Found inferred clock top|osc_clk_inferred_clock which controls 2 sequential elements including spi_interface_inst.signal. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Navigation>MT529</Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_interface.v</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Found inferred clock top|osc_clk_inferred_clock which controls 2 sequential elements including spi_interface_inst.signal. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v&quot;:17:14:17:20|Removing user instance spi_controller_inst.signal_2 because it is equivalent to instance spi_interface_inst.signal_2. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v</Navigation>
+            <Navigation>17</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>17</Navigation>
+            <Navigation>20</Navigation>
+            <Navigation>Removing user instance spi_controller_inst.signal_2 because it is equivalent to instance spi_interface_inst.signal_2. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_interface.v&quot;:9:0:9:5|Removing sequential instance spi_interface_inst.signal because it is equivalent to instance spi_controller_inst.signal. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_interface.v</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Removing sequential instance spi_interface_inst.signal because it is equivalent to instance spi_controller_inst.signal. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT246 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/pwr_cntrllr.v&quot;:24:10:24:20|Blackbox PCNTR is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
+            <Navigation>MT246</Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/pwr_cntrllr.v</Navigation>
+            <Navigation>24</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>24</Navigation>
+            <Navigation>20</Navigation>
+            <Navigation>Blackbox PCNTR is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) </Navigation>
+        </Message>
+        <Message>
+            <ID>2019993</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT420 |Found inferred clock top|osc_clk_inferred_clock with period 480.77ns. Please declare a user-defined clock on object &quot;n:osc_clk&quot;</Dynamic>
+            <Navigation>MT420</Navigation>
+            <Navigation>Found inferred clock top|osc_clk_inferred_clock with period 480.77ns. Please declare a user-defined clock on object &quot;n:osc_clk&quot;</Navigation>
+        </Message>
+    </Task>
+</BaliMessageLog>

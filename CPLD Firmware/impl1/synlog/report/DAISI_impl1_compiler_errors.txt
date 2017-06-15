@@ -1,0 +1,2 @@
+@E: CG389 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v":52:16:52:34|Reference to undefined module spi_controller_
+

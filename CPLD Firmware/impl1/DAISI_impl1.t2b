@@ -1,0 +1,5 @@
+
+
+-g RamCfg:Reset
+
+-path "/media/sf_Downloads/Code/DAISI/CPLD Firmware"  

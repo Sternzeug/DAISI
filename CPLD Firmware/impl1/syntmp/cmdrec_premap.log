@@ -1,0 +1,13 @@
+/usr/local/diamond/3.9_x64/synpbase/bin/m_gen_lattice  -prodtype  synplify_pro  -encrypt  -pro  -rundir  "/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1"   -part LCMXO2_7000HE  -package TG144C  -grade -4    -maxfan 1000 -pipe -forcenogsr -fixgatedclocks 1 -fixgeneratedclocks 1 -RWCheckOnRam 1 -use_rename_in_edif 1 -Write_declared_clocks_only 1 -summaryfile "/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/synlog/report/DAISI_impl1_premap.xml"  -top_level_module  top  -oedif  "/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/DAISI_impl1.edi"  -conchk_prepass  "/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/DAISI_impl1_cck.rpt"   -freq 1.000   "/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/synwork/DAISI_impl1_mult.srs"  -flow prepass  -gcc_prepass  -osrd  "/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/synwork/DAISI_impl1_prem.srd"  -devicelib  /usr/local/diamond/3.9_x64/synpbase/lib/lucent/machxo2.v  -devicelib  /usr/local/diamond/3.9_x64/synpbase/lib/lucent/pmi_def.v  -ologparam  "/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/syntmp/DAISI_impl1.plg"  -osyn  "/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/synwork/DAISI_impl1_prem.srd"  -prjdir  "/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/"  -prjname  proj_1  -log  "/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/synlog/DAISI_impl1_premap.srr" 
+rc:1 success:1 runtime:0
+file:/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/DAISI_impl1.edi|io:o|time:1497423681|size:11087|exec:0
+file:/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/DAISI_impl1_cck.rpt|io:o|time:1497424927|size:2424|exec:0
+file:/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/synwork/DAISI_impl1_mult.srs|io:i|time:1497424927|size:3225|exec:0
+file:/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/synwork/DAISI_impl1_prem.srd|io:o|time:1497424927|size:5972|exec:0
+file:/usr/local/diamond/3.9_x64/synpbase/lib/lucent/machxo2.v|io:i|time:1480957863|size:52418|exec:0
+file:/usr/local/diamond/3.9_x64/synpbase/lib/lucent/pmi_def.v|io:i|time:1480957863|size:39414|exec:0
+file:"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/syntmp/DAISI_impl1.plg"|io:o|time:0|size:0|exec:0
+file:/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/synwork/DAISI_impl1_prem.srd|io:o|time:1497424927|size:5972|exec:0
+file:/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/synlog/DAISI_impl1_premap.srr|io:o|time:1497424927|size:3453|exec:0
+file:/usr/local/diamond/3.9_x64/synpbase/linux_a_64/m_gen_lattice|io:i|time:1480959747|size:31321128|exec:1
+file:/usr/local/diamond/3.9_x64/synpbase/bin/m_gen_lattice|io:i|time:1480958672|size:345|exec:1

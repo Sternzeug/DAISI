@@ -1,0 +1,67 @@
+Synopsys HDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Running on host :localhost.localdomain
+@I::"/usr/local/diamond/3.9_x64/synpbase/lib/lucent/machxo2.v" (library work)
+@I::"/usr/local/diamond/3.9_x64/synpbase/lib/lucent/pmi_def.v" (library work)
+@I::"/usr/local/diamond/3.9_x64/synpbase/lib/vlog/hypermods.v" (library __hyper__lib__)
+@I::"/usr/local/diamond/3.9_x64/synpbase/lib/vlog/umr_capim.v" (library snps_haps)
+@I::"/usr/local/diamond/3.9_x64/synpbase/lib/vlog/scemi_objects.v" (library snps_haps)
+@I::"/usr/local/diamond/3.9_x64/synpbase/lib/vlog/scemi_pipes.svh" (library snps_haps)
+@I::"/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v" (library work)
+@I::"/media/sf_Downloads/Code/DAISI/CPLD Firmware/pwr_cntrllr.v" (library work)
+@I::"/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_interface.v" (library work)
+@I::"/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v" (library work)
+Verilog syntax check successful!
+File /media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v changed - recompiling
+Selecting top level module top
+@N: CG364 :"/usr/local/diamond/3.9_x64/synpbase/lib/lucent/machxo2.v":1793:7:1793:10|Synthesizing module OSCH in library work.
+
+@N: CG364 :"/usr/local/diamond/3.9_x64/synpbase/lib/lucent/machxo2.v":1124:7:1124:9|Synthesizing module VLO in library work.
+
+@N: CG364 :"/usr/local/diamond/3.9_x64/synpbase/lib/lucent/machxo2.v":1694:7:1694:11|Synthesizing module PCNTR in library work.
+
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/pwr_cntrllr.v":8:7:8:17|Synthesizing module pwr_cntrllr in library work.
+
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_interface.v":1:7:1:19|Synthesizing module spi_interface in library work.
+
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v":1:7:1:20|Synthesizing module spi_controller in library work.
+
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v":1:7:1:9|Synthesizing module top in library work.
+
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 70MB peak: 71MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Wed Jun 14 00:09:59 2017
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+File /media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/synwork/layer0.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 67MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Wed Jun 14 00:09:59 2017
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 3MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Wed Jun 14 00:09:59 2017
+
+###########################################################]
