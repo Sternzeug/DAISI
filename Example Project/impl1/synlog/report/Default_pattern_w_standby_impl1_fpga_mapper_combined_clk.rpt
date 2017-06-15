@@ -6,14 +6,15 @@
 #### START OF CLOCK OPTIMIZATION REPORT #####[
 
 0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
-1 gated/generated clock tree(s) driving 33 clock pin(s) of sequential element(s)
-0 instances converted, 33 sequential instances remain driven by gated/generated clocks
+2 gated/generated clock tree(s) driving 388 clock pin(s) of sequential element(s)
+0 instances converted, 388 sequential instances remain driven by gated/generated clocks
 
-================================================================= Gated/Generated Clocks =================================================================
-Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance     Explanation                                                   
-----------------------------------------------------------------------------------------------------------------------------------------------------------
-@K:CKID0001       OSCH_inst           OSCH                   33         adc_reg_0io         No gated clock conversion method for cell cell:LUCENT.IFS1P3DX
-==========================================================================================================================================================
+===================================================================================================================================================================== Gated/Generated Clocks =====================================================================================================================================================================
+Clock Tree ID     Driving Element                                                     Drive Element Type     Fanout     Sample Instance                                                                                             Explanation                                                                                                                   
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       OSCH_inst                                                           OSCH                   207        count[0]                                                                                                    Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+@K:CKID0002       Default_w_standby_top_reveal_coretop_instance.jtagconn16_inst_0     jtagconn16             181        Default_w_standby_top_reveal_coretop_instance.default_w_standby_top_la0_inst_0.jtag_int_u.capture_dr_d4     Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+==================================================================================================================================================================================================================================================================================================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######]

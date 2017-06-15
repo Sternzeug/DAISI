@@ -5,13 +5,31 @@ Selecting top level module Default_w_standby_top
 
 @N: CG364 :"C:\lscc\diamond\3.7_x64\synpbase\lib\lucent\machxo2.v":1694:7:1694:11|Synthesizing module PCNTR.
 
-@N: CG364 :"F:\MachXO2_Breakout_board\impl1\source\pwr_cntrllr.v":8:7:8:17|Synthesizing module pwr_cntrllr.
+@N: CG364 :"C:\Users\neera_000\Documents\GitHub\DAISI\Example Project\impl1\reveal_workspace\tmpreveal\Default_w_standby_top_rvl.v":137:7:137:24|Synthesizing module pwr_cntrllr_uniq_1.
 
-@N: CG364 :"F:\MachXO2_Breakout_board\pseudo_adc.v":1:7:1:27|Synthesizing module Default_w_standby_top.
+@N: CG364 :"C:\lscc\diamond\3.7_x64\synpbase\lib\lucent\machxo2.v":1120:7:1120:9|Synthesizing module VHI.
 
-@W: CL157 :"F:\MachXO2_Breakout_board\pseudo_adc.v":12:7:12:10|*Output trig has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
-@N: CL159 :"F:\MachXO2_Breakout_board\pseudo_adc.v":7:6:7:12|Input switch0 is unused.
-@N: CL159 :"F:\MachXO2_Breakout_board\pseudo_adc.v":7:15:7:21|Input switch1 is unused.
-@N: CL159 :"F:\MachXO2_Breakout_board\pseudo_adc.v":7:24:7:30|Input switch2 is unused.
-@N: CL159 :"F:\MachXO2_Breakout_board\pseudo_adc.v":7:33:7:39|Input switch3 is unused.
-@N: CL159 :"F:\MachXO2_Breakout_board\pseudo_adc.v":11:6:11:9|Input echo is unused.
+
+
+
+
+
+
+@N: CG364 :"C:\Users\neera_000\Documents\GitHub\DAISI\Example Project\impl1\reveal_workspace\tmpreveal\default_w_standby_top_la0_trig_gen.v":11:7:11:36|Synthesizing module default_w_standby_top_la0_trig.
+
+
+
+@N: CG364 :"C:\Users\neera_000\Documents\GitHub\DAISI\Example Project\impl1\reveal_workspace\tmpreveal\default_w_standby_top_la0_gen.v":12:7:12:31|Synthesizing module default_w_standby_top_la0.
+
+@N: CG364 :"C:\lscc\diamond\3.7_x64\cae_library\synthesis\verilog\pmi_def.v":1162:7:1162:16|Synthesizing module jtagconn16.
+
+@N: CG364 :"C:\Users\neera_000\Documents\GitHub\DAISI\Example Project\impl1\reveal_workspace\tmpreveal\Default_w_standby_top_rvl.v":2:7:2:20|Synthesizing module reveal_coretop.
+
+@W: CG360 :"C:\Users\neera_000\Documents\GitHub\DAISI\Example Project\impl1\reveal_workspace\tmpreveal\Default_w_standby_top_rvl.v":15:29:15:39|Removing wire trigger_out, as there is no assignment to it.
+@N: CG364 :"C:\Users\neera_000\Documents\GitHub\DAISI\Example Project\impl1\reveal_workspace\tmpreveal\Default_w_standby_top_rvl.v":83:7:83:27|Synthesizing module Default_w_standby_top.
+
+@W: CL169 :"C:\Users\neera_000\Documents\GitHub\DAISI\Example Project\impl1\reveal_workspace\tmpreveal\Default_w_standby_top_rvl.v":114:4:114:9|Pruning unused register slow_clk. Make sure that there are no unused intermediate registers.
+@W: CL157 :"C:\Users\neera_000\Documents\GitHub\DAISI\Example Project\impl1\reveal_workspace\tmpreveal\Default_w_standby_top_rvl.v":94:11:94:14|*Output trig has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@N: CL159 :"C:\Users\neera_000\Documents\GitHub\DAISI\Example Project\impl1\reveal_workspace\tmpreveal\Default_w_standby_top_rvl.v":93:10:93:13|Input echo is unused.
+@N: CL159 :"C:\Users\neera_000\Documents\GitHub\DAISI\Example Project\impl1\reveal_workspace\tmpreveal\default_w_standby_top_la0_gen.v":51:7:51:13|Input reset_n is unused.
+@N: CL159 :"C:\Users\neera_000\Documents\GitHub\DAISI\Example Project\impl1\reveal_workspace\tmpreveal\default_w_standby_top_la0_gen.v":62:7:62:16|Input trigger_en is unused.

@@ -5,7 +5,7 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 *******************************************************************************************-->
 <report_table display_priority="2" name="Timing Summary">
 <report_link name="Detailed report">
-<data>F:\MachXO2_Breakout_board\impl1\synlog\Default_pattern_w_standby_impl1_fpga_mapper.srr</data>
+<data>C:\Users\neera_000\Documents\GitHub\DAISI\Example Project\impl1\synlog\Default_pattern_w_standby_impl1_fpga_mapper.srr</data>
 <title>START OF TIMING REPORT</title>
 </report_link>
 <row>
@@ -16,14 +16,20 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 </row>
 <row>
 <data>Default_w_standby_top|osc_clk_inferred_clock</data>
-<data>2.1 MHz</data>
-<data>159.3 MHz</data>
-<data>474.491</data>
+<data>20.5 MHz</data>
+<data>115.6 MHz</data>
+<data>40.223</data>
+</row>
+<row>
+<data>reveal_coretop|jtck_inferred_clock[0]</data>
+<data>1.0 MHz</data>
+<data>105.9 MHz</data>
+<data>990.559</data>
 </row>
 <row>
 <data>System</data>
 <data>1.0 MHz</data>
-<data>165.6 MHz</data>
-<data>993.960</data>
+<data>152.9 MHz</data>
+<data>993.459</data>
 </row>
 </report_table>

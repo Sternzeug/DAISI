@@ -1,0 +1,5 @@
+#Start recording tcl command: 6/13/2017 19:33:25
+#Project Location: C:/Users/neera_000/Documents/GitHub/DAISI/Example Project; Project name: Tutprog1
+prj_project open "C:/Users/neera_000/Documents/GitHub/DAISI/Example Project/Tutprog1.ldf"
+prj_project close
+#Stop recording: 6/13/2017 19:50:00

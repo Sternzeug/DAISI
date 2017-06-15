@@ -22,7 +22,7 @@ set_option -disable_io_insertion false
 set_option -retiming false; set_option -pipe false
 set_option -force_gsr false
 set_option -compiler_compatible 0
-set_option -dup false
+set_option -dup 1
 set_option -frequency 1
 set_option -default_enum_encoding default
 
@@ -43,15 +43,21 @@ set_option -resolve_multiple_driver 1
 
 
 #-- add_file options
-set_option -include_path {F:/MachXO2_Breakout_board}
-add_file -verilog {F:/MachXO2_Breakout_board/impl1/source/pwr_cntrllr.v}
-add_file -verilog {F:/MachXO2_Breakout_board/pseudo_adc.v}
+set_option -include_path {C:/Users/neera_000/Documents/GitHub/DAISI/Example Project}
+add_file -verilog {C:/lscc/diamond/3.7_x64/cae_library/synthesis/verilog/pmi_def.v}
+add_file -verilog {C:/lscc/diamond/3.7_x64/module/reveal/src/ertl/ertl.v}
+add_file -verilog {C:/lscc/diamond/3.7_x64/module/reveal/src/rvl_j2w_module/rvl_j2w_module.v}
+add_file -verilog {C:/lscc/diamond/3.7_x64/module/reveal/src/rvl_j2w_module/wb2sci.v}
+add_file -verilog {C:/lscc/diamond/3.7_x64/module/reveal/src/ertl/JTAG_SOFT.v}
+add_file -verilog {C:/Users/neera_000/Documents/GitHub/DAISI/Example Project/impl1/reveal_workspace/tmpreveal/default_w_standby_top_la0_trig_gen.v}
+add_file -verilog {C:/Users/neera_000/Documents/GitHub/DAISI/Example Project/impl1/reveal_workspace/tmpreveal/default_w_standby_top_la0_gen.v}
+add_file -verilog {C:/Users/neera_000/Documents/GitHub/DAISI/Example Project/impl1/reveal_workspace/tmpreveal/Default_w_standby_top_rvl.v}
 
 #-- top module name
 set_option -top_module Default_w_standby_top
 
 #-- set result format/file last
-project -result_file {F:/MachXO2_Breakout_board/impl1/Default_pattern_w_standby_impl1.edi}
+project -result_file {C:/Users/neera_000/Documents/GitHub/DAISI/Example Project/impl1/Default_pattern_w_standby_impl1.edi}
 
 #-- error message log file
 project -log_file {Default_pattern_w_standby_impl1.srf}
@@ -60,4 +66,4 @@ project -log_file {Default_pattern_w_standby_impl1.srf}
 
 
 #-- run Synplify with 'arrange HDL file'
-project -run -clean
+project -run

@@ -4,7 +4,7 @@
   (keywordMap (keywordLevel 0))
   (status
     (written
-      (timeStamp 2017 6 14 0 10 2)
+      (timeStamp 2017 6 14 20 26 10)
       (author "Synopsys, Inc.")
       (program "Synplify Pro" (version "L-2016.09L, mapper maplat, Build 1612R"))
      )
@@ -228,11 +228,6 @@
           ))
           (net VCC (joined
            (portRef Z (instanceRef VCC))
-           (portRef I (instanceRef led2_pad))
-           (portRef I (instanceRef led3_pad))
-           (portRef I (instanceRef led4_pad))
-           (portRef I (instanceRef led5_pad))
-           (portRef I (instanceRef led6_pad))
            (portRef GSR (instanceRef GSR_INST))
           ))
           (net stdby_in_c (joined
@@ -268,6 +263,11 @@
            (portRef led0_c (instanceRef spi_controller_inst))
            (portRef I (instanceRef led0_pad))
            (portRef I (instanceRef led1_pad))
+           (portRef I (instanceRef led2_pad))
+           (portRef I (instanceRef led3_pad))
+           (portRef I (instanceRef led4_pad))
+           (portRef I (instanceRef led5_pad))
+           (portRef I (instanceRef led6_pad))
           ))
           (net led0 (joined
            (portRef O (instanceRef led0_pad))

@@ -1,4 +1,4 @@
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled 
 @N: MF203 |Set autoconstraint_io 
-@N: MO111 :"f:\machxo2_breakout_board\pseudo_adc.v":12:7:12:10|Tristate driver trig (in view: work.Default_w_standby_top(verilog)) on net trig (in view: work.Default_w_standby_top(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\neera_000\documents\github\daisi\example project\impl1\reveal_workspace\tmpreveal\default_w_standby_top_rvl.v":94:11:94:14|Tristate driver trig (in view: work.Default_w_standby_top(verilog)) on net trig (in view: work.Default_w_standby_top(verilog)) has its enable tied to GND.

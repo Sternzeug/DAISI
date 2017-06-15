@@ -17,33 +17,34 @@ Command line:   map -a MachXO2 -p LCMXO2-7000HE -t TQFP144 -s 4 -oc Commercial
      Default_pattern_w_standby_impl1.ngd -o
      Default_pattern_w_standby_impl1_map.ncd -pr
      Default_pattern_w_standby_impl1.prf -mp Default_pattern_w_standby_impl1.mrp
-     F:/MachXO2_Breakout_board/Default_pattern_w_standby.lpf -c 0 -gui -msgset
-     F:/MachXO2_Breakout_board/promote.xml 
+     C:/Users/neera_000/Documents/GitHub/DAISI/Example
+     Project/Default_pattern_w_standby.lpf -c 0 -gui -msgset
+     C:/Users/neera_000/Documents/GitHub/DAISI/Example Project/promote.xml 
 Target Vendor:  LATTICE
 Target Device:  LCMXO2-7000HETQFP144
 Target Performance:   4
-Mapper:  xo2c00,  version:  Diamond (64-bit) 3.7.1.502
-Mapped on:  05/30/17  23:58:24
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.7.0.96.1
+Mapped on:  06/14/17  09:11:46
 
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
-   Number of registers:     33 out of  7209 (0%)
-      PFU registers:           32 out of  6864 (0%)
-      PIO registers:            1 out of   345 (0%)
-   Number of SLICEs:        37 out of  3432 (1%)
-      SLICEs as Logic/ROM:     37 out of  3432 (1%)
+   Number of registers:    445 out of  7209 (6%)
+      PFU registers:          445 out of  6864 (6%)
+      PIO registers:            0 out of   345 (0%)
+   Number of SLICEs:       326 out of  3432 (9%)
+      SLICEs as Logic/ROM:    326 out of  3432 (9%)
       SLICEs as RAM:            0 out of  2574 (0%)
-      SLICEs as Carry:         20 out of  3432 (1%)
-   Number of LUT4s:         73 out of  6864 (1%)
-      Number used as logic LUTs:         33
+      SLICEs as Carry:         70 out of  3432 (2%)
+   Number of LUT4s:        636 out of  6864 (9%)
+      Number used as logic LUTs:        496
       Number used as distributed RAM:     0
-      Number used as ripple logic:       40
+      Number used as ripple logic:      140
       Number used as shift registers:     0
-   Number of PIO sites used: 14 + 4(JTAG) out of 115 (16%)
-   Number of block RAMs:  0 out of 26 (0%)
-   Number of GSRs:  1 out of 1 (100%)
+   Number of PIO sites used: 19 + 4(JTAG) out of 115 (20%)
+   Number of block RAMs:  17 out of 26 (65%)
+   Number of GSRs:  0 out of 1 (0%)
    EFB used :       No
-   JTAG used :      No
+   JTAG used :      Yes
    Readback used :  No
    Oscillator used :  Yes
    Startup used :   No
@@ -64,31 +65,127 @@ Mapped on:  05/30/17  23:58:24
      distributed RAMs) + 2*(Number of ripple logic)
       2. Number of logic LUT4s does not include count of distributed RAM and
      ripple logic.
-   Number of clocks:  1
-     Net osc_clk_c: 19 loads, 19 rising, 0 falling (Driver: OSCH_inst )
-   Number of Clock Enables:  2
+   Number of clocks:  2
+     Net osc_clk_c: 139 loads, 139 rising, 0 falling (Driver: OSCH_inst )
 
-     Net N_111_i: 6 loads, 6 LSLICEs
-     Net N_106_i: 5 loads, 5 LSLICEs
-   Number of local set/reset loads for net stdby_in_c merged into GSR:  33
-   Number of LSRs:  0
+     Net jtaghub16_jtck: 159 loads, 0 rising, 159 falling (Driver:
+     xo2chub/genblk7.jtagf_u )
+   Number of Clock Enables:  43
+     Net Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0
+     _inst_0/trig_u/tu_0/op_code8: 2 loads, 2 LSLICEs
+     Net Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0
+     _inst_0/trig_u/tu_0/mask_reg[0]_0_sqmuxa: 1 loads, 1 LSLICEs
+     Net Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0
+     _inst_0/trig_u/tu_0/compare_reg[0]_0_sqmuxa: 1 loads, 1 LSLICEs
+     Net Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0
+     _inst_0/trig_u/tcnt_0/reg2_0_sqmuxa: 1 loads, 1 LSLICEs
+     Net Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0
+     _inst_0/trig_u/tcnt_0/reg1_0_sqmuxa: 2 loads, 2 LSLICEs
+     Net Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0
+     _inst_0/trig_u/tcnt_0/reg0_read8: 1 loads, 1 LSLICEs
+     Net Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0
+     _inst_0/trig_u/tcnt_0/reg0_0_sqmuxa: 1 loads, 1 LSLICEs
+     Net Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0
+     _inst_0/trig_u/te_0/tt_wr_addr_cntr_1_sqmuxa_i_0: 1 loads, 1 LSLICEs
+     Net Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0
+     _inst_0/trig_u/te_0/un1_tt_end_1_0: 1 loads, 1 LSLICEs
+     Net Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0
+     _inst_0/trig_u/te_0/tt_prog_active_1_sqmuxa_1_i_0: 1 loads, 1 LSLICEs
+     Net Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0
+     _inst_0/trig_u/te_0/te_precnte: 9 loads, 9 LSLICEs
+     Net Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0
+     _inst_0/trig_u/te_0/te_precnt_val_0_sqmuxa: 8 loads, 8 LSLICEs
+     Net Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0
+     _inst_0/trig_u/te_0/cnt_contig_reg_wen_1: 1 loads, 1 LSLICEs
+     Net Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0
+     _inst_0/trig_u/te_0/num_then_wen_1: 1 loads, 1 LSLICEs
+     Net Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0
+     _inst_0/trig_u/te_0/next_then_reg_wen_1: 1 loads, 1 LSLICEs
+     Net jtaghub16_ip_enable0: 20 loads, 20 LSLICEs
+     Net Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0
+     _inst_0/tm_u/N_840_i: 7 loads, 7 LSLICEs
+     Net Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0
+     _inst_0/tm_u/sample_en_d: 10 loads, 10 LSLICEs
+     Net Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0
+     _inst_0/tm_u/N_188_i: 7 loads, 7 LSLICEs
+     Net Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0
+     _inst_0/tm_u/N_25_i: 7 loads, 7 LSLICEs
+     Net Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0
+     _inst_0/tm_u/trig_enbl_0_sqmuxa: 1 loads, 1 LSLICEs
+     Net Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0
+     _inst_0/tm_u/trace_dout_1_sqmuxa_i: 18 loads, 18 LSLICEs
+     Net Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0
+     _inst_0/tm_u/N_9_i: 7 loads, 7 LSLICEs
+     Net Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0
+     _inst_0/tm_u/force_trig_0_sqmuxa_1: 1 loads, 1 LSLICEs
+     Net Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0
+     _inst_0/tm_u/un1_rd_dout_tm55_i: 7 loads, 7 LSLICEs
+     Net Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0
+     _inst_0/tm_u/N_53: 7 loads, 7 LSLICEs
+     Net Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0
+     _inst_0/tm_u/N_841_i: 7 loads, 7 LSLICEs
+
+     Net Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0
+     _inst_0/tm_u/num_pre_trig_frm_0_sqmuxa: 7 loads, 7 LSLICEs
+     Net Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0
+     _inst_0/tm_u/num_post_trig_frm_0_sqmuxa: 7 loads, 7 LSLICEs
+     Net Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0
+     _inst_0/tm_u/N_50: 1 loads, 1 LSLICEs
+     Net Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0
+     _inst_0/jtag_int_u/addr_15_0_sqmuxa: 2 loads, 2 LSLICEs
+     Net Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0
+     _inst_0/jtag_int_u/un1_jtdo_4_i: 8 loads, 8 LSLICEs
+     Net Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0
+     _inst_0/jtag_int_u/capture_dr_d4_0_sqmuxa: 2 loads, 2 LSLICEs
+     Net Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0
+     _inst_0/jtag_int_u/jce2_d1_RNIPDRT1: 10 loads, 10 LSLICEs
+     Net Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0
+     _inst_0/jtag_int_u/un1_jtdo_1_i: 8 loads, 8 LSLICEs
+     Net Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0
+     _inst_0/jtag_int_u/N_50_i: 3 loads, 3 LSLICEs
+     Net Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0
+     _inst_0/jtag_int_u/tr_dout_bit_cnt_0_sqmuxa: 1 loads, 1 LSLICEs
+     Net Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0
+     _inst_0/jtag_int_u/N_65_i: 14 loads, 14 LSLICEs
+     Net Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0
+     _inst_0/jtag_int_u/parity_err_lat_0_sqmuxa: 1 loads, 1 LSLICEs
+     Net Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0
+     _inst_0/jtag_int_u/N_54: 1 loads, 1 LSLICEs
+     Net jtaghub16_jupdate: 8 loads, 8 LSLICEs
+     Net xo2chub/id_enable_0_sqmuxa: 1 loads, 1 LSLICEs
+     Net xo2chub/er1_shift_reg8: 10 loads, 10 LSLICEs
+   Number of LSRs:  3
+     Net slow_clk3: 4 loads, 4 LSLICEs
+     Net Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0
+     _inst_0/reset_rvl_n: 135 loads, 103 LSLICEs
+     Net jtaghub16_jrstn: 136 loads, 136 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net adc_reg: 15 loads
-     Net stdby_in_c: 9 loads
-     Net un8_io_adc_0: 7 loads
-     Net un8_io_adc_2: 7 loads
-     Net un8_io_adc_3: 7 loads
-     Net N_106_i: 6 loads
-     Net N_111_i: 6 loads
-     Net un8_io_adc_1: 6 loads
-     Net adc_result[1]: 5 loads
-     Net adc_result[3]: 5 loads
+     Net jtaghub16_jrstn: 140 loads
+     Net Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0
+     _inst_0/reset_rvl_n: 135 loads
+     Net Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0
+     _inst_0/tm_u/genblk4.tr_mem/raddr10_ff2: 72 loads
+     Net Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0
+     _inst_0/jshift_d1: 60 loads
+     Net Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0
+     _inst_0/addr[0]: 45 loads
+     Net jtaghub16_jshift: 42 loads
+     Net Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0
+     _inst_0/tm_u/N_42_i: 40 loads
+     Net jtaghub16_ip_enable0: 37 loads
+     Net Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0
+     _inst_0/tm_u/genblk4.tr_mem/raddr11_ff2: 36 loads
+     Net Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0
+     _inst_0/addr[2]: 31 loads
 
 
 
 
-   Number of warnings:  16
+
+
+
+   Number of warnings:  12
    Number of errors:    0
      
 
@@ -97,24 +194,17 @@ Mapped on:  05/30/17  23:58:24
 
 <A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
 
-WARNING - map: F:/MachXO2_Breakout_board/Default_pattern_w_standby.lpf(29):
-     Semantic error in "IOBUF PORT "switch0" PULLMODE=UP IO_TYPE=LVCMOS33 ;":
-     Port "switch0" does not exist in the design. This preference has been
-     disabled.
-WARNING - map: F:/MachXO2_Breakout_board/Default_pattern_w_standby.lpf(30):
-     Semantic error in "IOBUF PORT "switch1" PULLMODE=UP IO_TYPE=LVCMOS33 ;":
-     Port "switch1" does not exist in the design. This preference has been
-     disabled.
-WARNING - map: F:/MachXO2_Breakout_board/Default_pattern_w_standby.lpf(31):
-     Semantic error in "IOBUF PORT "switch2" PULLMODE=UP IO_TYPE=LVCMOS33 ;":
-     Port "switch2" does not exist in the design. This preference has been
-     disabled.
-WARNING - map: F:/MachXO2_Breakout_board/Default_pattern_w_standby.lpf(32):
-     Semantic error in "IOBUF PORT "switch3" PULLMODE=UP IO_TYPE=LVCMOS33 ;":
-     Port "switch3" does not exist in the design. This preference has been
-     disabled.
-WARNING - map: Preference parsing results:  4 semantic errors detected.
-WARNING - map: Using local reset signal 'stdby_in_c' to infer global GSR net.
+WARNING - map: C:/Users/neera_000/Documents/GitHub/DAISI/Example
+     Project/Default_pattern_w_standby.lpf(30): Semantic error in "LOCATE COMP
+     "io_adc" SITE "28" ;": COMP "io_adc" cannot be found in design. This
+     preference has been disabled.
+WARNING - map: C:/Users/neera_000/Documents/GitHub/DAISI/Example
+     Project/Default_pattern_w_standby.lpf(37): Semantic error in "IOBUF PORT
+     "io_adc" PULLMODE=NONE IO_TYPE=LVTTL33 ;": Port "io_adc" does not exist in
+     the design. This preference has been disabled.
+WARNING - map: Preference parsing results:  2 semantic errors detected.
+WARNING - map: OSCH 'OSCH_inst' has mismatching FREQUENCY preference value of
+     2.08 MHz and NOM_FREQ value of 20.46 MHz.
 WARNING - map: The Oscillator 'OSCH_inst' is controlled by the power controller
      'pcm1/PCNTR_Inst0', causing the I2C, SPI, Timer/Counter, Wishbone and SED
      features unavailable for use when the Oscillator is disabled.
@@ -126,23 +216,21 @@ WARNING - map: BANDGAP turned off dynamically by Power controller
      HSTL18 , LVCMOSXXD, SSTLXXD, HSTL18D, LVTTL33D, BLVDS25E and MLVDS25E) are
      turned off.
 WARNING - map: POR turned off dynamically by Power controller
-
      'pcm1/PCNTR_Inst0'. POR is only released when SFLAG is cleared.
 WARNING - map: Power controller 'pcm1/PCNTR_Inst0' dynamic BANDGAP option is
      enabled. The design contains oscillator component which will be disabled
      when BANDGAP is turned off.
-WARNING - map: IO buffer missing for top level port switch0...logic will be
-     discarded.
-WARNING - map: IO buffer missing for top level port switch1...logic will be
-     discarded.
-WARNING - map: IO buffer missing for top level port switch2...logic will be
-     discarded.
-WARNING - map: IO buffer missing for top level port switch3...logic will be
-     discarded.
 WARNING - map: IO buffer missing for top level port echo...logic will be
      discarded.
+WARNING - map: Multiple comps assigned to site "69". Only one comp will be
+     assigned to this location.
+WARNING - map: Pref conflict: Multi-locate on site. Ignoring LOCATE COMP
+     "stdby_in" SITE "69" ;
+        Keeping LOCATE COMP "switch3" SITE "69" ;
+     .
 WARNING - map: There are semantic errors in the preference file
-     F:/MachXO2_Breakout_board/Default_pattern_w_standby.lpf.
+     C:/Users/neera_000/Documents/GitHub/DAISI/Example
+     Project/Default_pattern_w_standby.lpf.
 
 
 
@@ -152,13 +240,16 @@ WARNING - map: There are semantic errors in the preference file
 | IO Name             | Direction | Levelmode | IO         |
 |                     |           |  IO_TYPE  | Register   |
 +---------------------+-----------+-----------+------------+
-| io_adc              | BIDIR     | LVTTL33   | IN         |
-+---------------------+-----------+-----------+------------+
 | trig                | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | stdby1              | OUTPUT    | LVCMOS33  |            |
+
 +---------------------+-----------+-----------+------------+
 | stdby_in            | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| rx                  | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| tx                  | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | led7                | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
@@ -180,39 +271,508 @@ WARNING - map: There are semantic errors in the preference file
 +---------------------+-----------+-----------+------------+
 | switch3_gnd         | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-
-
-
-
+| switch3             | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| switch2             | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| switch1             | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| switch0             | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
 
 
 
 <A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
 
-Signal divider_cry_0_COUT[3] undriven or does not drive anything - clipped.
-Signal counter_cry_0_S0[0] undriven or does not drive anything - clipped.
-Signal N_2 undriven or does not drive anything - clipped.
-Signal counter_cry_0_COUT[7] undriven or does not drive anything - clipped.
-Signal adc_result_cry_0_S0[0] undriven or does not drive anything - clipped.
-Signal N_3 undriven or does not drive anything - clipped.
-Signal adc_result_cry_0_COUT[9] undriven or does not drive anything - clipped.
-Signal un8_io_adc_cry_0_0_S1 undriven or does not drive anything - clipped.
-Signal un8_io_adc_cry_0_0_S0 undriven or does not drive anything - clipped.
-Signal N_4 undriven or does not drive anything - clipped.
-Signal un8_io_adc_cry_1_0_S1 undriven or does not drive anything - clipped.
-Signal un8_io_adc_cry_1_0_S0 undriven or does not drive anything - clipped.
-Signal un8_io_adc_cry_3_0_S1 undriven or does not drive anything - clipped.
-Signal un8_io_adc_cry_3_0_S0 undriven or does not drive anything - clipped.
-Signal un8_io_adc_cry_5_0_S1 undriven or does not drive anything - clipped.
-Signal un8_io_adc_cry_5_0_S0 undriven or does not drive anything - clipped.
-Signal un8_io_adc_cry_7_0_S1 undriven or does not drive anything - clipped.
-Signal un8_io_adc_cry_7_0_S0 undriven or does not drive anything - clipped.
-Signal un8_io_adc_cry_8_0_S1 undriven or does not drive anything - clipped.
-Signal un8_io_adc_cry_8_0_COUT undriven or does not drive anything - clipped.
+Block xo2chub/VCC_0 undriven or does not drive anything - clipped.
+Block xo2chub/GSR_INST undriven or does not drive anything - clipped.
+Block GSR_INST undriven or does not drive anything - clipped.
+Block xo2chub/ip_enable[15] undriven or does not drive anything - clipped.
+Block xo2chub/cdn undriven or does not drive anything - clipped.
+Block Default_w_standby_top_reveal_coretop_instance/VCC_0 undriven or does not
+     drive anything - clipped.
+Block Default_w_standby_top_reveal_coretop_instance/GND_0 undriven or does not
+     drive anything - clipped.
+Block Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_in
+     st_0/VCC_0 undriven or does not drive anything - clipped.
+Block Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_in
+     st_0/GND_0 undriven or does not drive anything - clipped.
+Block Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_in
+     st_0/jtag_int_u/VCC_0 undriven or does not drive anything - clipped.
+Block Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_in
+     st_0/trig_u/VCC_0 undriven or does not drive anything - clipped.
+
+Block Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_in
+     st_0/trig_u/GND_0 undriven or does not drive anything - clipped.
+Block Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_in
+     st_0/trig_u/te_0/genblk1.te_tt_ebr_ram/scuba_vhi_inst undriven or does not
+     drive anything - clipped.
+Block Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_in
+     st_0/trig_u/tcnt_0/VCC_0 undriven or does not drive anything - clipped.
+Block Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_in
+     st_0/trig_u/tcnt_0/GND_0 undriven or does not drive anything - clipped.
+Block Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_in
+     st_0/trig_u/tu_0/VCC_0 undriven or does not drive anything - clipped.
+Block Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_in
+     st_0/trig_u/tu_0/GND_0 undriven or does not drive anything - clipped.
+Block Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_in
+     st_0/trig_u/decode_u/VCC_0 undriven or does not drive anything - clipped.
+Block Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_in
+     st_0/trig_u/decode_u/GND_0 undriven or does not drive anything - clipped.
+Signal xo2chub/jrstn_i was merged into signal jtaghub16_jrstn
+Signal xo2chub/cdn.CN was merged into signal jtaghub16_jtck
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/jtag_int_u/r_w.CN was merged into signal jtaghub16_jtck
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/jtag_int_u/jrstn_i_r7 was merged into signal jtaghub16_jrstn
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/jtag_int_u/jrstn_i_r6 was merged into signal jtaghub16_jrstn
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/jtag_int_u/jrstn_i_r5 was merged into signal jtaghub16_jrstn
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/jtag_int_u/jrstn_i_r4 was merged into signal jtaghub16_jrstn
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/jtag_int_u/jrstn_i_r3 was merged into signal jtaghub16_jrstn
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/jtag_int_u/jrstn_i_r2 was merged into signal jtaghub16_jrstn
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/jtag_int_u/jrstn_i_r1 was merged into signal jtaghub16_jrstn
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/jtag_int_u/jrstn_i_r0 was merged into signal jtaghub16_jrstn
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/jtag_int_u/reset_n_i was merged into signal Default_w_standby_top_rev
+     eal_coretop_instance/default_w_standby_top_la0_inst_0/reset_rvl_n
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/tm_u/reset_n_i_r10 was merged into signal Default_w_standby_top_revea
+     l_coretop_instance/default_w_standby_top_la0_inst_0/reset_rvl_n
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/tm_u/reset_n_i_r9 was merged into signal Default_w_standby_top_reveal
+     _coretop_instance/default_w_standby_top_la0_inst_0/reset_rvl_n
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/tm_u/reset_n_i_r8 was merged into signal Default_w_standby_top_reveal
+     _coretop_instance/default_w_standby_top_la0_inst_0/reset_rvl_n
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/tm_u/reset_n_i_r7 was merged into signal Default_w_standby_top_reveal
+     _coretop_instance/default_w_standby_top_la0_inst_0/reset_rvl_n
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/tm_u/reset_n_i_r6 was merged into signal Default_w_standby_top_reveal
+     _coretop_instance/default_w_standby_top_la0_inst_0/reset_rvl_n
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+
+     nst_0/tm_u/reset_n_i_r5 was merged into signal Default_w_standby_top_reveal
+     _coretop_instance/default_w_standby_top_la0_inst_0/reset_rvl_n
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/tm_u/reset_n_i_r4 was merged into signal Default_w_standby_top_reveal
+     _coretop_instance/default_w_standby_top_la0_inst_0/reset_rvl_n
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/tm_u/reset_n_i_r3 was merged into signal Default_w_standby_top_reveal
+     _coretop_instance/default_w_standby_top_la0_inst_0/reset_rvl_n
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/tm_u/reset_n_i_r2 was merged into signal Default_w_standby_top_reveal
+     _coretop_instance/default_w_standby_top_la0_inst_0/reset_rvl_n
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/tm_u/reset_n_i_r1 was merged into signal Default_w_standby_top_reveal
+     _coretop_instance/default_w_standby_top_la0_inst_0/reset_rvl_n
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/tm_u/reset_n_i_r0 was merged into signal Default_w_standby_top_reveal
+     _coretop_instance/default_w_standby_top_la0_inst_0/reset_rvl_n
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/tm_u/jrstn_i was merged into signal jtaghub16_jrstn
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/tm_u/jtck_i was merged into signal jtaghub16_jtck
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/trig_u/te_0/jshift_d2.CN was merged into signal jtaghub16_jtck
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/trig_u/te_0/jrstn_i was merged into signal jtaghub16_jrstn
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/trig_u/te_0/reset_n_i was merged into signal Default_w_standby_top_re
+     veal_coretop_instance/default_w_standby_top_la0_inst_0/reset_rvl_n
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/trig_u/tcnt_0/reset_n_i was merged into signal Default_w_standby_top_
+     reveal_coretop_instance/default_w_standby_top_la0_inst_0/reset_rvl_n
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/trig_u/tu_0/reset_n_i was merged into signal Default_w_standby_top_re
+     veal_coretop_instance/default_w_standby_top_la0_inst_0/reset_rvl_n
+Signal xo2chub/GND undriven or does not drive anything - clipped.
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/ren_jtck undriven or does not drive anything - clipped.
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/rd_dout_tm[13] undriven or does not drive anything - clipped.
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/tm_u/VCC undriven or does not drive anything - clipped.
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/tm_u/genblk4.tr_mem/scuba_vlo undriven or does not drive anything -
+     clipped.
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/tm_u/genblk4.tr_mem/scuba_vhi undriven or does not drive anything -
+     clipped.
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/trig_u/te_0/VCC undriven or does not drive anything - clipped.
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/trig_u/rd_dout_te[1] undriven or does not drive anything - clipped.
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/trig_u/te_0/genblk1.te_tt_ebr_ram/scuba_vlo undriven or does not
+     drive anything - clipped.
+Signal xo2chub/VCC undriven or does not drive anything - clipped.
+Signal xo2chub/bit_count_cry_0_COUT[3] undriven or does not drive anything -
+
+     clipped.
+Signal xo2chub/rom_rd_addr_cry_0_S0[0] undriven or does not drive anything -
+     clipped.
+Signal xo2chub/N_2 undriven or does not drive anything - clipped.
+Signal xo2chub/rom_rd_addr_s_0_S1[7] undriven or does not drive anything -
+     clipped.
+Signal xo2chub/rom_rd_addr_s_0_COUT[7] undriven or does not drive anything -
+     clipped.
+Signal xo2chub/jtdo2_int_prm_16_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal xo2chub/jtdo2_int_prm_16_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal xo2chub/N_3 undriven or does not drive anything - clipped.
+Signal xo2chub/er2_tdo[14] undriven or does not drive anything - clipped.
+Signal xo2chub/er2_tdo[15] undriven or does not drive anything - clipped.
+Signal xo2chub/jtdo2_int_prm_15_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal xo2chub/jtdo2_int_prm_15_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal xo2chub/er2_tdo[12] undriven or does not drive anything - clipped.
+Signal xo2chub/er2_tdo[13] undriven or does not drive anything - clipped.
+Signal xo2chub/jtdo2_int_prm_13_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal xo2chub/jtdo2_int_prm_13_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal xo2chub/er2_tdo[10] undriven or does not drive anything - clipped.
+Signal xo2chub/er2_tdo[11] undriven or does not drive anything - clipped.
+Signal xo2chub/jtdo2_int_prm_11_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal xo2chub/jtdo2_int_prm_11_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal xo2chub/er2_tdo[8] undriven or does not drive anything - clipped.
+Signal xo2chub/er2_tdo[9] undriven or does not drive anything - clipped.
+Signal xo2chub/jtdo2_int_prm_9_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal xo2chub/jtdo2_int_prm_9_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal xo2chub/er2_tdo[6] undriven or does not drive anything - clipped.
+Signal xo2chub/er2_tdo[7] undriven or does not drive anything - clipped.
+Signal xo2chub/jtdo2_int_prm_7_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal xo2chub/jtdo2_int_prm_7_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal xo2chub/er2_tdo[4] undriven or does not drive anything - clipped.
+Signal xo2chub/er2_tdo[5] undriven or does not drive anything - clipped.
+Signal xo2chub/jtdo2_int_prm_5_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal xo2chub/jtdo2_int_prm_5_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal xo2chub/er2_tdo[2] undriven or does not drive anything - clipped.
+Signal xo2chub/er2_tdo[3] undriven or does not drive anything - clipped.
+Signal xo2chub/jtdo2_int_prm_3_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal xo2chub/jtdo2_int_prm_3_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal xo2chub/er2_tdo[1] undriven or does not drive anything - clipped.
+
+Signal xo2chub/jtdo2_int_prm_1_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal xo2chub/jtdo2_int_prm_1_0_0_COUT undriven or does not drive anything -
+     clipped.
+Signal xo2chub/ip_enable[15] undriven or does not drive anything - clipped.
+Signal xo2chub/genblk7.un1_jtagf_u_1 undriven or does not drive anything -
+     clipped.
+Signal xo2chub/genblk7.un1_jtagf_u undriven or does not drive anything -
+     clipped.
+Signal xo2chub/tdoa undriven or does not drive anything - clipped.
+Signal xo2chub/tdia undriven or does not drive anything - clipped.
+Signal xo2chub/tmsa undriven or does not drive anything - clipped.
+Signal xo2chub/tcka undriven or does not drive anything - clipped.
+Signal xo2chub/cdn undriven or does not drive anything - clipped.
+Signal xo2chub/bit_count_cry_0_S0[0] undriven or does not drive anything -
+     clipped.
+Signal xo2chub/N_1 undriven or does not drive anything - clipped.
+Signal un3_count_s_15_0_S1 undriven or does not drive anything - clipped.
+Signal un3_count_s_15_0_COUT undriven or does not drive anything - clipped.
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/VCC undriven or does not drive anything - clipped.
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/GND undriven or does not drive anything - clipped.
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/jtag_int_u/bit_cnt_cry_0_S0[0] undriven or does not drive anything -
+     clipped.
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/jtag_int_u/N_1 undriven or does not drive anything - clipped.
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/jtag_int_u/bit_cnt_s_0_S1[5] undriven or does not drive anything -
+     clipped.
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/jtag_int_u/bit_cnt_s_0_COUT[5] undriven or does not drive anything -
+     clipped.
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/jtag_int_u/tr_dout_bit_cnt_cry_0_S0[0] undriven or does not drive
+     anything - clipped.
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/jtag_int_u/N_2 undriven or does not drive anything - clipped.
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/jtag_int_u/tr_dout_bit_cnt_cry_0_COUT[3] undriven or does not drive
+     anything - clipped.
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/tm_u/tm_wr_addr_cntr_cry_0_S0[0] undriven or does not drive anything
+     - clipped.
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/tm_u/N_1 undriven or does not drive anything - clipped.
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/tm_u/tm_wr_addr_cntr_cry_0_COUT[11] undriven or does not drive
+     anything - clipped.
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/tm_u/tm_rd_addr_cntr_cry_0_S0[0] undriven or does not drive anything
+     - clipped.
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/tm_u/N_2 undriven or does not drive anything - clipped.
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+
+     nst_0/tm_u/tm_rd_addr_cntr_cry_0_COUT[11] undriven or does not drive
+     anything - clipped.
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/tm_u/pre_trig_cntr_cry_0_S0[0] undriven or does not drive anything -
+     clipped.
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/tm_u/N_3 undriven or does not drive anything - clipped.
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/tm_u/pre_trig_cntr_cry_0_COUT[11] undriven or does not drive anything
+     - clipped.
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/tm_u/post_trig_cntr_cry_0_S0[0] undriven or does not drive anything -
+     clipped.
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/tm_u/N_4 undriven or does not drive anything - clipped.
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/tm_u/post_trig_cntr_cry_0_COUT[11] undriven or does not drive
+     anything - clipped.
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/trig_u/VCC undriven or does not drive anything - clipped.
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/trig_u/GND undriven or does not drive anything - clipped.
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/trig_u/te_0/te_precnt_cry_0_S0[0] undriven or does not drive anything
+     - clipped.
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/trig_u/te_0/N_1 undriven or does not drive anything - clipped.
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/trig_u/te_0/te_precnt_s_0_S1[15] undriven or does not drive anything
+     - clipped.
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/trig_u/te_0/te_precnt_s_0_COUT[15] undriven or does not drive
+     anything - clipped.
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/trig_u/te_0/genblk1.te_tt_ebr_ram/scuba_vhi undriven or does not
+     drive anything - clipped.
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/trig_u/rd_dout_tcnt[4] undriven or does not drive anything - clipped.
+     
+Signal Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_i
+     nst_0/trig_u/rd_dout_tu[3] undriven or does not drive anything - clipped.
 Signal pcm1/STOP undriven or does not drive anything - clipped.
-Signal divider_cry_0_S0[0] undriven or does not drive anything - clipped.
+Signal un3_count_cry_0_0_S1 undriven or does not drive anything - clipped.
+Signal un3_count_cry_0_0_S0 undriven or does not drive anything - clipped.
 Signal N_1 undriven or does not drive anything - clipped.
 Signal OSCH_inst_SEDSTDBY undriven or does not drive anything - clipped.
+Block xo2chub/genblk7.jtagf_u_RNIO314 was optimized away.
+Block xo2chub/ip_enable_0_.CN was optimized away.
+Block Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_in
+     st_0/jtag_int_u/parity_calc.CN was optimized away.
+Block Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_in
+     st_0/jtag_int_u/jrstn_RNIH98D_3 was optimized away.
+Block Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_in
+     st_0/jtag_int_u/jrstn_RNIH98D_6 was optimized away.
+Block Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_in
+     st_0/jtag_int_u/jrstn_RNIH98D_2 was optimized away.
+
+Block Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_in
+     st_0/jtag_int_u/jrstn_RNIH98D_5 was optimized away.
+Block Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_in
+     st_0/jtag_int_u/jrstn_RNIH98D_1 was optimized away.
+Block Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_in
+     st_0/jtag_int_u/jrstn_RNIH98D was optimized away.
+Block Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_in
+     st_0/jtag_int_u/jrstn_RNIH98D_4 was optimized away.
+Block Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_in
+     st_0/jtag_int_u/jrstn_RNIH98D_0 was optimized away.
+Block Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_in
+     st_0/jtag_int_u/reset_n_RNIGUS4 was optimized away.
+Block Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_in
+     st_0/tm_u/reset_n_RNIGUS4_0 was optimized away.
+Block Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_in
+     st_0/tm_u/reset_n_RNIGUS4_8 was optimized away.
+Block Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_in
+     st_0/tm_u/reset_n_RNIGUS4_9 was optimized away.
+Block Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_in
+     st_0/tm_u/reset_n_RNIGUS4 was optimized away.
+Block Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_in
+     st_0/tm_u/reset_n_RNIGUS4_6 was optimized away.
+Block Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_in
+     st_0/tm_u/reset_n_RNIGUS4_5 was optimized away.
+Block Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_in
+     st_0/tm_u/reset_n_RNIGUS4_4 was optimized away.
+Block Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_in
+     st_0/tm_u/reset_n_RNIGUS4_3 was optimized away.
+Block Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_in
+     st_0/tm_u/reset_n_RNIGUS4_2 was optimized away.
+Block Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_in
+     st_0/tm_u/reset_n_RNIGUS4_1 was optimized away.
+Block Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_in
+     st_0/tm_u/reset_n_RNIGUS4_7 was optimized away.
+Block Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_in
+     st_0/tm_u/jrstn_RNIH98D was optimized away.
+Block Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_in
+     st_0/tm_u/jtck_RNICM68 was optimized away.
+Block Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_in
+     st_0/trig_u/te_0/tt_wr_addr_cntr_0_.CN was optimized away.
+Block Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_in
+     st_0/trig_u/te_0/jrstn_RNIH98D was optimized away.
+Block Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_in
+     st_0/trig_u/te_0/reset_n_RNIGUS4 was optimized away.
+Block Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_in
+     st_0/trig_u/tcnt_0/reset_n_RNIGUS4 was optimized away.
+Block Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_in
+     st_0/trig_u/tu_0/reset_n_RNIGUS4 was optimized away.
+Block xo2chub/GND_0 was optimized away.
+Block Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_in
+     st_0/jtag_int_u/GND_0 was optimized away.
+Block Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_in
+     st_0/tm_u/GND_0 was optimized away.
+Block Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_in
+     st_0/tm_u/VCC_0 was optimized away.
+Block Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_in
+
+     st_0/tm_u/genblk4.tr_mem/scuba_vlo_inst was optimized away.
+Block Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_in
+     st_0/tm_u/genblk4.tr_mem/scuba_vhi_inst was optimized away.
+Block Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_in
+     st_0/trig_u/te_0/VCC_0 was optimized away.
+Block Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_in
+     st_0/trig_u/te_0/GND_0 was optimized away.
+Block Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_in
+     st_0/trig_u/te_0/genblk1.te_tt_ebr_ram/scuba_vlo_inst was optimized away.
+
+
+
+<A name="mrp_mem"></A><B><U><big>Memory Usage</big></U></B>
+
+/Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/
+     tm_u/genblk4.tr_mem:
+    EBRs: 16
+    RAM SLICEs: 0
+    Logic SLICEs: 0
+    PFU Registers: 0
+    -Contains EBR pmi_ram_dpXbnonesadr1813819218138192p13962434_7_1_0:  TYPE=
+         DP8KC,  Width_B= 9,  Depth_A= 1024,  Depth_B= 1024,  REGMODE_A= OUTREG,
+         REGMODE_B= OUTREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= ASYNC,
+         WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,  GSR= DISABLED,
+         MEM_LPC_FILE=
+         pmi_ram_dpXbnonesadr1813819218138192p13962434__PMIP__8192__18__18B
+    -Contains EBR pmi_ram_dpXbnonesadr1813819218138192p13962434_0_0_15:  TYPE=
+         DP8KC,  Width_B= 9,  Depth_A= 1024,  Depth_B= 1024,  REGMODE_A= OUTREG,
+         REGMODE_B= OUTREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= ASYNC,
+         WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,  GSR= DISABLED,
+         MEM_LPC_FILE=
+         pmi_ram_dpXbnonesadr1813819218138192p13962434__PMIP__8192__18__18B
+    -Contains EBR pmi_ram_dpXbnonesadr1813819218138192p13962434_0_1_14:  TYPE=
+         DP8KC,  Width_B= 9,  Depth_A= 1024,  Depth_B= 1024,  REGMODE_A= OUTREG,
+         REGMODE_B= OUTREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= ASYNC,
+         WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,  GSR= DISABLED,
+         MEM_LPC_FILE=
+         pmi_ram_dpXbnonesadr1813819218138192p13962434__PMIP__8192__18__18B
+    -Contains EBR pmi_ram_dpXbnonesadr1813819218138192p13962434_1_0_13:  TYPE=
+         DP8KC,  Width_B= 9,  Depth_A= 1024,  Depth_B= 1024,  REGMODE_A= OUTREG,
+         REGMODE_B= OUTREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= ASYNC,
+         WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,  GSR= DISABLED,
+         MEM_LPC_FILE=
+         pmi_ram_dpXbnonesadr1813819218138192p13962434__PMIP__8192__18__18B
+    -Contains EBR pmi_ram_dpXbnonesadr1813819218138192p13962434_1_1_12:  TYPE=
+         DP8KC,  Width_B= 9,  Depth_A= 1024,  Depth_B= 1024,  REGMODE_A= OUTREG,
+         REGMODE_B= OUTREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= ASYNC,
+         WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,  GSR= DISABLED,
+         MEM_LPC_FILE=
+         pmi_ram_dpXbnonesadr1813819218138192p13962434__PMIP__8192__18__18B
+    -Contains EBR pmi_ram_dpXbnonesadr1813819218138192p13962434_2_0_11:  TYPE=
+         DP8KC,  Width_B= 9,  Depth_A= 1024,  Depth_B= 1024,  REGMODE_A= OUTREG,
+         REGMODE_B= OUTREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= ASYNC,
+         WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,  GSR= DISABLED,
+         MEM_LPC_FILE=
+         pmi_ram_dpXbnonesadr1813819218138192p13962434__PMIP__8192__18__18B
+    -Contains EBR pmi_ram_dpXbnonesadr1813819218138192p13962434_2_1_10:  TYPE=
+
+         DP8KC,  Width_B= 9,  Depth_A= 1024,  Depth_B= 1024,  REGMODE_A= OUTREG,
+         REGMODE_B= OUTREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= ASYNC,
+         WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,  GSR= DISABLED,
+         MEM_LPC_FILE=
+         pmi_ram_dpXbnonesadr1813819218138192p13962434__PMIP__8192__18__18B
+    -Contains EBR pmi_ram_dpXbnonesadr1813819218138192p13962434_3_0_9:  TYPE=
+         DP8KC,  Width_B= 9,  Depth_A= 1024,  Depth_B= 1024,  REGMODE_A= OUTREG,
+         REGMODE_B= OUTREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= ASYNC,
+         WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,  GSR= DISABLED,
+         MEM_LPC_FILE=
+         pmi_ram_dpXbnonesadr1813819218138192p13962434__PMIP__8192__18__18B
+    -Contains EBR pmi_ram_dpXbnonesadr1813819218138192p13962434_3_1_8:  TYPE=
+         DP8KC,  Width_B= 9,  Depth_A= 1024,  Depth_B= 1024,  REGMODE_A= OUTREG,
+         REGMODE_B= OUTREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= ASYNC,
+         WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,  GSR= DISABLED,
+         MEM_LPC_FILE=
+         pmi_ram_dpXbnonesadr1813819218138192p13962434__PMIP__8192__18__18B
+    -Contains EBR pmi_ram_dpXbnonesadr1813819218138192p13962434_4_0_7:  TYPE=
+         DP8KC,  Width_B= 9,  Depth_A= 1024,  Depth_B= 1024,  REGMODE_A= OUTREG,
+         REGMODE_B= OUTREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= ASYNC,
+         WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,  GSR= DISABLED,
+         MEM_LPC_FILE=
+         pmi_ram_dpXbnonesadr1813819218138192p13962434__PMIP__8192__18__18B
+    -Contains EBR pmi_ram_dpXbnonesadr1813819218138192p13962434_4_1_6:  TYPE=
+         DP8KC,  Width_B= 9,  Depth_A= 1024,  Depth_B= 1024,  REGMODE_A= OUTREG,
+         REGMODE_B= OUTREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= ASYNC,
+         WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,  GSR= DISABLED,
+         MEM_LPC_FILE=
+         pmi_ram_dpXbnonesadr1813819218138192p13962434__PMIP__8192__18__18B
+    -Contains EBR pmi_ram_dpXbnonesadr1813819218138192p13962434_5_0_5:  TYPE=
+         DP8KC,  Width_B= 9,  Depth_A= 1024,  Depth_B= 1024,  REGMODE_A= OUTREG,
+         REGMODE_B= OUTREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= ASYNC,
+         WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,  GSR= DISABLED,
+         MEM_LPC_FILE=
+         pmi_ram_dpXbnonesadr1813819218138192p13962434__PMIP__8192__18__18B
+    -Contains EBR pmi_ram_dpXbnonesadr1813819218138192p13962434_5_1_4:  TYPE=
+         DP8KC,  Width_B= 9,  Depth_A= 1024,  Depth_B= 1024,  REGMODE_A= OUTREG,
+         REGMODE_B= OUTREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= ASYNC,
+         WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,  GSR= DISABLED,
+         MEM_LPC_FILE=
+         pmi_ram_dpXbnonesadr1813819218138192p13962434__PMIP__8192__18__18B
+    -Contains EBR pmi_ram_dpXbnonesadr1813819218138192p13962434_6_0_3:  TYPE=
+         DP8KC,  Width_B= 9,  Depth_A= 1024,  Depth_B= 1024,  REGMODE_A= OUTREG,
+         REGMODE_B= OUTREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= ASYNC,
+         WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,  GSR= DISABLED,
+         MEM_LPC_FILE=
+         pmi_ram_dpXbnonesadr1813819218138192p13962434__PMIP__8192__18__18B
+    -Contains EBR pmi_ram_dpXbnonesadr1813819218138192p13962434_6_1_2:  TYPE=
+         DP8KC,  Width_B= 9,  Depth_A= 1024,  Depth_B= 1024,  REGMODE_A= OUTREG,
+         REGMODE_B= OUTREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= ASYNC,
+         WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,  GSR= DISABLED,
+         MEM_LPC_FILE=
+         pmi_ram_dpXbnonesadr1813819218138192p13962434__PMIP__8192__18__18B
+    -Contains EBR pmi_ram_dpXbnonesadr1813819218138192p13962434_7_0_1:  TYPE=
+         DP8KC,  Width_B= 9,  Depth_A= 1024,  Depth_B= 1024,  REGMODE_A= OUTREG,
+         REGMODE_B= OUTREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= ASYNC,
+
+         WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,  GSR= DISABLED,
+         MEM_LPC_FILE=
+         pmi_ram_dpXbnonesadr1813819218138192p13962434__PMIP__8192__18__18B
+/Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/
+     trig_u/te_0/genblk1.te_tt_ebr_ram:
+    EBRs: 1
+    RAM SLICEs: 0
+    Logic SLICEs: 0
+    PFU Registers: 0
+    -Contains EBR pmi_ram_dpXbnonesadr112112p12e1aace_0_0_0:  TYPE= DP8KC,
+         Width_B= 1,  Depth_A= 2,  Depth_B= 2,  REGMODE_A= OUTREG,  REGMODE_B=
+         OUTREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= ASYNC,  WRITEMODE_A=
+         NORMAL,  WRITEMODE_B= NORMAL,  GSR= DISABLED,  MEM_LPC_FILE=
+         pmi_ram_dpXbnonesadr112112p12e1aace__PMIP__2__1__1B
 
 Power Controller Summary
 ------------------------
@@ -241,9 +801,7 @@ OSC 1:                                     Pin/Node Value
   OSC Type:                                         OSCH
   STDBY Input:                             NODE     stdby1_c
   OSC Output:                              PIN,NODE osc_clk_c
-  OSC Nominal Frequency (MHz):                      2.08
-
-
+  OSC Nominal Frequency (MHz):                      20.46
 
 
 
@@ -254,32 +812,98 @@ Instance Name: OSCH_inst
          Type: OSCH
 Instance Name: pcm1/PCNTR_Inst0
          Type: PCNTR
+Instance Name: Default_w_standby_top_reveal_coretop_instance/default_w_standby_t
+     op_la0_inst_0/trig_u/te_0/genblk1.te_tt_ebr_ram/pmi_ram_dpXbnonesadr112112p
+     12e1aace_0_0_0
+         Type: DP8KC
+Instance Name: Default_w_standby_top_reveal_coretop_instance/default_w_standby_t
 
+     op_la0_inst_0/tm_u/genblk4.tr_mem/pmi_ram_dpXbnonesadr1813819218138192p1396
+     2434_7_1_0
+         Type: DP8KC
+Instance Name: Default_w_standby_top_reveal_coretop_instance/default_w_standby_t
+     op_la0_inst_0/tm_u/genblk4.tr_mem/pmi_ram_dpXbnonesadr1813819218138192p1396
+     2434_0_0_15
+         Type: DP8KC
+Instance Name: Default_w_standby_top_reveal_coretop_instance/default_w_standby_t
+     op_la0_inst_0/tm_u/genblk4.tr_mem/pmi_ram_dpXbnonesadr1813819218138192p1396
+     2434_0_1_14
+         Type: DP8KC
+Instance Name: Default_w_standby_top_reveal_coretop_instance/default_w_standby_t
+     op_la0_inst_0/tm_u/genblk4.tr_mem/pmi_ram_dpXbnonesadr1813819218138192p1396
+     2434_1_0_13
+         Type: DP8KC
+Instance Name: Default_w_standby_top_reveal_coretop_instance/default_w_standby_t
+     op_la0_inst_0/tm_u/genblk4.tr_mem/pmi_ram_dpXbnonesadr1813819218138192p1396
+     2434_1_1_12
+         Type: DP8KC
+Instance Name: Default_w_standby_top_reveal_coretop_instance/default_w_standby_t
+     op_la0_inst_0/tm_u/genblk4.tr_mem/pmi_ram_dpXbnonesadr1813819218138192p1396
+     2434_2_0_11
+         Type: DP8KC
+Instance Name: Default_w_standby_top_reveal_coretop_instance/default_w_standby_t
+     op_la0_inst_0/tm_u/genblk4.tr_mem/pmi_ram_dpXbnonesadr1813819218138192p1396
+     2434_2_1_10
+         Type: DP8KC
+Instance Name: Default_w_standby_top_reveal_coretop_instance/default_w_standby_t
+     op_la0_inst_0/tm_u/genblk4.tr_mem/pmi_ram_dpXbnonesadr1813819218138192p1396
+     2434_3_0_9
+         Type: DP8KC
+Instance Name: Default_w_standby_top_reveal_coretop_instance/default_w_standby_t
+     op_la0_inst_0/tm_u/genblk4.tr_mem/pmi_ram_dpXbnonesadr1813819218138192p1396
+     2434_3_1_8
+         Type: DP8KC
+Instance Name: Default_w_standby_top_reveal_coretop_instance/default_w_standby_t
+     op_la0_inst_0/tm_u/genblk4.tr_mem/pmi_ram_dpXbnonesadr1813819218138192p1396
+     2434_4_0_7
+         Type: DP8KC
+Instance Name: Default_w_standby_top_reveal_coretop_instance/default_w_standby_t
+     op_la0_inst_0/tm_u/genblk4.tr_mem/pmi_ram_dpXbnonesadr1813819218138192p1396
+     2434_4_1_6
+         Type: DP8KC
+Instance Name: Default_w_standby_top_reveal_coretop_instance/default_w_standby_t
+     op_la0_inst_0/tm_u/genblk4.tr_mem/pmi_ram_dpXbnonesadr1813819218138192p1396
+     2434_5_0_5
+         Type: DP8KC
+Instance Name: Default_w_standby_top_reveal_coretop_instance/default_w_standby_t
+     op_la0_inst_0/tm_u/genblk4.tr_mem/pmi_ram_dpXbnonesadr1813819218138192p1396
+     2434_5_1_4
+         Type: DP8KC
+Instance Name: Default_w_standby_top_reveal_coretop_instance/default_w_standby_t
+     op_la0_inst_0/tm_u/genblk4.tr_mem/pmi_ram_dpXbnonesadr1813819218138192p1396
+     2434_6_0_3
+         Type: DP8KC
+Instance Name: Default_w_standby_top_reveal_coretop_instance/default_w_standby_t
 
-
-<A name="mrp_gsr"></A><B><U><big>GSR Usage</big></U></B>
----------
-
-GSR Component:
-   The local reset signal 'stdby_in_c' of the design has been inferred as Global
-        Set Reset (GSR). The reset signal used for GSR control is 'stdby_in_c'.
-        
-
-     GSR Property:
-   The design components with GSR property set to ENABLED will respond to global
-        set reset while the components with GSR property set to DISABLED will
-        not.
-        
+     op_la0_inst_0/tm_u/genblk4.tr_mem/pmi_ram_dpXbnonesadr1813819218138192p1396
+     2434_6_1_2
+         Type: DP8KC
+Instance Name: Default_w_standby_top_reveal_coretop_instance/default_w_standby_t
+     op_la0_inst_0/tm_u/genblk4.tr_mem/pmi_ram_dpXbnonesadr1813819218138192p1396
+     2434_7_0_1
+         Type: DP8KC
+Instance Name: xo2chub/genblk7.jtagf_u
+         Type: JTAGF
 
 
 
 <A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
 -------------------------
 
-   Total CPU Time: 0 secs  
-   Total REAL Time: 0 secs  
-   Peak Memory Usage: 59 MB
+   Total CPU Time: 4 secs  
+   Total REAL Time: 10 secs  
+   Peak Memory Usage: 118 MB
         
+
+
+
+
+
+
+
+
+
+
 
 
 

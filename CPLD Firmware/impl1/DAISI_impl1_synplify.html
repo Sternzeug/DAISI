@@ -2,7 +2,7 @@
 <HEAD><TITLE>Synthesis Report</TITLE>
 <STYLE TYPE="text/css">
 <!--
- body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
 -->
 </STYLE>
 </HEAD>
@@ -12,7 +12,7 @@
 #OS: Linux 
 #Hostname: localhost.localdomain
 
-# Wed Jun 14 00:09:59 2017
+# Wed Jun 14 20:26:07 2017
 
 #Implementation: impl1
 
@@ -35,8 +35,19 @@ Running on host :localhost.localdomain
 @I::"/media/sf_Downloads/Code/DAISI/CPLD Firmware/pwr_cntrllr.v" (library work)
 @I::"/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_interface.v" (library work)
 @I::"/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v" (library work)
+@I::"/media/sf_Downloads/Code/DAISI/CPLD Firmware/data_buffer.v" (library work)
+@I::"/media/sf_Downloads/Code/DAISI/CPLD Firmware/data_formatter.v" (library work)
+@I::"/media/sf_Downloads/Code/DAISI/CPLD Firmware/storage_interface.v" (library work)
+@I::"/media/sf_Downloads/Code/DAISI/CPLD Firmware/rs232_decoder_encoder.v" (library work)
+@I::"/media/sf_Downloads/Code/DAISI/CPLD Firmware/rs232_command_processor.v" (library work)
+@I::"/media/sf_Downloads/Code/DAISI/CPLD Firmware/pseudo_adc.v" (library work)
+@I::"/media/sf_Downloads/Code/DAISI/CPLD Firmware/regulator_control.v" (library work)
+@I::"/media/sf_Downloads/Code/DAISI/CPLD Firmware/sensor_interface.v" (library work)
+@I::"/media/sf_Downloads/Code/DAISI/CPLD Firmware/thermal_controller.v" (library work)
 Verilog syntax check successful!
-File /media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v changed - recompiling
+
+Compiler output is up to date.  No re-compile necessary
+
 Selecting top level module top
 @N: CG364 :"/usr/local/diamond/3.9_x64/synpbase/lib/lucent/machxo2.v":1793:7:1793:10|Synthesizing module OSCH in library work.
 
@@ -50,52 +61,73 @@ Selecting top level module top
 
 @N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v":1:7:1:20|Synthesizing module spi_controller in library work.
 
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/data_buffer.v":1:7:1:17|Synthesizing module data_buffer in library work.
+
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/data_formatter.v":1:7:1:20|Synthesizing module data_formatter in library work.
+
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/storage_interface.v":1:7:1:23|Synthesizing module storage_interface in library work.
+
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/rs232_decoder_encoder.v":1:7:1:27|Synthesizing module rs232_decoder_encoder in library work.
+
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/rs232_command_processor.v":1:7:1:29|Synthesizing module rs232_command_processor in library work.
+
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/pseudo_adc.v":1:7:1:16|Synthesizing module pseudo_adc in library work.
+
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/regulator_control.v":1:7:1:23|Synthesizing module regulator_control in library work.
+
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/sensor_interface.v":1:7:1:22|Synthesizing module sensor_interface in library work.
+
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/thermal_controller.v":1:7:1:24|Synthesizing module thermal_controller in library work.
+
 @N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v":1:7:1:9|Synthesizing module top in library work.
 
+@W: CL168 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v":110:19:110:41|Removing instance thermal_controller_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v":105:17:105:37|Removing instance sensor_interface_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v":100:18:100:39|Removing instance regulator_control_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v":95:11:95:25|Removing instance pseudo_adc_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v":90:24:90:51|Removing instance rs232_command_processor_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
 
-At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 70MB peak: 71MB)
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Jun 14 00:09:59 2017
+# Wed Jun 14 20:26:07 2017
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
 @N|Running in 64-bit mode
-File /media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/synwork/layer0.srs changed - recompiling
 
-At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 67MB)
+Linker output is up to date. No re-linking necessary
 
-Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-
-Process completed successfully.
-# Wed Jun 14 00:09:59 2017
-
-###########################################################]
-@END
-
-At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 3MB)
-
-Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-
-Process completed successfully.
-# Wed Jun 14 00:09:59 2017
-
-###########################################################]
-Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
-@N|Running in 64-bit mode
-File /media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/synwork/DAISI_impl1_comp.srs changed - recompiling
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Jun 14 00:10:00 2017
+# Wed Jun 14 20:26:08 2017
 
 ###########################################################]
-# Wed Jun 14 00:10:01 2017
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Wed Jun 14 20:26:08 2017
+
+###########################################################]
+
+@A: multi_srs_gen output is up to date. No run necessary.
+To force a re-synthesis, select [Resynthesize All] in menu [Run].
+Click link to view previous log file.
+Multi-srs Generator Report
+@R:"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/synlog/DAISI_impl1_multi_srs_gen.srr"
+Pre-mapping Report
+
+# Wed Jun 14 20:26:08 2017
 
 Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1612R, Built Dec  5 2016 09:37:36
 Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -120,12 +152,13 @@ Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00
 
 Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 114MB)
 
+@W: BN132 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v":75:12:75:29|Removing user instance data_buffer_inst_2 because it is equivalent to instance data_buffer_inst_1. To keep the instance, apply constraint syn_preserve=1 on the instance.
 ICG Latch Removal Summary:
 Number of ICG latches removed:	0
 Number of ICG latches not removed:	0
 syn_allowed_resources : blockrams=26  set on top level netlist top
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 141MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
 
 
 
@@ -136,10 +169,10 @@ Start                          Requested     Requested     Clock        Clock   
 Clock                          Frequency     Period        Type         Group                   Load 
 -----------------------------------------------------------------------------------------------------
 System                         1.0 MHz       1000.000      system       system_clkgroup         0    
-top|osc_clk_inferred_clock     2.1 MHz       480.769       inferred     Inferred_clkgroup_0     2    
+top|osc_clk_inferred_clock     2.1 MHz       480.769       inferred     Inferred_clkgroup_0     6    
 =====================================================================================================
 
-@W: MT529 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_interface.v":9:0:9:5|Found inferred clock top|osc_clk_inferred_clock which controls 2 sequential elements including spi_interface_inst.signal. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_interface.v":9:0:9:5|Found inferred clock top|osc_clk_inferred_clock which controls 6 sequential elements including spi_interface_inst.signal. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
 
 Finished Pre Mapping Phase.
 
@@ -155,10 +188,12 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 54MB peak: 141MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Wed Jun 14 00:10:01 2017
+# Wed Jun 14 20:26:09 2017
 
 ###########################################################]
-# Wed Jun 14 00:10:01 2017
+Map & Optimize Report
+
+# Wed Jun 14 20:26:09 2017
 
 Synopsys Lattice Technology Mapper, Version maplat, Build 1612R, Built Dec  5 2016 09:37:36
 Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -188,6 +223,18 @@ Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapse
 Available hyper_sources - for debug and ip models
 	None Found
 
+@W: BN132 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/rs232_decoder_encoder.v":9:0:9:5|Removing sequential instance rs232_decoder_encoder_inst.signal because it is equivalent to instance storage_interface_inst.signal. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/storage_interface.v":9:0:9:5|Removing sequential instance storage_interface_inst.signal because it is equivalent to instance data_buffer_inst_1.signal. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/data_formatter.v":9:0:9:5|Removing sequential instance data_formatter_inst.signal because it is equivalent to instance spi_controller_inst.signal. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/data_buffer.v":9:0:9:5|Removing sequential instance data_buffer_inst_1.signal because it is equivalent to instance spi_interface_inst.signal. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/rs232_decoder_encoder.v":17:14:17:20|Removing user instance rs232_decoder_encoder_inst.signal_2 because it is equivalent to instance storage_interface_inst.signal_2. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/storage_interface.v":17:14:17:20|Removing user instance storage_interface_inst.signal_2 because it is equivalent to instance data_buffer_inst_1.signal_2. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/data_formatter.v":17:14:17:20|Removing user instance data_formatter_inst.signal_2 because it is equivalent to instance spi_controller_inst.signal_2. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/data_buffer.v":17:14:17:20|Removing user instance data_buffer_inst_1.signal_2 because it is equivalent to instance spi_interface_inst.signal_2. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@A: BN291 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/rs232_decoder_encoder.v":9:0:9:5|Boundary register rs232_decoder_encoder_inst.signal (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/storage_interface.v":9:0:9:5|Boundary register storage_interface_inst.signal (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/data_formatter.v":9:0:9:5|Boundary register data_formatter_inst.signal (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/data_buffer.v":9:0:9:5|Boundary register data_buffer_inst_1.signal (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
 @W: BN132 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v":17:14:17:20|Removing user instance spi_controller_inst.signal_2 because it is equivalent to instance spi_interface_inst.signal_2. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_interface.v":9:0:9:5|Removing sequential instance spi_interface_inst.signal because it is equivalent to instance spi_controller_inst.signal. To keep the instance, apply constraint syn_preserve=1 on the instance.
 
@@ -222,7 +269,7 @@ Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:0
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:00s		   479.30ns		   2 /         1
+   1		0h:00m:00s		   479.19ns		   2 /         1
 
 Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
 
@@ -272,7 +319,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:0
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Wed Jun 14 00:10:02 2017
+# Timing Report written on Wed Jun 14 20:26:10 2017
 #
 
 
@@ -291,13 +338,13 @@ Performance Summary
 *******************
 
 
-Worst slack in design: 478.988
+Worst slack in design: 478.876
 
 @N: MT286 |System clock period 0.000 stretches to negative invalid value -- ignoring stretching.
                                Requested     Estimated     Requested     Estimated                  Clock        Clock              
 Starting Clock                 Frequency     Frequency     Period        Period        Slack        Type         Group              
 ------------------------------------------------------------------------------------------------------------------------------------
-top|osc_clk_inferred_clock     2.1 MHz       561.4 MHz     480.769       1.781         478.988      inferred     Inferred_clkgroup_0
+top|osc_clk_inferred_clock     2.1 MHz       528.2 MHz     480.769       1.893         478.876      inferred     Inferred_clkgroup_0
 System                         1.0 MHz       NA            1000.000      0.000         1000.000     system       system_clkgroup    
 ====================================================================================================================================
 @N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack
@@ -314,7 +361,7 @@ Clocks                                                  |    rise  to  rise     
 Starting                    Ending                      |  constraint  slack     |  constraint  slack  |  constraint  slack  |  constraint  slack
 -------------------------------------------------------------------------------------------------------------------------------------------------
 System                      System                      |  1000.000    1000.000  |  No paths    -      |  No paths    -      |  No paths    -    
-top|osc_clk_inferred_clock  top|osc_clk_inferred_clock  |  480.769     478.988   |  No paths    -      |  No paths    -      |  No paths    -    
+top|osc_clk_inferred_clock  top|osc_clk_inferred_clock  |  480.769     478.876   |  No paths    -      |  No paths    -      |  No paths    -    
 =================================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
@@ -341,7 +388,7 @@ Starting Points with Worst Slack
 Instance                       Reference                      Type        Pin     Net        Time        Slack  
                                Clock                                                                            
 ----------------------------------------------------------------------------------------------------------------
-spi_controller_inst.signal     top|osc_clk_inferred_clock     FD1S3BX     Q       led0_c     1.108       478.988
+spi_controller_inst.signal     top|osc_clk_inferred_clock     FD1S3BX     Q       led0_c     1.220       478.876
 ================================================================================================================
 
 
@@ -352,7 +399,7 @@ Ending Points with Worst Slack
 Instance                       Reference                      Type        Pin     Net          Time         Slack  
                                Clock                                                                               
 -------------------------------------------------------------------------------------------------------------------
-spi_controller_inst.signal     top|osc_clk_inferred_clock     FD1S3BX     D       led0_c_i     480.664      478.988
+spi_controller_inst.signal     top|osc_clk_inferred_clock     FD1S3BX     D       led0_c_i     480.664      478.876
 ===================================================================================================================
 
 
@@ -367,9 +414,9 @@ Path information for path number 1:
     + Clock delay at ending point:           0.000 (ideal)
     = Required time:                         480.664
 
-    - Propagation time:                      1.676
+    - Propagation time:                      1.788
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     478.988
+    = Slack (critical) :                     478.876
 
     Number of logic level(s):                1
     Starting point:                          spi_controller_inst.signal / Q
@@ -380,12 +427,12 @@ Path information for path number 1:
 Instance / Net                                 Pin      Pin               Arrival     No. of    
 Name                               Type        Name     Dir     Delay     Time        Fan Out(s)
 ------------------------------------------------------------------------------------------------
-spi_controller_inst.signal         FD1S3BX     Q        Out     1.108     1.108       -         
-led0_c                             Net         -        -       -         -           3         
-spi_controller_inst.signal_RNO     INV         A        In      0.000     1.108       -         
-spi_controller_inst.signal_RNO     INV         Z        Out     0.568     1.676       -         
+spi_controller_inst.signal         FD1S3BX     Q        Out     1.220     1.220       -         
+led0_c                             Net         -        -       -         -           8         
+spi_controller_inst.signal_RNO     INV         A        In      0.000     1.220       -         
+spi_controller_inst.signal_RNO     INV         Z        Out     0.568     1.788       -         
 led0_c_i                           Net         -        -       -         -           1         
-spi_controller_inst.signal         FD1S3BX     D        In      0.000     1.676       -         
+spi_controller_inst.signal         FD1S3BX     D        In      0.000     1.788       -         
 ================================================================================================
 
 
@@ -491,7 +538,7 @@ Mapper successful!
 At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 30MB peak: 144MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Wed Jun 14 00:10:02 2017
+# Wed Jun 14 20:26:10 2017
 
 ###########################################################]
 

@@ -4,10 +4,11 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
-Wed Jun 14 00:10:03 2017
+Wed Jun 14 20:26:11 2017
 
 /usr/local/diamond/3.9_x64/ispfpga/bin/lin64/par -f DAISI_impl1.p2t
-DAISI_impl1_map.ncd DAISI_impl1.dir DAISI_impl1.prf -gui
+DAISI_impl1_map.ncd DAISI_impl1.dir DAISI_impl1.prf -gui -msgset
+/media/sf_Downloads/Code/DAISI/CPLD Firmware/promote.xml
 
 
 Preference file: DAISI_impl1.prf.

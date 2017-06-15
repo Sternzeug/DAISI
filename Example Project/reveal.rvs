@@ -1,0 +1,37 @@
+<Project ModBy="Inserter" Name="C:/Users/neera_000/Documents/GitHub/DAISI/Example Project/reveal.rvl" Date="2017-06-09">
+    <Core Name="Default_w_standby_top_LA0">
+        <Setting>
+            <Capture SamplesPerTrig="8192" NumTrigsCap="1"/>
+            <Event EventCnt="0" CntEnableRun="0"/>
+            <TrigSetting PreTrgSamples="" AND_ALL="0" PostTrgSamples="" TURadix="0"/>
+        </Setting>
+        <Dataset Name="Base">
+            <Trace>
+                <Sig Name="rx"/>
+                <Sig Name="tx"/>
+                <Bus Name="count" Radix="0">
+                    <Sig Name="count:0"/>
+                    <Sig Name="count:1"/>
+                    <Sig Name="count:2"/>
+                    <Sig Name="count:3"/>
+                    <Sig Name="count:4"/>
+                    <Sig Name="count:5"/>
+                    <Sig Name="count:6"/>
+                    <Sig Name="count:7"/>
+                    <Sig Name="count:8"/>
+                    <Sig Name="count:9"/>
+                    <Sig Name="count:10"/>
+                    <Sig Name="count:11"/>
+                    <Sig Name="count:12"/>
+                    <Sig Name="count:13"/>
+                    <Sig Name="count:14"/>
+                    <Sig Name="count:15"/>
+                </Bus>
+            </Trace>
+            <Trigger>
+                <TU Operator="0" Name="TU1" ID="1" Value="0" Radix="0"/>
+                <TE Enable="1" Expression="TU1" Name="TE1" ID="1"/>
+            </Trigger>
+        </Dataset>
+    </Core>
+</Project>

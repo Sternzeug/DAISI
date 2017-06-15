@@ -9,12 +9,13 @@ Command line:   map -a MachXO2 -p LCMXO2-7000HE -t TQFP144 -s 4 -oc Commercial
      DAISI_impl1.ngd -o DAISI_impl1_map.ncd -pr DAISI_impl1.prf -mp
      DAISI_impl1.mrp -lpf /media/sf_Downloads/Code/DAISI/CPLD
      Firmware/impl1/DAISI_impl1_synplify.lpf -lpf
-     /media/sf_Downloads/Code/DAISI/CPLD Firmware/DAISI.lpf -c 0 -gui 
+     /media/sf_Downloads/Code/DAISI/CPLD Firmware/DAISI.lpf -c 0 -gui -msgset
+     /media/sf_Downloads/Code/DAISI/CPLD Firmware/promote.xml 
 Target Vendor:  LATTICE
 Target Device:  LCMXO2-7000HETQFP144
 Target Performance:   4
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.9.0.99.2
-Mapped on:  06/14/17  00:10:03
+Mapped on:  06/14/17  20:26:10
 
 Design Summary
 --------------
@@ -22,12 +23,12 @@ Design Summary
    Number of registers:      1 out of  7209 (0%)
       PFU registers:            1 out of  6864 (0%)
       PIO registers:            0 out of   345 (0%)
-   Number of SLICEs:         3 out of  3432 (0%)
-      SLICEs as Logic/ROM:      3 out of  3432 (0%)
+   Number of SLICEs:         2 out of  3432 (0%)
+      SLICEs as Logic/ROM:      2 out of  3432 (0%)
       SLICEs as RAM:            0 out of  2574 (0%)
       SLICEs as Carry:          0 out of  3432 (0%)
-   Number of LUT4s:          4 out of  6864 (0%)
-      Number used as logic LUTs:          4
+   Number of LUT4s:          3 out of  6864 (0%)
+      Number used as logic LUTs:          3
       Number used as distributed RAM:     0
       Number used as ripple logic:        0
       Number used as shift registers:     0
@@ -59,22 +60,21 @@ Design Summary
    Number of clocks:  1
      Net osc_clk_c: 1 loads, 1 rising, 0 falling (Driver: OSCH_inst )
    Number of Clock Enables:  0
-   Number of local set/reset loads for net switch0_c merged into GSR:  1
 
                                     Page 1
 
 
 
 
-Design:  top                                           Date:  06/14/17  00:10:03
+Design:  top                                           Date:  06/14/17  20:26:10
 
 Design Summary (cont)
 ---------------------
+   Number of local set/reset loads for net switch0_c merged into GSR:  1
    Number of LSRs:  0
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net VCC: 5 loads
-     Net led0_c: 3 loads
+     Net led0_c: 8 loads
      Net stdby1_c: 2 loads
      Net switch0_c: 2 loads
      Net pcm1/stby_flag: 1 loads
@@ -132,7 +132,7 @@ IO (PIO) Attributes
 
 
 
-Design:  top                                           Date:  06/14/17  00:10:03
+Design:  top                                           Date:  06/14/17  20:26:10
 
 IO (PIO) Attributes (cont)
 --------------------------
@@ -154,8 +154,10 @@ IO (PIO) Attributes (cont)
 Removed logic
 -------------
 
+Block VCC undriven or does not drive anything - clipped.
 Block GND undriven or does not drive anything - clipped.
 Block spi_controller_inst/VCC undriven or does not drive anything - clipped.
+Signal VCC undriven or does not drive anything - clipped.
 Signal pcm1/STOP undriven or does not drive anything - clipped.
 Signal OSCH_inst_SEDSTDBY undriven or does not drive anything - clipped.
 
@@ -188,20 +190,20 @@ OSC 1:                                     Pin/Node Value
   OSC Output:                              PIN,NODE osc_clk_c
   OSC Nominal Frequency (MHz):                      2.08
 
-ASIC Components
----------------
 
-Instance Name: OSCH_inst
+
 
                                     Page 3
 
 
 
 
-Design:  top                                           Date:  06/14/17  00:10:03
+Design:  top                                           Date:  06/14/17  20:26:10
 
-ASIC Components (cont)
-----------------------
+ASIC Components
+---------------
+
+Instance Name: OSCH_inst
          Type: OSCH
 Instance Name: pcm1/PCNTR_Inst0
          Type: PCNTR
@@ -227,8 +229,6 @@ Run Time and Memory Usage
    Total REAL Time: 0 secs  
    Peak Memory Usage: 190 MB
         
-
-
 
 
 

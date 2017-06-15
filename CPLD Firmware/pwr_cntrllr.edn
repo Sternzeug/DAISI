@@ -1,0 +1,106 @@
+(edif pwr_cntrllr
+  (edifVersion 2 0 0)
+  (edifLevel 0)
+  (keywordMap (keywordLevel 0))
+  (status
+    (written
+      (timestamp 2017 6 14 21 17 46)
+      (program "SCUBA" (version "Diamond (64-bit) 3.7.0.96.1"))))
+      (comment "C:\lscc\diamond\3.7_x64\ispfpga\bin\nt64\scuba.exe -w -n pwr_cntrllr -lang verilog -synth synplify -bus_exp 7 -bb -arch xo2c00 -type power_cntl -entry USER_CFG -s2s BYPASS -wake USER -standby -bandgap_off -por_off ")
+  (library ORCLIB
+    (edifLevel 0)
+    (technology
+      (numberDefinition))
+    (cell VLO
+      (cellType GENERIC)
+      (view view1
+        (viewType NETLIST)
+        (interface
+          (port Z
+            (direction OUTPUT)))))
+    (cell PCNTR
+      (cellType GENERIC)
+      (view view1
+        (viewType NETLIST)
+        (interface
+          (port CLK
+            (direction INPUT))
+          (port USERTIMEOUT
+            (direction INPUT))
+          (port USERSTDBY
+            (direction INPUT))
+          (port CLRFLAG
+            (direction INPUT))
+          (port CFGWAKE
+            (direction INPUT))
+          (port CFGSTDBY
+            (direction INPUT))
+          (port STDBY
+            (direction OUTPUT))
+          (port STOP
+            (direction OUTPUT))
+          (port SFLAG
+            (direction OUTPUT)))))
+    (cell pwr_cntrllr
+      (cellType GENERIC)
+      (view view1
+        (viewType NETLIST)
+        (interface
+          (port USERSTDBY
+            (direction INPUT))
+          (port CLRFLAG
+            (direction INPUT))
+          (port CFGSTDBY
+            (direction INPUT))
+          (port STDBY
+            (direction OUTPUT))
+          (port SFLAG
+            (direction OUTPUT)))
+        (property NGD_DRC_MASK (integer 1))
+        (contents
+          (instance scuba_vlo_inst
+            (viewRef view1 
+              (cellRef VLO)))
+          (instance PCNTR_Inst0
+            (viewRef view1 
+              (cellRef PCNTR))
+            (property BGOFF
+              (string "TRUE"))
+            (property POROFF
+              (string "TRUE"))
+            (property WAKEUP
+              (string "USER"))
+            (property TIMEOUT
+              (string "BYPASS"))
+            (property STDBYOPT
+              (string "USER_CFG")))
+          (net scuba_vlo
+            (joined
+              (portRef Z (instanceRef scuba_vlo_inst))
+              (portRef CFGWAKE (instanceRef PCNTR_Inst0))
+              (portRef USERTIMEOUT (instanceRef PCNTR_Inst0))
+              (portRef CLK (instanceRef PCNTR_Inst0))))
+          (net SFLAG
+            (joined
+              (portRef SFLAG)
+              (portRef SFLAG (instanceRef PCNTR_Inst0))))
+          (net STDBY
+            (joined
+              (portRef STDBY)
+              (portRef STDBY (instanceRef PCNTR_Inst0))))
+          (net CFGSTDBY
+            (joined
+              (portRef CFGSTDBY)
+              (portRef CFGSTDBY (instanceRef PCNTR_Inst0))))
+          (net CLRFLAG
+            (joined
+              (portRef CLRFLAG)
+              (portRef CLRFLAG (instanceRef PCNTR_Inst0))))
+          (net USERSTDBY
+            (joined
+              (portRef USERSTDBY)
+              (portRef USERSTDBY (instanceRef PCNTR_Inst0))))))))
+  (design pwr_cntrllr
+    (cellRef pwr_cntrllr
+      (libraryRef ORCLIB)))
+)

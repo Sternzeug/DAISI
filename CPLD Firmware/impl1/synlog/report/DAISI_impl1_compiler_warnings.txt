@@ -1,2 +1,6 @@
-@W: CS133 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/pwr_cntrllr.v":8:76:8:87|Ignoring property NGD_DRC_MASK
+@W: CL168 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v":110:19:110:41|Removing instance thermal_controller_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v":105:17:105:37|Removing instance sensor_interface_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v":100:18:100:39|Removing instance regulator_control_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v":95:11:95:25|Removing instance pseudo_adc_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v":90:24:90:51|Removing instance rs232_command_processor_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
 

@@ -2,7 +2,7 @@
 <HEAD><TITLE>Place & Route Report</TITLE>
 <STYLE TYPE="text/css">
 <!--
- body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
 -->
 </STYLE>
 </HEAD>
@@ -12,10 +12,11 @@ Copyright (c) 1995 AT&amp;T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
-Wed Jun 14 00:10:03 2017
+Wed Jun 14 20:26:11 2017
 
 /usr/local/diamond/3.9_x64/ispfpga/bin/lin64/par -f DAISI_impl1.p2t
-DAISI_impl1_map.ncd DAISI_impl1.dir DAISI_impl1.prf -gui
+DAISI_impl1_map.ncd DAISI_impl1.dir DAISI_impl1.prf -gui -msgset
+/media/sf_Downloads/Code/DAISI/CPLD Firmware/promote.xml
 
 
 Preference file: DAISI_impl1.prf.
@@ -34,12 +35,12 @@ Total (real) run time for 1-seed: 4 secs
 par done!
 
 Lattice Place and Route Report for Design &quot;DAISI_impl1_map.ncd&quot;
-Wed Jun 14 00:10:03 2017
+Wed Jun 14 20:26:11 2017
 
 
 <A name="par_best"></A><B><U><big>Best Par Run</big></U></B>
 PAR: Place And Route Diamond (64-bit) 3.9.0.99.2.
-Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF DAISI_impl1_map.ncd DAISI_impl1.dir/5_1.ncd DAISI_impl1.prf
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset &quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/promote.xml&quot; -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF DAISI_impl1_map.ncd DAISI_impl1.dir/5_1.ncd DAISI_impl1.prf
 Preference file: DAISI_impl1.prf.
 Placement level-cost: 5-1.
 Routing Iterations: 6
@@ -64,14 +65,14 @@ Ignore Preference Error(s):  True
    PIO (prelim)   12+4(JTAG)/336     5% used
                   12+4(JTAG)/115     14% bonded
 
-   SLICE              3/3432         &lt;1% used
+   SLICE              2/3432         &lt;1% used
 
    GSR                1/1           100% used
    OSC                1/1           100% used
    PCNTR              1/1           100% used
 
 
-Number of Signals: 10
+Number of Signals: 9
 Number of Connections: 19
 
 Pin Constraint Summary:
@@ -89,12 +90,12 @@ Finished Placer Phase 0.  REAL time: 0 secs
 
 Starting Placer Phase 1.
 ....................
-Placer score = 11513.
+Placer score = 11512.
 Finished Placer Phase 1.  REAL time: 2 secs 
 
 Starting Placer Phase 2.
 .
-Placer score =  11488
+Placer score =  11494
 Finished Placer Phase 2.  REAL time: 2 secs 
 
 
@@ -147,9 +148,9 @@ WARNING - par: The following clock signals will be routed by using generic routi
    Signal=osc_clk_c loads=2 clock_loads=1
    Signal=pcm1/GND loads=1 clock_loads=1
 
-Completed router resource preassignment. Real time: 4 secs 
+Completed router resource preassignment. Real time: 3 secs 
 
-Start NBR router at Wed Jun 14 00:10:07 PDT 2017
+Start NBR router at Wed Jun 14 20:26:14 PDT 2017
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -164,9 +165,9 @@ Note: NBR uses a different method to calculate timing slacks. The
       your design.                                               
 *****************************************************************
 
-Start NBR special constraint process at Wed Jun 14 00:10:07 PDT 2017
+Start NBR special constraint process at Wed Jun 14 20:26:14 PDT 2017
 
-Start NBR section for initial routing at Wed Jun 14 00:10:07 PDT 2017
+Start NBR section for initial routing at Wed Jun 14 20:26:14 PDT 2017
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
 Estimated worst slack/total negative slack&lt;setup&gt;: 478.993ns/0.000ns; real time: 4 secs 
@@ -174,19 +175,19 @@ Estimated worst slack/total negative slack&lt;setup&gt;: 478.993ns/0.000ns; real
 Info: Initial congestion level at 75% usage is 0
 Info: Initial congestion area  at 75% usage is 0 (0.00%)
 
-Start NBR section for normal routing at Wed Jun 14 00:10:07 PDT 2017
+Start NBR section for normal routing at Wed Jun 14 20:26:15 PDT 2017
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
 Estimated worst slack/total negative slack&lt;setup&gt;: 478.993ns/0.000ns; real time: 4 secs 
 
-Start NBR section for setup/hold timing optimization with effort level 3 at Wed Jun 14 00:10:07 PDT 2017
+Start NBR section for setup/hold timing optimization with effort level 3 at Wed Jun 14 20:26:15 PDT 2017
 
-Start NBR section for re-routing at Wed Jun 14 00:10:07 PDT 2017
+Start NBR section for re-routing at Wed Jun 14 20:26:15 PDT 2017
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
 Estimated worst slack/total negative slack&lt;setup&gt;: 478.993ns/0.000ns; real time: 4 secs 
 
-Start NBR section for post-routing at Wed Jun 14 00:10:07 PDT 2017
+Start NBR section for post-routing at Wed Jun 14 20:26:15 PDT 2017
 
 End NBR router with 0 unrouted connection
 

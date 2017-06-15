@@ -30,15 +30,25 @@ wire reset = ~switch0;
 
 wire spi_interface_signal;
 wire spi_controller_signal;
+wire data_buffer_signal_1;
+wire data_formatter_signal;
+wire data_buffer_signal_2;
+wire storage_interface_signal;
+wire rs232_decoder_encoder_signal;
+wire rs232_command_processor_signal;
+wire pseudo_adc_signal;
+wire regulator_control_signal;
+wire sensor_interface_signal;
+wire thermal_controller_signal;
 
 assign led0 = spi_interface_signal;
 assign led1 = spi_controller_signal;
-assign led2 = 1'b1;
-assign led3 = 1'b1;
+assign led2 = data_buffer_signal_1;
+assign led3 = data_formatter_signal;
 
-assign led4 = 1'b1;
-assign led5 = 1'b1;
-assign led6 = 1'b1;
+assign led4 = data_buffer_signal_2;
+assign led5 = storage_interface_signal;
+assign led6 = rs232_decoder_encoder_signal;
 assign led7 = reset;//1'b1; // Off
 
 
@@ -51,6 +61,56 @@ spi_controller spi_controller_inst (
 					.clock(osc_clk ),
 					.reset(reset ),
 					.signal(spi_controller_signal ));
+					
+data_buffer data_buffer_inst_1 (	
+					.clock(osc_clk ),
+					.reset(reset ),
+					.signal(data_buffer_signal_1 ));
+					
+data_formatter data_formatter_inst(	
+					.clock(osc_clk ),
+					.reset(reset ),
+					.signal(data_formatter_signal ));
+					
+data_buffer data_buffer_inst_2(	
+					.clock(osc_clk ),
+					.reset(reset ),
+					.signal(data_buffer_signal_2 ));
+					
+storage_interface storage_interface_inst(	
+					.clock(osc_clk ),
+					.reset(reset ),
+					.signal(storage_interface_signal ));
+					
+rs232_decoder_encoder rs232_decoder_encoder_inst(	
+					.clock(osc_clk ),
+					.reset(reset ),
+					.signal(rs232_decoder_encoder_signal ));
+					
+rs232_command_processor rs232_command_processor_inst(	
+					.clock(osc_clk ),
+					.reset(reset ),
+					.signal(rs232_command_processor_signal ));
+					
+pseudo_adc pseudo_adc_inst(	
+					.clock(osc_clk ),
+					.reset(reset ),
+					.signal(pseudo_adc_signal ));
+					
+regulator_control regulator_control_inst(	
+					.clock(osc_clk ),
+					.reset(reset ),
+					.signal(regulator_control_signal ));
+					
+sensor_interface sensor_interface_inst(	
+					.clock(osc_clk ),
+					.reset(reset ),
+					.signal(sensor_interface_signal ));
+					
+thermal_controller thermal_controller_inst(	
+					.clock(osc_clk ),
+					.reset(reset ),
+					.signal(thermal_controller_signal ));
 
 
 endmodule

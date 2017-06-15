@@ -1,12 +1,18 @@
 #--  Synopsys, Inc.
 #--  Version K-2015.09L-2
-#--  Project file F:\MachXO2_Breakout_board\impl1\run_options.txt
-#--  Written on Tue May 30 23:58:08 2017
+#--  Project file C:\Users\neera_000\Documents\GitHub\DAISI\Example Project\impl1\run_options.txt
+#--  Written on Wed Jun 14 09:11:17 2017
 
 
 #project files
-add_file -verilog "F:/MachXO2_Breakout_board/impl1/source/pwr_cntrllr.v"
-add_file -verilog "F:/MachXO2_Breakout_board/pseudo_adc.v"
+add_file -verilog "C:/lscc/diamond/3.7_x64/cae_library/synthesis/verilog/pmi_def.v"
+add_file -verilog "C:/lscc/diamond/3.7_x64/module/reveal/src/ertl/ertl.v"
+add_file -verilog "C:/lscc/diamond/3.7_x64/module/reveal/src/rvl_j2w_module/rvl_j2w_module.v"
+add_file -verilog "C:/lscc/diamond/3.7_x64/module/reveal/src/rvl_j2w_module/wb2sci.v"
+add_file -verilog "C:/lscc/diamond/3.7_x64/module/reveal/src/ertl/JTAG_SOFT.v"
+add_file -verilog "C:/Users/neera_000/Documents/GitHub/DAISI/Example Project/impl1/reveal_workspace/tmpreveal/default_w_standby_top_la0_trig_gen.v"
+add_file -verilog "C:/Users/neera_000/Documents/GitHub/DAISI/Example Project/impl1/reveal_workspace/tmpreveal/default_w_standby_top_la0_gen.v"
+add_file -verilog "C:/Users/neera_000/Documents/GitHub/DAISI/Example Project/impl1/reveal_workspace/tmpreveal/Default_w_standby_top_rvl.v"
 
 
 
@@ -20,7 +26,7 @@ set_option -vlog_std v2001
 set_option -num_critical_paths 3
 set_option -num_startend_points 0
 set_option -project_relative_includes 1
-set_option -include_path {F:/MachXO2_Breakout_board}
+set_option -include_path {C:/Users/neera_000/Documents/GitHub/DAISI/Example Project}
 
 #device options
 set_option -technology MACHXO2
@@ -64,6 +70,7 @@ set_option -resource_sharing 1
 set_option -multi_file_compilation_unit 1
 
 # Compiler Options
+set_option -allow_duplicate_modules 1
 set_option -auto_infer_blackbox 0
 
 #automatic place and route (vendor) options
@@ -73,5 +80,5 @@ set_option -write_apr_constraint 1
 project -result_file "./Default_pattern_w_standby_impl1.edi"
 
 #set log file 
-set_option log_file "F:/MachXO2_Breakout_board/impl1/Default_pattern_w_standby_impl1.srf" 
+set_option log_file "C:/Users/neera_000/Documents/GitHub/DAISI/Example Project/impl1/Default_pattern_w_standby_impl1.srf" 
 impl -active "impl1"

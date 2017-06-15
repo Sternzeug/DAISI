@@ -5,14 +5,14 @@ The file contains the area information from mapper to be displayed as part of th
 *******************************************************************************************-->
 <report_table display_priority="1" name="Area Summary">
 <report_link name="Detailed report">
-<data>F:\MachXO2_Breakout_board\impl1\synlog\report\Default_pattern_w_standby_impl1_fpga_mapper_resourceusage.rpt</data>
+<data>C:\Users\neera_000\Documents\GitHub\DAISI\Example Project\impl1\synlog\report\Default_pattern_w_standby_impl1_fpga_mapper_resourceusage.rpt</data>
 <title>Resource Usage</title>
 </report_link>
 <parameter tooltip="Total Register bits used" name="Register bits">
-<data>33</data>
+<data>388</data>
 </parameter>
 <parameter tooltip="Total I/O cells used" name="I/O cells">
-<data>14</data>
+<data>19</data>
 </parameter>
 <parameter tcl_name="v_ram" tooltip="Total Block RAMs used" name="Block RAMs">
 <data>0</data>
@@ -21,6 +21,6 @@ The file contains the area information from mapper to be displayed as part of th
 <data>0</data>
 </parameter>
 <parameter tcl_name="total_luts" tooltip="Total ORCA LUTs used" name="ORCA LUTs">
-<data>29</data>
+<data>407</data>
 </parameter>
 </report_table>

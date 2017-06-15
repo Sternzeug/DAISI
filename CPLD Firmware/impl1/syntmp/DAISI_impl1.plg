@@ -1,9 +1,9 @@
-@P:  Worst Slack : 478.988
-@P:  top|osc_clk_inferred_clock - Estimated Frequency : 561.4 MHz
+@P:  Worst Slack : 478.876
+@P:  top|osc_clk_inferred_clock - Estimated Frequency : 528.2 MHz
 @P:  top|osc_clk_inferred_clock - Requested Frequency : 2.1 MHz
-@P:  top|osc_clk_inferred_clock - Estimated Period : 1.781
+@P:  top|osc_clk_inferred_clock - Estimated Period : 1.893
 @P:  top|osc_clk_inferred_clock - Requested Period : 480.769
-@P:  top|osc_clk_inferred_clock - Slack : 478.988
+@P:  top|osc_clk_inferred_clock - Slack : 478.876
 @P:  System - Estimated Frequency : NA
 @P:  System - Requested Frequency : 1.0 MHz
 @P:  System - Estimated Period : 0.000

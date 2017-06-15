@@ -3,26 +3,26 @@ Report for cell top
    Instance path: top
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	       3.00        100.0
-                                  LUT4	       4.00        100.0
+                                  SLIC	       2.00        100.0
+                                  LUT4	       3.00        100.0
                                  IOBUF	         12        100.0
                                 PFUREG	          1        100.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                        spi_controller	          1        22.2
-                           pwr_cntrllr	          1        11.1
+                        spi_controller	          1        33.3
+                           pwr_cntrllr	          1        16.7
 ---------------------------------------------------
 Report for cell spi_controller
    Instance path: top/spi_controller_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	       0.67        22.2
-                                  LUT4	       1.00        25.0
+                                  SLIC	       0.67        33.3
+                                  LUT4	       1.00        33.3
                                 PFUREG	          1        100.0
 ---------------------------------------------------
 Report for cell pwr_cntrllr
    Instance path: top/pcm1
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	       0.33        11.1
-                                  LUT4	       1.00        25.0
+                                  SLIC	       0.33        16.7
+                                  LUT4	       1.00        33.3

@@ -15,6 +15,33 @@
         <Source name="spi_controller.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
+        <Source name="data_buffer.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="data_formatter.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="storage_interface.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="rs232_decoder_encoder.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="rs232_command_processor.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="pseudo_adc.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="regulator_control.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="sensor_interface.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="thermal_controller.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
         <Source name="DAISI.lpf" type="Logic Preference" type_short="LPF">
             <Options/>
         </Source>

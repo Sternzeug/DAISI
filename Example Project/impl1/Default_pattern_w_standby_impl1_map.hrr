@@ -3,20 +3,147 @@ Report for cell Default_w_standby_top
    Instance path: Default_w_standby_top
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      37.00        100.0
-                                 IOLGC	       1.00        100.0
-                                  LUT4	      33.00        100.0
-                                 IOREG	          1        100.0
-                                 IOBUF	         14        100.0
-                                PFUREG	         32        100.0
-                                RIPPLE	         20        100.0
+                                  SLIC	     326.00        100.0
+                                  LUT4	     496.00        100.0
+                                 IOBUF	         19        100.0
+                                PFUREG	        445        100.0
+                                RIPPLE	         70        100.0
+                                   EBR	         17        100.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                           pwr_cntrllr	          1         1.4
+                               xo2chub	          1         8.4
+                        reveal_coretop	          1        87.5
+                    pwr_cntrllr_uniq_1	          1         0.1
 ---------------------------------------------------
-Report for cell pwr_cntrllr
+Report for cell pwr_cntrllr_uniq_1
    Instance path: Default_w_standby_top/pcm1
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	       0.50         1.4
-                                  LUT4	       1.00         3.0
+                                  SLIC	       0.33         0.1
+                                  LUT4	       1.00         0.2
+---------------------------------------------------
+Report for cell reveal_coretop
+   Instance path: Default_w_standby_top/Default_w_standby_top_reveal_coretop_instance
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     285.33        87.5
+                                  LUT4	     474.00        95.6
+                                PFUREG	        378        84.9
+                                RIPPLE	         44        62.9
+                                   EBR	         17        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+             default_w_standby_top_la0	          1        87.5
+---------------------------------------------------
+Report for cell default_w_standby_top_la0
+   Instance path: Default_w_standby_top/Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     285.33        87.5
+                                  LUT4	     474.00        95.6
+                                PFUREG	        378        84.9
+                                RIPPLE	         44        62.9
+                                   EBR	         17        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+        default_w_standby_top_la0_trig	          1        14.5
+                             rvl_tm_Z3	          1        40.5
+  rvl_jtag_int_18s_1s_0s_0s_5s_18s_18s	          1        32.3
+---------------------------------------------------
+Report for cell default_w_standby_top_la0_trig
+   Instance path: Default_w_standby_top/Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      47.27        14.5
+                                  LUT4	      79.00        15.9
+                                PFUREG	         65        14.6
+                                RIPPLE	          9        12.9
+                                   EBR	          1         5.9
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                             rvl_te_Z1	          1         8.6
+                 rvl_tu_1s_0s_0s_0s_1s	          1         2.1
+                   rvl_tcnt_1s_3s_1_0s	          1         2.7
+                      rvl_decode_1s_1s	          1         0.6
+---------------------------------------------------
+Report for cell rvl_decode_1s_1s
+   Instance path: Default_w_standby_top/Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/decode_u
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       2.08         0.6
+                                  LUT4	       7.50         1.5
+---------------------------------------------------
+Report for cell rvl_tu_1s_0s_0s_0s_1s
+   Instance path: Default_w_standby_top/Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/tu_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       7.00         2.1
+                                  LUT4	      14.00         2.8
+                                PFUREG	          8         1.8
+---------------------------------------------------
+Report for cell rvl_tcnt_1s_3s_1_0s
+   Instance path: Default_w_standby_top/Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/tcnt_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       8.82         2.7
+                                  LUT4	      20.00         4.0
+                                PFUREG	         12         2.7
+---------------------------------------------------
+Report for cell rvl_te_Z1
+   Instance path: Default_w_standby_top/Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      28.00         8.6
+                                  LUT4	      33.50         6.8
+                                PFUREG	         45        10.1
+                                RIPPLE	          9        12.9
+                                   EBR	          1         5.9
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+   pmi_ram_dpXbnonesadr112112p12e1aace	          1         0.0
+---------------------------------------------------
+Report for cell pmi_ram_dpXbnonesadr112112p12e1aace
+   Instance path: Default_w_standby_top/Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/genblk1.te_tt_ebr_ram
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         5.9
+---------------------------------------------------
+Report for cell rvl_tm_Z3
+   Instance path: Default_w_standby_top/Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     132.15        40.5
+                                  LUT4	     189.50        38.2
+                                PFUREG	        179        40.2
+                                RIPPLE	         28        40.0
+                                   EBR	         16        94.1
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+pmi_ram_dpXbnonesadr1813819218138192p13962434	          1        10.2
+---------------------------------------------------
+Report for cell pmi_ram_dpXbnonesadr1813819218138192p13962434
+   Instance path: Default_w_standby_top/Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/genblk4.tr_mem
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      33.33        10.2
+                                  LUT4	      72.00        14.5
+                                PFUREG	          6         1.3
+                                   EBR	         16        94.1
+---------------------------------------------------
+Report for cell rvl_jtag_int_18s_1s_0s_0s_5s_18s_18s
+   Instance path: Default_w_standby_top/Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/jtag_int_u
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     105.33        32.3
+                                  LUT4	     204.00        41.1
+                                PFUREG	        134        30.1
+                                RIPPLE	          7        10.0
+---------------------------------------------------
+Report for cell xo2chub
+   Instance path: Default_w_standby_top/xo2chub
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      27.25         8.4
+                                  LUT4	      12.00         2.4
+                                PFUREG	         51        11.5
+                                RIPPLE	         17        24.3

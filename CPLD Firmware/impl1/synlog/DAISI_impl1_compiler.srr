@@ -17,8 +17,19 @@ Running on host :localhost.localdomain
 @I::"/media/sf_Downloads/Code/DAISI/CPLD Firmware/pwr_cntrllr.v" (library work)
 @I::"/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_interface.v" (library work)
 @I::"/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v" (library work)
+@I::"/media/sf_Downloads/Code/DAISI/CPLD Firmware/data_buffer.v" (library work)
+@I::"/media/sf_Downloads/Code/DAISI/CPLD Firmware/data_formatter.v" (library work)
+@I::"/media/sf_Downloads/Code/DAISI/CPLD Firmware/storage_interface.v" (library work)
+@I::"/media/sf_Downloads/Code/DAISI/CPLD Firmware/rs232_decoder_encoder.v" (library work)
+@I::"/media/sf_Downloads/Code/DAISI/CPLD Firmware/rs232_command_processor.v" (library work)
+@I::"/media/sf_Downloads/Code/DAISI/CPLD Firmware/pseudo_adc.v" (library work)
+@I::"/media/sf_Downloads/Code/DAISI/CPLD Firmware/regulator_control.v" (library work)
+@I::"/media/sf_Downloads/Code/DAISI/CPLD Firmware/sensor_interface.v" (library work)
+@I::"/media/sf_Downloads/Code/DAISI/CPLD Firmware/thermal_controller.v" (library work)
 Verilog syntax check successful!
-File /media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v changed - recompiling
+
+Compiler output is up to date.  No re-compile necessary
+
 Selecting top level module top
 @N: CG364 :"/usr/local/diamond/3.9_x64/synpbase/lib/lucent/machxo2.v":1793:7:1793:10|Synthesizing module OSCH in library work.
 
@@ -32,36 +43,61 @@ Selecting top level module top
 
 @N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v":1:7:1:20|Synthesizing module spi_controller in library work.
 
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/data_buffer.v":1:7:1:17|Synthesizing module data_buffer in library work.
+
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/data_formatter.v":1:7:1:20|Synthesizing module data_formatter in library work.
+
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/storage_interface.v":1:7:1:23|Synthesizing module storage_interface in library work.
+
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/rs232_decoder_encoder.v":1:7:1:27|Synthesizing module rs232_decoder_encoder in library work.
+
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/rs232_command_processor.v":1:7:1:29|Synthesizing module rs232_command_processor in library work.
+
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/pseudo_adc.v":1:7:1:16|Synthesizing module pseudo_adc in library work.
+
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/regulator_control.v":1:7:1:23|Synthesizing module regulator_control in library work.
+
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/sensor_interface.v":1:7:1:22|Synthesizing module sensor_interface in library work.
+
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/thermal_controller.v":1:7:1:24|Synthesizing module thermal_controller in library work.
+
 @N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v":1:7:1:9|Synthesizing module top in library work.
 
+@W: CL168 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v":110:19:110:41|Removing instance thermal_controller_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v":105:17:105:37|Removing instance sensor_interface_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v":100:18:100:39|Removing instance regulator_control_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v":95:11:95:25|Removing instance pseudo_adc_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v":90:24:90:51|Removing instance rs232_command_processor_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
 
-At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 70MB peak: 71MB)
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Jun 14 00:09:59 2017
+# Wed Jun 14 20:26:07 2017
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
 @N|Running in 64-bit mode
-File /media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/synwork/layer0.srs changed - recompiling
 
-At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 67MB)
+Linker output is up to date. No re-linking necessary
+
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Jun 14 00:09:59 2017
+# Wed Jun 14 20:26:08 2017
 
 ###########################################################]
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 3MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Jun 14 00:09:59 2017
+# Wed Jun 14 20:26:08 2017
 
 ###########################################################]

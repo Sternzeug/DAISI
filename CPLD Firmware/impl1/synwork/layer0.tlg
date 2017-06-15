@@ -11,5 +11,28 @@ Selecting top level module top
 
 @N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v":1:7:1:20|Synthesizing module spi_controller in library work.
 
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/data_buffer.v":1:7:1:17|Synthesizing module data_buffer in library work.
+
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/data_formatter.v":1:7:1:20|Synthesizing module data_formatter in library work.
+
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/storage_interface.v":1:7:1:23|Synthesizing module storage_interface in library work.
+
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/rs232_decoder_encoder.v":1:7:1:27|Synthesizing module rs232_decoder_encoder in library work.
+
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/rs232_command_processor.v":1:7:1:29|Synthesizing module rs232_command_processor in library work.
+
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/pseudo_adc.v":1:7:1:16|Synthesizing module pseudo_adc in library work.
+
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/regulator_control.v":1:7:1:23|Synthesizing module regulator_control in library work.
+
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/sensor_interface.v":1:7:1:22|Synthesizing module sensor_interface in library work.
+
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/thermal_controller.v":1:7:1:24|Synthesizing module thermal_controller in library work.
+
 @N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v":1:7:1:9|Synthesizing module top in library work.
 
+@W: CL168 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v":110:19:110:41|Removing instance thermal_controller_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v":105:17:105:37|Removing instance sensor_interface_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v":100:18:100:39|Removing instance regulator_control_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v":95:11:95:25|Removing instance pseudo_adc_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v":90:24:90:51|Removing instance rs232_command_processor_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.

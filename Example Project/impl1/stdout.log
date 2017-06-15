@@ -5,8 +5,8 @@ sourcing C:\lscc\diamond\3.7_x64\synpbase\lib\message_override.tcl
 
 Starting:    C:\lscc\diamond\3.7_x64\synpbase\bin64\mbin\synbatch.exe
 Install:     C:\lscc\diamond\3.7_x64\synpbase
-Hostname:    RK-WENG-LT-03
-Date:        Tue May 30 23:58:08 2017
+Hostname:    NEERAJNEALMENON
+Date:        Wed Jun 14 09:11:15 2017
 Version:     K-2015.09L-2
 
 Arguments:   -product synplify_pro -batch Default_pattern_w_standby_impl1_synplify.tcl
@@ -16,7 +16,7 @@ ProductType: synplify_pro
 
 
 
-log file: "F:\MachXO2_Breakout_board\impl1\Default_pattern_w_standby_impl1.srr"
+log file: "C:\Users\neera_000\Documents\GitHub\DAISI\Example Project\impl1\Default_pattern_w_standby_impl1.srr"
 
 Running: impl1 in foreground
 
@@ -33,35 +33,35 @@ Running: compile_flow (Compile Process) on proj_1|impl1
 
 Running: compiler (Compile Input) on proj_1|impl1
 
-Copied F:\MachXO2_Breakout_board\impl1\synwork\Default_pattern_w_standby_impl1_comp.srs to F:\MachXO2_Breakout_board\impl1\Default_pattern_w_standby_impl1.srs
+Copied C:\Users\neera_000\Documents\GitHub\DAISI\Example Project\impl1\synwork\Default_pattern_w_standby_impl1_comp.srs to C:\Users\neera_000\Documents\GitHub\DAISI\Example Project\impl1\Default_pattern_w_standby_impl1.srs
 
 
 compiler Completed
 Return Code: 0
-Run Time:0h:00m:03s
+Run Time:0h:00m:07s
 
 
 Running: multi_srs_gen (Multi-srs Generator) on proj_1|impl1
 
-Copied F:\MachXO2_Breakout_board\impl1\synwork\Default_pattern_w_standby_impl1_comp.srs to F:\MachXO2_Breakout_board\impl1\synwork\Default_pattern_w_standby_impl1_s.srs
+Copied C:\Users\neera_000\Documents\GitHub\DAISI\Example Project\impl1\synwork\Default_pattern_w_standby_impl1_comp.srs to C:\Users\neera_000\Documents\GitHub\DAISI\Example Project\impl1\synwork\Default_pattern_w_standby_impl1_s.srs
 
 
 multi_srs_gen Completed
 Return Code: 0
 Run Time:0h:00m:00s
 
-Copied F:\MachXO2_Breakout_board\impl1\Default_pattern_w_standby_impl1.srr to F:\MachXO2_Breakout_board\impl1\Default_pattern_w_standby_impl1.srf
+Copied C:\Users\neera_000\Documents\GitHub\DAISI\Example Project\impl1\Default_pattern_w_standby_impl1.srr to C:\Users\neera_000\Documents\GitHub\DAISI\Example Project\impl1\Default_pattern_w_standby_impl1.srf
 
 Complete: Compile Process on proj_1|impl1
 
 
 Running: premap (Pre-mapping) on proj_1|impl1
 
-Copied F:\MachXO2_Breakout_board\impl1\Default_pattern_w_standby_impl1.fse to F:\MachXO2_Breakout_board\impl1\synwork\Default_pattern_w_standby_impl1_s.fse
+Copied C:\Users\neera_000\Documents\GitHub\DAISI\Example Project\impl1\Default_pattern_w_standby_impl1.fse to C:\Users\neera_000\Documents\GitHub\DAISI\Example Project\impl1\synwork\Default_pattern_w_standby_impl1_s.fse
 
 
-premap Completed with warnings
-Return Code: 1
+premap Completed
+Return Code: 0
 Run Time:0h:00m:03s
 
 Complete: Compile on proj_1|impl1
@@ -74,16 +74,16 @@ License granted for 4 parallel jobs
 
 Running: fpga_mapper (Map & Optimize) on proj_1|impl1
 
-Copied F:\MachXO2_Breakout_board\impl1\synwork\Default_pattern_w_standby_impl1_m.srm to F:\MachXO2_Breakout_board\impl1\Default_pattern_w_standby_impl1.srm
+Copied C:\Users\neera_000\Documents\GitHub\DAISI\Example Project\impl1\synwork\Default_pattern_w_standby_impl1_m.srm to C:\Users\neera_000\Documents\GitHub\DAISI\Example Project\impl1\Default_pattern_w_standby_impl1.srm
 
 
 fpga_mapper Completed with warnings
 Return Code: 1
-Run Time:0h:00m:05s
+Run Time:0h:00m:06s
 
 Complete: Map on proj_1|impl1
 
-Copied F:\MachXO2_Breakout_board\impl1\Default_pattern_w_standby_impl1.srr to F:\MachXO2_Breakout_board\impl1\Default_pattern_w_standby_impl1.srf
+Copied C:\Users\neera_000\Documents\GitHub\DAISI\Example Project\impl1\Default_pattern_w_standby_impl1.srr to C:\Users\neera_000\Documents\GitHub\DAISI\Example Project\impl1\Default_pattern_w_standby_impl1.srf
 
 Complete: Logic Synthesis on proj_1|impl1
 
@@ -94,7 +94,7 @@ exit status=0
 exit status=0
 
 Save changes for project:
-F:\MachXO2_Breakout_board\impl1\proj_1.prj
+C:\Users\neera_000\Documents\GitHub\DAISI\Example Project\impl1\proj_1.prj
 
 batch mode default:no
 

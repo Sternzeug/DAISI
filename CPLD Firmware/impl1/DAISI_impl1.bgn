@@ -5,7 +5,7 @@ Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
 
-Command: bitgen -g RamCfg:Reset -path /media/sf_Downloads/Code/DAISI/CPLD Firmware -w -jedec -gui DAISI_impl1.ncd DAISI_impl1.prf 
+Command: bitgen -g RamCfg:Reset -path /media/sf_Downloads/Code/DAISI/CPLD Firmware -w -jedec -gui -msgset /media/sf_Downloads/Code/DAISI/CPLD Firmware/promote.xml DAISI_impl1.ncd DAISI_impl1.prf 
 
 Loading design for application Bitgen from file DAISI_impl1.ncd.
 Design name: top

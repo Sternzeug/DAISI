@@ -1,7 +1,7 @@
 #--  Synopsys, Inc.
 #--  Version L-2016.09L
 #--  Project file /media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/run_options.txt
-#--  Written on Wed Jun 14 00:09:59 2017
+#--  Written on Wed Jun 14 20:26:07 2017
 
 
 #project files
@@ -9,6 +9,15 @@ add_file -verilog "/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v"
 add_file -verilog "/media/sf_Downloads/Code/DAISI/CPLD Firmware/pwr_cntrllr.v"
 add_file -verilog "/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_interface.v"
 add_file -verilog "/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v"
+add_file -verilog "/media/sf_Downloads/Code/DAISI/CPLD Firmware/data_buffer.v"
+add_file -verilog "/media/sf_Downloads/Code/DAISI/CPLD Firmware/data_formatter.v"
+add_file -verilog "/media/sf_Downloads/Code/DAISI/CPLD Firmware/storage_interface.v"
+add_file -verilog "/media/sf_Downloads/Code/DAISI/CPLD Firmware/rs232_decoder_encoder.v"
+add_file -verilog "/media/sf_Downloads/Code/DAISI/CPLD Firmware/rs232_command_processor.v"
+add_file -verilog "/media/sf_Downloads/Code/DAISI/CPLD Firmware/pseudo_adc.v"
+add_file -verilog "/media/sf_Downloads/Code/DAISI/CPLD Firmware/regulator_control.v"
+add_file -verilog "/media/sf_Downloads/Code/DAISI/CPLD Firmware/sensor_interface.v"
+add_file -verilog "/media/sf_Downloads/Code/DAISI/CPLD Firmware/thermal_controller.v"
 
 
 

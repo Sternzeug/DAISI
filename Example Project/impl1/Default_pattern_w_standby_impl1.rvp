@@ -1,0 +1,36 @@
+#-- Lattice Semiconductor Corporation Ltd.
+#-- Bali Reveal project file
+
+#device options
+[Device]
+part = LCMXO2-7000HE-4TG144C
+family = MachXO2
+device = LCMXO2-7000HE
+speed = 4
+package = TQFP144
+operation = Commercial
+
+#design options
+[Design]
+title = Default_pattern_w_standby
+path = C:/Users/neera_000/Documents/GitHub/DAISI/Example Project/impl1
+core_generate = C:/Users/neera_000/Documents/GitHub/DAISI/Example Project/impl1
+search_path = C:/Users/neera_000/Documents/GitHub/DAISI/Example Project
+top = Default_w_standby_top
+lpf = C:/Users/neera_000/Documents/GitHub/DAISI/Example Project/Default_pattern_w_standby.lpf
+synthesis = synplify
+
+#strategy options
+VHDL2008 = false
+
+#HDLs options
+[HDLs]
+C:/Users/neera_000/Documents/GitHub/DAISI/Example Project/impl1/source/pwr_cntrllr.v = Verilog
+C:/Users/neera_000/Documents/GitHub/DAISI/Example Project/impl1/source/switch_led.v = Verilog
+[HDL_Defines]
+SBP_SYNTHESIS=
+[HDL_Param]
+[Generated]
+C:/Users/neera_000/Documents/GitHub/DAISI/Example Project/impl1/reveal_workspace/tmpreveal/default_w_standby_top_la0_trig_gen.v=Verilog
+C:/Users/neera_000/Documents/GitHub/DAISI/Example Project/impl1/reveal_workspace/tmpreveal/default_w_standby_top_la0_gen.v=Verilog
+C:/Users/neera_000/Documents/GitHub/DAISI/Example Project/impl1/reveal_workspace/tmpreveal/Default_w_standby_top_rvl.v=Verilog,work

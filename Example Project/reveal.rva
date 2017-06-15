@@ -1,0 +1,59 @@
+<!DOCTYPE ispTLA>
+<ispTLA>
+ <CreationDate>Wed May 31 23:35:56 2017</CreationDate>
+ <XCFFileName/>
+ <CableSetting>
+  <IsTRSTConnected val="false"/>
+  <TRSTSetting val="0"/>
+  <IsBSCANConnected val="false"/>
+  <BSCANSetting val="0"/>
+  <CableType val="USB2"/>
+  <PortAddress val="0"/>
+  <PortSetting val="0"/>
+  <TCKDelay val="1"/>
+ </CableSetting>
+ <DeviceCount>1</DeviceCount>
+ <Device>
+  <DeviceIndex>0</DeviceIndex>
+  <DeviceName>1. LCMXO2-7000ZE</DeviceName>
+  <DeviceID>0x012B5043</DeviceID>
+  <HasIspTRACY>true</HasIspTRACY>
+  <HasJTAG2WB>false</HasJTAG2WB>
+  <SERDES/>
+  <IRBypassLen>8</IRBypassLen>
+  <RVLFileName>reveal.rvl</RVLFileName>
+  <RVSFileName>reveal.rvs</RVSFileName>
+  <LACoreCount>1</LACoreCount>
+  <WinUI CoreIndex="0">
+   <TraceSigTreeData>
+    <TraceSignal IsHidden="false" Name="rx" NodeType="0" PortIndex="0"/>
+    <TraceSignal IsHidden="false" Name="tx" NodeType="0" PortIndex="1"/>
+    <TraceSignal IsHidden="false" Name="count" NodeType="1" PortIndex="2">
+     <BusRadix Radix="0"/>
+     <IsExpanded Expand="false"/>
+    </TraceSignal>
+    <TraceSignal IsHidden="false" Name="count:0" NodeType="2" PortIndex="2"/>
+    <TraceSignal IsHidden="false" Name="count:1" NodeType="2" PortIndex="3"/>
+    <TraceSignal IsHidden="false" Name="count:2" NodeType="2" PortIndex="4"/>
+    <TraceSignal IsHidden="false" Name="count:3" NodeType="2" PortIndex="5"/>
+    <TraceSignal IsHidden="false" Name="count:4" NodeType="2" PortIndex="6"/>
+    <TraceSignal IsHidden="false" Name="count:5" NodeType="2" PortIndex="7"/>
+    <TraceSignal IsHidden="false" Name="count:6" NodeType="2" PortIndex="8"/>
+    <TraceSignal IsHidden="false" Name="count:7" NodeType="2" PortIndex="9"/>
+    <TraceSignal IsHidden="false" Name="count:8" NodeType="2" PortIndex="10"/>
+    <TraceSignal IsHidden="false" Name="count:9" NodeType="2" PortIndex="11"/>
+    <TraceSignal IsHidden="false" Name="count:10" NodeType="2" PortIndex="12"/>
+    <TraceSignal IsHidden="false" Name="count:11" NodeType="2" PortIndex="13"/>
+    <TraceSignal IsHidden="false" Name="count:12" NodeType="2" PortIndex="14"/>
+    <TraceSignal IsHidden="false" Name="count:13" NodeType="2" PortIndex="15"/>
+    <TraceSignal IsHidden="false" Name="count:14" NodeType="2" PortIndex="16"/>
+    <TraceSignal IsHidden="false" Name="count:15" NodeType="2" PortIndex="17"/>
+   </TraceSigTreeData>
+   <TriggerUI UserSelect="0" PreSelectType="0" PreSelect="1" UserSelectPos="0"/>
+   <CoreRun Run="true"/>
+   <CoreWndUIData>
+    <ClockFrequency Unit="ns" Frequency="-1.0"/>
+   </CoreWndUIData>
+  </WinUI>
+ </Device>
+</ispTLA>

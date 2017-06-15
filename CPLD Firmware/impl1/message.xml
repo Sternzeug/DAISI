@@ -73,14 +73,182 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>MT529 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_interface.v&quot;:9:0:9:5|Found inferred clock top|osc_clk_inferred_clock which controls 2 sequential elements including spi_interface_inst.signal. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Dynamic>CL168 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v&quot;:110:19:110:41|Removing instance thermal_controller_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Dynamic>
+            <Navigation>CL168</Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v</Navigation>
+            <Navigation>110</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>110</Navigation>
+            <Navigation>41</Navigation>
+            <Navigation>Removing instance thermal_controller_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL168 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v&quot;:105:17:105:37|Removing instance sensor_interface_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Dynamic>
+            <Navigation>CL168</Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v</Navigation>
+            <Navigation>105</Navigation>
+            <Navigation>17</Navigation>
+            <Navigation>105</Navigation>
+            <Navigation>37</Navigation>
+            <Navigation>Removing instance sensor_interface_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL168 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v&quot;:100:18:100:39|Removing instance regulator_control_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Dynamic>
+            <Navigation>CL168</Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v</Navigation>
+            <Navigation>100</Navigation>
+            <Navigation>18</Navigation>
+            <Navigation>100</Navigation>
+            <Navigation>39</Navigation>
+            <Navigation>Removing instance regulator_control_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL168 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v&quot;:95:11:95:25|Removing instance pseudo_adc_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Dynamic>
+            <Navigation>CL168</Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v</Navigation>
+            <Navigation>95</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>95</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>Removing instance pseudo_adc_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL168 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v&quot;:90:24:90:51|Removing instance rs232_command_processor_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Dynamic>
+            <Navigation>CL168</Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v</Navigation>
+            <Navigation>90</Navigation>
+            <Navigation>24</Navigation>
+            <Navigation>90</Navigation>
+            <Navigation>51</Navigation>
+            <Navigation>Removing instance rs232_command_processor_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v&quot;:75:12:75:29|Removing user instance data_buffer_inst_2 because it is equivalent to instance data_buffer_inst_1. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v</Navigation>
+            <Navigation>75</Navigation>
+            <Navigation>12</Navigation>
+            <Navigation>75</Navigation>
+            <Navigation>29</Navigation>
+            <Navigation>Removing user instance data_buffer_inst_2 because it is equivalent to instance data_buffer_inst_1. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT529 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_interface.v&quot;:9:0:9:5|Found inferred clock top|osc_clk_inferred_clock which controls 6 sequential elements including spi_interface_inst.signal. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
             <Navigation>MT529</Navigation>
             <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_interface.v</Navigation>
             <Navigation>9</Navigation>
             <Navigation>0</Navigation>
             <Navigation>9</Navigation>
             <Navigation>5</Navigation>
-            <Navigation>Found inferred clock top|osc_clk_inferred_clock which controls 2 sequential elements including spi_interface_inst.signal. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
+            <Navigation>Found inferred clock top|osc_clk_inferred_clock which controls 6 sequential elements including spi_interface_inst.signal. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/rs232_decoder_encoder.v&quot;:9:0:9:5|Removing sequential instance rs232_decoder_encoder_inst.signal because it is equivalent to instance storage_interface_inst.signal. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/rs232_decoder_encoder.v</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Removing sequential instance rs232_decoder_encoder_inst.signal because it is equivalent to instance storage_interface_inst.signal. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/storage_interface.v&quot;:9:0:9:5|Removing sequential instance storage_interface_inst.signal because it is equivalent to instance data_buffer_inst_1.signal. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/storage_interface.v</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Removing sequential instance storage_interface_inst.signal because it is equivalent to instance data_buffer_inst_1.signal. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/data_formatter.v&quot;:9:0:9:5|Removing sequential instance data_formatter_inst.signal because it is equivalent to instance spi_controller_inst.signal. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/data_formatter.v</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Removing sequential instance data_formatter_inst.signal because it is equivalent to instance spi_controller_inst.signal. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/data_buffer.v&quot;:9:0:9:5|Removing sequential instance data_buffer_inst_1.signal because it is equivalent to instance spi_interface_inst.signal. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/data_buffer.v</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Removing sequential instance data_buffer_inst_1.signal because it is equivalent to instance spi_interface_inst.signal. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/rs232_decoder_encoder.v&quot;:17:14:17:20|Removing user instance rs232_decoder_encoder_inst.signal_2 because it is equivalent to instance storage_interface_inst.signal_2. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/rs232_decoder_encoder.v</Navigation>
+            <Navigation>17</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>17</Navigation>
+            <Navigation>20</Navigation>
+            <Navigation>Removing user instance rs232_decoder_encoder_inst.signal_2 because it is equivalent to instance storage_interface_inst.signal_2. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/storage_interface.v&quot;:17:14:17:20|Removing user instance storage_interface_inst.signal_2 because it is equivalent to instance data_buffer_inst_1.signal_2. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/storage_interface.v</Navigation>
+            <Navigation>17</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>17</Navigation>
+            <Navigation>20</Navigation>
+            <Navigation>Removing user instance storage_interface_inst.signal_2 because it is equivalent to instance data_buffer_inst_1.signal_2. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/data_formatter.v&quot;:17:14:17:20|Removing user instance data_formatter_inst.signal_2 because it is equivalent to instance spi_controller_inst.signal_2. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/data_formatter.v</Navigation>
+            <Navigation>17</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>17</Navigation>
+            <Navigation>20</Navigation>
+            <Navigation>Removing user instance data_formatter_inst.signal_2 because it is equivalent to instance spi_controller_inst.signal_2. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/data_buffer.v&quot;:17:14:17:20|Removing user instance data_buffer_inst_1.signal_2 because it is equivalent to instance spi_interface_inst.signal_2. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/data_buffer.v</Navigation>
+            <Navigation>17</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>17</Navigation>
+            <Navigation>20</Navigation>
+            <Navigation>Removing user instance data_buffer_inst_1.signal_2 because it is equivalent to instance spi_interface_inst.signal_2. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>

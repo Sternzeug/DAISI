@@ -48,6 +48,15 @@ add_file -verilog {/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v}
 add_file -verilog {/media/sf_Downloads/Code/DAISI/CPLD Firmware/pwr_cntrllr.v}
 add_file -verilog {/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_interface.v}
 add_file -verilog {/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v}
+add_file -verilog {/media/sf_Downloads/Code/DAISI/CPLD Firmware/data_buffer.v}
+add_file -verilog {/media/sf_Downloads/Code/DAISI/CPLD Firmware/data_formatter.v}
+add_file -verilog {/media/sf_Downloads/Code/DAISI/CPLD Firmware/storage_interface.v}
+add_file -verilog {/media/sf_Downloads/Code/DAISI/CPLD Firmware/rs232_decoder_encoder.v}
+add_file -verilog {/media/sf_Downloads/Code/DAISI/CPLD Firmware/rs232_command_processor.v}
+add_file -verilog {/media/sf_Downloads/Code/DAISI/CPLD Firmware/pseudo_adc.v}
+add_file -verilog {/media/sf_Downloads/Code/DAISI/CPLD Firmware/regulator_control.v}
+add_file -verilog {/media/sf_Downloads/Code/DAISI/CPLD Firmware/sensor_interface.v}
+add_file -verilog {/media/sf_Downloads/Code/DAISI/CPLD Firmware/thermal_controller.v}
 
 #-- top module name
 set_option -top_module top

@@ -3,19 +3,22 @@
 #
 
 # Period Constraints 
-#FREQUENCY NET "osc_clk_c" 2.1 MHz;
+#FREQUENCY NET "osc_clk_c" 20.5 MHz;
+#FREQUENCY NET "Default_w_standby_top_reveal_coretop_instance/jtck[0]" 1.0 MHz;
 
 
 # Output Constraints 
 
 # Input Constraints 
-#INPUT_SETUP "io_adc" 480.8 NS CLKNET  = "osc_clk_c";
+#INPUT_SETUP "rx" 48.9 NS CLKNET  = "osc_clk_c";
 
 # Point-to-point Delay Constraints 
 
 
 
 # Block Path Constraints 
+#BLOCK PATH FROM CLKNET "Default_w_standby_top_reveal_coretop_instance/jtck[0]" TO CLKNET "osc_clk_c";
+#BLOCK PATH FROM CLKNET "osc_clk_c" TO CLKNET "Default_w_standby_top_reveal_coretop_instance/jtck[0]";
 
 BLOCK ASYNCPATHS;
 

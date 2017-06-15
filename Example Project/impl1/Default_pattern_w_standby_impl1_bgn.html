@@ -6,14 +6,14 @@
 -->
 </STYLE>
 </HEAD>
-<PRE><A name="Bgn"></A>BITGEN: Bitstream Generator Diamond (64-bit) 3.7.1.502
+<PRE><A name="Bgn"></A>BITGEN: Bitstream Generator Diamond (64-bit) 3.7.0.96.1
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
 
-Command: bitgen -g RamCfg:Reset -path F:/MachXO2_Breakout_board -w -jedec -gui -msgset F:/MachXO2_Breakout_board/promote.xml Default_pattern_w_standby_impl1.ncd Default_pattern_w_standby_impl1.prf 
+Command: bitgen -g RamCfg:Reset -path C:/Users/neera_000/Documents/GitHub/DAISI/Example Project -w -jedec -gui -msgset C:/Users/neera_000/Documents/GitHub/DAISI/Example Project/promote.xml Default_pattern_w_standby_impl1.ncd Default_pattern_w_standby_impl1.prf 
 
 Loading design for application Bitgen from file Default_pattern_w_standby_impl1.ncd.
 Design name: Default_w_standby_top
@@ -27,6 +27,7 @@ Package Status:                     Final          Version 1.39.
 Performance Hardware Data Status:   Final          Version 33.4.
 
 Running DRC.
+INFO: Design contains EBR with ASYNC Reset Mode that has a limitation: The use of the EBR block asynchronous reset requires that certain timing be met between the clock and the reset within the memory block. See the device specific data sheet for additional details.
 WARNING - chipcheck: The STDBY port on the Oscillator OSCH_inst is conntected to the Power Controller. The I2C, SPI, Wishbone and SED features will not be available for use when the Oscillator is disabled.
 DRC detected 0 errors and 1 warnings.
 Reading Preference File from Default_pattern_w_standby_impl1.prf.

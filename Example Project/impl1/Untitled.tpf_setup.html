@@ -1,0 +1,612 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<STYLE type=text/css>
+<!--
+.blink {text-decoration:blink}
+.ms  {font-size: 9pt; font-family: monospace; font-weight: normal}
+.msb {font-size: 9pt; font-family: monospace; font-weight: bold  }
+-->
+</STYLE>
+<META content="MSHTML 6.00.2900.2180" name=GENERATOR></HEAD>
+<BODY><B>
+</B>
+<BR><PRE><A name="Report Header"></A>
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.7.0.96.1
+Wed Jun 07 20:32:54 2017
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design file:     Default_w_standby_top
+Device,speed:    LCMXO2-7000HE,4
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+
+
+</A><A name="FREQUENCY NET 'osc_clk_c' 2.080000 MH"></A>================================================================================
+Preference: FREQUENCY NET "osc_clk_c" 2.080000 MHz ;
+            10 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+<font color=#000000> 
+
+Passed: The following path meets requirements by 470.763ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_322">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/jtag_int_u/jupdate_reclk[3]</A>  (from <A href="#@net:osc_clk_c">osc_clk_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/SLICE_333">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/te_precnt_val[9]</A>  (to <A href="#@net:osc_clk_c">osc_clk_c</A> +)
+                   FF                        <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/te_precnt_val[8]">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/te_precnt_val[8]</A>
+
+   Delay:               9.724ns  (25.0% logic, 75.0% route), 5 logic levels.
+
+ Constraint Details:
+
+      9.724ns physical path delay Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_322 to Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/SLICE_333 meets
+    480.769ns delay constraint less
+      0.000ns skew and
+      0.282ns CE_SET requirement (totaling 480.487ns) by 470.763ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'osc_clk_c' 2.080000 MHz ;:REG_DEL, 0.452,R15C22C.CLK,R15C22C.Q1,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_322:ROUTE, 1.333,R15C22C.Q1,R16C23C.A1,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/jtag_int_u/jupdate_reclk[3]:CTOF_DEL, 0.495,R16C23C.A1,R16C23C.F1,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_252:ROUTE, 0.453,R16C23C.F1,R16C23C.C0,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/wen:CTOF_DEL, 0.495,R16C23C.C0,R16C23C.F0,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_252:ROUTE, 1.982,R16C23C.F0,R17C18D.B1,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/wen_te[0]:CTOF_DEL, 0.495,R17C18D.B1,R17C18D.F1,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/SLICE_266:ROUTE, 1.182,R17C18D.F1,R21C18B.D1,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/addr_cnt_init_1:CTOF_DEL, 0.495,R21C18B.D1,R21C18B.F1,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_323:ROUTE, 2.342,R21C18B.F1,R17C19B.CE,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/te_precnt_val_0_sqmuxa">Data path</A> Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_322 to Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/SLICE_333:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452    R15C22C.CLK to     R15C22C.Q1 <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_322">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_322</A> (from <A href="#@net:osc_clk_c">osc_clk_c</A>)
+ROUTE         4     1.333<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/jtag_int_u/jupdate_reclk[3]:R15C22C.Q1:R16C23C.A1:1.333">     R15C22C.Q1 to R16C23C.A1    </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/jtag_int_u/jupdate_reclk[3]">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/jtag_int_u/jupdate_reclk[3]</A>
+CTOF_DEL    ---     0.495     R16C23C.A1 to     R16C23C.F1 <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_252">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_252</A>
+ROUTE         7     0.453<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/wen:R16C23C.F1:R16C23C.C0:0.453">     R16C23C.F1 to R16C23C.C0    </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/wen">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/wen</A>
+CTOF_DEL    ---     0.495     R16C23C.C0 to     R16C23C.F0 <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_252">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_252</A>
+ROUTE         4     1.982<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/wen_te[0]:R16C23C.F0:R17C18D.B1:1.982">     R16C23C.F0 to R17C18D.B1    </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/wen_te[0]">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/wen_te[0]</A>
+CTOF_DEL    ---     0.495     R17C18D.B1 to     R17C18D.F1 <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/SLICE_266">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/SLICE_266</A>
+ROUTE         2     1.182<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/addr_cnt_init_1:R17C18D.F1:R21C18B.D1:1.182">     R17C18D.F1 to R21C18B.D1    </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/addr_cnt_init_1">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/addr_cnt_init_1</A>
+CTOF_DEL    ---     0.495     R21C18B.D1 to     R21C18B.F1 <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_323">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_323</A>
+ROUTE         8     2.342<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/te_precnt_val_0_sqmuxa:R21C18B.F1:R17C19B.CE:2.342">     R21C18B.F1 to R17C19B.CE    </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/te_precnt_val_0_sqmuxa">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/te_precnt_val_0_sqmuxa</A> (to <A href="#@net:osc_clk_c">osc_clk_c</A>)
+                  --------
+                    9.724   (25.0% logic, 75.0% route), 5 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'osc_clk_c' 2.080000 MHz ;:ROUTE, 4.199,OSC.OSC,R15C22C.CLK,osc_clk_c">Source Clock Path</A> OSCH_inst to Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_322:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        92     4.199<A href="#@net:osc_clk_c:OSC.OSC:R15C22C.CLK:4.199">        OSC.OSC to R15C22C.CLK   </A> <A href="#@net:osc_clk_c">osc_clk_c</A>
+                  --------
+                    4.199   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'osc_clk_c' 2.080000 MHz ;:ROUTE, 4.199,OSC.OSC,R17C19B.CLK,osc_clk_c">Destination Clock Path</A> OSCH_inst to Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/SLICE_333:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        92     4.199<A href="#@net:osc_clk_c:OSC.OSC:R17C19B.CLK:4.199">        OSC.OSC to R17C19B.CLK   </A> <A href="#@net:osc_clk_c">osc_clk_c</A>
+                  --------
+                    4.199   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 470.983ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_322">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/jtag_int_u/jupdate_reclk[2]</A>  (from <A href="#@net:osc_clk_c">osc_clk_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/SLICE_333">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/te_precnt_val[9]</A>  (to <A href="#@net:osc_clk_c">osc_clk_c</A> +)
+                   FF                        <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/te_precnt_val[8]">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/te_precnt_val[8]</A>
+
+   Delay:               9.504ns  (25.6% logic, 74.4% route), 5 logic levels.
+
+ Constraint Details:
+
+      9.504ns physical path delay Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_322 to Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/SLICE_333 meets
+    480.769ns delay constraint less
+      0.000ns skew and
+      0.282ns CE_SET requirement (totaling 480.487ns) by 470.983ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'osc_clk_c' 2.080000 MHz ;:REG_DEL, 0.452,R15C22C.CLK,R15C22C.Q0,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_322:ROUTE, 1.113,R15C22C.Q0,R16C23C.C1,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/jtag_int_u/jupdate_reclk[2]:CTOF_DEL, 0.495,R16C23C.C1,R16C23C.F1,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_252:ROUTE, 0.453,R16C23C.F1,R16C23C.C0,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/wen:CTOF_DEL, 0.495,R16C23C.C0,R16C23C.F0,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_252:ROUTE, 1.982,R16C23C.F0,R17C18D.B1,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/wen_te[0]:CTOF_DEL, 0.495,R17C18D.B1,R17C18D.F1,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/SLICE_266:ROUTE, 1.182,R17C18D.F1,R21C18B.D1,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/addr_cnt_init_1:CTOF_DEL, 0.495,R21C18B.D1,R21C18B.F1,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_323:ROUTE, 2.342,R21C18B.F1,R17C19B.CE,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/te_precnt_val_0_sqmuxa">Data path</A> Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_322 to Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/SLICE_333:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452    R15C22C.CLK to     R15C22C.Q0 <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_322">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_322</A> (from <A href="#@net:osc_clk_c">osc_clk_c</A>)
+ROUTE         5     1.113<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/jtag_int_u/jupdate_reclk[2]:R15C22C.Q0:R16C23C.C1:1.113">     R15C22C.Q0 to R16C23C.C1    </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/jtag_int_u/jupdate_reclk[2]">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/jtag_int_u/jupdate_reclk[2]</A>
+CTOF_DEL    ---     0.495     R16C23C.C1 to     R16C23C.F1 <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_252">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_252</A>
+ROUTE         7     0.453<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/wen:R16C23C.F1:R16C23C.C0:0.453">     R16C23C.F1 to R16C23C.C0    </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/wen">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/wen</A>
+CTOF_DEL    ---     0.495     R16C23C.C0 to     R16C23C.F0 <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_252">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_252</A>
+ROUTE         4     1.982<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/wen_te[0]:R16C23C.F0:R17C18D.B1:1.982">     R16C23C.F0 to R17C18D.B1    </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/wen_te[0]">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/wen_te[0]</A>
+CTOF_DEL    ---     0.495     R17C18D.B1 to     R17C18D.F1 <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/SLICE_266">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/SLICE_266</A>
+ROUTE         2     1.182<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/addr_cnt_init_1:R17C18D.F1:R21C18B.D1:1.182">     R17C18D.F1 to R21C18B.D1    </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/addr_cnt_init_1">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/addr_cnt_init_1</A>
+CTOF_DEL    ---     0.495     R21C18B.D1 to     R21C18B.F1 <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_323">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_323</A>
+ROUTE         8     2.342<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/te_precnt_val_0_sqmuxa:R21C18B.F1:R17C19B.CE:2.342">     R21C18B.F1 to R17C19B.CE    </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/te_precnt_val_0_sqmuxa">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/te_precnt_val_0_sqmuxa</A> (to <A href="#@net:osc_clk_c">osc_clk_c</A>)
+                  --------
+                    9.504   (25.6% logic, 74.4% route), 5 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'osc_clk_c' 2.080000 MHz ;:ROUTE, 4.199,OSC.OSC,R15C22C.CLK,osc_clk_c">Source Clock Path</A> OSCH_inst to Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_322:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        92     4.199<A href="#@net:osc_clk_c:OSC.OSC:R15C22C.CLK:4.199">        OSC.OSC to R15C22C.CLK   </A> <A href="#@net:osc_clk_c">osc_clk_c</A>
+                  --------
+                    4.199   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'osc_clk_c' 2.080000 MHz ;:ROUTE, 4.199,OSC.OSC,R17C19B.CLK,osc_clk_c">Destination Clock Path</A> OSCH_inst to Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/SLICE_333:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        92     4.199<A href="#@net:osc_clk_c:OSC.OSC:R17C19B.CLK:4.199">        OSC.OSC to R17C19B.CLK   </A> <A href="#@net:osc_clk_c">osc_clk_c</A>
+                  --------
+                    4.199   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 471.111ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_150">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/start_d</A>  (from <A href="#@net:osc_clk_c">osc_clk_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_14">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/pre_trig_cntr[7]</A>  (to <A href="#@net:osc_clk_c">osc_clk_c</A> +)
+
+   Delay:               9.492ns  (35.5% logic, 64.5% route), 7 logic levels.
+
+ Constraint Details:
+
+      9.492ns physical path delay Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_150 to Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_14 meets
+    480.769ns delay constraint less
+      0.000ns skew and
+      0.166ns DIN_SET requirement (totaling 480.603ns) by 471.111ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'osc_clk_c' 2.080000 MHz ;:REG_DEL, 0.452,R15C26D.CLK,R15C26D.Q1,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_150:ROUTE, 1.445,R15C26D.Q1,R18C27B.D1,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/start_d:CTOF_DEL, 0.495,R18C27B.D1,R18C27B.F1,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_275:ROUTE, 2.230,R18C27B.F1,R15C25C.A0,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/trig_det_cntr_5_i_0_o2[0]:CTOF_DEL, 0.495,R15C25C.A0,R15C25C.F0,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_294:ROUTE, 2.443,R15C25C.F0,R17C26B.B0,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/N_839_i:C0TOFCO_DEL, 1.023,R17C26B.B0,R17C26B.FCO,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_17:ROUTE, 0.000,R17C26B.FCO,R17C26C.FCI,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/pre_trig_cntr_cry[2]:FCITOFCO_DEL, 0.162,R17C26C.FCI,R17C26C.FCO,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_16:ROUTE, 0.000,R17C26C.FCO,R17C26D.FCI,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/pre_trig_cntr_cry[4]:FCITOFCO_DEL, 0.162,R17C26D.FCI,R17C26D.FCO,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_15:ROUTE, 0.000,R17C26D.FCO,R17C27A.FCI,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/pre_trig_cntr_cry[6]:FCITOF0_DEL, 0.585,R17C27A.FCI,R17C27A.F0,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_14:ROUTE, 0.000,R17C27A.F0,R17C27A.DI0,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/pre_trig_cntr_s[7]">Data path</A> Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_150 to Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_14:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452    R15C26D.CLK to     R15C26D.Q1 <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_150">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_150</A> (from <A href="#@net:osc_clk_c">osc_clk_c</A>)
+ROUTE         6     1.445<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/start_d:R15C26D.Q1:R18C27B.D1:1.445">     R15C26D.Q1 to R18C27B.D1    </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/start_d">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/start_d</A>
+CTOF_DEL    ---     0.495     R18C27B.D1 to     R18C27B.F1 <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_275">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_275</A>
+ROUTE        10     2.230<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/trig_det_cntr_5_i_0_o2[0]:R18C27B.F1:R15C25C.A0:2.230">     R18C27B.F1 to R15C25C.A0    </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/trig_det_cntr_5_i_0_o2[0]">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/trig_det_cntr_5_i_0_o2[0]</A>
+CTOF_DEL    ---     0.495     R15C25C.A0 to     R15C25C.F0 <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_294">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_294</A>
+ROUTE        25     2.443<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/N_839_i:R15C25C.F0:R17C26B.B0:2.443">     R15C25C.F0 to R17C26B.B0    </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/N_839_i">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/N_839_i</A>
+C0TOFCO_DE  ---     1.023     R17C26B.B0 to    R17C26B.FCO <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_17">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_17</A>
+ROUTE         1     0.000<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/pre_trig_cntr_cry[2]:R17C26B.FCO:R17C26C.FCI:0.000">    R17C26B.FCO to R17C26C.FCI   </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/pre_trig_cntr_cry[2]">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/pre_trig_cntr_cry[2]</A>
+FCITOFCO_D  ---     0.162    R17C26C.FCI to    R17C26C.FCO <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_16">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_16</A>
+ROUTE         1     0.000<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/pre_trig_cntr_cry[4]:R17C26C.FCO:R17C26D.FCI:0.000">    R17C26C.FCO to R17C26D.FCI   </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/pre_trig_cntr_cry[4]">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/pre_trig_cntr_cry[4]</A>
+FCITOFCO_D  ---     0.162    R17C26D.FCI to    R17C26D.FCO <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_15">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_15</A>
+ROUTE         1     0.000<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/pre_trig_cntr_cry[6]:R17C26D.FCO:R17C27A.FCI:0.000">    R17C26D.FCO to R17C27A.FCI   </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/pre_trig_cntr_cry[6]">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/pre_trig_cntr_cry[6]</A>
+FCITOF0_DE  ---     0.585    R17C27A.FCI to     R17C27A.F0 <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_14">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_14</A>
+ROUTE         1     0.000<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/pre_trig_cntr_s[7]:R17C27A.F0:R17C27A.DI0:0.000">     R17C27A.F0 to R17C27A.DI0   </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/pre_trig_cntr_s[7]">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/pre_trig_cntr_s[7]</A> (to <A href="#@net:osc_clk_c">osc_clk_c</A>)
+                  --------
+                    9.492   (35.5% logic, 64.5% route), 7 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'osc_clk_c' 2.080000 MHz ;:ROUTE, 4.199,OSC.OSC,R15C26D.CLK,osc_clk_c">Source Clock Path</A> OSCH_inst to Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_150:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        92     4.199<A href="#@net:osc_clk_c:OSC.OSC:R15C26D.CLK:4.199">        OSC.OSC to R15C26D.CLK   </A> <A href="#@net:osc_clk_c">osc_clk_c</A>
+                  --------
+                    4.199   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'osc_clk_c' 2.080000 MHz ;:ROUTE, 4.199,OSC.OSC,R17C27A.CLK,osc_clk_c">Destination Clock Path</A> OSCH_inst to Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_14:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        92     4.199<A href="#@net:osc_clk_c:OSC.OSC:R17C27A.CLK:4.199">        OSC.OSC to R17C27A.CLK   </A> <A href="#@net:osc_clk_c">osc_clk_c</A>
+                  --------
+                    4.199   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 471.111ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_150">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/start_d</A>  (from <A href="#@net:osc_clk_c">osc_clk_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_9">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/post_trig_cntr[7]</A>  (to <A href="#@net:osc_clk_c">osc_clk_c</A> +)
+
+   Delay:               9.492ns  (35.5% logic, 64.5% route), 7 logic levels.
+
+ Constraint Details:
+
+      9.492ns physical path delay Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_150 to Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_9 meets
+    480.769ns delay constraint less
+      0.000ns skew and
+      0.166ns DIN_SET requirement (totaling 480.603ns) by 471.111ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'osc_clk_c' 2.080000 MHz ;:REG_DEL, 0.452,R15C26D.CLK,R15C26D.Q1,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_150:ROUTE, 1.445,R15C26D.Q1,R18C27B.D1,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/start_d:CTOF_DEL, 0.495,R18C27B.D1,R18C27B.F1,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_275:ROUTE, 2.230,R18C27B.F1,R15C25C.A0,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/trig_det_cntr_5_i_0_o2[0]:CTOF_DEL, 0.495,R15C25C.A0,R15C25C.F0,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_294:ROUTE, 2.443,R15C25C.F0,R16C26B.B0,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/N_839_i:C0TOFCO_DEL, 1.023,R16C26B.B0,R16C26B.FCO,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_12:ROUTE, 0.000,R16C26B.FCO,R16C26C.FCI,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/post_trig_cntr_cry[2]:FCITOFCO_DEL, 0.162,R16C26C.FCI,R16C26C.FCO,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_11:ROUTE, 0.000,R16C26C.FCO,R16C26D.FCI,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/post_trig_cntr_cry[4]:FCITOFCO_DEL, 0.162,R16C26D.FCI,R16C26D.FCO,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_10:ROUTE, 0.000,R16C26D.FCO,R16C27A.FCI,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/post_trig_cntr_cry[6]:FCITOF0_DEL, 0.585,R16C27A.FCI,R16C27A.F0,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_9:ROUTE, 0.000,R16C27A.F0,R16C27A.DI0,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/post_trig_cntr_s[7]">Data path</A> Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_150 to Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_9:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452    R15C26D.CLK to     R15C26D.Q1 <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_150">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_150</A> (from <A href="#@net:osc_clk_c">osc_clk_c</A>)
+ROUTE         6     1.445<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/start_d:R15C26D.Q1:R18C27B.D1:1.445">     R15C26D.Q1 to R18C27B.D1    </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/start_d">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/start_d</A>
+CTOF_DEL    ---     0.495     R18C27B.D1 to     R18C27B.F1 <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_275">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_275</A>
+ROUTE        10     2.230<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/trig_det_cntr_5_i_0_o2[0]:R18C27B.F1:R15C25C.A0:2.230">     R18C27B.F1 to R15C25C.A0    </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/trig_det_cntr_5_i_0_o2[0]">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/trig_det_cntr_5_i_0_o2[0]</A>
+CTOF_DEL    ---     0.495     R15C25C.A0 to     R15C25C.F0 <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_294">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_294</A>
+ROUTE        25     2.443<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/N_839_i:R15C25C.F0:R16C26B.B0:2.443">     R15C25C.F0 to R16C26B.B0    </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/N_839_i">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/N_839_i</A>
+C0TOFCO_DE  ---     1.023     R16C26B.B0 to    R16C26B.FCO <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_12">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_12</A>
+ROUTE         1     0.000<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/post_trig_cntr_cry[2]:R16C26B.FCO:R16C26C.FCI:0.000">    R16C26B.FCO to R16C26C.FCI   </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/post_trig_cntr_cry[2]">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/post_trig_cntr_cry[2]</A>
+FCITOFCO_D  ---     0.162    R16C26C.FCI to    R16C26C.FCO <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_11">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_11</A>
+ROUTE         1     0.000<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/post_trig_cntr_cry[4]:R16C26C.FCO:R16C26D.FCI:0.000">    R16C26C.FCO to R16C26D.FCI   </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/post_trig_cntr_cry[4]">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/post_trig_cntr_cry[4]</A>
+FCITOFCO_D  ---     0.162    R16C26D.FCI to    R16C26D.FCO <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_10">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_10</A>
+ROUTE         1     0.000<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/post_trig_cntr_cry[6]:R16C26D.FCO:R16C27A.FCI:0.000">    R16C26D.FCO to R16C27A.FCI   </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/post_trig_cntr_cry[6]">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/post_trig_cntr_cry[6]</A>
+FCITOF0_DE  ---     0.585    R16C27A.FCI to     R16C27A.F0 <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_9">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_9</A>
+ROUTE         1     0.000<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/post_trig_cntr_s[7]:R16C27A.F0:R16C27A.DI0:0.000">     R16C27A.F0 to R16C27A.DI0   </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/post_trig_cntr_s[7]">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/post_trig_cntr_s[7]</A> (to <A href="#@net:osc_clk_c">osc_clk_c</A>)
+                  --------
+                    9.492   (35.5% logic, 64.5% route), 7 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'osc_clk_c' 2.080000 MHz ;:ROUTE, 4.199,OSC.OSC,R15C26D.CLK,osc_clk_c">Source Clock Path</A> OSCH_inst to Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_150:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        92     4.199<A href="#@net:osc_clk_c:OSC.OSC:R15C26D.CLK:4.199">        OSC.OSC to R15C26D.CLK   </A> <A href="#@net:osc_clk_c">osc_clk_c</A>
+                  --------
+                    4.199   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'osc_clk_c' 2.080000 MHz ;:ROUTE, 4.199,OSC.OSC,R16C27A.CLK,osc_clk_c">Destination Clock Path</A> OSCH_inst to Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_9:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        92     4.199<A href="#@net:osc_clk_c:OSC.OSC:R16C27A.CLK:4.199">        OSC.OSC to R16C27A.CLK   </A> <A href="#@net:osc_clk_c">osc_clk_c</A>
+                  --------
+                    4.199   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 471.182ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_322">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/jtag_int_u/jupdate_reclk[3]</A>  (from <A href="#@net:osc_clk_c">osc_clk_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/SLICE_264">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/te_precnt_val[5]</A>  (to <A href="#@net:osc_clk_c">osc_clk_c</A> +)
+                   FF                        <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/te_precnt_val[4]">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/te_precnt_val[4]</A>
+
+   Delay:               9.305ns  (26.1% logic, 73.9% route), 5 logic levels.
+
+ Constraint Details:
+
+      9.305ns physical path delay Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_322 to Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/SLICE_264 meets
+    480.769ns delay constraint less
+      0.000ns skew and
+      0.282ns CE_SET requirement (totaling 480.487ns) by 471.182ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'osc_clk_c' 2.080000 MHz ;:REG_DEL, 0.452,R15C22C.CLK,R15C22C.Q1,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_322:ROUTE, 1.333,R15C22C.Q1,R16C23C.A1,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/jtag_int_u/jupdate_reclk[3]:CTOF_DEL, 0.495,R16C23C.A1,R16C23C.F1,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_252:ROUTE, 0.453,R16C23C.F1,R16C23C.C0,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/wen:CTOF_DEL, 0.495,R16C23C.C0,R16C23C.F0,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_252:ROUTE, 1.982,R16C23C.F0,R17C18D.B1,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/wen_te[0]:CTOF_DEL, 0.495,R17C18D.B1,R17C18D.F1,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/SLICE_266:ROUTE, 1.182,R17C18D.F1,R21C18B.D1,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/addr_cnt_init_1:CTOF_DEL, 0.495,R21C18B.D1,R21C18B.F1,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_323:ROUTE, 1.923,R21C18B.F1,R18C19B.CE,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/te_precnt_val_0_sqmuxa">Data path</A> Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_322 to Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/SLICE_264:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452    R15C22C.CLK to     R15C22C.Q1 <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_322">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_322</A> (from <A href="#@net:osc_clk_c">osc_clk_c</A>)
+ROUTE         4     1.333<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/jtag_int_u/jupdate_reclk[3]:R15C22C.Q1:R16C23C.A1:1.333">     R15C22C.Q1 to R16C23C.A1    </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/jtag_int_u/jupdate_reclk[3]">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/jtag_int_u/jupdate_reclk[3]</A>
+CTOF_DEL    ---     0.495     R16C23C.A1 to     R16C23C.F1 <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_252">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_252</A>
+ROUTE         7     0.453<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/wen:R16C23C.F1:R16C23C.C0:0.453">     R16C23C.F1 to R16C23C.C0    </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/wen">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/wen</A>
+CTOF_DEL    ---     0.495     R16C23C.C0 to     R16C23C.F0 <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_252">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_252</A>
+ROUTE         4     1.982<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/wen_te[0]:R16C23C.F0:R17C18D.B1:1.982">     R16C23C.F0 to R17C18D.B1    </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/wen_te[0]">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/wen_te[0]</A>
+CTOF_DEL    ---     0.495     R17C18D.B1 to     R17C18D.F1 <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/SLICE_266">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/SLICE_266</A>
+ROUTE         2     1.182<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/addr_cnt_init_1:R17C18D.F1:R21C18B.D1:1.182">     R17C18D.F1 to R21C18B.D1    </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/addr_cnt_init_1">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/addr_cnt_init_1</A>
+CTOF_DEL    ---     0.495     R21C18B.D1 to     R21C18B.F1 <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_323">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_323</A>
+ROUTE         8     1.923<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/te_precnt_val_0_sqmuxa:R21C18B.F1:R18C19B.CE:1.923">     R21C18B.F1 to R18C19B.CE    </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/te_precnt_val_0_sqmuxa">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/te_precnt_val_0_sqmuxa</A> (to <A href="#@net:osc_clk_c">osc_clk_c</A>)
+                  --------
+                    9.305   (26.1% logic, 73.9% route), 5 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'osc_clk_c' 2.080000 MHz ;:ROUTE, 4.199,OSC.OSC,R15C22C.CLK,osc_clk_c">Source Clock Path</A> OSCH_inst to Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_322:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        92     4.199<A href="#@net:osc_clk_c:OSC.OSC:R15C22C.CLK:4.199">        OSC.OSC to R15C22C.CLK   </A> <A href="#@net:osc_clk_c">osc_clk_c</A>
+                  --------
+                    4.199   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'osc_clk_c' 2.080000 MHz ;:ROUTE, 4.199,OSC.OSC,R18C19B.CLK,osc_clk_c">Destination Clock Path</A> OSCH_inst to Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/SLICE_264:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        92     4.199<A href="#@net:osc_clk_c:OSC.OSC:R18C19B.CLK:4.199">        OSC.OSC to R18C19B.CLK   </A> <A href="#@net:osc_clk_c">osc_clk_c</A>
+                  --------
+                    4.199   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 471.182ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_322">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/jtag_int_u/jupdate_reclk[3]</A>  (from <A href="#@net:osc_clk_c">osc_clk_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_315">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/te_precnt_val[7]</A>  (to <A href="#@net:osc_clk_c">osc_clk_c</A> +)
+                   FF                        <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/te_precnt_val[6]">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/te_precnt_val[6]</A>
+
+   Delay:               9.305ns  (26.1% logic, 73.9% route), 5 logic levels.
+
+ Constraint Details:
+
+      9.305ns physical path delay Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_322 to Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_315 meets
+    480.769ns delay constraint less
+      0.000ns skew and
+      0.282ns CE_SET requirement (totaling 480.487ns) by 471.182ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'osc_clk_c' 2.080000 MHz ;:REG_DEL, 0.452,R15C22C.CLK,R15C22C.Q1,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_322:ROUTE, 1.333,R15C22C.Q1,R16C23C.A1,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/jtag_int_u/jupdate_reclk[3]:CTOF_DEL, 0.495,R16C23C.A1,R16C23C.F1,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_252:ROUTE, 0.453,R16C23C.F1,R16C23C.C0,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/wen:CTOF_DEL, 0.495,R16C23C.C0,R16C23C.F0,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_252:ROUTE, 1.982,R16C23C.F0,R17C18D.B1,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/wen_te[0]:CTOF_DEL, 0.495,R17C18D.B1,R17C18D.F1,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/SLICE_266:ROUTE, 1.182,R17C18D.F1,R21C18B.D1,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/addr_cnt_init_1:CTOF_DEL, 0.495,R21C18B.D1,R21C18B.F1,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_323:ROUTE, 1.923,R21C18B.F1,R18C19A.CE,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/te_precnt_val_0_sqmuxa">Data path</A> Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_322 to Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_315:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452    R15C22C.CLK to     R15C22C.Q1 <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_322">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_322</A> (from <A href="#@net:osc_clk_c">osc_clk_c</A>)
+ROUTE         4     1.333<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/jtag_int_u/jupdate_reclk[3]:R15C22C.Q1:R16C23C.A1:1.333">     R15C22C.Q1 to R16C23C.A1    </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/jtag_int_u/jupdate_reclk[3]">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/jtag_int_u/jupdate_reclk[3]</A>
+CTOF_DEL    ---     0.495     R16C23C.A1 to     R16C23C.F1 <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_252">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_252</A>
+ROUTE         7     0.453<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/wen:R16C23C.F1:R16C23C.C0:0.453">     R16C23C.F1 to R16C23C.C0    </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/wen">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/wen</A>
+CTOF_DEL    ---     0.495     R16C23C.C0 to     R16C23C.F0 <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_252">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_252</A>
+ROUTE         4     1.982<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/wen_te[0]:R16C23C.F0:R17C18D.B1:1.982">     R16C23C.F0 to R17C18D.B1    </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/wen_te[0]">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/wen_te[0]</A>
+CTOF_DEL    ---     0.495     R17C18D.B1 to     R17C18D.F1 <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/SLICE_266">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/SLICE_266</A>
+ROUTE         2     1.182<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/addr_cnt_init_1:R17C18D.F1:R21C18B.D1:1.182">     R17C18D.F1 to R21C18B.D1    </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/addr_cnt_init_1">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/addr_cnt_init_1</A>
+CTOF_DEL    ---     0.495     R21C18B.D1 to     R21C18B.F1 <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_323">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_323</A>
+ROUTE         8     1.923<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/te_precnt_val_0_sqmuxa:R21C18B.F1:R18C19A.CE:1.923">     R21C18B.F1 to R18C19A.CE    </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/te_precnt_val_0_sqmuxa">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/te_precnt_val_0_sqmuxa</A> (to <A href="#@net:osc_clk_c">osc_clk_c</A>)
+                  --------
+                    9.305   (26.1% logic, 73.9% route), 5 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'osc_clk_c' 2.080000 MHz ;:ROUTE, 4.199,OSC.OSC,R15C22C.CLK,osc_clk_c">Source Clock Path</A> OSCH_inst to Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_322:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        92     4.199<A href="#@net:osc_clk_c:OSC.OSC:R15C22C.CLK:4.199">        OSC.OSC to R15C22C.CLK   </A> <A href="#@net:osc_clk_c">osc_clk_c</A>
+                  --------
+                    4.199   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'osc_clk_c' 2.080000 MHz ;:ROUTE, 4.199,OSC.OSC,R18C19A.CLK,osc_clk_c">Destination Clock Path</A> OSCH_inst to Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_315:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        92     4.199<A href="#@net:osc_clk_c:OSC.OSC:R18C19A.CLK:4.199">        OSC.OSC to R18C19A.CLK   </A> <A href="#@net:osc_clk_c">osc_clk_c</A>
+                  --------
+                    4.199   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 471.190ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_322">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/jtag_int_u/jupdate_reclk[3]</A>  (from <A href="#@net:osc_clk_c">osc_clk_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/SLICE_266">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/te_precnt_val[3]</A>  (to <A href="#@net:osc_clk_c">osc_clk_c</A> +)
+                   FF                        <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/te_precnt_val[2]">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/te_precnt_val[2]</A>
+
+   Delay:               9.297ns  (26.2% logic, 73.8% route), 5 logic levels.
+
+ Constraint Details:
+
+      9.297ns physical path delay Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_322 to Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/SLICE_266 meets
+    480.769ns delay constraint less
+      0.000ns skew and
+      0.282ns CE_SET requirement (totaling 480.487ns) by 471.190ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'osc_clk_c' 2.080000 MHz ;:REG_DEL, 0.452,R15C22C.CLK,R15C22C.Q1,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_322:ROUTE, 1.333,R15C22C.Q1,R16C23C.A1,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/jtag_int_u/jupdate_reclk[3]:CTOF_DEL, 0.495,R16C23C.A1,R16C23C.F1,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_252:ROUTE, 0.453,R16C23C.F1,R16C23C.C0,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/wen:CTOF_DEL, 0.495,R16C23C.C0,R16C23C.F0,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_252:ROUTE, 1.982,R16C23C.F0,R17C18D.B1,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/wen_te[0]:CTOF_DEL, 0.495,R17C18D.B1,R17C18D.F1,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/SLICE_266:ROUTE, 1.182,R17C18D.F1,R21C18B.D1,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/addr_cnt_init_1:CTOF_DEL, 0.495,R21C18B.D1,R21C18B.F1,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_323:ROUTE, 1.915,R21C18B.F1,R17C18D.CE,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/te_precnt_val_0_sqmuxa">Data path</A> Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_322 to Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/SLICE_266:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452    R15C22C.CLK to     R15C22C.Q1 <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_322">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_322</A> (from <A href="#@net:osc_clk_c">osc_clk_c</A>)
+ROUTE         4     1.333<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/jtag_int_u/jupdate_reclk[3]:R15C22C.Q1:R16C23C.A1:1.333">     R15C22C.Q1 to R16C23C.A1    </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/jtag_int_u/jupdate_reclk[3]">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/jtag_int_u/jupdate_reclk[3]</A>
+CTOF_DEL    ---     0.495     R16C23C.A1 to     R16C23C.F1 <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_252">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_252</A>
+ROUTE         7     0.453<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/wen:R16C23C.F1:R16C23C.C0:0.453">     R16C23C.F1 to R16C23C.C0    </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/wen">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/wen</A>
+CTOF_DEL    ---     0.495     R16C23C.C0 to     R16C23C.F0 <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_252">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_252</A>
+ROUTE         4     1.982<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/wen_te[0]:R16C23C.F0:R17C18D.B1:1.982">     R16C23C.F0 to R17C18D.B1    </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/wen_te[0]">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/wen_te[0]</A>
+CTOF_DEL    ---     0.495     R17C18D.B1 to     R17C18D.F1 <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/SLICE_266">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/SLICE_266</A>
+ROUTE         2     1.182<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/addr_cnt_init_1:R17C18D.F1:R21C18B.D1:1.182">     R17C18D.F1 to R21C18B.D1    </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/addr_cnt_init_1">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/addr_cnt_init_1</A>
+CTOF_DEL    ---     0.495     R21C18B.D1 to     R21C18B.F1 <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_323">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_323</A>
+ROUTE         8     1.915<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/te_precnt_val_0_sqmuxa:R21C18B.F1:R17C18D.CE:1.915">     R21C18B.F1 to R17C18D.CE    </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/te_precnt_val_0_sqmuxa">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/te_precnt_val_0_sqmuxa</A> (to <A href="#@net:osc_clk_c">osc_clk_c</A>)
+                  --------
+                    9.297   (26.2% logic, 73.8% route), 5 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'osc_clk_c' 2.080000 MHz ;:ROUTE, 4.199,OSC.OSC,R15C22C.CLK,osc_clk_c">Source Clock Path</A> OSCH_inst to Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_322:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        92     4.199<A href="#@net:osc_clk_c:OSC.OSC:R15C22C.CLK:4.199">        OSC.OSC to R15C22C.CLK   </A> <A href="#@net:osc_clk_c">osc_clk_c</A>
+                  --------
+                    4.199   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'osc_clk_c' 2.080000 MHz ;:ROUTE, 4.199,OSC.OSC,R17C18D.CLK,osc_clk_c">Destination Clock Path</A> OSCH_inst to Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/te_0/SLICE_266:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        92     4.199<A href="#@net:osc_clk_c:OSC.OSC:R17C18D.CLK:4.199">        OSC.OSC to R17C18D.CLK   </A> <A href="#@net:osc_clk_c">osc_clk_c</A>
+                  --------
+                    4.199   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 471.215ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_150">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/start_d</A>  (from <A href="#@net:osc_clk_c">osc_clk_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_10">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/post_trig_cntr[6]</A>  (to <A href="#@net:osc_clk_c">osc_clk_c</A> +)
+
+   Delay:               9.388ns  (34.8% logic, 65.2% route), 6 logic levels.
+
+ Constraint Details:
+
+      9.388ns physical path delay Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_150 to Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_10 meets
+    480.769ns delay constraint less
+      0.000ns skew and
+      0.166ns DIN_SET requirement (totaling 480.603ns) by 471.215ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'osc_clk_c' 2.080000 MHz ;:REG_DEL, 0.452,R15C26D.CLK,R15C26D.Q1,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_150:ROUTE, 1.445,R15C26D.Q1,R18C27B.D1,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/start_d:CTOF_DEL, 0.495,R18C27B.D1,R18C27B.F1,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_275:ROUTE, 2.230,R18C27B.F1,R15C25C.A0,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/trig_det_cntr_5_i_0_o2[0]:CTOF_DEL, 0.495,R15C25C.A0,R15C25C.F0,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_294:ROUTE, 2.443,R15C25C.F0,R16C26B.B0,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/N_839_i:C0TOFCO_DEL, 1.023,R16C26B.B0,R16C26B.FCO,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_12:ROUTE, 0.000,R16C26B.FCO,R16C26C.FCI,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/post_trig_cntr_cry[2]:FCITOFCO_DEL, 0.162,R16C26C.FCI,R16C26C.FCO,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_11:ROUTE, 0.000,R16C26C.FCO,R16C26D.FCI,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/post_trig_cntr_cry[4]:FCITOF1_DEL, 0.643,R16C26D.FCI,R16C26D.F1,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_10:ROUTE, 0.000,R16C26D.F1,R16C26D.DI1,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/post_trig_cntr_s[6]">Data path</A> Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_150 to Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_10:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452    R15C26D.CLK to     R15C26D.Q1 <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_150">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_150</A> (from <A href="#@net:osc_clk_c">osc_clk_c</A>)
+ROUTE         6     1.445<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/start_d:R15C26D.Q1:R18C27B.D1:1.445">     R15C26D.Q1 to R18C27B.D1    </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/start_d">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/start_d</A>
+CTOF_DEL    ---     0.495     R18C27B.D1 to     R18C27B.F1 <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_275">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_275</A>
+ROUTE        10     2.230<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/trig_det_cntr_5_i_0_o2[0]:R18C27B.F1:R15C25C.A0:2.230">     R18C27B.F1 to R15C25C.A0    </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/trig_det_cntr_5_i_0_o2[0]">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/trig_det_cntr_5_i_0_o2[0]</A>
+CTOF_DEL    ---     0.495     R15C25C.A0 to     R15C25C.F0 <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_294">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_294</A>
+ROUTE        25     2.443<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/N_839_i:R15C25C.F0:R16C26B.B0:2.443">     R15C25C.F0 to R16C26B.B0    </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/N_839_i">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/N_839_i</A>
+C0TOFCO_DE  ---     1.023     R16C26B.B0 to    R16C26B.FCO <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_12">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_12</A>
+ROUTE         1     0.000<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/post_trig_cntr_cry[2]:R16C26B.FCO:R16C26C.FCI:0.000">    R16C26B.FCO to R16C26C.FCI   </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/post_trig_cntr_cry[2]">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/post_trig_cntr_cry[2]</A>
+FCITOFCO_D  ---     0.162    R16C26C.FCI to    R16C26C.FCO <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_11">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_11</A>
+ROUTE         1     0.000<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/post_trig_cntr_cry[4]:R16C26C.FCO:R16C26D.FCI:0.000">    R16C26C.FCO to R16C26D.FCI   </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/post_trig_cntr_cry[4]">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/post_trig_cntr_cry[4]</A>
+FCITOF1_DE  ---     0.643    R16C26D.FCI to     R16C26D.F1 <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_10">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_10</A>
+ROUTE         1     0.000<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/post_trig_cntr_s[6]:R16C26D.F1:R16C26D.DI1:0.000">     R16C26D.F1 to R16C26D.DI1   </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/post_trig_cntr_s[6]">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/post_trig_cntr_s[6]</A> (to <A href="#@net:osc_clk_c">osc_clk_c</A>)
+                  --------
+                    9.388   (34.8% logic, 65.2% route), 6 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'osc_clk_c' 2.080000 MHz ;:ROUTE, 4.199,OSC.OSC,R15C26D.CLK,osc_clk_c">Source Clock Path</A> OSCH_inst to Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_150:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        92     4.199<A href="#@net:osc_clk_c:OSC.OSC:R15C26D.CLK:4.199">        OSC.OSC to R15C26D.CLK   </A> <A href="#@net:osc_clk_c">osc_clk_c</A>
+                  --------
+                    4.199   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'osc_clk_c' 2.080000 MHz ;:ROUTE, 4.199,OSC.OSC,R16C26D.CLK,osc_clk_c">Destination Clock Path</A> OSCH_inst to Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_10:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        92     4.199<A href="#@net:osc_clk_c:OSC.OSC:R16C26D.CLK:4.199">        OSC.OSC to R16C26D.CLK   </A> <A href="#@net:osc_clk_c">osc_clk_c</A>
+                  --------
+                    4.199   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 471.215ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_150">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/start_d</A>  (from <A href="#@net:osc_clk_c">osc_clk_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_15">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/pre_trig_cntr[6]</A>  (to <A href="#@net:osc_clk_c">osc_clk_c</A> +)
+
+   Delay:               9.388ns  (34.8% logic, 65.2% route), 6 logic levels.
+
+ Constraint Details:
+
+      9.388ns physical path delay Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_150 to Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_15 meets
+    480.769ns delay constraint less
+      0.000ns skew and
+      0.166ns DIN_SET requirement (totaling 480.603ns) by 471.215ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'osc_clk_c' 2.080000 MHz ;:REG_DEL, 0.452,R15C26D.CLK,R15C26D.Q1,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_150:ROUTE, 1.445,R15C26D.Q1,R18C27B.D1,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/start_d:CTOF_DEL, 0.495,R18C27B.D1,R18C27B.F1,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_275:ROUTE, 2.230,R18C27B.F1,R15C25C.A0,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/trig_det_cntr_5_i_0_o2[0]:CTOF_DEL, 0.495,R15C25C.A0,R15C25C.F0,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_294:ROUTE, 2.443,R15C25C.F0,R17C26B.B0,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/N_839_i:C0TOFCO_DEL, 1.023,R17C26B.B0,R17C26B.FCO,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_17:ROUTE, 0.000,R17C26B.FCO,R17C26C.FCI,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/pre_trig_cntr_cry[2]:FCITOFCO_DEL, 0.162,R17C26C.FCI,R17C26C.FCO,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_16:ROUTE, 0.000,R17C26C.FCO,R17C26D.FCI,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/pre_trig_cntr_cry[4]:FCITOF1_DEL, 0.643,R17C26D.FCI,R17C26D.F1,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_15:ROUTE, 0.000,R17C26D.F1,R17C26D.DI1,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/pre_trig_cntr_s[6]">Data path</A> Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_150 to Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_15:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452    R15C26D.CLK to     R15C26D.Q1 <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_150">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_150</A> (from <A href="#@net:osc_clk_c">osc_clk_c</A>)
+ROUTE         6     1.445<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/start_d:R15C26D.Q1:R18C27B.D1:1.445">     R15C26D.Q1 to R18C27B.D1    </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/start_d">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/start_d</A>
+CTOF_DEL    ---     0.495     R18C27B.D1 to     R18C27B.F1 <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_275">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_275</A>
+ROUTE        10     2.230<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/trig_det_cntr_5_i_0_o2[0]:R18C27B.F1:R15C25C.A0:2.230">     R18C27B.F1 to R15C25C.A0    </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/trig_det_cntr_5_i_0_o2[0]">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/trig_det_cntr_5_i_0_o2[0]</A>
+CTOF_DEL    ---     0.495     R15C25C.A0 to     R15C25C.F0 <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_294">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_294</A>
+ROUTE        25     2.443<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/N_839_i:R15C25C.F0:R17C26B.B0:2.443">     R15C25C.F0 to R17C26B.B0    </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/N_839_i">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/N_839_i</A>
+C0TOFCO_DE  ---     1.023     R17C26B.B0 to    R17C26B.FCO <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_17">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_17</A>
+ROUTE         1     0.000<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/pre_trig_cntr_cry[2]:R17C26B.FCO:R17C26C.FCI:0.000">    R17C26B.FCO to R17C26C.FCI   </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/pre_trig_cntr_cry[2]">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/pre_trig_cntr_cry[2]</A>
+FCITOFCO_D  ---     0.162    R17C26C.FCI to    R17C26C.FCO <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_16">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_16</A>
+ROUTE         1     0.000<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/pre_trig_cntr_cry[4]:R17C26C.FCO:R17C26D.FCI:0.000">    R17C26C.FCO to R17C26D.FCI   </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/pre_trig_cntr_cry[4]">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/pre_trig_cntr_cry[4]</A>
+FCITOF1_DE  ---     0.643    R17C26D.FCI to     R17C26D.F1 <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_15">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_15</A>
+ROUTE         1     0.000<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/pre_trig_cntr_s[6]:R17C26D.F1:R17C26D.DI1:0.000">     R17C26D.F1 to R17C26D.DI1   </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/pre_trig_cntr_s[6]">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/pre_trig_cntr_s[6]</A> (to <A href="#@net:osc_clk_c">osc_clk_c</A>)
+                  --------
+                    9.388   (34.8% logic, 65.2% route), 6 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'osc_clk_c' 2.080000 MHz ;:ROUTE, 4.199,OSC.OSC,R15C26D.CLK,osc_clk_c">Source Clock Path</A> OSCH_inst to Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_150:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        92     4.199<A href="#@net:osc_clk_c:OSC.OSC:R15C26D.CLK:4.199">        OSC.OSC to R15C26D.CLK   </A> <A href="#@net:osc_clk_c">osc_clk_c</A>
+                  --------
+                    4.199   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'osc_clk_c' 2.080000 MHz ;:ROUTE, 4.199,OSC.OSC,R17C26D.CLK,osc_clk_c">Destination Clock Path</A> OSCH_inst to Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_15:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        92     4.199<A href="#@net:osc_clk_c:OSC.OSC:R17C26D.CLK:4.199">        OSC.OSC to R17C26D.CLK   </A> <A href="#@net:osc_clk_c">osc_clk_c</A>
+                  --------
+                    4.199   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 471.245ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_150">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/start_d</A>  (from <A href="#@net:osc_clk_c">osc_clk_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_9">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/post_trig_cntr[7]</A>  (to <A href="#@net:osc_clk_c">osc_clk_c</A> +)
+
+   Delay:               9.358ns  (34.6% logic, 65.4% route), 7 logic levels.
+
+ Constraint Details:
+
+      9.358ns physical path delay Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_150 to Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_9 meets
+    480.769ns delay constraint less
+      0.000ns skew and
+      0.166ns DIN_SET requirement (totaling 480.603ns) by 471.245ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'osc_clk_c' 2.080000 MHz ;:REG_DEL, 0.452,R15C26D.CLK,R15C26D.Q1,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_150:ROUTE, 1.445,R15C26D.Q1,R18C27B.D1,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/start_d:CTOF_DEL, 0.495,R18C27B.D1,R18C27B.F1,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_275:ROUTE, 2.230,R18C27B.F1,R15C25C.A0,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/trig_det_cntr_5_i_0_o2[0]:CTOF_DEL, 0.495,R15C25C.A0,R15C25C.F0,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_294:ROUTE, 2.443,R15C25C.F0,R16C26B.B1,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/N_839_i:C1TOFCO_DEL, 0.889,R16C26B.B1,R16C26B.FCO,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_12:ROUTE, 0.000,R16C26B.FCO,R16C26C.FCI,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/post_trig_cntr_cry[2]:FCITOFCO_DEL, 0.162,R16C26C.FCI,R16C26C.FCO,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_11:ROUTE, 0.000,R16C26C.FCO,R16C26D.FCI,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/post_trig_cntr_cry[4]:FCITOFCO_DEL, 0.162,R16C26D.FCI,R16C26D.FCO,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_10:ROUTE, 0.000,R16C26D.FCO,R16C27A.FCI,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/post_trig_cntr_cry[6]:FCITOF0_DEL, 0.585,R16C27A.FCI,R16C27A.F0,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_9:ROUTE, 0.000,R16C27A.F0,R16C27A.DI0,Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/post_trig_cntr_s[7]">Data path</A> Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_150 to Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_9:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452    R15C26D.CLK to     R15C26D.Q1 <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_150">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_150</A> (from <A href="#@net:osc_clk_c">osc_clk_c</A>)
+ROUTE         6     1.445<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/start_d:R15C26D.Q1:R18C27B.D1:1.445">     R15C26D.Q1 to R18C27B.D1    </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/start_d">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/start_d</A>
+CTOF_DEL    ---     0.495     R18C27B.D1 to     R18C27B.F1 <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_275">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_275</A>
+ROUTE        10     2.230<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/trig_det_cntr_5_i_0_o2[0]:R18C27B.F1:R15C25C.A0:2.230">     R18C27B.F1 to R15C25C.A0    </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/trig_det_cntr_5_i_0_o2[0]">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/trig_det_cntr_5_i_0_o2[0]</A>
+CTOF_DEL    ---     0.495     R15C25C.A0 to     R15C25C.F0 <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_294">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_294</A>
+ROUTE        25     2.443<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/N_839_i:R15C25C.F0:R16C26B.B1:2.443">     R15C25C.F0 to R16C26B.B1    </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/N_839_i">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/N_839_i</A>
+C1TOFCO_DE  ---     0.889     R16C26B.B1 to    R16C26B.FCO <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_12">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_12</A>
+ROUTE         1     0.000<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/post_trig_cntr_cry[2]:R16C26B.FCO:R16C26C.FCI:0.000">    R16C26B.FCO to R16C26C.FCI   </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/post_trig_cntr_cry[2]">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/post_trig_cntr_cry[2]</A>
+FCITOFCO_D  ---     0.162    R16C26C.FCI to    R16C26C.FCO <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_11">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_11</A>
+ROUTE         1     0.000<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/post_trig_cntr_cry[4]:R16C26C.FCO:R16C26D.FCI:0.000">    R16C26C.FCO to R16C26D.FCI   </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/post_trig_cntr_cry[4]">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/post_trig_cntr_cry[4]</A>
+FCITOFCO_D  ---     0.162    R16C26D.FCI to    R16C26D.FCO <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_10">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_10</A>
+ROUTE         1     0.000<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/post_trig_cntr_cry[6]:R16C26D.FCO:R16C27A.FCI:0.000">    R16C26D.FCO to R16C27A.FCI   </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/post_trig_cntr_cry[6]">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/post_trig_cntr_cry[6]</A>
+FCITOF0_DE  ---     0.585    R16C27A.FCI to     R16C27A.F0 <A href="#@comp:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_9">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_9</A>
+ROUTE         1     0.000<A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/post_trig_cntr_s[7]:R16C27A.F0:R16C27A.DI0:0.000">     R16C27A.F0 to R16C27A.DI0   </A> <A href="#@net:Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/post_trig_cntr_s[7]">Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/post_trig_cntr_s[7]</A> (to <A href="#@net:osc_clk_c">osc_clk_c</A>)
+                  --------
+                    9.358   (34.6% logic, 65.4% route), 7 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'osc_clk_c' 2.080000 MHz ;:ROUTE, 4.199,OSC.OSC,R15C26D.CLK,osc_clk_c">Source Clock Path</A> OSCH_inst to Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_150:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        92     4.199<A href="#@net:osc_clk_c:OSC.OSC:R15C26D.CLK:4.199">        OSC.OSC to R15C26D.CLK   </A> <A href="#@net:osc_clk_c">osc_clk_c</A>
+                  --------
+                    4.199   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'osc_clk_c' 2.080000 MHz ;:ROUTE, 4.199,OSC.OSC,R16C27A.CLK,osc_clk_c">Destination Clock Path</A> OSCH_inst to Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/tm_u/SLICE_9:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        92     4.199<A href="#@net:osc_clk_c:OSC.OSC:R16C27A.CLK:4.199">        OSC.OSC to R16C27A.CLK   </A> <A href="#@net:osc_clk_c">osc_clk_c</A>
+                  --------
+                    4.199   (0.0% logic, 100.0% route), 0 logic levels.
+
+Report:   99.940MHz is the maximum frequency for this preference.
+
+<A name="Report Summary"></A><B><U><big>Report Summary</big></U></B>
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "osc_clk_c" 2.080000 MHz  |             |             |
+;                                       |    2.080 MHz|   99.940 MHz|   5  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+<A name="Clock Domains Analysis"></A><B><U><big>Clock Domains Analysis</big></U></B>
+------------------------
+
+Found 3 clocks:
+
+Clock Domain: <A href="#@net:jtaghub16_jtck">jtaghub16_jtck</A>   Source: xo2chub/genblk7.jtagf_u.JTCK   Loads: 120
+   No transfer within this clock domain is found
+
+Clock Domain: <A href="#@net:pcm1/GND">pcm1/GND</A>   Source: SLICE_245.F1   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: <A href="#@net:osc_clk_c">osc_clk_c</A>   Source: OSCH_inst.OSC   Loads: 92
+   Covered under: FREQUENCY NET "osc_clk_c" 2.080000 MHz ;
+
+   Data transfers from:
+   Clock Domain: <A href="#@net:jtaghub16_jtck">jtaghub16_jtck</A>   Source: xo2chub/genblk7.jtagf_u.JTCK
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 2247 paths, 1 nets, and 2480 connections (99.60% coverage)
+

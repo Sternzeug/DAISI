@@ -1,0 +1,8 @@
+#Start recording tcl command: 6/14/2017 08:30:13
+#Project Location: C:/Users/neera_000/Documents/GitHub/DAISI/Example Project; Project name: Default_pattern_w_standby
+prj_project open "C:/Users/neera_000/Documents/GitHub/DAISI/Example Project/Default_pattern_w_standby.ldf"
+prj_run Export -impl impl1 -task Jedecgen
+pgr_project open "C:/Users/neera_000/Documents/GitHub/DAISI/Example Project/impl1/impl1.xcf"
+pgr_project close
+prj_project close
+#Stop recording: 6/14/2017 20:55:38
