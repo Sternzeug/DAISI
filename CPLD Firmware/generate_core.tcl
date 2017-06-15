@@ -85,7 +85,7 @@ set Para(install_dir) $env(TOOLRTF)
 set Para(FPGAPath) "[file join $Para(install_dir) ispfpga bin $platformpath]"
 
 set scuba "$Para(FPGAPath)/scuba"
-set modulename "pwr_cntrllr"
+set modulename "pll"
 set lang "verilog"
 set lpcfile "$Para(sbp_path)/$modulename.lpc"
 set arch "xo2c00"
