@@ -1,0 +1,57 @@
+<Project ModBy="Analyzer" Name="/media/sf_Downloads/Code/DAISI/CPLD Firmware/reveal.rvs" Date="2017-07-04">
+ <Core Name="top_LA0">
+  <Setting>
+   <Capture SamplesPerTrig="32" NumTrigsCap="1"/>
+   <Event EventCnt="0" CntEnableRun="0"/>
+   <TrigSetting PreTrgSamples="" AND_ALL="0" PostTrgSamples="" TURadix="0"/>
+  </Setting>
+  <Dataset Name="Base">
+   <Trace>
+    <Sig Name="spi_controller_inst/reset"/>
+    <Bus Name="spi_controller_inst/state" Radix="0">
+     <Sig Name="spi_controller_inst/state:0"/>
+     <Sig Name="spi_controller_inst/state:1"/>
+     <Sig Name="spi_controller_inst/state:2"/>
+    </Bus>
+    <Sig Name="spi_controller_inst/wb_cyc"/>
+    <Sig Name="spi_controller_inst/wb_stb"/>
+    <Sig Name="spi_controller_inst/wb_we"/>
+    <Bus Name="spi_controller_inst/wb_adr" Radix="0">
+     <Sig Name="spi_controller_inst/wb_adr:0"/>
+     <Sig Name="spi_controller_inst/wb_adr:1"/>
+     <Sig Name="spi_controller_inst/wb_adr:2"/>
+     <Sig Name="spi_controller_inst/wb_adr:3"/>
+     <Sig Name="spi_controller_inst/wb_adr:4"/>
+     <Sig Name="spi_controller_inst/wb_adr:5"/>
+     <Sig Name="spi_controller_inst/wb_adr:6"/>
+     <Sig Name="spi_controller_inst/wb_adr:7"/>
+    </Bus>
+    <Bus Name="spi_controller_inst/wb_dat_i" Radix="0">
+     <Sig Name="spi_controller_inst/wb_dat_i:0"/>
+     <Sig Name="spi_controller_inst/wb_dat_i:1"/>
+     <Sig Name="spi_controller_inst/wb_dat_i:2"/>
+     <Sig Name="spi_controller_inst/wb_dat_i:3"/>
+     <Sig Name="spi_controller_inst/wb_dat_i:4"/>
+     <Sig Name="spi_controller_inst/wb_dat_i:5"/>
+     <Sig Name="spi_controller_inst/wb_dat_i:6"/>
+     <Sig Name="spi_controller_inst/wb_dat_i:7"/>
+    </Bus>
+    <Bus Name="spi_controller_inst/wb_dat_o" Radix="0">
+     <Sig Name="spi_controller_inst/wb_dat_o:0"/>
+     <Sig Name="spi_controller_inst/wb_dat_o:1"/>
+     <Sig Name="spi_controller_inst/wb_dat_o:2"/>
+     <Sig Name="spi_controller_inst/wb_dat_o:3"/>
+     <Sig Name="spi_controller_inst/wb_dat_o:4"/>
+     <Sig Name="spi_controller_inst/wb_dat_o:5"/>
+     <Sig Name="spi_controller_inst/wb_dat_o:6"/>
+     <Sig Name="spi_controller_inst/wb_dat_o:7"/>
+    </Bus>
+    <Sig Name="spi_controller_inst/wb_ack"/>
+   </Trace>
+   <Trigger>
+    <TU Operator="7" Name="TU1" ID="1" Value="1" Radix="0"/>
+    <TE Enable="1" Expression="TU1" Name="TE1" ID="1"/>
+   </Trigger>
+  </Dataset>
+ </Core>
+</Project>

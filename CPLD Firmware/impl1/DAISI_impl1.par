@@ -1,10 +1,10 @@
-PAR: Place And Route Diamond (64-bit) 3.9.0.99.2.
+PAR: Place And Route Diamond (64-bit) 3.9.1.119.
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
-Wed Jun 14 20:26:11 2017
+Wed Jun 28 23:11:36 2017
 
 /usr/local/diamond/3.9_x64/ispfpga/bin/lin64/par -f DAISI_impl1.p2t
 DAISI_impl1_map.ncd DAISI_impl1.dir DAISI_impl1.prf -gui -msgset
@@ -16,19 +16,19 @@ Preference file: DAISI_impl1.prf.
 Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
 Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
 ----------   --------     -----        ------       -----------  -----------  ----         ------
-5_1   *      0            478.993      0            0.379        0            04           Complete
+5_1   *      0            2.406        0            0.326        0            14           Complete
 
 
 * : Design saved.
 
-Total (real) run time for 1-seed: 4 secs 
+Total (real) run time for 1-seed: 14 secs 
 
 par done!
 
 Lattice Place and Route Report for Design "DAISI_impl1_map.ncd"
-Wed Jun 14 20:26:11 2017
+Wed Jun 28 23:11:36 2017
 
-PAR: Place And Route Diamond (64-bit) 3.9.0.99.2.
+PAR: Place And Route Diamond (64-bit) 3.9.1.119.
 Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset "/media/sf_Downloads/Code/DAISI/CPLD Firmware/promote.xml" -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF DAISI_impl1_map.ncd DAISI_impl1.dir/5_1.ncd DAISI_impl1.prf
 Preference file: DAISI_impl1.prf.
 Placement level-cost: 5-1.
@@ -50,55 +50,85 @@ License checked out.
 Ignore Preference Error(s):  True
 Device utilization summary:
 
-   PIO (prelim)   12+4(JTAG)/336     5% used
-                  12+4(JTAG)/115     14% bonded
+   PIO (prelim)   21+4(JTAG)/336     7% used
+                  21+4(JTAG)/115     22% bonded
+   IOLOGIC            9/336           2% used
 
-   SLICE              2/3432         <1% used
+   SLICE            267/3432          7% used
 
    GSR                1/1           100% used
    OSC                1/1           100% used
+   JTAG               1/1           100% used
+   EBR                3/26           11% used
+   PLL                1/2            50% used
    PCNTR              1/1           100% used
+   EFB                1/1           100% used
 
 
-Number of Signals: 9
-Number of Connections: 19
+INFO: Design contains EBR with ASYNC Reset Mode that has a limitation: The use of the EBR block asynchronous reset requires that certain timing be met between the clock and the reset within the memory block. See the device specific data sheet for additional details.
+Number of Signals: 997
+Number of Connections: 2867
+WARNING - par: The SN pin is not available for use as a general purpose I/O pin when the SLAVE_SPI_PORT attribute is enabled.  The SN pin should be tied high with an external pull-up if you are not using the Slave SPI port for configuration.
 
 Pin Constraint Summary:
-   12 out of 12 pins locked (100% locked).
+   15 out of 21 pins locked (71% locked).
 
-No signal is selected as primary clock.
+The following 3 signals are selected to use the primary clock routing resources:
+    clock_84_0000_c (driver: pll_inst/PLLInst_0, clk load #: 94)
+    clock_00_0192_0 (driver: pll_inst/PLLInst_0, clk load #: 17)
+    jtaghub16_jtck (driver: xo2chub/genblk7.jtagf_u, clk load #: 147)
 
 
-No signal is selected as secondary clock.
+The following 8 signals are selected to use the secondary clock routing resources:
+    jtaghub16_jrstn (driver: xo2chub/genblk7.jtagf_u, clk load #: 0, sr load #: 143, ce load #: 0)
+    top_reveal_coretop_instance/top_la0_inst_0/reset_rvl_n (driver: SLICE_361, clk load #: 0, sr load #: 79, ce load #: 0)
+    jtaghub16_ip_enable0 (driver: SLICE_275, clk load #: 0, sr load #: 0, ce load #: 28)
+    top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/N_78_i (driver: SLICE_362, clk load #: 0, sr load #: 0, ce load #: 21)
+    top_reveal_coretop_instance/top_la0_inst_0/tm_u/trace_dout_1_sqmuxa_i (driver: top_reveal_coretop_instance/top_la0_inst_0/tm_u/SLICE_319, clk load #: 0, sr load #: 0, ce load #: 16)
+    top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jce2_d1_RNIR5MS (driver: top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/SLICE_69, clk load #: 0, sr load #: 0, ce load #: 10)
+    top_reveal_coretop_instance/top_la0_inst_0/tm_u/sample_en_d (driver: top_reveal_coretop_instance/top_la0_inst_0/tm_u/SLICE_150, clk load #: 0, sr load #: 0, ce load #: 10)
+    xo2chub/er1_shift_reg8 (driver: SLICE_264, clk load #: 0, sr load #: 0, ce load #: 10)
 
-Signal switch0_c is selected as Global Set/Reset.
+Signal reset is selected as Global Set/Reset.
+.
 Starting Placer Phase 0.
-
-Finished Placer Phase 0.  REAL time: 0 secs 
+...........
+Finished Placer Phase 0.  REAL time: 2 secs 
 
 Starting Placer Phase 1.
 ....................
-Placer score = 11512.
-Finished Placer Phase 1.  REAL time: 2 secs 
+Placer score = 181012.
+Finished Placer Phase 1.  REAL time: 9 secs 
 
 Starting Placer Phase 2.
 .
-Placer score =  11494
-Finished Placer Phase 2.  REAL time: 2 secs 
+Placer score =  180752
+Finished Placer Phase 2.  REAL time: 9 secs 
 
 
 ------------------ Clock Report ------------------
 
 Global Clock Resources:
   CLK_PIN    : 0 out of 8 (0%)
-  PLL        : 0 out of 2 (0%)
+  PLL        : 1 out of 2 (50%)
   DCM        : 0 out of 2 (0%)
   DCC        : 0 out of 8 (0%)
 
 Quadrants All (TL, TR, BL, BR) - Global Clocks:
+  PRIMARY "clock_84_0000_c" from CLKOP on comp "pll_inst/PLLInst_0" on PLL site "LPLL", clk load = 94
+  PRIMARY "clock_00_0192_0" from CLKOS on comp "pll_inst/PLLInst_0" on PLL site "LPLL", clk load = 17
+  PRIMARY "jtaghub16_jtck" from JTCK on comp "xo2chub/genblk7.jtagf_u" on site "JTAG", clk load = 147
+  SECONDARY "jtaghub16_jrstn" from JRSTN on comp "xo2chub/genblk7.jtagf_u" on site "JTAG", clk load = 0, ce load = 0, sr load = 143
+  SECONDARY "top_reveal_coretop_instance/top_la0_inst_0/reset_rvl_n" from F1 on comp "SLICE_361" on site "R14C20C", clk load = 0, ce load = 0, sr load = 79
+  SECONDARY "jtaghub16_ip_enable0" from Q0 on comp "SLICE_275" on site "R14C18C", clk load = 0, ce load = 28, sr load = 0
+  SECONDARY "top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/N_78_i" from F0 on comp "SLICE_362" on site "R14C18A", clk load = 0, ce load = 21, sr load = 0
+  SECONDARY "top_reveal_coretop_instance/top_la0_inst_0/tm_u/trace_dout_1_sqmuxa_i" from F0 on comp "top_reveal_coretop_instance/top_la0_inst_0/tm_u/SLICE_319" on site "R14C18D", clk load = 0, ce load = 16, sr load = 0
+  SECONDARY "top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jce2_d1_RNIR5MS" from F1 on comp "top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/SLICE_69" on site "R14C18B", clk load = 0, ce load = 10, sr load = 0
+  SECONDARY "top_reveal_coretop_instance/top_la0_inst_0/tm_u/sample_en_d" from Q0 on comp "top_reveal_coretop_instance/top_la0_inst_0/tm_u/SLICE_150" on site "R11C40C", clk load = 0, ce load = 10, sr load = 0
+  SECONDARY "xo2chub/er1_shift_reg8" from F0 on comp "SLICE_264" on site "R14C20B", clk load = 0, ce load = 10, sr load = 0
 
-  PRIMARY  : 0 out of 8 (0%)
-  SECONDARY: 0 out of 8 (0%)
+  PRIMARY  : 3 out of 8 (37%)
+  SECONDARY: 8 out of 8 (100%)
 
 Edge Clocks:
   No edge clock selected.
@@ -107,37 +137,37 @@ Edge Clocks:
 
 
 I/O Usage Summary (final):
-   12 + 4(JTAG) out of 336 (4.8%) PIO sites used.
-   12 + 4(JTAG) out of 115 (13.9%) bonded PIO sites used.
-   Number of PIO comps: 12; differential: 0.
+   21 + 4(JTAG) out of 336 (7.4%) PIO sites used.
+   21 + 4(JTAG) out of 115 (21.7%) bonded PIO sites used.
+   Number of PIO comps: 21; differential: 0.
    Number of Vref pins used: 0.
 
 I/O Bank Usage Summary:
 +----------+---------------+------------+-----------+
 | I/O Bank | Usage         | Bank Vccio | Bank Vref |
 +----------+---------------+------------+-----------+
-| 0        | 0 / 28 (  0%) | 3.3V       | -         |
+| 0        | 3 / 28 ( 10%) | 3.3V       | -         |
 | 1        | 8 / 29 ( 27%) | 3.3V       | -         |
-| 2        | 4 / 29 ( 13%) | 3.3V       | -         |
-| 3        | 0 / 9 (  0%)  | 3.3V       | -         |
-| 4        | 0 / 10 (  0%) | -          | -         |
-| 5        | 0 / 10 (  0%) | -          | -         |
+| 2        | 6 / 29 ( 20%) | 3.3V       | -         |
+| 3        | 2 / 9 ( 22%)  | 3.3V       | -         |
+| 4        | 1 / 10 ( 10%) | 3.3V       | -         |
+| 5        | 1 / 10 ( 10%) | 3.3V       | -         |
 +----------+---------------+------------+-----------+
 
-Total placer CPU time: 1 secs 
+Total placer CPU time: 7 secs 
 
 Dumping design to file DAISI_impl1.dir/5_1.ncd.
 
-0 connections routed; 19 unrouted.
+0 connections routed; 2867 unrouted.
 Starting router resource preassignment
 
 WARNING - par: The following clock signals will be routed by using generic routing resource and may suffer from excessive delay and/or skew.
    Signal=osc_clk_c loads=2 clock_loads=1
    Signal=pcm1/GND loads=1 clock_loads=1
 
-Completed router resource preassignment. Real time: 3 secs 
+Completed router resource preassignment. Real time: 11 secs 
 
-Start NBR router at Wed Jun 14 20:26:14 PDT 2017
+Start NBR router at Wed Jun 28 23:11:47 PDT 2017
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -152,29 +182,53 @@ Note: NBR uses a different method to calculate timing slacks. The
       your design.                                               
 *****************************************************************
 
-Start NBR special constraint process at Wed Jun 14 20:26:14 PDT 2017
+Start NBR special constraint process at Wed Jun 28 23:11:47 PDT 2017
 
-Start NBR section for initial routing at Wed Jun 14 20:26:14 PDT 2017
+Start NBR section for initial routing at Wed Jun 28 23:11:47 PDT 2017
+Level 1, iteration 1
+3(0.00%) conflicts; 2007(70.00%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 2.824ns/0.000ns; real time: 12 secs 
+Level 2, iteration 1
+2(0.00%) conflicts; 2000(69.76%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 2.579ns/0.000ns; real time: 12 secs 
+Level 3, iteration 1
+0(0.00%) conflict; 1917(66.86%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 2.579ns/0.000ns; real time: 12 secs 
 Level 4, iteration 1
-0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 478.993ns/0.000ns; real time: 4 secs 
+87(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 2.579ns/0.000ns; real time: 12 secs 
 
 Info: Initial congestion level at 75% usage is 0
 Info: Initial congestion area  at 75% usage is 0 (0.00%)
 
-Start NBR section for normal routing at Wed Jun 14 20:26:15 PDT 2017
+Start NBR section for normal routing at Wed Jun 28 23:11:48 PDT 2017
+Level 1, iteration 1
+0(0.00%) conflict; 148(5.16%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 2.406ns/0.000ns; real time: 12 secs 
+Level 4, iteration 1
+47(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 2.406ns/0.000ns; real time: 12 secs 
+Level 4, iteration 2
+23(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 2.406ns/0.000ns; real time: 13 secs 
+Level 4, iteration 3
+6(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 2.406ns/0.000ns; real time: 13 secs 
+Level 4, iteration 4
+2(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 2.406ns/0.000ns; real time: 13 secs 
+Level 4, iteration 5
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 2.406ns/0.000ns; real time: 13 secs 
+
+Start NBR section for setup/hold timing optimization with effort level 3 at Wed Jun 28 23:11:49 PDT 2017
+
+Start NBR section for re-routing at Wed Jun 28 23:11:49 PDT 2017
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 478.993ns/0.000ns; real time: 4 secs 
+Estimated worst slack/total negative slack<setup>: 2.406ns/0.000ns; real time: 13 secs 
 
-Start NBR section for setup/hold timing optimization with effort level 3 at Wed Jun 14 20:26:15 PDT 2017
-
-Start NBR section for re-routing at Wed Jun 14 20:26:15 PDT 2017
-Level 4, iteration 1
-0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 478.993ns/0.000ns; real time: 4 secs 
-
-Start NBR section for post-routing at Wed Jun 14 20:26:15 PDT 2017
+Start NBR section for post-routing at Wed Jun 28 23:11:49 PDT 2017
 
 End NBR router with 0 unrouted connection
 
@@ -182,7 +236,7 @@ NBR Summary
 -----------
   Number of unrouted connections : 0 (0.00%)
   Number of connections with timing violations : 0 (0.00%)
-  Estimated worst slack<setup> : 478.993ns
+  Estimated worst slack<setup> : 2.406ns
   Timing score<setup> : 0
 -----------
 Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
@@ -193,10 +247,10 @@ WARNING - par: The following clock signals will be routed by using generic routi
    Signal=osc_clk_c loads=2 clock_loads=1
    Signal=pcm1/GND loads=1 clock_loads=1
 
-Total CPU time 3 secs 
-Total REAL time: 4 secs 
+Total CPU time 11 secs 
+Total REAL time: 14 secs 
 Completely routed.
-End of route.  19 routed (100.00%); 0 unrouted.
+End of route.  2867 routed (100.00%); 0 unrouted.
 
 Hold time timing score: 0, hold timing errors: 0
 
@@ -210,14 +264,14 @@ All signals are completely routed.
 
 PAR_SUMMARY::Run status = completed
 PAR_SUMMARY::Number of unrouted conns = 0
-PAR_SUMMARY::Worst  slack<setup/<ns>> = 478.993
+PAR_SUMMARY::Worst  slack<setup/<ns>> = 2.406
 PAR_SUMMARY::Timing score<setup/<ns>> = 0.000
-PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.379
+PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.326
 PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
 PAR_SUMMARY::Number of errors = 0
 
-Total CPU  time to completion: 3 secs 
-Total REAL time to completion: 4 secs 
+Total CPU  time to completion: 11 secs 
+Total REAL time to completion: 14 secs 
 
 par done!
 

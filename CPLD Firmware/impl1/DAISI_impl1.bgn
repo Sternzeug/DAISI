@@ -1,4 +1,4 @@
-BITGEN: Bitstream Generator Diamond (64-bit) 3.9.0.99.2
+BITGEN: Bitstream Generator Diamond (64-bit) 3.9.1.119
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
@@ -19,6 +19,7 @@ Package Status:                     Final          Version 1.39.
 Performance Hardware Data Status:   Final          Version 34.4.
 
 Running DRC.
+INFO: Design contains EBR with ASYNC Reset Mode that has a limitation: The use of the EBR block asynchronous reset requires that certain timing be met between the clock and the reset within the memory block. See the device specific data sheet for additional details.
 WARNING - chipcheck: The STDBY port on the Oscillator OSCH_inst is conntected to the Power Controller. The I2C, SPI, Wishbone and SED features will not be available for use when the Oscillator is disabled.
 DRC detected 0 errors and 1 warnings.
 Reading Preference File from DAISI_impl1.prf.
@@ -39,9 +40,9 @@ Preference Summary:
 +---------------------------------+---------------------------------+
 |                       SDM_PORT  |                      DISABLE**  |
 +---------------------------------+---------------------------------+
-|                 SLAVE_SPI_PORT  |                      DISABLE**  |
+|                 SLAVE_SPI_PORT  |                         ENABLE  |
 +---------------------------------+---------------------------------+
-|                MASTER_SPI_PORT  |                      DISABLE**  |
+|                MASTER_SPI_PORT  |                       EFB_USER  |
 +---------------------------------+---------------------------------+
 |                       I2C_PORT  |                      DISABLE**  |
 +---------------------------------+---------------------------------+

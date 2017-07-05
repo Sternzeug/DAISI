@@ -1,76 +1,126 @@
-#OPTIONS:"|-layerid|0|-orig_srs|/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/synwork/DAISI_impl1_comp.srs|-top|top|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-sdff_counter|-divnmod|-nostructver|-I|/media/sf_Downloads/Code/DAISI/CPLD Firmware|-I|/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/|-I|/usr/local/diamond/3.9_x64/synpbase/lib|-v2001|-devicelib|/usr/local/diamond/3.9_x64/synpbase/lib/lucent/machxo2.v|-devicelib|/usr/local/diamond/3.9_x64/synpbase/lib/lucent/pmi_def.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-D_MULTIPLE_FILE_COMPILATION_UNIT_|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
-#CUR:"/usr/local/diamond/3.9_x64/synpbase/linux_a_64/c_ver":1480958477
-#CUR:"/usr/local/diamond/3.9_x64/synpbase/lib/lucent/machxo2.v":1480957863
-#CUR:"/usr/local/diamond/3.9_x64/synpbase/lib/lucent/pmi_def.v":1480957863
-#CUR:"/usr/local/diamond/3.9_x64/synpbase/lib/vlog/hypermods.v":1480957482
-#CUR:"/usr/local/diamond/3.9_x64/synpbase/lib/vlog/umr_capim.v":1480957482
-#CUR:"/usr/local/diamond/3.9_x64/synpbase/lib/vlog/scemi_objects.v":1480957482
-#CUR:"/usr/local/diamond/3.9_x64/synpbase/lib/vlog/scemi_pipes.svh":1480957482
-#CUR:"/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v":1497492494
-#CUR:"/media/sf_Downloads/Code/DAISI/CPLD Firmware/pwr_cntrllr.v":1497410618
-#CUR:"/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_interface.v":1497420232
-#CUR:"/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v":1497420237
-#CUR:"/media/sf_Downloads/Code/DAISI/CPLD Firmware/data_buffer.v":1497491112
-#CUR:"/media/sf_Downloads/Code/DAISI/CPLD Firmware/data_formatter.v":1497491219
-#CUR:"/media/sf_Downloads/Code/DAISI/CPLD Firmware/storage_interface.v":1497491320
-#CUR:"/media/sf_Downloads/Code/DAISI/CPLD Firmware/rs232_decoder_encoder.v":1497491547
-#CUR:"/media/sf_Downloads/Code/DAISI/CPLD Firmware/rs232_command_processor.v":1497491650
-#CUR:"/media/sf_Downloads/Code/DAISI/CPLD Firmware/pseudo_adc.v":1497491739
-#CUR:"/media/sf_Downloads/Code/DAISI/CPLD Firmware/regulator_control.v":1497491833
-#CUR:"/media/sf_Downloads/Code/DAISI/CPLD Firmware/sensor_interface.v":1497491902
-#CUR:"/media/sf_Downloads/Code/DAISI/CPLD Firmware/thermal_controller.v":1497492130
-0			"/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v" verilog
-1			"/media/sf_Downloads/Code/DAISI/CPLD Firmware/pwr_cntrllr.v" verilog
-2			"/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_interface.v" verilog
-3			"/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v" verilog
-4			"/media/sf_Downloads/Code/DAISI/CPLD Firmware/data_buffer.v" verilog
-5			"/media/sf_Downloads/Code/DAISI/CPLD Firmware/data_formatter.v" verilog
-6			"/media/sf_Downloads/Code/DAISI/CPLD Firmware/storage_interface.v" verilog
-7			"/media/sf_Downloads/Code/DAISI/CPLD Firmware/rs232_decoder_encoder.v" verilog
-8			"/media/sf_Downloads/Code/DAISI/CPLD Firmware/rs232_command_processor.v" verilog
-9			"/media/sf_Downloads/Code/DAISI/CPLD Firmware/pseudo_adc.v" verilog
-10			"/media/sf_Downloads/Code/DAISI/CPLD Firmware/regulator_control.v" verilog
-11			"/media/sf_Downloads/Code/DAISI/CPLD Firmware/sensor_interface.v" verilog
-12			"/media/sf_Downloads/Code/DAISI/CPLD Firmware/thermal_controller.v" verilog
+#OPTIONS:"|-layerid|0|-orig_srs|/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/synwork/DAISI_impl1_comp.srs|-top|top|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-sdff_counter|-divnmod|-nostructver|-I|/media/sf_Downloads/Code/DAISI/CPLD Firmware|-I|/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/|-I|/usr/local/diamond/3.9_x64/synpbase/lib|-v2001|-devicelib|/usr/local/diamond/3.9_x64/synpbase/lib/lucent/machxo2.v|-devicelib|/usr/local/diamond/3.9_x64/synpbase/lib/lucent/pmi_def.v|-encrypt|-pro|-dup|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-D_MULTIPLE_FILE_COMPILATION_UNIT_|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"/usr/local/diamond/3.9_x64/synpbase/linux_a_64/c_ver":1493194290
+#CUR:"/usr/local/diamond/3.9_x64/synpbase/lib/lucent/machxo2.v":1493194279
+#CUR:"/usr/local/diamond/3.9_x64/synpbase/lib/lucent/pmi_def.v":1493194279
+#CUR:"/usr/local/diamond/3.9_x64/synpbase/lib/vlog/hypermods.v":1493194286
+#CUR:"/usr/local/diamond/3.9_x64/synpbase/lib/vlog/umr_capim.v":1493194286
+#CUR:"/usr/local/diamond/3.9_x64/synpbase/lib/vlog/scemi_objects.v":1493194286
+#CUR:"/usr/local/diamond/3.9_x64/synpbase/lib/vlog/scemi_pipes.svh":1493194286
+#CUR:"/usr/local/diamond/3.9_x64/cae_library/synthesis/verilog/pmi_def.v":1485406878
+#CUR:"/usr/local/diamond/3.9_x64/module/reveal/src/ertl/ertl.v":1433964971
+#CUR:"/usr/local/diamond/3.9_x64/module/reveal/src/rvl_j2w_module/rvl_j2w_module.v":1385424153
+#CUR:"/usr/local/diamond/3.9_x64/module/reveal/src/rvl_j2w_module/wb2sci.v":1384215546
+#CUR:"/usr/local/diamond/3.9_x64/module/reveal/src/ertl/JTAG_SOFT.v":1459373099
+#CUR:"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_la0_trig_gen.v":1498716680
+#CUR:"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_la0_gen.v":1498716680
+#CUR:"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":1498716681
+0			"/usr/local/diamond/3.9_x64/cae_library/synthesis/verilog/pmi_def.v" verilog
+1			"/usr/local/diamond/3.9_x64/module/reveal/src/ertl/ertl.v" verilog
+2			"/usr/local/diamond/3.9_x64/module/reveal/src/rvl_j2w_module/rvl_j2w_module.v" verilog
+3			"/usr/local/diamond/3.9_x64/module/reveal/src/rvl_j2w_module/wb2sci.v" verilog
+4			"/usr/local/diamond/3.9_x64/module/reveal/src/ertl/JTAG_SOFT.v" verilog
+5			"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_la0_trig_gen.v" verilog
+6			"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_la0_gen.v" verilog
+7			"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v" verilog
 #Dependency Lists(Uses List)
-0 12 11 10 9 8 7 6 5 4 3 2 1
-1 -1
+0 -1
+1 0
 2 -1
 3 -1
 4 -1
-5 -1
-6 -1
-7 -1
-8 -1
-9 -1
-10 -1
-11 -1
-12 -1
+5 1
+6 5 1
+7 0 6
 #Dependency Lists(Users Of)
-0 -1
-1 0
-2 0
-3 0
-4 0
-5 0
-6 0
-7 0
-8 0
-9 0
-10 0
-11 0
-12 0
+0 7 1
+1 6 5
+2 -1
+3 -1
+4 -1
+5 6
+6 7
+7 -1
 #Design Unit to File Association
-module work top 0
-module work thermal_controller 12
-module work sensor_interface 11
-module work regulator_control 10
-module work pseudo_adc 9
-module work rs232_command_processor 8
+module work efb 7
+module work pll 7
+module work thermal_controller 7
+module work sensor_interface 7
+module work regulator_control 7
+module work pseudo_adc 7
+module work rs232_command_processor 7
 module work rs232_decoder_encoder 7
-module work storage_interface 6
-module work data_formatter 5
-module work data_buffer 4
-module work spi_controller 3
-module work spi_interface 2
-module work pwr_cntrllr 1
+module work storage_interface 7
+module work data_formatter 7
+module work data_buffer 7
+module work spi_controller 7
+module work pwr_cntrllr 7
+module work top 7
+module work thermal_controller_uniq_1 7
+module work sensor_interface_uniq_1 7
+module work regulator_control_uniq_1 7
+module work pseudo_adc_uniq_1 7
+module work rs232_command_processor_uniq_1 7
+module work rs232_decoder_encoder_uniq_1 7
+module work storage_interface_uniq_1 7
+module work data_buffer_uniq_2 7
+module work data_formatter_uniq_1 7
+module work data_buffer_uniq_1 7
+module work spi_controller_uniq_1 7
+module work efb_uniq_1 7
+module work pwr_cntrllr_uniq_1 7
+module work pll_uniq_1 7
+module work reveal_coretop 7
+module work top_la0 6
+module work top_la0_trig 5
+module work jtag_register_soft 4
+module work jtag_logic_soft 4
+module work jtag_inst_dec_soft 4
+module work jtag_tap_cntl_soft 4
+module work JTAG_SOFT 4
+module work jtag_cntl_soft 4
+module work wb2sci 3
+module work jtaghub16 2
+module work idata 2
+module work wb_control 2
+module work jtaghub_if 2
+module work rvl_j2w 2
+module work rvl_jtag2wb 2
+module work rvl_tm 1
+module work rvl_decode 1
+module work rvl_te 1
+module work rvl_serial_tu 1
+module work rvl_tu 1
+module work rvl_jtag_int 1
+module work rvl_tcnt 1
+module work jtagconn16 0
+module work pmi_pll_fp 0
+module work pmi_pll 0
+module work pmi_dsp_preadd_slice 0
+module work pmi_dsp_multaddsubsum 0
+module work pmi_dsp_casmultaddsub 0
+module work pmi_dsp_multaddsub 0
+module work pmi_dsp_mult 0
+module work pmi_dsp_mac 0
+module work pmi_fifo 0
+module work pmi_fifo_dc 0
+module work pmi_rom 0
+module work pmi_ram_dq_be 0
+module work pmi_ram_dq 0
+module work pmi_ram_dp_true_be 0
+module work pmi_ram_dp_true 0
+module work pmi_ram_dp_be 0
+module work pmi_ram_dp 0
+module work pmi_addsub 0
+module work pmi_counter 0
+module work pmi_sub 0
+module work pmi_add 0
+module work pmi_complex_mult 0
+module work pmi_multaddsubsum 0
+module work pmi_multaddsub 0
+module work pmi_mac 0
+module work pmi_mult 0
+module work pmi_constant_mult 0
+module work pmi_distributed_shift_reg 0
+module work pmi_distributed_spram 0
+module work pmi_distributed_rom 0
+module work pmi_distributed_dpram 0

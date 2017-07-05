@@ -3,7 +3,6 @@ Starting: parse design source files
 (VERI-1482) Analyzing Verilog file /usr/local/diamond/3.9_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v
 (VERI-1482) Analyzing Verilog file /media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v
 (VERI-1482) Analyzing Verilog file /media/sf_Downloads/Code/DAISI/CPLD Firmware/pwr_cntrllr.v
-(VERI-1482) Analyzing Verilog file /media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_interface.v
 (VERI-1482) Analyzing Verilog file /media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v
 (VERI-1482) Analyzing Verilog file /media/sf_Downloads/Code/DAISI/CPLD Firmware/data_buffer.v
 (VERI-1482) Analyzing Verilog file /media/sf_Downloads/Code/DAISI/CPLD Firmware/data_formatter.v
@@ -14,24 +13,35 @@ Starting: parse design source files
 (VERI-1482) Analyzing Verilog file /media/sf_Downloads/Code/DAISI/CPLD Firmware/regulator_control.v
 (VERI-1482) Analyzing Verilog file /media/sf_Downloads/Code/DAISI/CPLD Firmware/sensor_interface.v
 (VERI-1482) Analyzing Verilog file /media/sf_Downloads/Code/DAISI/CPLD Firmware/thermal_controller.v
+(VERI-1482) Analyzing Verilog file /media/sf_Downloads/Code/DAISI/CPLD Firmware/pll.v
+(VERI-1482) Analyzing Verilog file /media/sf_Downloads/Code/DAISI/CPLD Firmware/efb.v
 INFO - /media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v(1,8-1,11) (VERI-1018) compiling module top
-INFO - /media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v(1,1-116,10) (VERI-9000) elaborating module 'top'
+INFO - /media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v(1,1-170,10) (VERI-9000) elaborating module 'top'
 INFO - /usr/local/diamond/3.9_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1793,1-1798,10) (VERI-9000) elaborating module 'OSCH_uniq_1'
+INFO - /media/sf_Downloads/Code/DAISI/CPLD Firmware/pll.v(8,1-98,10) (VERI-9000) elaborating module 'pll_uniq_1'
 INFO - /media/sf_Downloads/Code/DAISI/CPLD Firmware/pwr_cntrllr.v(8,1-33,10) (VERI-9000) elaborating module 'pwr_cntrllr_uniq_1'
-INFO - /media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_interface.v(1,1-22,10) (VERI-9000) elaborating module 'spi_interface_uniq_1'
-INFO - /media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v(1,1-22,10) (VERI-9000) elaborating module 'spi_controller_uniq_1'
+INFO - /media/sf_Downloads/Code/DAISI/CPLD Firmware/efb.v(8,1-134,10) (VERI-9000) elaborating module 'efb_uniq_1'
+INFO - /media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v(1,1-114,10) (VERI-9000) elaborating module 'spi_controller_uniq_1'
 INFO - /media/sf_Downloads/Code/DAISI/CPLD Firmware/data_buffer.v(1,1-22,10) (VERI-9000) elaborating module 'data_buffer_uniq_1'
 INFO - /media/sf_Downloads/Code/DAISI/CPLD Firmware/data_buffer.v(1,1-22,10) (VERI-9000) elaborating module 'data_buffer_uniq_2'
 INFO - /media/sf_Downloads/Code/DAISI/CPLD Firmware/data_formatter.v(1,1-22,10) (VERI-9000) elaborating module 'data_formatter_uniq_1'
 INFO - /media/sf_Downloads/Code/DAISI/CPLD Firmware/storage_interface.v(1,1-22,10) (VERI-9000) elaborating module 'storage_interface_uniq_1'
-INFO - /media/sf_Downloads/Code/DAISI/CPLD Firmware/rs232_decoder_encoder.v(1,1-22,10) (VERI-9000) elaborating module 'rs232_decoder_encoder_uniq_1'
+INFO - /media/sf_Downloads/Code/DAISI/CPLD Firmware/rs232_decoder_encoder.v(1,1-37,10) (VERI-9000) elaborating module 'rs232_decoder_encoder_uniq_1'
 INFO - /media/sf_Downloads/Code/DAISI/CPLD Firmware/rs232_command_processor.v(1,1-22,10) (VERI-9000) elaborating module 'rs232_command_processor_uniq_1'
 INFO - /media/sf_Downloads/Code/DAISI/CPLD Firmware/pseudo_adc.v(1,1-22,10) (VERI-9000) elaborating module 'pseudo_adc_uniq_1'
 INFO - /media/sf_Downloads/Code/DAISI/CPLD Firmware/regulator_control.v(1,1-22,10) (VERI-9000) elaborating module 'regulator_control_uniq_1'
 INFO - /media/sf_Downloads/Code/DAISI/CPLD Firmware/sensor_interface.v(1,1-22,10) (VERI-9000) elaborating module 'sensor_interface_uniq_1'
 INFO - /media/sf_Downloads/Code/DAISI/CPLD Firmware/thermal_controller.v(1,1-22,10) (VERI-9000) elaborating module 'thermal_controller_uniq_1'
 INFO - /usr/local/diamond/3.9_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1124,1-1126,10) (VERI-9000) elaborating module 'VLO_uniq_1'
+INFO - /usr/local/diamond/3.9_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1124,1-1126,10) (VERI-9000) elaborating module 'VLO_uniq_2'
+INFO - /usr/local/diamond/3.9_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1124,1-1126,10) (VERI-9000) elaborating module 'VLO_uniq_3'
+INFO - /usr/local/diamond/3.9_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1730,1-1786,10) (VERI-9000) elaborating module 'EHXPLLJ_uniq_1'
 INFO - /usr/local/diamond/3.9_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1694,1-1703,10) (VERI-9000) elaborating module 'PCNTR_uniq_1'
+INFO - /usr/local/diamond/3.9_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1120,1-1122,10) (VERI-9000) elaborating module 'VHI_uniq_1'
+INFO - /usr/local/diamond/3.9_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(82,1-87,10) (VERI-9000) elaborating module 'BB_uniq_1'
+INFO - /usr/local/diamond/3.9_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(82,1-87,10) (VERI-9000) elaborating module 'BB_uniq_2'
+INFO - /usr/local/diamond/3.9_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(82,1-87,10) (VERI-9000) elaborating module 'BB_uniq_3'
+INFO - /usr/local/diamond/3.9_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1800,1-1872,10) (VERI-9000) elaborating module 'EFB_uniq_1'
 Done: design load finished with (0) errors, and (0) warnings
 
 </PRE></BODY></HTML>

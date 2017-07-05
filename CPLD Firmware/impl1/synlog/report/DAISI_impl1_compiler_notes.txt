@@ -2,19 +2,42 @@
 @N|Running in 64-bit mode
 @N: CG364 :"/usr/local/diamond/3.9_x64/synpbase/lib/lucent/machxo2.v":1793:7:1793:10|Synthesizing module OSCH in library work.
 @N: CG364 :"/usr/local/diamond/3.9_x64/synpbase/lib/lucent/machxo2.v":1124:7:1124:9|Synthesizing module VLO in library work.
+@N: CG364 :"/usr/local/diamond/3.9_x64/synpbase/lib/lucent/machxo2.v":1730:7:1730:13|Synthesizing module EHXPLLJ in library work.
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":689:7:689:16|Synthesizing module pll_uniq_1 in library work.
 @N: CG364 :"/usr/local/diamond/3.9_x64/synpbase/lib/lucent/machxo2.v":1694:7:1694:11|Synthesizing module PCNTR in library work.
-@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/pwr_cntrllr.v":8:7:8:17|Synthesizing module pwr_cntrllr in library work.
-@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_interface.v":1:7:1:19|Synthesizing module spi_interface in library work.
-@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v":1:7:1:20|Synthesizing module spi_controller in library work.
-@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/data_buffer.v":1:7:1:17|Synthesizing module data_buffer in library work.
-@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/data_formatter.v":1:7:1:20|Synthesizing module data_formatter in library work.
-@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/storage_interface.v":1:7:1:23|Synthesizing module storage_interface in library work.
-@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/rs232_decoder_encoder.v":1:7:1:27|Synthesizing module rs232_decoder_encoder in library work.
-@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/rs232_command_processor.v":1:7:1:29|Synthesizing module rs232_command_processor in library work.
-@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/pseudo_adc.v":1:7:1:16|Synthesizing module pseudo_adc in library work.
-@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/regulator_control.v":1:7:1:23|Synthesizing module regulator_control in library work.
-@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/sensor_interface.v":1:7:1:22|Synthesizing module sensor_interface in library work.
-@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/thermal_controller.v":1:7:1:24|Synthesizing module thermal_controller in library work.
-@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v":1:7:1:9|Synthesizing module top in library work.
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":767:7:767:24|Synthesizing module pwr_cntrllr_uniq_1 in library work.
+@N: CG364 :"/usr/local/diamond/3.9_x64/synpbase/lib/lucent/machxo2.v":1120:7:1120:9|Synthesizing module VHI in library work.
+@N: CG364 :"/usr/local/diamond/3.9_x64/synpbase/lib/lucent/machxo2.v":82:7:82:8|Synthesizing module BB in library work.
+@N: CG364 :"/usr/local/diamond/3.9_x64/synpbase/lib/lucent/machxo2.v":1800:7:1800:9|Synthesizing module EFB in library work.
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":793:7:793:16|Synthesizing module efb_uniq_1 in library work.
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":890:7:890:27|Synthesizing module spi_controller_uniq_1 in library work.
+@N: CG179 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":940:39:940:44|Removing redundant assignment.
+@N: CG179 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":941:39:941:44|Removing redundant assignment.
+@N: CG179 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":942:38:942:42|Removing redundant assignment.
+@N: CG179 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":943:39:943:44|Removing redundant assignment.
+@N: CG179 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":944:41:944:48|Removing redundant assignment.
+@N: CG179 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":973:39:973:44|Removing redundant assignment.
+@N: CG179 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":974:39:974:44|Removing redundant assignment.
+@N: CG179 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":975:38:975:42|Removing redundant assignment.
+@N: CG179 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":976:39:976:44|Removing redundant assignment.
+@N: CG179 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":977:41:977:48|Removing redundant assignment.
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":1008:7:1008:24|Synthesizing module data_buffer_uniq_1 in library work.
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":1052:7:1052:27|Synthesizing module data_formatter_uniq_1 in library work.
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":1030:7:1030:24|Synthesizing module data_buffer_uniq_2 in library work.
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":1074:7:1074:30|Synthesizing module storage_interface_uniq_1 in library work.
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":1096:7:1096:34|Synthesizing module rs232_decoder_encoder_uniq_1 in library work.
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":1134:7:1134:36|Synthesizing module rs232_command_processor_uniq_1 in library work.
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":1156:7:1156:23|Synthesizing module pseudo_adc_uniq_1 in library work.
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":1178:7:1178:30|Synthesizing module regulator_control_uniq_1 in library work.
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":1200:7:1200:29|Synthesizing module sensor_interface_uniq_1 in library work.
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":1222:7:1222:31|Synthesizing module thermal_controller_uniq_1 in library work.
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_la0_trig_gen.v":11:7:11:18|Synthesizing module top_la0_trig in library work.
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_la0_gen.v":12:7:12:13|Synthesizing module top_la0 in library work.
+@N: CG364 :"/usr/local/diamond/3.9_x64/cae_library/synthesis/verilog/pmi_def.v":1162:7:1162:16|Synthesizing module jtagconn16 in library work.
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":2:7:2:20|Synthesizing module reveal_coretop in library work.
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":70:7:70:9|Synthesizing module top in library work.
+@N: CL159 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_la0_gen.v":51:7:51:13|Input reset_n is unused.
+@N: CL159 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_la0_gen.v":62:7:62:16|Input trigger_en is unused.
+@N: CL159 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":898:16:898:23|Input wb_dat_o is unused.
 @N|Running in 64-bit mode
 

@@ -1,8 +1,8 @@
-# Wed Jun 14 20:26:08 2017
+# Wed Jun 28 23:11:24 2017
 
-Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1612R, Built Dec  5 2016 09:37:36
-Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
-Product Version L-2016.09L
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1682R, Built Mar 10 2017 09:26:52
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L-1
 
 Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 99MB)
 
@@ -12,53 +12,63 @@ Printing clock  summary report in "/media/sf_Downloads/Code/DAISI/CPLD Firmware/
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
 
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 105MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 105MB)
 
 
-Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 113MB peak: 113MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 114MB)
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 113MB peak: 115MB)
 
-@W: BN132 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v":75:12:75:29|Removing user instance data_buffer_inst_2 because it is equivalent to instance data_buffer_inst_1. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":910:4:910:9|Removing sequential instance spi_controller_inst.wb_dat_i_1[7] because it is equivalent to instance spi_controller_inst.wb_dat_i_1[4]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":910:4:910:9|Removing sequential instance spi_controller_inst.wb_we because it is equivalent to instance spi_controller_inst.wb_dat_i_1[4]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":910:4:910:9|Removing sequential instance spi_controller_inst.wb_dat_i_1[4] because it is equivalent to instance spi_controller_inst.wb_dat_i_1[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":910:4:910:9|Removing sequential instance spi_controller_inst.wb_adr_1[6] because it is equivalent to instance spi_controller_inst.wb_adr_1[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":910:4:910:9|Removing sequential instance spi_controller_inst.wb_stb because it is equivalent to instance spi_controller_inst.wb_adr_1[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":910:4:910:9|Removing sequential instance spi_controller_inst.wb_cyc because it is equivalent to instance spi_controller_inst.wb_adr_1[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: MO111 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":1100:11:1100:12|Tristate driver tx (in view: work.rs232_decoder_encoder_uniq_1(verilog)) on net tx (in view: work.rs232_decoder_encoder_uniq_1(verilog)) has its enable tied to GND.
 ICG Latch Removal Summary:
 Number of ICG latches removed:	0
 Number of ICG latches not removed:	0
 syn_allowed_resources : blockrams=26  set on top level netlist top
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 143MB)
 
 
 
 Clock Summary
 *****************
 
-Start                          Requested     Requested     Clock        Clock                   Clock
-Clock                          Frequency     Period        Type         Group                   Load 
------------------------------------------------------------------------------------------------------
-System                         1.0 MHz       1000.000      system       system_clkgroup         0    
-top|osc_clk_inferred_clock     2.1 MHz       480.769       inferred     Inferred_clkgroup_0     6    
-=====================================================================================================
+Start                                     Requested     Requested     Clock                                              Clock                   Clock
+Clock                                     Frequency     Period        Type                                               Group                   Load 
+------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                    1.0 MHz       1000.000      system                                             system_clkgroup         0    
+pll_uniq_1|CLKOP_inferred_clock           1.0 MHz       1000.000      inferred                                           Inferred_clkgroup_2     152  
+pll_uniq_1|CLKOS_inferred_clock           1.0 MHz       1000.000      inferred                                           Inferred_clkgroup_0     1    
+reveal_coretop|jtck_inferred_clock[0]     1.0 MHz       1000.000      inferred                                           Inferred_clkgroup_1     216  
+top|clock_00_0096_derived_clock           1.0 MHz       1000.000      derived (from pll_uniq_1|CLKOS_inferred_clock)     Inferred_clkgroup_0     22   
+======================================================================================================================================================
 
-@W: MT529 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_interface.v":9:0:9:5|Found inferred clock top|osc_clk_inferred_clock which controls 6 sequential elements including spi_interface_inst.signal. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":110:4:110:9|Found inferred clock pll_uniq_1|CLKOS_inferred_clock which controls 1 sequential elements including clock_00_0096. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":910:4:910:9|Found inferred clock pll_uniq_1|CLKOP_inferred_clock which controls 152 sequential elements including spi_controller_inst.state[2:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
 
 Finished Pre Mapping Phase.
 
-Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 143MB)
 
 None
 None
 
-Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 143MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 54MB peak: 141MB)
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 57MB peak: 143MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Wed Jun 14 20:26:09 2017
+# Wed Jun 28 23:11:25 2017
 
 ###########################################################]

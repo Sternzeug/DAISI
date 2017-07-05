@@ -16,8 +16,8 @@ CoreRevision=1.2
 ModuleName=pwr_cntrllr
 SourceFormat=Verilog HDL
 ParameterFileVersion=1.0
-Date=06/14/2017
-Time=21:17:46
+Date=06/17/2017
+Time=18:26:17
 
 [Parameters]
 Verilog=1

@@ -9,9 +9,6 @@
         <Source name="pwr_cntrllr.ipx" type="IPX_Module" type_short="IPX">
             <Options/>
         </Source>
-        <Source name="spi_interface.v" type="Verilog" type_short="Verilog">
-            <Options/>
-        </Source>
         <Source name="spi_controller.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
@@ -42,10 +39,22 @@
         <Source name="thermal_controller.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
+        <Source name="pll.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
+        <Source name="efb.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
         <Source name="DAISI.lpf" type="Logic Preference" type_short="LPF">
             <Options/>
         </Source>
         <Source name="impl1/impl1.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
+        <Source name="reveal.rva" type="Reveal Analyzer Project File" type_short="RVA">
+            <Options/>
+        </Source>
+        <Source name="reveal.rvl" type="Reveal" type_short="Reveal">
             <Options/>
         </Source>
     </Implementation>

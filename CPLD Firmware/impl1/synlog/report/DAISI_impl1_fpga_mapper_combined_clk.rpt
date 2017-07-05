@@ -6,14 +6,16 @@
 #### START OF CLOCK OPTIMIZATION REPORT #####[
 
 0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
-1 gated/generated clock tree(s) driving 1 clock pin(s) of sequential element(s)
-0 instances converted, 1 sequential instance remains driven by gated/generated clocks
+3 gated/generated clock tree(s) driving 366 clock pin(s) of sequential element(s)
+0 instances converted, 366 sequential instances remain driven by gated/generated clocks
 
-====================================================================== Gated/Generated Clocks ======================================================================
-Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance                Explanation                                                  
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-@K:CKID0001       OSCH_inst           OSCH                   1          spi_controller_inst.signal     No gated clock conversion method for cell cell:LUCENT.FD1S3BX
-====================================================================================================================================================================
+============================================================================================================================================ Gated/Generated Clocks ============================================================================================================================================
+Clock Tree ID     Driving Element                                   Drive Element Type     Fanout     Sample Instance                                                             Explanation                                                                                                                   
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       top_reveal_coretop_instance.jtagconn16_inst_0     jtagconn16             201        top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.capture_dr_d4         Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+@K:CKID0002       pll_inst.PLLInst_0                                EHXPLLJ                142        top_reveal_coretop_instance.top_la0_inst_0.trig_u.te_0.te_precnt_val[0]     Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+@K:CKID0003       pll_inst.PLLInst_0                                EHXPLLJ                23         clock_00_0096                                                               No gated clock conversion method for cell cell:LUCENT.FD1S3DX                                                                 
+================================================================================================================================================================================================================================================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######]

@@ -1,11 +1,11 @@
 /usr/local/diamond/3.9_x64/synpbase/bin/m_gen_lattice  -prodtype  synplify_pro  -encrypt  -pro  -rundir  "/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1"   -part LCMXO2_7000HE  -package TG144C  -grade -4    -maxfan 1000 -pipe -forcenogsr -fixgatedclocks 1 -fixgeneratedclocks 1 -RWCheckOnRam 1 -use_rename_in_edif 1 -Write_declared_clocks_only 1 -summaryfile "/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/synlog/report/DAISI_impl1_fpga_mapper.xml"  -top_level_module  top  -flow mapping  -multisrs  -oedif  "/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/DAISI_impl1.edi"   -freq 1.000   "/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/synwork/DAISI_impl1_prem.srd"  -devicelib  /usr/local/diamond/3.9_x64/synpbase/lib/lucent/machxo2.v  -devicelib  /usr/local/diamond/3.9_x64/synpbase/lib/lucent/pmi_def.v  -ologparam  "/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/syntmp/DAISI_impl1.plg"  -osyn  "/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/DAISI_impl1.srm"  -prjdir  "/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/"  -prjname  proj_1  -log  "/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/synlog/DAISI_impl1_fpga_mapper.srr" 
-rc:1 success:1 runtime:1
-file:/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/DAISI_impl1.edi|io:o|time:1497497170|size:11089|exec:0
-file:/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/synwork/DAISI_impl1_prem.srd|io:i|time:1497497168|size:9397|exec:0
-file:/usr/local/diamond/3.9_x64/synpbase/lib/lucent/machxo2.v|io:i|time:1480957863|size:52418|exec:0
-file:/usr/local/diamond/3.9_x64/synpbase/lib/lucent/pmi_def.v|io:i|time:1480957863|size:39414|exec:0
+rc:1 success:1 runtime:4
+file:/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/DAISI_impl1.edi|io:o|time:1498716689|size:772770|exec:0
+file:/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/synwork/DAISI_impl1_prem.srd|io:i|time:1498716685|size:195104|exec:0
+file:/usr/local/diamond/3.9_x64/synpbase/lib/lucent/machxo2.v|io:i|time:1493194279|size:52418|exec:0
+file:/usr/local/diamond/3.9_x64/synpbase/lib/lucent/pmi_def.v|io:i|time:1493194279|size:39414|exec:0
 file:"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/syntmp/DAISI_impl1.plg"|io:o|time:0|size:0|exec:0
-file:/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/DAISI_impl1.srm|io:o|time:1497497170|size:5275|exec:0
-file:/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/synlog/DAISI_impl1_fpga_mapper.srr|io:o|time:1497497170|size:20350|exec:0
-file:/usr/local/diamond/3.9_x64/synpbase/linux_a_64/m_gen_lattice|io:i|time:1480959747|size:31321128|exec:1
-file:/usr/local/diamond/3.9_x64/synpbase/bin/m_gen_lattice|io:i|time:1480958672|size:345|exec:1
+file:/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/DAISI_impl1.srm|io:o|time:1498716689|size:13272|exec:0
+file:/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/synlog/DAISI_impl1_fpga_mapper.srr|io:o|time:1498716689|size:54063|exec:0
+file:/usr/local/diamond/3.9_x64/synpbase/linux_a_64/m_gen_lattice|io:i|time:1493194289|size:31325224|exec:1
+file:/usr/local/diamond/3.9_x64/synpbase/bin/m_gen_lattice|io:i|time:1493194294|size:345|exec:1

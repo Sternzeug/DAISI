@@ -4,7 +4,7 @@
     <Implement name="impl1">
         <ToolReport id="tooldec" path="" status="0"/>
         <ToolReport id="toolhle_genhierarchy" path="/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/hdla_gen_hierarchy.html" status="1"/>
-        <ToolReport id="toolpio" path="" status="0"/>
-        <ToolReport id="toolsso" path="" status="0"/>
+        <ToolReport id="toolpio" path="" status="2"/>
+        <ToolReport id="toolsso" path="" status="2"/>
     </Implement>
 </ReportView>

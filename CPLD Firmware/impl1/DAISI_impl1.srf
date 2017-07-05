@@ -1,128 +1,186 @@
-#Build: Synplify Pro L-2016.09L, Build 077R, Dec  2 2016
+#Build: Synplify Pro L-2016.09L-1, Build 147R, Mar  7 2017
 #install: /usr/local/diamond/3.9_x64/synpbase
 #OS: Linux 
-#Hostname: localhost.localdomain
+#Hostname: linux-ma4k
 
-# Wed Jun 14 20:26:07 2017
+# Wed Jun 28 23:11:21 2017
 
 #Implementation: impl1
 
-Synopsys HDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+Synopsys HDL Compiler, version comp2016q3p1, Build 284R, built Mar 10 2017
 @N|Running in 64-bit mode
 Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
 
-Synopsys Verilog Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+Synopsys Verilog Compiler, version comp2016q3p1, Build 284R, built Mar 10 2017
 @N|Running in 64-bit mode
 Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
 
-Running on host :localhost.localdomain
+Running on host :linux-ma4k
 @I::"/usr/local/diamond/3.9_x64/synpbase/lib/lucent/machxo2.v" (library work)
 @I::"/usr/local/diamond/3.9_x64/synpbase/lib/lucent/pmi_def.v" (library work)
 @I::"/usr/local/diamond/3.9_x64/synpbase/lib/vlog/hypermods.v" (library __hyper__lib__)
 @I::"/usr/local/diamond/3.9_x64/synpbase/lib/vlog/umr_capim.v" (library snps_haps)
 @I::"/usr/local/diamond/3.9_x64/synpbase/lib/vlog/scemi_objects.v" (library snps_haps)
 @I::"/usr/local/diamond/3.9_x64/synpbase/lib/vlog/scemi_pipes.svh" (library snps_haps)
-@I::"/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v" (library work)
-@I::"/media/sf_Downloads/Code/DAISI/CPLD Firmware/pwr_cntrllr.v" (library work)
-@I::"/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_interface.v" (library work)
-@I::"/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v" (library work)
-@I::"/media/sf_Downloads/Code/DAISI/CPLD Firmware/data_buffer.v" (library work)
-@I::"/media/sf_Downloads/Code/DAISI/CPLD Firmware/data_formatter.v" (library work)
-@I::"/media/sf_Downloads/Code/DAISI/CPLD Firmware/storage_interface.v" (library work)
-@I::"/media/sf_Downloads/Code/DAISI/CPLD Firmware/rs232_decoder_encoder.v" (library work)
-@I::"/media/sf_Downloads/Code/DAISI/CPLD Firmware/rs232_command_processor.v" (library work)
-@I::"/media/sf_Downloads/Code/DAISI/CPLD Firmware/pseudo_adc.v" (library work)
-@I::"/media/sf_Downloads/Code/DAISI/CPLD Firmware/regulator_control.v" (library work)
-@I::"/media/sf_Downloads/Code/DAISI/CPLD Firmware/sensor_interface.v" (library work)
-@I::"/media/sf_Downloads/Code/DAISI/CPLD Firmware/thermal_controller.v" (library work)
+@I::"/usr/local/diamond/3.9_x64/cae_library/synthesis/verilog/pmi_def.v" (library work)
+@I::"/usr/local/diamond/3.9_x64/module/reveal/src/ertl/ertl.v" (library work)
+@I::"/usr/local/diamond/3.9_x64/module/reveal/src/rvl_j2w_module/rvl_j2w_module.v" (library work)
+@I::"/usr/local/diamond/3.9_x64/module/reveal/src/rvl_j2w_module/wb2sci.v" (library work)
+@I::"/usr/local/diamond/3.9_x64/module/reveal/src/ertl/JTAG_SOFT.v" (library work)
+@I::"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_la0_trig_gen.v" (library work)
+@I::"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_la0_gen.v" (library work)
+@I::"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v" (library work)
 Verilog syntax check successful!
-
-Compiler output is up to date.  No re-compile necessary
-
+File /media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_la0_trig_gen.v changed - recompiling
+File /media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_la0_gen.v changed - recompiling
+File /media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v changed - recompiling
 Selecting top level module top
 @N: CG364 :"/usr/local/diamond/3.9_x64/synpbase/lib/lucent/machxo2.v":1793:7:1793:10|Synthesizing module OSCH in library work.
 
 @N: CG364 :"/usr/local/diamond/3.9_x64/synpbase/lib/lucent/machxo2.v":1124:7:1124:9|Synthesizing module VLO in library work.
 
+@N: CG364 :"/usr/local/diamond/3.9_x64/synpbase/lib/lucent/machxo2.v":1730:7:1730:13|Synthesizing module EHXPLLJ in library work.
+
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":689:7:689:16|Synthesizing module pll_uniq_1 in library work.
+
 @N: CG364 :"/usr/local/diamond/3.9_x64/synpbase/lib/lucent/machxo2.v":1694:7:1694:11|Synthesizing module PCNTR in library work.
 
-@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/pwr_cntrllr.v":8:7:8:17|Synthesizing module pwr_cntrllr in library work.
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":767:7:767:24|Synthesizing module pwr_cntrllr_uniq_1 in library work.
 
-@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_interface.v":1:7:1:19|Synthesizing module spi_interface in library work.
+@N: CG364 :"/usr/local/diamond/3.9_x64/synpbase/lib/lucent/machxo2.v":1120:7:1120:9|Synthesizing module VHI in library work.
 
-@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v":1:7:1:20|Synthesizing module spi_controller in library work.
+@N: CG364 :"/usr/local/diamond/3.9_x64/synpbase/lib/lucent/machxo2.v":82:7:82:8|Synthesizing module BB in library work.
 
-@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/data_buffer.v":1:7:1:17|Synthesizing module data_buffer in library work.
+@N: CG364 :"/usr/local/diamond/3.9_x64/synpbase/lib/lucent/machxo2.v":1800:7:1800:9|Synthesizing module EFB in library work.
 
-@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/data_formatter.v":1:7:1:20|Synthesizing module data_formatter in library work.
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":793:7:793:16|Synthesizing module efb_uniq_1 in library work.
 
-@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/storage_interface.v":1:7:1:23|Synthesizing module storage_interface in library work.
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":890:7:890:27|Synthesizing module spi_controller_uniq_1 in library work.
 
-@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/rs232_decoder_encoder.v":1:7:1:27|Synthesizing module rs232_decoder_encoder in library work.
+@N: CG179 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":940:39:940:44|Removing redundant assignment.
+@N: CG179 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":941:39:941:44|Removing redundant assignment.
+@N: CG179 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":942:38:942:42|Removing redundant assignment.
+@N: CG179 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":943:39:943:44|Removing redundant assignment.
+@N: CG179 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":944:41:944:48|Removing redundant assignment.
+@N: CG179 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":973:39:973:44|Removing redundant assignment.
+@N: CG179 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":974:39:974:44|Removing redundant assignment.
+@N: CG179 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":975:38:975:42|Removing redundant assignment.
+@N: CG179 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":976:39:976:44|Removing redundant assignment.
+@N: CG179 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":977:41:977:48|Removing redundant assignment.
+@W: CL190 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":910:4:910:9|Optimizing register bit wb_adr[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":910:4:910:9|Optimizing register bit wb_adr[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":910:4:910:9|Optimizing register bit wb_adr[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":910:4:910:9|Optimizing register bit wb_dat_i[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":910:4:910:9|Optimizing register bit wb_dat_i[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":910:4:910:9|Optimizing register bit wb_dat_i[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":910:4:910:9|Optimizing register bit wb_dat_i[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":910:4:910:9|Optimizing register bit wb_dat_i[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":910:4:910:9|Pruning register bit 7 of wb_adr[7:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":910:4:910:9|Pruning register bit 5 of wb_adr[7:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":910:4:910:9|Pruning register bit 2 of wb_adr[7:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":910:4:910:9|Pruning register bits 6 to 5 of wb_dat_i[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":910:4:910:9|Pruning register bits 3 to 1 of wb_dat_i[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":1008:7:1008:24|Synthesizing module data_buffer_uniq_1 in library work.
 
-@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/rs232_command_processor.v":1:7:1:29|Synthesizing module rs232_command_processor in library work.
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":1052:7:1052:27|Synthesizing module data_formatter_uniq_1 in library work.
 
-@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/pseudo_adc.v":1:7:1:16|Synthesizing module pseudo_adc in library work.
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":1030:7:1030:24|Synthesizing module data_buffer_uniq_2 in library work.
 
-@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/regulator_control.v":1:7:1:23|Synthesizing module regulator_control in library work.
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":1074:7:1074:30|Synthesizing module storage_interface_uniq_1 in library work.
 
-@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/sensor_interface.v":1:7:1:22|Synthesizing module sensor_interface in library work.
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":1096:7:1096:34|Synthesizing module rs232_decoder_encoder_uniq_1 in library work.
 
-@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/thermal_controller.v":1:7:1:24|Synthesizing module thermal_controller in library work.
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":1134:7:1134:36|Synthesizing module rs232_command_processor_uniq_1 in library work.
 
-@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v":1:7:1:9|Synthesizing module top in library work.
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":1156:7:1156:23|Synthesizing module pseudo_adc_uniq_1 in library work.
 
-@W: CL168 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v":110:19:110:41|Removing instance thermal_controller_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
-@W: CL168 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v":105:17:105:37|Removing instance sensor_interface_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
-@W: CL168 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v":100:18:100:39|Removing instance regulator_control_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
-@W: CL168 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v":95:11:95:25|Removing instance pseudo_adc_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
-@W: CL168 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v":90:24:90:51|Removing instance rs232_command_processor_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":1178:7:1178:30|Synthesizing module regulator_control_uniq_1 in library work.
 
-At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":1200:7:1200:29|Synthesizing module sensor_interface_uniq_1 in library work.
+
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":1222:7:1222:31|Synthesizing module thermal_controller_uniq_1 in library work.
+
+
+
+
+
+
+
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_la0_trig_gen.v":11:7:11:18|Synthesizing module top_la0_trig in library work.
+
+
+
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_la0_gen.v":12:7:12:13|Synthesizing module top_la0 in library work.
+
+@N: CG364 :"/usr/local/diamond/3.9_x64/cae_library/synthesis/verilog/pmi_def.v":1162:7:1162:16|Synthesizing module jtagconn16 in library work.
+
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":2:7:2:20|Synthesizing module reveal_coretop in library work.
+
+@W: CG360 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":15:29:15:39|Removing wire trigger_out, as there is no assignment to it.
+@N: CG364 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":70:7:70:9|Synthesizing module top in library work.
+
+@W: CL168 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":144:30:144:52|Removing instance thermal_controller_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":143:28:143:48|Removing instance sensor_interface_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":142:29:142:50|Removing instance regulator_control_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":141:22:141:36|Removing instance pseudo_adc_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":140:35:140:62|Removing instance rs232_command_processor_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":138:29:138:50|Removing instance storage_interface_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":137:23:137:40|Removing instance data_buffer_inst_2 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":136:26:136:44|Removing instance data_formatter_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":135:23:135:40|Removing instance data_buffer_inst_1 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@N: CL159 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_la0_gen.v":51:7:51:13|Input reset_n is unused.
+@N: CL159 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_la0_gen.v":62:7:62:16|Input trigger_en is unused.
+@W: CL157 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":1100:11:1100:12|*Output tx has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL260 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":910:4:910:9|Pruning register bit 4 of wb_adr[4:3]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL159 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":898:16:898:23|Input wb_dat_o is unused.
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 83MB peak: 90MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Jun 14 20:26:07 2017
+# Wed Jun 28 23:11:22 2017
 
 ###########################################################]
-Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
+Synopsys Netlist Linker, version comp2016q3p1, Build 279R, built Mar  8 2017
 @N|Running in 64-bit mode
+File /media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/synwork/layer0.srs changed - recompiling
 
-Linker output is up to date. No re-linking necessary
-
-
-At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Jun 14 20:26:08 2017
+# Wed Jun 28 23:11:23 2017
 
 ###########################################################]
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Jun 14 20:26:08 2017
+# Wed Jun 28 23:11:23 2017
 
 ###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 279R, built Mar  8 2017
+@N|Running in 64-bit mode
+File /media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/synwork/DAISI_impl1_comp.srs changed - recompiling
 
-@A: multi_srs_gen output is up to date. No run necessary.
-To force a re-synthesis, select [Resynthesize All] in menu [Run].
-Click link to view previous log file.
-Multi-srs Generator Report
-@R:"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/synlog/DAISI_impl1_multi_srs_gen.srr"
-Pre-mapping Report
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
 
-# Wed Jun 14 20:26:08 2017
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
-Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1612R, Built Dec  5 2016 09:37:36
-Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
-Product Version L-2016.09L
+Process completed successfully.
+# Wed Jun 28 23:11:24 2017
+
+###########################################################]
+# Wed Jun 28 23:11:24 2017
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1682R, Built Mar 10 2017 09:26:52
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L-1
 
 Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 99MB)
 
@@ -132,63 +190,71 @@ Printing clock  summary report in "/media/sf_Downloads/Code/DAISI/CPLD Firmware/
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
 
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 105MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 105MB)
 
 
-Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 113MB peak: 113MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 114MB)
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 113MB peak: 115MB)
 
-@W: BN132 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v":75:12:75:29|Removing user instance data_buffer_inst_2 because it is equivalent to instance data_buffer_inst_1. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":910:4:910:9|Removing sequential instance spi_controller_inst.wb_dat_i_1[7] because it is equivalent to instance spi_controller_inst.wb_dat_i_1[4]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":910:4:910:9|Removing sequential instance spi_controller_inst.wb_we because it is equivalent to instance spi_controller_inst.wb_dat_i_1[4]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":910:4:910:9|Removing sequential instance spi_controller_inst.wb_dat_i_1[4] because it is equivalent to instance spi_controller_inst.wb_dat_i_1[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":910:4:910:9|Removing sequential instance spi_controller_inst.wb_adr_1[6] because it is equivalent to instance spi_controller_inst.wb_adr_1[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":910:4:910:9|Removing sequential instance spi_controller_inst.wb_stb because it is equivalent to instance spi_controller_inst.wb_adr_1[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":910:4:910:9|Removing sequential instance spi_controller_inst.wb_cyc because it is equivalent to instance spi_controller_inst.wb_adr_1[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: MO111 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":1100:11:1100:12|Tristate driver tx (in view: work.rs232_decoder_encoder_uniq_1(verilog)) on net tx (in view: work.rs232_decoder_encoder_uniq_1(verilog)) has its enable tied to GND.
 ICG Latch Removal Summary:
 Number of ICG latches removed:	0
 Number of ICG latches not removed:	0
 syn_allowed_resources : blockrams=26  set on top level netlist top
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 143MB)
 
 
 
 Clock Summary
 *****************
 
-Start                          Requested     Requested     Clock        Clock                   Clock
-Clock                          Frequency     Period        Type         Group                   Load 
------------------------------------------------------------------------------------------------------
-System                         1.0 MHz       1000.000      system       system_clkgroup         0    
-top|osc_clk_inferred_clock     2.1 MHz       480.769       inferred     Inferred_clkgroup_0     6    
-=====================================================================================================
+Start                                     Requested     Requested     Clock                                              Clock                   Clock
+Clock                                     Frequency     Period        Type                                               Group                   Load 
+------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                    1.0 MHz       1000.000      system                                             system_clkgroup         0    
+pll_uniq_1|CLKOP_inferred_clock           1.0 MHz       1000.000      inferred                                           Inferred_clkgroup_2     152  
+pll_uniq_1|CLKOS_inferred_clock           1.0 MHz       1000.000      inferred                                           Inferred_clkgroup_0     1    
+reveal_coretop|jtck_inferred_clock[0]     1.0 MHz       1000.000      inferred                                           Inferred_clkgroup_1     216  
+top|clock_00_0096_derived_clock           1.0 MHz       1000.000      derived (from pll_uniq_1|CLKOS_inferred_clock)     Inferred_clkgroup_0     22   
+======================================================================================================================================================
 
-@W: MT529 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_interface.v":9:0:9:5|Found inferred clock top|osc_clk_inferred_clock which controls 6 sequential elements including spi_interface_inst.signal. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":110:4:110:9|Found inferred clock pll_uniq_1|CLKOS_inferred_clock which controls 1 sequential elements including clock_00_0096. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":910:4:910:9|Found inferred clock pll_uniq_1|CLKOP_inferred_clock which controls 152 sequential elements including spi_controller_inst.state[2:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
 
 Finished Pre Mapping Phase.
 
-Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 143MB)
 
 None
 None
 
-Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 143MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 54MB peak: 141MB)
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 57MB peak: 143MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Wed Jun 14 20:26:09 2017
+# Wed Jun 28 23:11:25 2017
 
 ###########################################################]
-Map & Optimize Report
+# Wed Jun 28 23:11:25 2017
 
-# Wed Jun 14 20:26:09 2017
-
-Synopsys Lattice Technology Mapper, Version maplat, Build 1612R, Built Dec  5 2016 09:37:36
-Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
-Product Version L-2016.09L
+Synopsys Lattice Technology Mapper, Version maplat, Build 1682R, Built Mar 10 2017 09:26:52
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L-1
 
 Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 99MB)
 
@@ -208,66 +274,57 @@ Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 
 
 
-Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 141MB)
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
 
+@N: MO111 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":1100:11:1100:12|Tristate driver tx (in view: work.rs232_decoder_encoder_uniq_1(verilog)) on net tx (in view: work.rs232_decoder_encoder_uniq_1(verilog)) has its enable tied to GND.
+@N: MO111 :|Tristate driver rs_232_tx_t (in view: work.top(verilog)) on net rs_232_tx (in view: work.top(verilog)) has its enable tied to GND.
 
 Available hyper_sources - for debug and ip models
 	None Found
 
-@W: BN132 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/rs232_decoder_encoder.v":9:0:9:5|Removing sequential instance rs232_decoder_encoder_inst.signal because it is equivalent to instance storage_interface_inst.signal. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/storage_interface.v":9:0:9:5|Removing sequential instance storage_interface_inst.signal because it is equivalent to instance data_buffer_inst_1.signal. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/data_formatter.v":9:0:9:5|Removing sequential instance data_formatter_inst.signal because it is equivalent to instance spi_controller_inst.signal. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/data_buffer.v":9:0:9:5|Removing sequential instance data_buffer_inst_1.signal because it is equivalent to instance spi_interface_inst.signal. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/rs232_decoder_encoder.v":17:14:17:20|Removing user instance rs232_decoder_encoder_inst.signal_2 because it is equivalent to instance storage_interface_inst.signal_2. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/storage_interface.v":17:14:17:20|Removing user instance storage_interface_inst.signal_2 because it is equivalent to instance data_buffer_inst_1.signal_2. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/data_formatter.v":17:14:17:20|Removing user instance data_formatter_inst.signal_2 because it is equivalent to instance spi_controller_inst.signal_2. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/data_buffer.v":17:14:17:20|Removing user instance data_buffer_inst_1.signal_2 because it is equivalent to instance spi_interface_inst.signal_2. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@A: BN291 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/rs232_decoder_encoder.v":9:0:9:5|Boundary register rs232_decoder_encoder_inst.signal (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/storage_interface.v":9:0:9:5|Boundary register storage_interface_inst.signal (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/data_formatter.v":9:0:9:5|Boundary register data_formatter_inst.signal (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/data_buffer.v":9:0:9:5|Boundary register data_buffer_inst_1.signal (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@W: BN132 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v":17:14:17:20|Removing user instance spi_controller_inst.signal_2 because it is equivalent to instance spi_interface_inst.signal_2. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_interface.v":9:0:9:5|Removing sequential instance spi_interface_inst.signal because it is equivalent to instance spi_controller_inst.signal. To keep the instance, apply constraint syn_preserve=1 on the instance.
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 141MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 142MB)
+
+@W: BN132 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":910:4:910:9|Removing instance spi_controller_inst.wb_adr_1[3] because it is equivalent to instance spi_controller_inst.wb_adr_1[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 143MB)
 
 
-Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 141MB)
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 145MB peak: 145MB)
 
 
-Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 141MB)
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 145MB)
 
 
-Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 146MB peak: 146MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 146MB peak: 147MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 146MB peak: 147MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 146MB peak: 147MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 146MB peak: 147MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
-
-
-Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 157MB peak: 159MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:00s		   479.19ns		   2 /         1
+   1		0h:00m:01s		   991.29ns		 425 /       366
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 157MB peak: 159MB)
 
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+@N: MO111 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":79:11:79:19|Tristate driver rs_232_tx_obuft.un1[0] (in view: work.top(verilog)) on net rs_232_tx (in view: work.top(verilog)) has its enable tied to GND.
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 157MB peak: 159MB)
 
+@N: MT611 :|Automatically generated clock top|clock_00_0096_derived_clock is not used and is being removed
 
 
 @S |Clock Optimization Summary
@@ -276,46 +333,55 @@ Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:
 #### START OF CLOCK OPTIMIZATION REPORT #####[
 
 0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
-1 gated/generated clock tree(s) driving 1 clock pin(s) of sequential element(s)
-0 instances converted, 1 sequential instance remains driven by gated/generated clocks
+3 gated/generated clock tree(s) driving 366 clock pin(s) of sequential element(s)
+0 instances converted, 366 sequential instances remain driven by gated/generated clocks
 
-====================================================================== Gated/Generated Clocks ======================================================================
-Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance                Explanation                                                  
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-@K:CKID0001       OSCH_inst           OSCH                   1          spi_controller_inst.signal     No gated clock conversion method for cell cell:LUCENT.FD1S3BX
-====================================================================================================================================================================
+============================================================================================================================================ Gated/Generated Clocks ============================================================================================================================================
+Clock Tree ID     Driving Element                                   Drive Element Type     Fanout     Sample Instance                                                             Explanation                                                                                                                   
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       top_reveal_coretop_instance.jtagconn16_inst_0     jtagconn16             201        top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.capture_dr_d4         Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+@K:CKID0002       pll_inst.PLLInst_0                                EHXPLLJ                142        top_reveal_coretop_instance.top_la0_inst_0.trig_u.te_0.te_precnt_val[0]     Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+@K:CKID0003       pll_inst.PLLInst_0                                EHXPLLJ                23         clock_00_0096                                                               No gated clock conversion method for cell cell:LUCENT.FD1S3DX                                                                 
+================================================================================================================================================================================================================================================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######]
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 106MB peak: 141MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 123MB peak: 159MB)
 
 Writing Analyst data base /media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/synwork/DAISI_impl1_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 141MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 157MB peak: 159MB)
 
 Writing EDIF Netlist and constraint files
 @N: FX1056 |Writing EDF file: /media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/DAISI_impl1.edi
-L-2016.09L
+L-2016.09L-1
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 144MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 161MB peak: 164MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 144MB)
+Start final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 160MB peak: 164MB)
 
-@W: MT246 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/pwr_cntrllr.v":24:10:24:20|Blackbox PCNTR is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
-@W: MT420 |Found inferred clock top|osc_clk_inferred_clock with period 480.77ns. Please declare a user-defined clock on object "n:osc_clk"
+@W: MT246 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":874:8:874:16|Blackbox EFB is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":780:10:780:20|Blackbox PCNTR is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":744:12:744:20|Blackbox EHXPLLJ is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v":61:15:61:31|Blackbox jtagconn16 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"/usr/local/diamond/3.9_x64/module/reveal/src/ertl/ertl.v":1192:8:1192:20|Blackbox pmi_ram_dp_Z2 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"/usr/local/diamond/3.9_x64/module/reveal/src/ertl/ertl.v":2159:8:2159:13|Blackbox pmi_ram_dp_Z4 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT420 |Found inferred clock pll_uniq_1|CLKOP_inferred_clock with period 1000.00ns. Please declare a user-defined clock on object "n:pll_inst.CLKOP"
+@W: MT420 |Found inferred clock pll_uniq_1|CLKOS_inferred_clock with period 1000.00ns. Please declare a user-defined clock on object "n:pll_inst.CLKOS"
+@W: MT420 |Found inferred clock reveal_coretop|jtck_inferred_clock[0] with period 1000.00ns. Please declare a user-defined clock on object "n:top_reveal_coretop_instance.jtck[0]"
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Wed Jun 14 20:26:10 2017
+# Timing Report written on Wed Jun 28 23:11:29 2017
 #
 
 
 Top view:               top
-Requested Frequency:    2.1 MHz
+Requested Frequency:    1.0 MHz
 Wire load mode:         top
 Paths requested:        5
 Constraint File(s):    
@@ -329,16 +395,16 @@ Performance Summary
 *******************
 
 
-Worst slack in design: 478.876
+Worst slack in design: 990.887
 
-@N: MT286 |System clock period 0.000 stretches to negative invalid value -- ignoring stretching.
-                               Requested     Estimated     Requested     Estimated                  Clock        Clock              
-Starting Clock                 Frequency     Frequency     Period        Period        Slack        Type         Group              
-------------------------------------------------------------------------------------------------------------------------------------
-top|osc_clk_inferred_clock     2.1 MHz       528.2 MHz     480.769       1.893         478.876      inferred     Inferred_clkgroup_0
-System                         1.0 MHz       NA            1000.000      0.000         1000.000     system       system_clkgroup    
-====================================================================================================================================
-@N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack
+                                          Requested     Estimated     Requested     Estimated                 Clock        Clock              
+Starting Clock                            Frequency     Frequency     Period        Period        Slack       Type         Group              
+----------------------------------------------------------------------------------------------------------------------------------------------
+pll_uniq_1|CLKOP_inferred_clock           1.0 MHz       127.0 MHz     1000.000      7.876         992.124     inferred     Inferred_clkgroup_2
+pll_uniq_1|CLKOS_inferred_clock           1.0 MHz       261.7 MHz     1000.000      3.821         996.179     inferred     Inferred_clkgroup_0
+reveal_coretop|jtck_inferred_clock[0]     1.0 MHz       109.7 MHz     1000.000      9.113         990.887     inferred     Inferred_clkgroup_1
+System                                    1.0 MHz       255.7 MHz     1000.000      3.911         996.089     system       system_clkgroup    
+==============================================================================================================================================
 
 
 
@@ -347,13 +413,21 @@ System                         1.0 MHz       NA            1000.000      0.000  
 Clock Relationships
 *******************
 
-Clocks                                                  |    rise  to  rise      |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
--------------------------------------------------------------------------------------------------------------------------------------------------
-Starting                    Ending                      |  constraint  slack     |  constraint  slack  |  constraint  slack  |  constraint  slack
--------------------------------------------------------------------------------------------------------------------------------------------------
-System                      System                      |  1000.000    1000.000  |  No paths    -      |  No paths    -      |  No paths    -    
-top|osc_clk_inferred_clock  top|osc_clk_inferred_clock  |  480.769     478.876   |  No paths    -      |  No paths    -      |  No paths    -    
-=================================================================================================================================================
+Clocks                                                                        |    rise  to  rise     |    fall  to  fall     |    rise  to  fall     |    fall  to  rise   
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                               Ending                                 |  constraint  slack    |  constraint  slack    |  constraint  slack    |  constraint  slack  
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                 System                                 |  1000.000    996.089  |  No paths    -        |  No paths    -        |  No paths    -      
+System                                 reveal_coretop|jtck_inferred_clock[0]  |  No paths    -        |  No paths    -        |  1000.000    993.800  |  No paths    -      
+System                                 pll_uniq_1|CLKOP_inferred_clock        |  1000.000    997.767  |  No paths    -        |  No paths    -        |  No paths    -      
+pll_uniq_1|CLKOS_inferred_clock        pll_uniq_1|CLKOS_inferred_clock        |  1000.000    996.179  |  No paths    -        |  No paths    -        |  No paths    -      
+reveal_coretop|jtck_inferred_clock[0]  System                                 |  No paths    -        |  No paths    -        |  No paths    -        |  1000.000    993.175
+reveal_coretop|jtck_inferred_clock[0]  reveal_coretop|jtck_inferred_clock[0]  |  No paths    -        |  1000.000    990.887  |  No paths    -        |  No paths    -      
+reveal_coretop|jtck_inferred_clock[0]  pll_uniq_1|CLKOP_inferred_clock        |  No paths    -        |  No paths    -        |  No paths    -        |  Diff grp    -      
+pll_uniq_1|CLKOP_inferred_clock        System                                 |  1000.000    993.471  |  No paths    -        |  No paths    -        |  No paths    -      
+pll_uniq_1|CLKOP_inferred_clock        reveal_coretop|jtck_inferred_clock[0]  |  No paths    -        |  No paths    -        |  Diff grp    -        |  No paths    -      
+pll_uniq_1|CLKOP_inferred_clock        pll_uniq_1|CLKOP_inferred_clock        |  1000.000    992.124  |  No paths    -        |  No paths    -        |  No paths    -      
+============================================================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
 
@@ -367,7 +441,7 @@ No IO constraint found
 
 
 ====================================
-Detailed Report for Clock: top|osc_clk_inferred_clock
+Detailed Report for Clock: pll_uniq_1|CLKOP_inferred_clock
 ====================================
 
 
@@ -375,23 +449,41 @@ Detailed Report for Clock: top|osc_clk_inferred_clock
 Starting Points with Worst Slack
 ********************************
 
-                               Starting                                                      Arrival            
-Instance                       Reference                      Type        Pin     Net        Time        Slack  
-                               Clock                                                                            
-----------------------------------------------------------------------------------------------------------------
-spi_controller_inst.signal     top|osc_clk_inferred_clock     FD1S3BX     Q       led0_c     1.220       478.876
-================================================================================================================
+                                                                      Starting                                                                      Arrival            
+Instance                                                              Reference                           Type        Pin     Net                   Time        Slack  
+                                                                      Clock                                                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+top_reveal_coretop_instance.top_la0_inst_0.tm_u.post_trig_cntr[0]     pll_uniq_1|CLKOP_inferred_clock     FD1P3DX     Q       post_trig_cntr[0]     1.044       992.124
+top_reveal_coretop_instance.top_la0_inst_0.tm_u.post_trig_cntr[1]     pll_uniq_1|CLKOP_inferred_clock     FD1P3DX     Q       post_trig_cntr[1]     1.044       992.124
+top_reveal_coretop_instance.top_la0_inst_0.tm_u.post_trig_cntr[3]     pll_uniq_1|CLKOP_inferred_clock     FD1P3DX     Q       post_trig_cntr[3]     1.044       992.124
+top_reveal_coretop_instance.top_la0_inst_0.tm_u.post_trig_cntr[4]     pll_uniq_1|CLKOP_inferred_clock     FD1P3DX     Q       post_trig_cntr[4]     1.044       992.124
+top_reveal_coretop_instance.top_la0_inst_0.tm_u.capture               pll_uniq_1|CLKOP_inferred_clock     FD1P3DX     Q       capture               1.204       993.053
+top_reveal_coretop_instance.top_la0_inst_0.tm_u.post_trig_cntr[2]     pll_uniq_1|CLKOP_inferred_clock     FD1P3DX     Q       post_trig_cntr[2]     1.108       993.149
+top_reveal_coretop_instance.top_la0_inst_0.trig_u.tcnt_0.reg0[0]      pll_uniq_1|CLKOP_inferred_clock     FD1P3DX     Q       reg0[0]               1.044       993.471
+top_reveal_coretop_instance.top_la0_inst_0.trig_u.tcnt_0.reg1[0]      pll_uniq_1|CLKOP_inferred_clock     FD1P3DX     Q       reg1[0]               1.044       993.471
+top_reveal_coretop_instance.top_la0_inst_0.tm_u.start_bit             pll_uniq_1|CLKOP_inferred_clock     FD1P3DX     Q       start_bit             1.232       994.114
+top_reveal_coretop_instance.top_la0_inst_0.tm_u.start_d               pll_uniq_1|CLKOP_inferred_clock     FD1P3DX     Q       start_d               1.220       994.126
+=======================================================================================================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                               Starting                                                        Required            
-Instance                       Reference                      Type        Pin     Net          Time         Slack  
-                               Clock                                                                               
--------------------------------------------------------------------------------------------------------------------
-spi_controller_inst.signal     top|osc_clk_inferred_clock     FD1S3BX     D       led0_c_i     480.664      478.876
-===================================================================================================================
+                                                                       Starting                                                                         Required            
+Instance                                                               Reference                           Type        Pin     Net                      Time         Slack  
+                                                                       Clock                                                                                                
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+top_reveal_coretop_instance.top_la0_inst_0.tm_u.post_trig_cntr[3]      pll_uniq_1|CLKOP_inferred_clock     FD1P3DX     D       post_trig_cntr_s[3]      999.894      992.124
+top_reveal_coretop_instance.top_la0_inst_0.tm_u.post_trig_cntr[4]      pll_uniq_1|CLKOP_inferred_clock     FD1P3DX     D       post_trig_cntr_s[4]      999.894      992.124
+top_reveal_coretop_instance.top_la0_inst_0.tm_u.pre_trig_cntr[3]       pll_uniq_1|CLKOP_inferred_clock     FD1P3DX     D       pre_trig_cntr_s[3]       999.894      992.124
+top_reveal_coretop_instance.top_la0_inst_0.tm_u.pre_trig_cntr[4]       pll_uniq_1|CLKOP_inferred_clock     FD1P3DX     D       pre_trig_cntr_s[4]       999.894      992.124
+top_reveal_coretop_instance.top_la0_inst_0.tm_u.tm_wr_addr_cntr[3]     pll_uniq_1|CLKOP_inferred_clock     FD1P3DX     D       tm_wr_addr_cntr_s[3]     999.894      992.124
+top_reveal_coretop_instance.top_la0_inst_0.tm_u.tm_wr_addr_cntr[4]     pll_uniq_1|CLKOP_inferred_clock     FD1P3DX     D       tm_wr_addr_cntr_s[4]     999.894      992.124
+top_reveal_coretop_instance.top_la0_inst_0.tm_u.post_trig_cntr[1]      pll_uniq_1|CLKOP_inferred_clock     FD1P3DX     D       post_trig_cntr_s[1]      999.894      992.267
+top_reveal_coretop_instance.top_la0_inst_0.tm_u.post_trig_cntr[2]      pll_uniq_1|CLKOP_inferred_clock     FD1P3DX     D       post_trig_cntr_s[2]      999.894      992.267
+top_reveal_coretop_instance.top_la0_inst_0.tm_u.pre_trig_cntr[1]       pll_uniq_1|CLKOP_inferred_clock     FD1P3DX     D       pre_trig_cntr_s[1]       999.894      992.267
+top_reveal_coretop_instance.top_la0_inst_0.tm_u.pre_trig_cntr[2]       pll_uniq_1|CLKOP_inferred_clock     FD1P3DX     D       pre_trig_cntr_s[2]       999.894      992.267
+============================================================================================================================================================================
 
 
 
@@ -400,31 +492,238 @@ Worst Path Information
 
 
 Path information for path number 1: 
-      Requested Period:                      480.769
+      Requested Period:                      1000.000
     - Setup time:                            0.106
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         480.664
+    = Required time:                         999.894
 
-    - Propagation time:                      1.788
+    - Propagation time:                      7.771
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     478.876
+    = Slack (non-critical) :                 992.124
 
-    Number of logic level(s):                1
-    Starting point:                          spi_controller_inst.signal / Q
-    Ending point:                            spi_controller_inst.signal / D
-    The start point is clocked by            top|osc_clk_inferred_clock [rising] on pin CK
-    The end   point is clocked by            top|osc_clk_inferred_clock [rising] on pin CK
+    Number of logic level(s):                6
+    Starting point:                          top_reveal_coretop_instance.top_la0_inst_0.tm_u.post_trig_cntr[0] / Q
+    Ending point:                            top_reveal_coretop_instance.top_la0_inst_0.tm_u.post_trig_cntr[4] / D
+    The start point is clocked by            pll_uniq_1|CLKOP_inferred_clock [rising] on pin CK
+    The end   point is clocked by            pll_uniq_1|CLKOP_inferred_clock [rising] on pin CK
 
-Instance / Net                                 Pin      Pin               Arrival     No. of    
-Name                               Type        Name     Dir     Delay     Time        Fan Out(s)
-------------------------------------------------------------------------------------------------
-spi_controller_inst.signal         FD1S3BX     Q        Out     1.220     1.220       -         
-led0_c                             Net         -        -       -         -           8         
-spi_controller_inst.signal_RNO     INV         A        In      0.000     1.220       -         
-spi_controller_inst.signal_RNO     INV         Z        Out     0.568     1.788       -         
-led0_c_i                           Net         -        -       -         -           1         
-spi_controller_inst.signal         FD1S3BX     D        In      0.000     1.788       -         
-================================================================================================
+Instance / Net                                                                              Pin      Pin               Arrival     No. of    
+Name                                                                           Type         Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------------------------------------------
+top_reveal_coretop_instance.top_la0_inst_0.tm_u.post_trig_cntr[0]              FD1P3DX      Q        Out     1.044     1.044       -         
+post_trig_cntr[0]                                                              Net          -        -       -         -           2         
+top_reveal_coretop_instance.top_la0_inst_0.tm_u.post_trig_cntr_RNIC7UQ1[0]     ORCALUT4     A        In      0.000     1.044       -         
+top_reveal_coretop_instance.top_la0_inst_0.tm_u.post_trig_cntr_RNIC7UQ1[0]     ORCALUT4     Z        Out     1.089     2.133       -         
+clear_5_0_219_1_o2_3                                                           Net          -        -       -         -           2         
+top_reveal_coretop_instance.top_la0_inst_0.tm_u.post_trig_cntr_RNIRV3M2[2]     ORCALUT4     B        In      0.000     2.133       -         
+top_reveal_coretop_instance.top_la0_inst_0.tm_u.post_trig_cntr_RNIRV3M2[2]     ORCALUT4     Z        Out     1.089     3.221       -         
+N_769                                                                          Net          -        -       -         -           2         
+top_reveal_coretop_instance.top_la0_inst_0.tm_u.start_d_RNIOAGV2               ORCALUT4     C        In      0.000     3.221       -         
+top_reveal_coretop_instance.top_la0_inst_0.tm_u.start_d_RNIOAGV2               ORCALUT4     Z        Out     1.313     4.534       -         
+N_707_i                                                                        Net          -        -       -         -           16        
+top_reveal_coretop_instance.top_la0_inst_0.tm_u.post_trig_cntr_cry_0[0]        CCU2D        A1       In      0.000     4.534       -         
+top_reveal_coretop_instance.top_la0_inst_0.tm_u.post_trig_cntr_cry_0[0]        CCU2D        COUT     Out     1.544     6.079       -         
+post_trig_cntr_cry[0]                                                          Net          -        -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.tm_u.post_trig_cntr_cry_0[1]        CCU2D        CIN      In      0.000     6.079       -         
+top_reveal_coretop_instance.top_la0_inst_0.tm_u.post_trig_cntr_cry_0[1]        CCU2D        COUT     Out     0.143     6.222       -         
+post_trig_cntr_cry[2]                                                          Net          -        -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.tm_u.post_trig_cntr_cry_0[3]        CCU2D        CIN      In      0.000     6.222       -         
+top_reveal_coretop_instance.top_la0_inst_0.tm_u.post_trig_cntr_cry_0[3]        CCU2D        S1       Out     1.549     7.771       -         
+post_trig_cntr_s[4]                                                            Net          -        -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.tm_u.post_trig_cntr[4]              FD1P3DX      D        In      0.000     7.771       -         
+=============================================================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: pll_uniq_1|CLKOS_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                Starting                                                                     Arrival            
+Instance                                        Reference                           Type        Pin     Net                  Time        Slack  
+                                                Clock                                                                                           
+------------------------------------------------------------------------------------------------------------------------------------------------
+rs232_decoder_encoder_inst.count[1]             pll_uniq_1|CLKOS_inferred_clock     FD1P3DX     Q       count[1]             1.188       996.179
+rs232_decoder_encoder_inst.count[0]             pll_uniq_1|CLKOS_inferred_clock     FD1P3DX     Q       count[0]             1.180       996.187
+rs232_decoder_encoder_inst.count[2]             pll_uniq_1|CLKOS_inferred_clock     FD1P3DX     Q       count[2]             1.180       996.187
+rs232_decoder_encoder_inst.count[3]             pll_uniq_1|CLKOS_inferred_clock     FD1P3DX     Q       count[3]             1.148       996.219
+rs232_decoder_encoder_inst.incoming_data[8]     pll_uniq_1|CLKOS_inferred_clock     FD1P3DX     Q       incoming_data[8]     1.108       997.347
+rs232_decoder_encoder_inst.incoming_data[9]     pll_uniq_1|CLKOS_inferred_clock     FD1P3DX     Q       incoming_data[9]     0.972       997.483
+clock_00_0096                                   pll_uniq_1|CLKOS_inferred_clock     FD1S3DX     Q       clock_00_0096_c      1.108       997.853
+rs232_decoder_encoder_inst.incoming_data[1]     pll_uniq_1|CLKOS_inferred_clock     FD1P3DX     Q       incoming_data[1]     1.044       998.851
+rs232_decoder_encoder_inst.incoming_data[2]     pll_uniq_1|CLKOS_inferred_clock     FD1P3DX     Q       incoming_data[2]     1.044       998.851
+rs232_decoder_encoder_inst.incoming_data[3]     pll_uniq_1|CLKOS_inferred_clock     FD1P3DX     Q       incoming_data[3]     1.044       998.851
+================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                Starting                                                                      Required            
+Instance                                        Reference                           Type        Pin     Net                   Time         Slack  
+                                                Clock                                                                                             
+--------------------------------------------------------------------------------------------------------------------------------------------------
+rs232_decoder_encoder_inst.count[0]             pll_uniq_1|CLKOS_inferred_clock     FD1P3DX     D       count_3[0]            1000.089     996.179
+rs232_decoder_encoder_inst.count[3]             pll_uniq_1|CLKOS_inferred_clock     FD1P3DX     D       count_3[3]            1000.089     997.195
+rs232_decoder_encoder_inst.count[0]             pll_uniq_1|CLKOS_inferred_clock     FD1P3DX     SP      clock_00_0096_c_i     999.528      997.853
+rs232_decoder_encoder_inst.count[1]             pll_uniq_1|CLKOS_inferred_clock     FD1P3DX     SP      clock_00_0096_c_i     999.528      997.853
+rs232_decoder_encoder_inst.count[2]             pll_uniq_1|CLKOS_inferred_clock     FD1P3DX     SP      clock_00_0096_c_i     999.528      997.853
+rs232_decoder_encoder_inst.count[3]             pll_uniq_1|CLKOS_inferred_clock     FD1P3DX     SP      clock_00_0096_c_i     999.528      997.853
+rs232_decoder_encoder_inst.incoming_data[1]     pll_uniq_1|CLKOS_inferred_clock     FD1P3DX     SP      clock_00_0096_c_i     999.528      997.853
+rs232_decoder_encoder_inst.incoming_data[2]     pll_uniq_1|CLKOS_inferred_clock     FD1P3DX     SP      clock_00_0096_c_i     999.528      997.853
+rs232_decoder_encoder_inst.incoming_data[3]     pll_uniq_1|CLKOS_inferred_clock     FD1P3DX     SP      clock_00_0096_c_i     999.528      997.853
+rs232_decoder_encoder_inst.incoming_data[4]     pll_uniq_1|CLKOS_inferred_clock     FD1P3DX     SP      clock_00_0096_c_i     999.528      997.853
+==================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      1000.000
+    - Setup time:                            -0.089
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         1000.089
+
+    - Propagation time:                      3.910
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 996.179
+
+    Number of logic level(s):                3
+    Starting point:                          rs232_decoder_encoder_inst.count[1] / Q
+    Ending point:                            rs232_decoder_encoder_inst.count[0] / D
+    The start point is clocked by            pll_uniq_1|CLKOS_inferred_clock [rising] on pin CK
+    The end   point is clocked by            pll_uniq_1|CLKOS_inferred_clock [rising] on pin CK
+
+Instance / Net                                            Pin      Pin               Arrival     No. of    
+Name                                         Type         Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------
+rs232_decoder_encoder_inst.count[1]          FD1P3DX      Q        Out     1.188     1.188       -         
+count[1]                                     Net          -        -       -         -           6         
+rs232_decoder_encoder_inst.un2_c4            ORCALUT4     B        In      0.000     1.188       -         
+rs232_decoder_encoder_inst.un2_c4            ORCALUT4     Z        Out     1.089     2.277       -         
+un2                                          Net          -        -       -         -           2         
+rs232_decoder_encoder_inst.count16           ORCALUT4     C        In      0.000     2.277       -         
+rs232_decoder_encoder_inst.count16           ORCALUT4     Z        Out     1.017     3.293       -         
+count16                                      Net          -        -       -         -           1         
+rs232_decoder_encoder_inst.count_3_f0[0]     ORCALUT4     A        In      0.000     3.293       -         
+rs232_decoder_encoder_inst.count_3_f0[0]     ORCALUT4     Z        Out     0.617     3.910       -         
+count_3[0]                                   Net          -        -       -         -           1         
+rs232_decoder_encoder_inst.count[0]          FD1P3DX      D        In      0.000     3.910       -         
+===========================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: reveal_coretop|jtck_inferred_clock[0]
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                                        Starting                                                                       Arrival            
+Instance                                                                Reference                                 Type        Pin     Net              Time        Slack  
+                                                                        Clock                                                                                             
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.shift_reg[16]     reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     Q       addr[0]          1.339       990.887
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.shift_reg[28]     reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     Q       addr[12]         1.309       991.150
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.shift_reg[29]     reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     Q       addr[13]         1.305       991.153
+top_reveal_coretop_instance.top_la0_inst_0.trig_u.te_0.te_precnt[0]     reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     Q       te_precnt[0]     1.044       991.275
+top_reveal_coretop_instance.top_la0_inst_0.trig_u.te_0.te_precnt[1]     reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     Q       te_precnt[1]     1.044       991.275
+top_reveal_coretop_instance.top_la0_inst_0.trig_u.te_0.te_precnt[2]     reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     Q       te_precnt[2]     1.044       991.275
+top_reveal_coretop_instance.top_la0_inst_0.trig_u.te_0.te_precnt[3]     reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     Q       te_precnt[3]     1.044       991.275
+top_reveal_coretop_instance.top_la0_inst_0.trig_u.te_0.te_precnt[4]     reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     Q       te_precnt[4]     1.044       991.275
+top_reveal_coretop_instance.top_la0_inst_0.trig_u.te_0.te_precnt[5]     reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     Q       te_precnt[5]     1.044       991.275
+top_reveal_coretop_instance.top_la0_inst_0.trig_u.te_0.te_precnt[6]     reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     Q       te_precnt[6]     1.044       991.275
+==========================================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                                         Starting                                                                               Required            
+Instance                                                                 Reference                                 Type        Pin     Net                      Time         Slack  
+                                                                         Clock                                                                                                      
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc        reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     D       parity_calc_5            1000.089     990.887
+top_reveal_coretop_instance.top_la0_inst_0.trig_u.te_0.te_precnt[15]     reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     D       te_precnt_s[15]          999.894      991.275
+top_reveal_coretop_instance.top_la0_inst_0.trig_u.te_0.te_precnt[13]     reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     D       te_precnt_s[13]          999.894      991.418
+top_reveal_coretop_instance.top_la0_inst_0.trig_u.te_0.te_precnt[14]     reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     D       te_precnt_s[14]          999.894      991.418
+top_reveal_coretop_instance.top_la0_inst_0.trig_u.te_0.te_precnt[11]     reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     D       te_precnt_s[11]          999.894      991.561
+top_reveal_coretop_instance.top_la0_inst_0.trig_u.te_0.te_precnt[12]     reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     D       te_precnt_s[12]          999.894      991.561
+top_reveal_coretop_instance.top_la0_inst_0.tm_u.tm_rd_addr_cntr[3]       reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     D       tm_rd_addr_cntr_s[3]     999.894      991.627
+top_reveal_coretop_instance.top_la0_inst_0.tm_u.tm_rd_addr_cntr[4]       reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     D       tm_rd_addr_cntr_s[4]     999.894      991.627
+top_reveal_coretop_instance.top_la0_inst_0.trig_u.te_0.te_precnt[9]      reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     D       te_precnt_s[9]           999.894      991.704
+top_reveal_coretop_instance.top_la0_inst_0.trig_u.te_0.te_precnt[10]     reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     D       te_precnt_s[10]          999.894      991.704
+====================================================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      1000.000
+    - Setup time:                            -0.089
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         1000.089
+
+    - Propagation time:                      9.202
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     990.887
+
+    Number of logic level(s):                9
+    Starting point:                          top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.shift_reg[16] / Q
+    Ending point:                            top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc / D
+    The start point is clocked by            reveal_coretop|jtck_inferred_clock[0] [falling] on pin CK
+    The end   point is clocked by            reveal_coretop|jtck_inferred_clock[0] [falling] on pin CK
+
+Instance / Net                                                                                Pin      Pin               Arrival     No. of    
+Name                                                                             Type         Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------------------------------------------
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.shift_reg[16]              FD1P3DX      Q        Out     1.339     1.339       -         
+addr[0]                                                                          Net          -        -       -         -           41        
+top_reveal_coretop_instance.top_la0_inst_0.trig_u.tcnt_0.rd_dout_tcnt_1_0[0]     ORCALUT4     A        In      0.000     1.339       -         
+top_reveal_coretop_instance.top_la0_inst_0.trig_u.tcnt_0.rd_dout_tcnt_1_0[0]     ORCALUT4     Z        Out     1.017     2.356       -         
+N_91                                                                             Net          -        -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.trig_u.tcnt_0.rd_dout_tcnt_1[0]       ORCALUT4     A        In      0.000     2.356       -         
+top_reveal_coretop_instance.top_la0_inst_0.trig_u.tcnt_0.rd_dout_tcnt_1[0]       ORCALUT4     Z        Out     0.449     2.805       -         
+rd_dout_tcnt[0]                                                                  Net          -        -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.trig_u.rd_dout_trig_0[0]              ORCALUT4     A        In      0.000     2.805       -         
+top_reveal_coretop_instance.top_la0_inst_0.trig_u.rd_dout_trig_0[0]              ORCALUT4     Z        Out     1.017     3.821       -         
+N_20                                                                             Net          -        -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.trig_u.rd_dout_trig[0]                ORCALUT4     A        In      0.000     3.821       -         
+top_reveal_coretop_instance.top_la0_inst_0.trig_u.rd_dout_trig[0]                ORCALUT4     Z        Out     0.449     4.270       -         
+rd_dout_trig[0]                                                                  Net          -        -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.jtdo_iv_i_m3_0             ORCALUT4     B        In      0.000     4.270       -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.jtdo_iv_i_m3_0             ORCALUT4     Z        Out     1.017     5.287       -         
+N_57                                                                             Net          -        -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.jtdo_iv_i_a4_0             ORCALUT4     A        In      0.000     5.287       -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.jtdo_iv_i_a4_0             ORCALUT4     Z        Out     1.089     6.376       -         
+N_1426                                                                           Net          -        -       -         -           2         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.jtdo_iv_i                  ORCALUT4     A        In      0.000     6.376       -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.jtdo_iv_i                  ORCALUT4     Z        Out     1.193     7.569       -         
+N_21                                                                             Net          -        -       -         -           4         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_5_iv_0_0_0     ORCALUT4     A        In      0.000     7.569       -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_5_iv_0_0_0     ORCALUT4     Z        Out     1.017     8.585       -         
+parity_calc_5_iv_0_0_0                                                           Net          -        -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_5_iv_0_0       ORCALUT4     C        In      0.000     8.585       -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_5_iv_0_0       ORCALUT4     Z        Out     0.617     9.202       -         
+parity_calc_5                                                                    Net          -        -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc                FD1P3DX      D        In      0.000     9.202       -         
+===============================================================================================================================================
 
 
 
@@ -438,25 +737,41 @@ Detailed Report for Clock: System
 Starting Points with Worst Slack
 ********************************
 
-                     Starting                                        Arrival             
-Instance             Reference     Type      Pin       Net           Time        Slack   
-                     Clock                                                               
------------------------------------------------------------------------------------------
-pcm1.PCNTR_Inst0     System        PCNTR     SFLAG     stby_flag     0.000       1000.000
-pcm1.PCNTR_Inst0     System        PCNTR     STDBY     stdby1_c      0.000       1000.000
-=========================================================================================
+                                                                                  Starting                                                       Arrival            
+Instance                                                                          Reference     Type              Pin           Net              Time        Slack  
+                                                                                  Clock                                                                             
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+top_reveal_coretop_instance.jtagconn16_inst_0                                     System        jtagconn16        jce2          jce2[0]          0.000       993.800
+top_reveal_coretop_instance.jtagconn16_inst_0                                     System        jtagconn16        jshift        jshift[0]        0.000       993.800
+top_reveal_coretop_instance.jtagconn16_inst_0                                     System        jtagconn16        ip_enable     ip_enable[0]     0.000       995.641
+top_reveal_coretop_instance.jtagconn16_inst_0                                     System        jtagconn16        jrstn         jrstn[0]         0.000       997.767
+top_reveal_coretop_instance.top_la0_inst_0.trig_u.te_0.genblk1\.te_tt_ebr_ram     System        pmi_ram_dp_Z2     Q[0]          tt_out[0]        0.000       998.383
+top_reveal_coretop_instance.jtagconn16_inst_0                                     System        jtagconn16        jtdi          jtdi[0]          0.000       998.455
+pll_inst.PLLInst_0                                                                System        EHXPLLJ           LOCK          clock_lock       0.000       998.530
+efb_inst.EFBInst_0                                                                System        EFB               WBACKO        wb_ack           0.000       999.472
+efb_inst.EFBInst_0                                                                System        EFB               WBDATO0       wb_dat_o[0]      0.000       999.894
+efb_inst.EFBInst_0                                                                System        EFB               WBDATO1       wb_dat_o[1]      0.000       999.894
+====================================================================================================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                     Starting                                          Required             
-Instance             Reference     Type      Pin         Net           Time         Slack   
-                     Clock                                                                  
---------------------------------------------------------------------------------------------
-OSCH_inst            System        OSCH      STDBY       stdby1_c      1000.000     1000.000
-pcm1.PCNTR_Inst0     System        PCNTR     CLRFLAG     stby_flag     1000.000     1000.000
-============================================================================================
+                                                                             Starting                                                   Required            
+Instance                                                                     Reference     Type        Pin     Net                      Time         Slack  
+                                                                             Clock                                                                          
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc            System        FD1P3DX     D       parity_calc_5            1000.089     993.800
+top_reveal_coretop_instance.top_la0_inst_0.tm_u.tm_rd_addr_cntr[3]           System        FD1P3DX     D       tm_rd_addr_cntr_s[3]     999.894      994.069
+top_reveal_coretop_instance.top_la0_inst_0.tm_u.tm_rd_addr_cntr[4]           System        FD1P3DX     D       tm_rd_addr_cntr_s[4]     999.894      994.069
+top_reveal_coretop_instance.top_la0_inst_0.tm_u.tm_rd_addr_cntr[1]           System        FD1P3DX     D       tm_rd_addr_cntr_s[1]     999.894      994.211
+top_reveal_coretop_instance.top_la0_inst_0.tm_u.tm_rd_addr_cntr[2]           System        FD1P3DX     D       tm_rd_addr_cntr_s[2]     999.894      994.211
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.tm_crc[0]              System        FD1P3BX     D       tm_crc_7[0]              1000.089     994.817
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.tr_dout_bit_cnt[3]     System        FD1P3DX     D       tr_dout_bit_cnt_s[3]     999.894      995.641
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.tr_dout_bit_cnt[4]     System        FD1P3DX     D       tr_dout_bit_cnt_s[4]     999.894      995.641
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.tr_dout_bit_cnt[1]     System        FD1P3DX     D       tr_dout_bit_cnt_s[1]     999.894      995.784
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.tr_dout_bit_cnt[2]     System        FD1P3DX     D       tr_dout_bit_cnt_s[2]     999.894      995.784
+============================================================================================================================================================
 
 
 
@@ -466,29 +781,46 @@ Worst Path Information
 
 Path information for path number 1: 
       Requested Period:                      1000.000
-    - Setup time:                            0.000
+    - Setup time:                            -0.089
     + Clock delay at ending point:           0.000 (ideal)
-    + Estimated clock delay at ending point: 0.000
-    = Required time:                         1000.000
+    = Required time:                         1000.089
 
-    - Propagation time:                      0.000
+    - Propagation time:                      6.289
     - Clock delay at starting point:         0.000 (ideal)
     - Estimated clock delay at start point:  -0.000
-    = Slack (non-critical) :                 1000.000
+    = Slack (non-critical) :                 993.800
 
-    Number of logic level(s):                0
-    Starting point:                          pcm1.PCNTR_Inst0 / SFLAG
-    Ending point:                            pcm1.PCNTR_Inst0 / CLRFLAG
+    Number of logic level(s):                6
+    Starting point:                          top_reveal_coretop_instance.jtagconn16_inst_0 / jce2
+    Ending point:                            top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc / D
     The start point is clocked by            System [rising]
-    The end   point is clocked by            System [rising]
+    The end   point is clocked by            reveal_coretop|jtck_inferred_clock[0] [falling] on pin CK
 
-Instance / Net                 Pin         Pin               Arrival     No. of    
-Name                 Type      Name        Dir     Delay     Time        Fan Out(s)
------------------------------------------------------------------------------------
-pcm1.PCNTR_Inst0     PCNTR     SFLAG       Out     0.000     0.000       -         
-stby_flag            Net       -           -       -         -           1         
-pcm1.PCNTR_Inst0     PCNTR     CLRFLAG     In      0.000     0.000       -         
-===================================================================================
+Instance / Net                                                                                  Pin      Pin               Arrival     No. of    
+Name                                                                             Type           Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------------------------------------------
+top_reveal_coretop_instance.jtagconn16_inst_0                                    jtagconn16     jce2     Out     0.000     0.000       -         
+jce2[0]                                                                          Net            -        -       -         -           12        
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.capture_dr_0_a2            ORCALUT4       C        In      0.000     0.000       -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.capture_dr_0_a2            ORCALUT4       Z        Out     1.357     1.357       -         
+capture_dr                                                                       Net            -        -       -         -           29        
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.jtdo_iv_i_a3_1             ORCALUT4       C        In      0.000     1.357       -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.jtdo_iv_i_a3_1             ORCALUT4       Z        Out     1.017     2.374       -         
+N_83                                                                             Net            -        -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.jtdo_iv_i_3                ORCALUT4       A        In      0.000     2.374       -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.jtdo_iv_i_3                ORCALUT4       Z        Out     1.089     3.462       -         
+jtdo_iv_i_3                                                                      Net            -        -       -         -           2         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.jtdo_iv_i                  ORCALUT4       D        In      0.000     3.462       -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.jtdo_iv_i                  ORCALUT4       Z        Out     1.193     4.655       -         
+N_21                                                                             Net            -        -       -         -           4         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_5_iv_0_0_0     ORCALUT4       A        In      0.000     4.655       -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_5_iv_0_0_0     ORCALUT4       Z        Out     1.017     5.672       -         
+parity_calc_5_iv_0_0_0                                                           Net            -        -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_5_iv_0_0       ORCALUT4       C        In      0.000     5.672       -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_5_iv_0_0       ORCALUT4       Z        Out     0.617     6.289       -         
+parity_calc_5                                                                    Net            -        -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc                FD1P3DX        D        In      0.000     6.289       -         
+=================================================================================================================================================
 
 
 
@@ -497,38 +829,51 @@ pcm1.PCNTR_Inst0     PCNTR     CLRFLAG     In      0.000     0.000       -
 Timing exceptions that could not be applied
 None
 
-Finished final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 144MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 161MB peak: 164MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 144MB)
+Finished timing report (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 161MB peak: 164MB)
 
 ---------------------------------------
 Resource Usage Report
 Part: lcmxo2_7000he-4
 
-Register bits: 1 of 6864 (0%)
+Register bits: 366 of 6864 (5%)
 PIC Latch:       0
-I/O cells:       12
+I/O cells:       21
 
 
 Details:
+BB:             3
+CCU2D:          28
+EFB:            1
+EHXPLLJ:        1
+FD1P3AX:        18
+FD1P3BX:        33
+FD1P3DX:        250
 FD1S3BX:        1
+FD1S3DX:        55
 GSR:            1
-IB:             2
-INV:            2
-OB:             10
+IB:             3
+IFS1P3DX:       1
+INV:            13
+L6MUX21:        1
+OB:             14
+OBZ:            1
+OFS1P3DX:       8
+ORCALUT4:       411
 OSCH:           1
 PCNTR:          1
+PFUMX:          17
 PUR:            1
-VHI:            2
-VLO:            2
-false:          1
-true:           1
+VHI:            13
+VLO:            15
+true:           2
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 30MB peak: 144MB)
+At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 34MB peak: 164MB)
 
-Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Wed Jun 14 20:26:10 2017
+Process took 0h:00m:03s realtime, 0h:00m:02s cputime
+# Wed Jun 28 23:11:29 2017
 
 ###########################################################]

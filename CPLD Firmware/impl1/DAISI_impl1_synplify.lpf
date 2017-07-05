@@ -1,9 +1,11 @@
 #
-# Logical Preferences generated for Lattice by Synplify maplat, Build 1612R.
+# Logical Preferences generated for Lattice by Synplify maplat, Build 1682R.
 #
 
 # Period Constraints 
-#FREQUENCY NET "osc_clk_c" 2.1 MHz;
+#FREQUENCY NET "pll_inst/clock_00_0192_0" 1.0 MHz;
+#FREQUENCY NET "top_reveal_coretop_instance/jtck[0]" 1.0 MHz;
+#FREQUENCY NET "pll_inst/clock_84_0000_c" 1.0 MHz;
 
 
 # Output Constraints 
@@ -15,6 +17,12 @@
 
 
 # Block Path Constraints 
+#BLOCK PATH FROM CLKNET "top_reveal_coretop_instance/jtck[0]" TO CLKNET "pll_inst/clock_00_0192_0";
+#BLOCK PATH FROM CLKNET "top_reveal_coretop_instance/jtck[0]" TO CLKNET "pll_inst/clock_84_0000_c";
+#BLOCK PATH FROM CLKNET "pll_inst/clock_00_0192_0" TO CLKNET "top_reveal_coretop_instance/jtck[0]";
+#BLOCK PATH FROM CLKNET "pll_inst/clock_00_0192_0" TO CLKNET "pll_inst/clock_84_0000_c";
+#BLOCK PATH FROM CLKNET "pll_inst/clock_84_0000_c" TO CLKNET "top_reveal_coretop_instance/jtck[0]";
+#BLOCK PATH FROM CLKNET "pll_inst/clock_84_0000_c" TO CLKNET "pll_inst/clock_00_0192_0";
 
 BLOCK ASYNCPATHS;
 

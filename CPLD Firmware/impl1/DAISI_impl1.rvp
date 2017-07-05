@@ -1,0 +1,48 @@
+#-- Lattice Semiconductor Corporation Ltd.
+#-- Bali Reveal project file
+
+#device options
+[Device]
+part = LCMXO2-7000HE-4TG144C
+family = MachXO2
+device = LCMXO2-7000HE
+speed = 4
+package = TQFP144
+operation = Commercial
+
+#design options
+[Design]
+title = DAISI
+path = /media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1
+core_generate = /media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1
+search_path = /media/sf_Downloads/Code/DAISI/CPLD Firmware
+top = top
+lpf = /media/sf_Downloads/Code/DAISI/CPLD Firmware/DAISI.lpf
+synthesis = synplify
+
+#strategy options
+VHDL2008 = false
+
+#HDLs options
+[HDLs]
+/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v = Verilog
+/media/sf_Downloads/Code/DAISI/CPLD Firmware/pwr_cntrllr.v = Verilog
+/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v = Verilog
+/media/sf_Downloads/Code/DAISI/CPLD Firmware/data_buffer.v = Verilog
+/media/sf_Downloads/Code/DAISI/CPLD Firmware/data_formatter.v = Verilog
+/media/sf_Downloads/Code/DAISI/CPLD Firmware/storage_interface.v = Verilog
+/media/sf_Downloads/Code/DAISI/CPLD Firmware/rs232_decoder_encoder.v = Verilog
+/media/sf_Downloads/Code/DAISI/CPLD Firmware/rs232_command_processor.v = Verilog
+/media/sf_Downloads/Code/DAISI/CPLD Firmware/pseudo_adc.v = Verilog
+/media/sf_Downloads/Code/DAISI/CPLD Firmware/regulator_control.v = Verilog
+/media/sf_Downloads/Code/DAISI/CPLD Firmware/sensor_interface.v = Verilog
+/media/sf_Downloads/Code/DAISI/CPLD Firmware/thermal_controller.v = Verilog
+/media/sf_Downloads/Code/DAISI/CPLD Firmware/pll.v = Verilog
+/media/sf_Downloads/Code/DAISI/CPLD Firmware/efb.v = Verilog
+[HDL_Defines]
+SBP_SYNTHESIS=
+[HDL_Param]
+[Generated]
+/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_la0_trig_gen.v=Verilog
+/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_la0_gen.v=Verilog
+/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v=Verilog,work
