@@ -14,15 +14,15 @@ Performance Grade:      4
 PACKAGE:          TQFP144
 Package Status:                     Final          Version 1.39
 
-Wed Jun 28 23:11:45 2017
+Wed Jul 12 20:48:57 2017
 
 Pinout by Port Name:
 +---------------+----------+---------------+-------+-----------+-----------+----------------------------------------------------------+
 | Port Name     | Pin/Bank | Buffer Type   | Site  | PG Enable | BC Enable | Properties                                               |
 +---------------+----------+---------------+-------+-----------+-----------+----------------------------------------------------------+
-| clock_00_0096 | 32/3     | LVCMOS33_OUT  | PL24A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| clock_00_0192 | 34/3     | LVCMOS33_OUT  | PL25A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| clock_84_0000 | 23/4     | LVCMOS33_OUT  | PL17A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| clock_00_0096 | 76/1     | LVCMOS33_OUT  | PR23A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| clock_00_0192 | 89/1     | LVCMOS33_OUT  | PR15A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| clock_84_0000 | 96/1     | LVCMOS33_OUT  | PR9A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
 | led0          | 97/1     | LVCMOS33_OUT  | PR7B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
 | led1          | 98/1     | LVCMOS33_OUT  | PR7A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
 | led2          | 99/1     | LVCMOS33_OUT  | PR5B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
@@ -31,7 +31,7 @@ Pinout by Port Name:
 | led5          | 105/1    | LVCMOS33_OUT  | PR3A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
 | led6          | 106/1    | LVCMOS33_OUT  | PR2B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
 | led7          | 107/1    | LVCMOS33_OUT  | PR2A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| osc_clk       | 6/5      | LVCMOS33_OUT  | PL6B  |           |           | DRIVE:8mA PULL:DOWN SLEW:FAST                            |
+| osc_clk       | 42/2     | LVCMOS33_OUT  | PB9A  |           |           | DRIVE:8mA PULL:DOWN SLEW:FAST                            |
 | rs_232_rx     | 121/0    | LVCMOS33_IN   | PT25B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
 | rs_232_tx     | 125/0    | LVCMOS33_OUT  | PT22D |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
 | spi_clk       | 44/2     | LVCMOS33_BIDI | PB12A |           |           | DRIVE:8mA PULL:DOWN CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW  |
@@ -40,7 +40,8 @@ Pinout by Port Name:
 | spi_mosi      | 71/2     | LVCMOS33_BIDI | PB38B |           |           | DRIVE:8mA PULL:DOWN CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW  |
 | stdby1        | 38/2     | LVCMOS33_OUT  | PB4A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
 | stdby_in      | 69/2     | LVCMOS33_IN   | PB37B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| switch0       | 109/0    | LVCMOS33_IN   | PT36D |           |           | PULL:UP CLAMP:ON HYSTERESIS:SMALL                        |
+| switch0       | 142/0    | LVCMOS33_IN   | PT9B  |           |           | PULL:UP CLAMP:ON HYSTERESIS:SMALL                        |
+| switch0_gnd   | 138/0    | LVCMOS33_OUT  | PT11B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
 +---------------+----------+---------------+-------+-----------+-----------+----------------------------------------------------------+
 
 Vccio by Bank:
@@ -51,8 +52,6 @@ Vccio by Bank:
 | 1    | 3.3V  |
 | 2    | 3.3V  |
 | 3    | 3.3V  |
-| 4    | 3.3V  |
-| 5    | 3.3V  |
 +------+-------+
 
 
@@ -71,7 +70,7 @@ Vccio by Bank:
 | 3/5      |     unused, PULL:DOWN |            |               | PL4A  | L_GPLLT_IN     |           |           |
 | 4/5      |     unused, PULL:DOWN |            |               | PL4B  | L_GPLLC_IN     |           |           |
 | 5/5      |     unused, PULL:DOWN |            |               | PL6A  | PCLKT5_0       |           |           |
-| 6/5      | osc_clk               |            | LVCMOS33_OUT  | PL6B  | PCLKC5_0       |           |           |
+| 6/5      |     unused, PULL:DOWN |            |               | PL6B  | PCLKC5_0       |           |           |
 | 9/5      |     unused, PULL:DOWN |            |               | PL8A  |                |           |           |
 | 10/5     |     unused, PULL:DOWN |            |               | PL8B  |                |           |           |
 | 11/5     |     unused, PULL:DOWN |            |               | PL9A  |                |           |           |
@@ -84,22 +83,22 @@ Vccio by Bank:
 | 20/4     |     unused, PULL:DOWN |            |               | PL12B | PCLKC4_0       |           |           |
 | 21/4     |     unused, PULL:DOWN |            |               | PL15A |                |           |           |
 | 22/4     |     unused, PULL:DOWN |            |               | PL15B |                |           |           |
-| 23/4     | clock_84_0000         |            | LVCMOS33_OUT  | PL17A |                |           |           |
+| 23/4     |     unused, PULL:DOWN |            |               | PL17A |                |           |           |
 | 24/4     |     unused, PULL:DOWN |            |               | PL17B |                |           |           |
 | 25/3     |     unused, PULL:DOWN |            |               | PL19A |                |           |           |
 | 26/3     |     unused, PULL:DOWN |            |               | PL19B |                |           |           |
 | 27/3     |     unused, PULL:DOWN |            |               | PL22A | PCLKT3_0       |           |           |
 | 28/3     |     unused, PULL:DOWN |            |               | PL22B | PCLKC3_0       |           |           |
 | 31/3     |     unused, PULL:DOWN |            |               | PL23D |                |           |           |
-| 32/3     | clock_00_0096         | LOCATED    | LVCMOS33_OUT  | PL24A |                |           |           |
+| 32/3     |     unused, PULL:DOWN |            |               | PL24A |                |           |           |
 | 33/3     |     unused, PULL:DOWN |            |               | PL24B |                |           |           |
-| 34/3     | clock_00_0192         | LOCATED    | LVCMOS33_OUT  | PL25A |                |           |           |
+| 34/3     |     unused, PULL:DOWN |            |               | PL25A |                |           |           |
 | 35/3     |     unused, PULL:DOWN |            |               | PL25B |                |           |           |
 | 38/2     | stdby1                | LOCATED    | LVCMOS33_OUT  | PB4A  |                |           |           |
 | 39/2     |     unused, PULL:DOWN |            |               | PB4B  |                |           |           |
 | 40/2     | spi_csn               |            | LVCMOS33_OUT  | PB6A  | CSSPIN         |           |           |
 | 41/2     |     unused, PULL:DOWN |            |               | PB6B  |                |           |           |
-| 42/2     |     unused, PULL:DOWN |            |               | PB9A  |                |           |           |
+| 42/2     | osc_clk               | LOCATED    | LVCMOS33_OUT  | PB9A  |                |           |           |
 | 43/2     |     unused, PULL:DOWN |            |               | PB9B  |                |           |           |
 | 44/2     | spi_clk               |            | LVCMOS33_BIDI | PB12A | MCLK/CCLK      |           |           |
 | 45/2     | spi_miso              |            | LVCMOS33_BIDI | PB12B | SO/SPISO       |           |           |
@@ -127,7 +126,7 @@ Vccio by Bank:
 | 73/1     |     unused, PULL:DOWN |            |               | PR24B | DQ1            |           |           |
 | 74/1     |     unused, PULL:DOWN |            |               | PR24A | DQ1            |           |           |
 | 75/1     |     unused, PULL:DOWN |            |               | PR23B | DQ1            |           |           |
-| 76/1     |     unused, PULL:DOWN |            |               | PR23A | DQ1            |           |           |
+| 76/1     | clock_00_0096         |            | LVCMOS33_OUT  | PR23A | DQ1            |           |           |
 | 77/1     |     unused, PULL:DOWN |            |               | PR21B | DQ1            |           |           |
 | 78/1     |     unused, PULL:DOWN |            |               | PR21A | DQ1            |           |           |
 | 81/1     |     unused, PULL:DOWN |            |               | PR18B | DQ1            |           |           |
@@ -137,13 +136,13 @@ Vccio by Bank:
 | 85/1     |     unused, PULL:DOWN |            |               | PR16B | DQS1N          |           |           |
 | 86/1     |     unused, PULL:DOWN |            |               | PR16A | DQS1           |           |           |
 | 87/1     |     unused, PULL:DOWN |            |               | PR15B |                |           |           |
-| 89/1     |     unused, PULL:DOWN |            |               | PR15A |                |           |           |
+| 89/1     | clock_00_0192         | LOCATED    | LVCMOS33_OUT  | PR15A |                |           |           |
 | 91/1     |     unused, PULL:DOWN |            |               | PR12B | PCLKC1_0/DQ0   |           |           |
 | 92/1     |     unused, PULL:DOWN |            |               | PR12A | PCLKT1_0/DQ0   |           |           |
 | 93/1     |     unused, PULL:DOWN |            |               | PR11B | DQS0N          |           |           |
 | 94/1     |     unused, PULL:DOWN |            |               | PR11A | DQS0           |           |           |
 | 95/1     |     unused, PULL:DOWN |            |               | PR9B  | DQ0            |           |           |
-| 96/1     |     unused, PULL:DOWN |            |               | PR9A  | DQ0            |           |           |
+| 96/1     | clock_84_0000         |            | LVCMOS33_OUT  | PR9A  | DQ0            |           |           |
 | 97/1     | led0                  | LOCATED    | LVCMOS33_OUT  | PR7B  | DQ0            |           |           |
 | 98/1     | led1                  | LOCATED    | LVCMOS33_OUT  | PR7A  | DQ0            |           |           |
 | 99/1     | led2                  | LOCATED    | LVCMOS33_OUT  | PR5B  | DQ0            |           |           |
@@ -153,7 +152,7 @@ Vccio by Bank:
 | 105/1    | led5                  | LOCATED    | LVCMOS33_OUT  | PR3A  | R_GPLLT_IN/DQ0 |           |           |
 | 106/1    | led6                  | LOCATED    | LVCMOS33_OUT  | PR2B  | R_GPLLC_FB/DQ0 |           |           |
 | 107/1    | led7                  | LOCATED    | LVCMOS33_OUT  | PR2A  | R_GPLLT_FB/DQ0 |           |           |
-| 109/0    | switch0               | LOCATED    | LVCMOS33_IN   | PT36D | DONE           |           |           |
+| 109/0    |     unused, PULL:DOWN |            |               | PT36D | DONE           |           |           |
 | 110/0    |     unused, PULL:DOWN |            |               | PT36C | INITN          |           |           |
 | 111/0    |     unused, PULL:DOWN |            |               | PT35B |                |           |           |
 | 112/0    |     unused, PULL:DOWN |            |               | PT35A |                |           |           |
@@ -175,11 +174,11 @@ Vccio by Bank:
 | 133/0    |     unused, PULL:DOWN |            |               | PT15A |                |           |           |
 | 136/0    | Reserved: sysCONFIG   |            |               | PT14D | TDI            |           |           |
 | 137/0    | Reserved: sysCONFIG   |            |               | PT14C | TDO            |           |           |
-| 138/0    |     unused, PULL:DOWN |            |               | PT11B |                |           |           |
+| 138/0    | switch0_gnd           | LOCATED    | LVCMOS33_OUT  | PT11B |                |           |           |
 | 139/0    |     unused, PULL:DOWN |            |               | PT11A |                |           |           |
 | 140/0    |     unused, PULL:DOWN |            |               | PT10B |                |           |           |
 | 141/0    |     unused, PULL:DOWN |            |               | PT10A |                |           |           |
-| 142/0    |     unused, PULL:DOWN |            |               | PT9B  |                |           |           |
+| 142/0    | switch0               | LOCATED    | LVCMOS33_IN   | PT9B  |                |           |           |
 | 143/0    |     unused, PULL:DOWN |            |               | PT9A  |                |           |           |
 | PB4C/2   |     unused, PULL:DOWN |            |               | PB4C  |                |           |           |
 | PB4D/2   |     unused, PULL:DOWN |            |               | PB4D  |                |           |           |
@@ -424,9 +423,9 @@ Dedicated sysCONFIG Pins:
 List of All Pins' Locate Preferences Based on Final Placement After PAR 
 to Help Users Lock Down ALL the Pins Easily (by Simply Copy & Paste): 
 
-LOCATE  COMP  "clock_00_0096"  SITE  "32";
-LOCATE  COMP  "clock_00_0192"  SITE  "34";
-LOCATE  COMP  "clock_84_0000"  SITE  "23";
+LOCATE  COMP  "clock_00_0096"  SITE  "76";
+LOCATE  COMP  "clock_00_0192"  SITE  "89";
+LOCATE  COMP  "clock_84_0000"  SITE  "96";
 LOCATE  COMP  "led0"  SITE  "97";
 LOCATE  COMP  "led1"  SITE  "98";
 LOCATE  COMP  "led2"  SITE  "99";
@@ -435,7 +434,7 @@ LOCATE  COMP  "led4"  SITE  "104";
 LOCATE  COMP  "led5"  SITE  "105";
 LOCATE  COMP  "led6"  SITE  "106";
 LOCATE  COMP  "led7"  SITE  "107";
-LOCATE  COMP  "osc_clk"  SITE  "6";
+LOCATE  COMP  "osc_clk"  SITE  "42";
 LOCATE  COMP  "rs_232_rx"  SITE  "121";
 LOCATE  COMP  "rs_232_tx"  SITE  "125";
 LOCATE  COMP  "spi_clk"  SITE  "44";
@@ -444,7 +443,8 @@ LOCATE  COMP  "spi_miso"  SITE  "45";
 LOCATE  COMP  "spi_mosi"  SITE  "71";
 LOCATE  COMP  "stdby1"  SITE  "38";
 LOCATE  COMP  "stdby_in"  SITE  "69";
-LOCATE  COMP  "switch0"  SITE  "109";
+LOCATE  COMP  "switch0"  SITE  "142";
+LOCATE  COMP  "switch0_gnd"  SITE  "138";
 
 #PLL
 LOCATE  COMP  "pll_inst/PLLInst_0"  SITE  "LPLL" ;
@@ -458,7 +458,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
-Wed Jun 28 23:11:45 2017
+Wed Jul 12 20:48:57 2017
 
 
 

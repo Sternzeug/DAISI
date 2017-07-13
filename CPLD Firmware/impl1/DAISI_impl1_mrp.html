@@ -23,27 +23,27 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-7000HETQFP144
 Target Performance:   4
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.9.1.119
-Mapped on:  06/28/17  23:11:34
+Mapped on:  07/12/17  20:48:51
 
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
-   Number of registers:    417 out of  7209 (6%)
-      PFU registers:          408 out of  6864 (6%)
-      PIO registers:            9 out of   345 (3%)
-   Number of SLICEs:       267 out of  3432 (8%)
-      SLICEs as Logic/ROM:    267 out of  3432 (8%)
+   Number of registers:     43 out of  7209 (1%)
+      PFU registers:           41 out of  6864 (1%)
+      PIO registers:            2 out of   345 (1%)
+   Number of SLICEs:        24 out of  3432 (1%)
+      SLICEs as Logic/ROM:     24 out of  3432 (1%)
       SLICEs as RAM:            0 out of  2574 (0%)
-      SLICEs as Carry:         45 out of  3432 (1%)
-   Number of LUT4s:        517 out of  6864 (8%)
-      Number used as logic LUTs:        427
+      SLICEs as Carry:          0 out of  3432 (0%)
+   Number of LUT4s:         45 out of  6864 (1%)
+      Number used as logic LUTs:         45
       Number used as distributed RAM:     0
-      Number used as ripple logic:       90
+      Number used as ripple logic:        0
       Number used as shift registers:     0
-   Number of PIO sites used: 21 + 4(JTAG) out of 115 (22%)
-   Number of block RAMs:  3 out of 26 (12%)
+   Number of PIO sites used: 22 + 4(JTAG) out of 115 (23%)
+   Number of block RAMs:  0 out of 26 (0%)
    Number of GSRs:  1 out of 1 (100%)
    EFB used :       Yes
-   JTAG used :      Yes
+   JTAG used :      No
    Readback used :  No
    Oscillator used :  Yes
    Startup used :   No
@@ -64,129 +64,40 @@ Mapped on:  06/28/17  23:11:34
      distributed RAMs) + 2*(Number of ripple logic)
       2. Number of logic LUT4s does not include count of distributed RAM and
      ripple logic.
-   Number of clocks:  5
+   Number of clocks:  4
      Net osc_clk_c: 1 loads, 1 rising, 0 falling (Driver: OSCH_inst )
-     Net clock_00_0192_0: 17 loads, 17 rising, 0 falling (Driver:
+     Net clock_00_0192_0: 21 loads, 21 rising, 0 falling (Driver:
 
      pll_inst/PLLInst_0 )
-     Net clock_84_0000_c: 95 loads, 95 rising, 0 falling (Driver:
+     Net clock_84_0000_c: 7 loads, 7 rising, 0 falling (Driver:
      pll_inst/PLLInst_0 )
      Net efb_inst/spi_clk_i: 1 loads, 1 rising, 0 falling (Driver: PIO spi_clk )
      
-     Net jtaghub16_jtck: 147 loads, 0 rising, 147 falling (Driver:
-     xo2chub/genblk7.jtagf_u )
-   Number of Clock Enables:  46
-     Net clock_00_0096_c: 8 loads, 7 LSLICEs
-     Net count_RNI34421[3]: 8 loads, 0 LSLICEs
-     Net spi_controller_inst/un1_state_1_i: 3 loads, 3 LSLICEs
-     Net top_reveal_coretop_instance/top_la0_inst_0/trig_u/tu_0/op_code8: 2
-     loads, 2 LSLICEs
-     Net top_reveal_coretop_instance/top_la0_inst_0/trig_u/tu_0/mask_reg[0]_0_sq
-     muxa: 1 loads, 1 LSLICEs
-     Net top_reveal_coretop_instance/top_la0_inst_0/trig_u/tu_0/compare_reg[0]_0
-     _sqmuxa: 1 loads, 1 LSLICEs
-     Net top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/tt_wr_addr_cntr_
-     1_sqmuxa_i_0: 1 loads, 1 LSLICEs
-     Net top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/un1_tt_end_1_0:
-     1 loads, 1 LSLICEs
-     Net top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/tt_prog_active_1
-     _sqmuxa_1_i_0: 1 loads, 1 LSLICEs
-     Net top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/te_precnte: 9
-     loads, 9 LSLICEs
-     Net top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/te_precnt_val_0_
-     sqmuxa: 9 loads, 9 LSLICEs
-     Net top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/cnt_contig_reg_w
-     en_1: 1 loads, 1 LSLICEs
-     Net top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/num_then_wen_1:
-     1 loads, 1 LSLICEs
-     Net top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/next_then_reg_we
-     n_1: 1 loads, 1 LSLICEs
-     Net jtaghub16_ip_enable0: 28 loads, 28 LSLICEs
-     Net top_reveal_coretop_instance/top_la0_inst_0/trig_u/tcnt_0/reg2_0_sqmuxa:
-     1 loads, 1 LSLICEs
-     Net top_reveal_coretop_instance/top_la0_inst_0/trig_u/tcnt_0/reg1_0_sqmuxa:
-     2 loads, 2 LSLICEs
-     Net top_reveal_coretop_instance/top_la0_inst_0/trig_u/tcnt_0/reg0_read8: 1
-     loads, 1 LSLICEs
-     Net top_reveal_coretop_instance/top_la0_inst_0/trig_u/tcnt_0/reg0_0_sqmuxa:
-     1 loads, 1 LSLICEs
-     Net top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/un1_jtdo_4_i: 8
-     loads, 8 LSLICEs
-     Net top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/capture_dr_d4_0_s
-     qmuxa: 1 loads, 1 LSLICEs
-     Net top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/N_1413_i: 1
-     loads, 1 LSLICEs
-     Net top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jce2_d1_RNIR5MS:
-     10 loads, 10 LSLICEs
-     Net top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/N_58_i: 2 loads,
-     2 LSLICEs
-     Net top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/un1_jtdo_1_i: 8
-     loads, 8 LSLICEs
-     Net top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/N_52_i: 3 loads,
-     3 LSLICEs
-
-     Net top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/N_78_i: 21 loads,
-     21 LSLICEs
-     Net top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/parity_err_lat_0_
-     sqmuxa: 1 loads, 1 LSLICEs
-     Net top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/N_56: 1 loads, 1
-     LSLICEs
-     Net top_reveal_coretop_instance/top_la0_inst_0/tm_u/N_79_i: 3 loads, 3
-     LSLICEs
-     Net top_reveal_coretop_instance/top_la0_inst_0/tm_u/sample_en_d: 10 loads,
-     10 LSLICEs
-     Net top_reveal_coretop_instance/top_la0_inst_0/tm_u/start_d_RNITT1M: 3
-     loads, 3 LSLICEs
-     Net top_reveal_coretop_instance/top_la0_inst_0/tm_u/N_56_i: 3 loads, 3
-     LSLICEs
-     Net top_reveal_coretop_instance/top_la0_inst_0/tm_u/trig_enbl_0_sqmuxa: 1
-     loads, 1 LSLICEs
-     Net top_reveal_coretop_instance/top_la0_inst_0/tm_u/trace_dout_1_sqmuxa_i:
-     16 loads, 16 LSLICEs
-     Net top_reveal_coretop_instance/top_la0_inst_0/tm_u/N_9_i: 3 loads, 3
-     LSLICEs
-     Net top_reveal_coretop_instance/top_la0_inst_0/tm_u/force_trig_0_sqmuxa_1:
-     1 loads, 1 LSLICEs
-     Net top_reveal_coretop_instance/top_la0_inst_0/tm_u/un1_rd_dout_tm56_i: 4
-     loads, 4 LSLICEs
-     Net top_reveal_coretop_instance/top_la0_inst_0/tm_u/pre_trig_cntre: 3
-     loads, 3 LSLICEs
-     Net top_reveal_coretop_instance/top_la0_inst_0/tm_u/armed_p1_7_0_0_a2_0_RNI
-     SEIM1: 3 loads, 3 LSLICEs
-     Net
-     top_reveal_coretop_instance/top_la0_inst_0/tm_u/num_pre_trig_frm_0_sqmuxa:
-     3 loads, 3 LSLICEs
-     Net top_reveal_coretop_instance/top_la0_inst_0/tm_u/num_post_trig_frm_0_sqm
-     uxa: 3 loads, 3 LSLICEs
-     Net top_reveal_coretop_instance/top_la0_inst_0/tm_u/N_18: 1 loads, 1
-     LSLICEs
-     Net jtaghub16_jupdate: 8 loads, 8 LSLICEs
-     Net xo2chub/id_enable_0_sqmuxa: 1 loads, 1 LSLICEs
-     Net xo2chub/er1_shift_reg8: 10 loads, 10 LSLICEs
-   Number of local set/reset loads for net reset merged into GSR:  29
-   Number of LSRs:  3
+   Number of Clock Enables:  4
+     Net clock_00_0096_c: 11 loads, 9 LSLICEs
+     Net rs232_decoder_encoder_inst/rx_valid_RNINSRE: 5 loads, 5 LSLICEs
+     Net rs232_decoder_encoder_inst/rx_count17_RNIE23G: 4 loads, 4 LSLICEs
+     Net spi_controller_inst/N_48_i: 3 loads, 3 LSLICEs
+   Number of local set/reset loads for net reset merged into GSR:  43
+   Number of LSRs:  1
      Net reset: 1 loads, 0 LSLICEs
-     Net top_reveal_coretop_instance/top_la0_inst_0/reset_rvl_n: 77 loads, 75
-     LSLICEs
-     Net jtaghub16_jrstn: 143 loads, 143 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net jtaghub16_jrstn: 147 loads
-     Net top_reveal_coretop_instance/top_la0_inst_0/reset_rvl_n: 77 loads
-     Net top_reveal_coretop_instance/top_la0_inst_0/jshift_d1: 76 loads
-     Net jtaghub16_jshift: 45 loads
-     Net jtaghub16_ip_enable0: 44 loads
-     Net top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/N_26: 42 loads
-     Net top_reveal_coretop_instance/top_la0_inst_0/addr[0]: 41 loads
-     Net top_reveal_coretop_instance/top_la0_inst_0/addr[1]: 34 loads
-     Net top_reveal_coretop_instance/top_la0_inst_0/addr[12]: 29 loads
-     Net top_reveal_coretop_instance/top_la0_inst_0/addr[13]: 29 loads
+     Net clock_00_0096_c: 15 loads
+     Net rs232_decoder_encoder_inst/un6_c4: 12 loads
+     Net rs232_decoder_encoder_inst/outgoing_data12: 9 loads
+     Net rs232_decoder_encoder_inst/rx_count[0]: 6 loads
+     Net rs232_decoder_encoder_inst/tx_count[0]: 6 loads
+     Net spi_controller_inst/state[0]: 6 loads
+     Net spi_controller_inst/state[1]: 6 loads
+     Net wb_cyc: 6 loads
+     Net rs232_decoder_encoder_inst/rx_count[1]: 5 loads
+     Net rs232_decoder_encoder_inst/rx_valid_RNINSRE: 5 loads
 
 
 
 
-
-   Number of warnings:  13
+   Number of warnings:  12
    Number of errors:    0
      
 
@@ -214,14 +125,11 @@ WARNING - map: Power controller 'pcm1/PCNTR_Inst0' dynamic BANDGAP option is
 WARNING - map: Power controller 'pcm1/PCNTR_Inst0' dynamic BANDGAP option is
      enabled. The design contains PLL component(s) which will be disabled when
      BANDGAP is turned off.
-WARNING - map: The reset of EBR 'top_reveal_coretop_instance/top_la0_inst_0/trig
-     _u/te_0/genblk1.te_tt_ebr_ram/pmi_ram_dpXbnonesadr112112p12e1aace_0_0_0'
-     cannot be controlled. The local reset is not connected to any control
-     signal and set to GND. The global reset is disabled via GSR property. To
-     control the EBR reset, either connect the local reset to a control signal
-     or force the GSR property to be enabled.
-WARNING - map: Multiple comps assigned to site "40". Only one comp will be
-     assigned to this location.
+WARNING - map: Specified location site name "102" is not valid for
+
+     clock_00_0096. Location directive ignored.
+WARNING - map: Semantic error in "LOCATE COMP "clock_00_0096" SITE "102" ;":
+     Unable to find site 102 in the device. This preference has been disabled.
 WARNING - map: In "LOCATE COMP "spi_clk" SITE "44" ;": Current SYS_CONFIG
      setting prohibits pin "44" to be used as user IO. This preference has been
      disabled.
@@ -234,20 +142,14 @@ WARNING - map: In "LOCATE COMP "spi_miso" SITE "45" ;": Current SYS_CONFIG
 WARNING - map: In "LOCATE COMP "spi_csn" SITE "40" ;": Current SYS_CONFIG
      setting prohibits pin "40" to be used as user IO. This preference has been
      disabled.
-WARNING - map: In "LOCATE COMP "osc_clk" SITE "40" ;": Current SYS_CONFIG
-     setting prohibits pin "40" to be used as user IO. This preference has been
-     disabled.
 
 
 
 <A name="mrp_ioa"></A><B><U><big>IO (PIO) Attributes</big></U></B>
 
 +---------------------+-----------+-----------+------------+
-
 | IO Name             | Direction | Levelmode | IO         |
 |                     |           |  IO_TYPE  | Register   |
-+---------------------+-----------+-----------+------------+
-| rs_232_tx           | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | stdby1              | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
@@ -259,33 +161,38 @@ WARNING - map: In "LOCATE COMP "osc_clk" SITE "40" ;": Current SYS_CONFIG
 +---------------------+-----------+-----------+------------+
 | spi_miso            | BIDIR     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
+| rs_232_tx           | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
 | rs_232_rx           | INPUT     | LVCMOS33  | IN         |
 +---------------------+-----------+-----------+------------+
 | spi_csn             | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| led7                | OUTPUT    | LVCMOS33  | OUT        |
+| led7                | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| led6                | OUTPUT    | LVCMOS33  | OUT        |
+| led6                | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| led5                | OUTPUT    | LVCMOS33  | OUT        |
+| led5                | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| led4                | OUTPUT    | LVCMOS33  | OUT        |
+| led4                | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| led3                | OUTPUT    | LVCMOS33  | OUT        |
+| led3                | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| led2                | OUTPUT    | LVCMOS33  | OUT        |
+| led2                | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| led1                | OUTPUT    | LVCMOS33  | OUT        |
+| led1                | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| led0                | OUTPUT    | LVCMOS33  | OUT        |
+| led0                | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | clock_00_0096       | OUTPUT    | LVCMOS33  |            |
+
 +---------------------+-----------+-----------+------------+
 | clock_00_0192       | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | clock_84_0000       | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | osc_clk             | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| switch0_gnd         | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | switch0             | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
@@ -294,228 +201,17 @@ WARNING - map: In "LOCATE COMP "osc_clk" SITE "40" ;": Current SYS_CONFIG
 
 <A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
 
-Block xo2chub/VCC_0 undriven or does not drive anything - clipped.
-Block xo2chub/ip_enable[15] undriven or does not drive anything - clipped.
-Block xo2chub/cdn undriven or does not drive anything - clipped.
-Block top_reveal_coretop_instance/VCC_0 undriven or does not drive anything -
-     clipped.
-Block top_reveal_coretop_instance/GND_0 undriven or does not drive anything -
-     clipped.
-
-Block top_reveal_coretop_instance/top_la0_inst_0/VCC_0 undriven or does not
-     drive anything - clipped.
-Block top_reveal_coretop_instance/top_la0_inst_0/GND_0 undriven or does not
-     drive anything - clipped.
-Block top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/VCC_0 undriven or
-     does not drive anything - clipped.
-Block top_reveal_coretop_instance/top_la0_inst_0/trig_u/VCC_0 undriven or does
-     not drive anything - clipped.
-Block top_reveal_coretop_instance/top_la0_inst_0/trig_u/GND_0 undriven or does
-     not drive anything - clipped.
-Block top_reveal_coretop_instance/top_la0_inst_0/trig_u/tcnt_0/VCC_0 undriven or
-     does not drive anything - clipped.
-Block top_reveal_coretop_instance/top_la0_inst_0/trig_u/tcnt_0/GND_0 undriven or
-     does not drive anything - clipped.
-Block top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/genblk1.te_tt_ebr_r
-     am/scuba_vhi_inst undriven or does not drive anything - clipped.
-Block top_reveal_coretop_instance/top_la0_inst_0/trig_u/tu_0/VCC_0 undriven or
-     does not drive anything - clipped.
-Block top_reveal_coretop_instance/top_la0_inst_0/trig_u/tu_0/GND_0 undriven or
-     does not drive anything - clipped.
-Block top_reveal_coretop_instance/top_la0_inst_0/trig_u/decode_u/VCC_0 undriven
-     or does not drive anything - clipped.
-Block top_reveal_coretop_instance/top_la0_inst_0/trig_u/decode_u/GND_0 undriven
-     or does not drive anything - clipped.
+Block VCC undriven or does not drive anything - clipped.
 Block spi_controller_inst/GND undriven or does not drive anything - clipped.
 Block spi_controller_inst/VCC undriven or does not drive anything - clipped.
-Block rs232_decoder_encoder_inst/GND undriven or does not drive anything -
-     clipped.
 Block rs232_decoder_encoder_inst/VCC undriven or does not drive anything -
      clipped.
-Signal xo2chub/jrstn_i was merged into signal jtaghub16_jrstn
-Signal xo2chub/cdn.CN was merged into signal jtaghub16_jtck
-Signal top_reveal_coretop_instance/top_la0_inst_0/tm_u/jrstn_i was merged into
-     signal jtaghub16_jrstn
-Signal top_reveal_coretop_instance/top_la0_inst_0/tm_u/jtck_i was merged into
-     signal jtaghub16_jtck
-Signal top_reveal_coretop_instance/top_la0_inst_0/tm_u/reset_n_i was merged into
-     signal top_reveal_coretop_instance/top_la0_inst_0/reset_rvl_n
-Signal top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/r_w.CN was merged
-     into signal jtaghub16_jtck
-Signal top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jrstn_i was merged
-     into signal jtaghub16_jrstn
-Signal top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/reset_n_i was
-     merged into signal top_reveal_coretop_instance/top_la0_inst_0/reset_rvl_n
-Signal top_reveal_coretop_instance/top_la0_inst_0/trig_u/tcnt_0/reset_n_i was
-     merged into signal top_reveal_coretop_instance/top_la0_inst_0/reset_rvl_n
-Signal top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/jshift_d2.CN was
-     merged into signal jtaghub16_jtck
-Signal top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/jrstn_i was merged
-     into signal jtaghub16_jrstn
-Signal top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/reset_n_i was
-     merged into signal top_reveal_coretop_instance/top_la0_inst_0/reset_rvl_n
-Signal top_reveal_coretop_instance/top_la0_inst_0/trig_u/tu_0/reset_n_i was
-     merged into signal top_reveal_coretop_instance/top_la0_inst_0/reset_rvl_n
-Signal xo2chub/GND undriven or does not drive anything - clipped.
-Signal VCC undriven or does not drive anything - clipped.
-
-Signal top_reveal_coretop_instance/top_la0_inst_0/tm_u/VCC undriven or does not
-     drive anything - clipped.
-Signal top_reveal_coretop_instance/top_la0_inst_0/rd_dout_tm[11] undriven or
-     does not drive anything - clipped.
-Signal top_reveal_coretop_instance/top_la0_inst_0/tm_u/genblk4.tr_mem/scuba_vlo
-     undriven or does not drive anything - clipped.
-Signal top_reveal_coretop_instance/top_la0_inst_0/tm_u/genblk4.tr_mem/scuba_vhi
-     undriven or does not drive anything - clipped.
-Signal top_reveal_coretop_instance/top_la0_inst_0/ren_jtck undriven or does not
-     drive anything - clipped.
-Signal top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/VCC undriven or
-     does not drive anything - clipped.
-Signal top_reveal_coretop_instance/top_la0_inst_0/trig_u/rd_dout_te[1] undriven
-     or does not drive anything - clipped.
-Signal top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/genblk1.te_tt_ebr_
-     ram/scuba_vlo undriven or does not drive anything - clipped.
+Block rs232_decoder_encoder_inst/GND undriven or does not drive anything -
+     clipped.
 Signal pll_inst/GND undriven or does not drive anything - clipped.
 Signal efb_inst/VCC undriven or does not drive anything - clipped.
 Signal efb_inst/GND undriven or does not drive anything - clipped.
-Signal xo2chub/VCC undriven or does not drive anything - clipped.
-Signal xo2chub/bit_count_cry_0_COUT[3] undriven or does not drive anything -
-     clipped.
-Signal xo2chub/rom_rd_addr_cry_0_S0[0] undriven or does not drive anything -
-     clipped.
-Signal xo2chub/N_2 undriven or does not drive anything - clipped.
-Signal xo2chub/rom_rd_addr_s_0_S1[7] undriven or does not drive anything -
-     clipped.
-Signal xo2chub/rom_rd_addr_s_0_COUT[7] undriven or does not drive anything -
-     clipped.
-Signal xo2chub/jtdo2_int_prm_16_0_0_S1 undriven or does not drive anything -
-     clipped.
-Signal xo2chub/jtdo2_int_prm_16_0_0_S0 undriven or does not drive anything -
-     clipped.
-Signal xo2chub/N_3 undriven or does not drive anything - clipped.
-Signal xo2chub/er2_tdo[14] undriven or does not drive anything - clipped.
-Signal xo2chub/er2_tdo[15] undriven or does not drive anything - clipped.
-Signal xo2chub/jtdo2_int_prm_15_0_0_S1 undriven or does not drive anything -
-     clipped.
-Signal xo2chub/jtdo2_int_prm_15_0_0_S0 undriven or does not drive anything -
-     clipped.
-Signal xo2chub/er2_tdo[12] undriven or does not drive anything - clipped.
-Signal xo2chub/er2_tdo[13] undriven or does not drive anything - clipped.
-Signal xo2chub/jtdo2_int_prm_13_0_0_S1 undriven or does not drive anything -
-     clipped.
-Signal xo2chub/jtdo2_int_prm_13_0_0_S0 undriven or does not drive anything -
-     clipped.
-Signal xo2chub/er2_tdo[10] undriven or does not drive anything - clipped.
-Signal xo2chub/er2_tdo[11] undriven or does not drive anything - clipped.
-Signal xo2chub/jtdo2_int_prm_11_0_0_S1 undriven or does not drive anything -
-     clipped.
-Signal xo2chub/jtdo2_int_prm_11_0_0_S0 undriven or does not drive anything -
-     clipped.
-Signal xo2chub/er2_tdo[8] undriven or does not drive anything - clipped.
-Signal xo2chub/er2_tdo[9] undriven or does not drive anything - clipped.
-Signal xo2chub/jtdo2_int_prm_9_0_0_S1 undriven or does not drive anything -
-     clipped.
-
-Signal xo2chub/jtdo2_int_prm_9_0_0_S0 undriven or does not drive anything -
-     clipped.
-Signal xo2chub/er2_tdo[6] undriven or does not drive anything - clipped.
-Signal xo2chub/er2_tdo[7] undriven or does not drive anything - clipped.
-Signal xo2chub/jtdo2_int_prm_7_0_0_S1 undriven or does not drive anything -
-     clipped.
-Signal xo2chub/jtdo2_int_prm_7_0_0_S0 undriven or does not drive anything -
-     clipped.
-Signal xo2chub/er2_tdo[4] undriven or does not drive anything - clipped.
-Signal xo2chub/er2_tdo[5] undriven or does not drive anything - clipped.
-Signal xo2chub/jtdo2_int_prm_5_0_0_S1 undriven or does not drive anything -
-     clipped.
-Signal xo2chub/jtdo2_int_prm_5_0_0_S0 undriven or does not drive anything -
-     clipped.
-Signal xo2chub/er2_tdo[2] undriven or does not drive anything - clipped.
-Signal xo2chub/er2_tdo[3] undriven or does not drive anything - clipped.
-Signal xo2chub/jtdo2_int_prm_3_0_0_S1 undriven or does not drive anything -
-     clipped.
-Signal xo2chub/jtdo2_int_prm_3_0_0_S0 undriven or does not drive anything -
-     clipped.
-Signal xo2chub/er2_tdo[1] undriven or does not drive anything - clipped.
-Signal xo2chub/jtdo2_int_prm_1_0_0_S0 undriven or does not drive anything -
-     clipped.
-Signal xo2chub/jtdo2_int_prm_1_0_0_COUT undriven or does not drive anything -
-     clipped.
-Signal xo2chub/ip_enable[15] undriven or does not drive anything - clipped.
-Signal xo2chub/genblk7.un1_jtagf_u_1 undriven or does not drive anything -
-     clipped.
-Signal xo2chub/genblk7.un1_jtagf_u undriven or does not drive anything -
-     clipped.
-Signal xo2chub/tdoa undriven or does not drive anything - clipped.
-Signal xo2chub/tdia undriven or does not drive anything - clipped.
-Signal xo2chub/tmsa undriven or does not drive anything - clipped.
-Signal xo2chub/tcka undriven or does not drive anything - clipped.
-Signal xo2chub/cdn undriven or does not drive anything - clipped.
-Signal xo2chub/bit_count_cry_0_S0[0] undriven or does not drive anything -
-     clipped.
-Signal xo2chub/N_1 undriven or does not drive anything - clipped.
-Signal top_reveal_coretop_instance/top_la0_inst_0/VCC undriven or does not drive
-     anything - clipped.
-Signal top_reveal_coretop_instance/top_la0_inst_0/GND undriven or does not drive
-     anything - clipped.
-Signal top_reveal_coretop_instance/top_la0_inst_0/tm_u/pre_trig_cntr_cry_0_COUT[
-     3] undriven or does not drive anything - clipped.
-Signal top_reveal_coretop_instance/top_la0_inst_0/tm_u/tm_wr_addr_cntr_cry_0_S0[
-     0] undriven or does not drive anything - clipped.
-Signal top_reveal_coretop_instance/top_la0_inst_0/tm_u/N_2 undriven or does not
-     drive anything - clipped.
-Signal top_reveal_coretop_instance/top_la0_inst_0/tm_u/tm_wr_addr_cntr_cry_0_COU
-     T[3] undriven or does not drive anything - clipped.
-Signal top_reveal_coretop_instance/top_la0_inst_0/tm_u/tm_rd_addr_cntr_cry_0_S0[
-     0] undriven or does not drive anything - clipped.
-Signal top_reveal_coretop_instance/top_la0_inst_0/tm_u/N_3 undriven or does not
-     drive anything - clipped.
-Signal top_reveal_coretop_instance/top_la0_inst_0/tm_u/tm_rd_addr_cntr_cry_0_COU
-     T[3] undriven or does not drive anything - clipped.
-
-Signal
-     top_reveal_coretop_instance/top_la0_inst_0/tm_u/post_trig_cntr_cry_0_S0[0]
-     undriven or does not drive anything - clipped.
-Signal top_reveal_coretop_instance/top_la0_inst_0/tm_u/N_4 undriven or does not
-     drive anything - clipped.
-Signal top_reveal_coretop_instance/top_la0_inst_0/tm_u/post_trig_cntr_cry_0_COUT
-     [3] undriven or does not drive anything - clipped.
-Signal top_reveal_coretop_instance/top_la0_inst_0/tm_u/pre_trig_cntr_cry_0_S0[0]
-     undriven or does not drive anything - clipped.
-Signal top_reveal_coretop_instance/top_la0_inst_0/tm_u/N_1 undriven or does not
-     drive anything - clipped.
-Signal top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/bit_cnt_cry_0_S0[0]
-     undriven or does not drive anything - clipped.
-Signal top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/N_1 undriven or
-     does not drive anything - clipped.
-Signal top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/bit_cnt_s_0_S1[5]
-     undriven or does not drive anything - clipped.
-Signal top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/bit_cnt_s_0_COUT[5]
-     undriven or does not drive anything - clipped.
-Signal top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/tr_dout_bit_cnt_cry
-     _0_S0[0] undriven or does not drive anything - clipped.
-Signal top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/N_2 undriven or
-     does not drive anything - clipped.
-Signal top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/tr_dout_bit_cnt_cry
-     _0_COUT[3] undriven or does not drive anything - clipped.
-Signal top_reveal_coretop_instance/top_la0_inst_0/trig_u/VCC undriven or does
-     not drive anything - clipped.
-Signal top_reveal_coretop_instance/top_la0_inst_0/trig_u/GND undriven or does
-     not drive anything - clipped.
-Signal top_reveal_coretop_instance/top_la0_inst_0/trig_u/rd_dout_tcnt[4]
-     undriven or does not drive anything - clipped.
-Signal top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/te_precnt_cry_0_S0
-     [0] undriven or does not drive anything - clipped.
-Signal top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/N_1 undriven or
-     does not drive anything - clipped.
-Signal top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/te_precnt_s_0_S1[1
-     5] undriven or does not drive anything - clipped.
-Signal top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/te_precnt_s_0_COUT
-     [15] undriven or does not drive anything - clipped.
-Signal top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/genblk1.te_tt_ebr_
-     ram/scuba_vhi undriven or does not drive anything - clipped.
-Signal top_reveal_coretop_instance/top_la0_inst_0/trig_u/rd_dout_tu[3] undriven
-     or does not drive anything - clipped.
+Signal VCC undriven or does not drive anything - clipped.
 Signal pll_inst/CLKINTFB undriven or does not drive anything - clipped.
 Signal pll_inst/DPHSRC undriven or does not drive anything - clipped.
 Signal pll_inst/PLLACK undriven or does not drive anything - clipped.
@@ -529,7 +225,6 @@ Signal pll_inst/PLLDATO6 undriven or does not drive anything - clipped.
 Signal pll_inst/PLLDATO7 undriven or does not drive anything - clipped.
 Signal pll_inst/REFCLK undriven or does not drive anything - clipped.
 Signal pll_inst/INTLOCK undriven or does not drive anything - clipped.
-
 Signal pll_inst/CLKOS3 undriven or does not drive anything - clipped.
 Signal pll_inst/CLKOS2 undriven or does not drive anything - clipped.
 Signal pcm1/STOP undriven or does not drive anything - clipped.
@@ -547,6 +242,7 @@ Signal efb_inst/SPIMCSN4 undriven or does not drive anything - clipped.
 Signal efb_inst/SPIMCSN3 undriven or does not drive anything - clipped.
 Signal efb_inst/SPIMCSN2 undriven or does not drive anything - clipped.
 Signal efb_inst/SPIMCSN1 undriven or does not drive anything - clipped.
+
 Signal efb_inst/I2C2IRQO undriven or does not drive anything - clipped.
 Signal efb_inst/I2C1IRQO undriven or does not drive anything - clipped.
 Signal efb_inst/I2C2SDAOEN undriven or does not drive anything - clipped.
@@ -575,80 +271,18 @@ Signal efb_inst/PLL1STBO undriven or does not drive anything - clipped.
 Signal efb_inst/PLL0STBO undriven or does not drive anything - clipped.
 Signal efb_inst/PLLRSTO undriven or does not drive anything - clipped.
 Signal efb_inst/PLLCLKO undriven or does not drive anything - clipped.
+Signal efb_inst/wb_dat_o_1[0] undriven or does not drive anything - clipped.
+Signal efb_inst/wb_dat_o_1[1] undriven or does not drive anything - clipped.
+Signal efb_inst/wb_dat_o_1[2] undriven or does not drive anything - clipped.
+Signal efb_inst/wb_dat_o_1[3] undriven or does not drive anything - clipped.
+Signal efb_inst/wb_dat_o_1[4] undriven or does not drive anything - clipped.
+Signal efb_inst/wb_dat_o_1[5] undriven or does not drive anything - clipped.
+Signal efb_inst/wb_dat_o_1[6] undriven or does not drive anything - clipped.
+Signal efb_inst/wb_dat_o_1[7] undriven or does not drive anything - clipped.
 Signal OSCH_inst_SEDSTDBY undriven or does not drive anything - clipped.
-Block xo2chub/genblk7.jtagf_u_RNIO314 was optimized away.
-Block xo2chub/ip_enable_0_.CN was optimized away.
-Block top_reveal_coretop_instance/top_la0_inst_0/tm_u/jrstn_RNIH98D was
-     optimized away.
-Block top_reveal_coretop_instance/top_la0_inst_0/tm_u/jtck_RNICM68 was optimized
-     away.
-Block top_reveal_coretop_instance/top_la0_inst_0/tm_u/reset_n_RNIGUS4 was
-     optimized away.
-Block top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/parity_calc.CN was
-     optimized away.
-
-Block top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jrstn_RNIH98D was
-     optimized away.
-Block top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/reset_n_RNIGUS4 was
-     optimized away.
-Block top_reveal_coretop_instance/top_la0_inst_0/trig_u/tcnt_0/reset_n_RNIGUS4
-     was optimized away.
-Block top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/tt_wr_addr_cntr_0_.
-     CN was optimized away.
-Block top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/jrstn_RNIH98D was
-     optimized away.
-Block top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/reset_n_RNIGUS4 was
-     optimized away.
-Block top_reveal_coretop_instance/top_la0_inst_0/trig_u/tu_0/reset_n_RNIGUS4 was
-     optimized away.
-Block xo2chub/GND_0 was optimized away.
-Block VCC was optimized away.
-Block top_reveal_coretop_instance/top_la0_inst_0/tm_u/VCC_0 was optimized away.
-Block top_reveal_coretop_instance/top_la0_inst_0/tm_u/GND_0 was optimized away.
-Block top_reveal_coretop_instance/top_la0_inst_0/tm_u/genblk4.tr_mem/scuba_vlo_i
-     nst was optimized away.
-Block top_reveal_coretop_instance/top_la0_inst_0/tm_u/genblk4.tr_mem/scuba_vhi_i
-     nst was optimized away.
-Block top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/GND_0 was optimized
-     away.
-Block top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/VCC_0 was optimized
-     away.
-Block top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/GND_0 was optimized
-     away.
-Block top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/genblk1.te_tt_ebr_r
-     am/scuba_vlo_inst was optimized away.
 Block pll_inst/GND was optimized away.
 Block efb_inst/VCC was optimized away.
 Block efb_inst/GND was optimized away.
-
-
-
-<A name="mrp_mem"></A><B><U><big>Memory Usage</big></U></B>
-
-/top_reveal_coretop_instance/top_la0_inst_0/tm_u/genblk4.tr_mem:
-    EBRs: 2
-    RAM SLICEs: 0
-    Logic SLICEs: 0
-    PFU Registers: 0
-    -Contains EBR pmi_ram_dpXbnonesadr3253232532p1329d5d2_0_1_0:  TYPE= PDPW8KC,
-         Width= 14,  Depth_R= 32,  Depth_W= 32,  REGMODE= OUTREG,  RESETMODE=
-         ASYNC,  ASYNC_RESET_RELEASE= ASYNC,  GSR= DISABLED,  MEM_LPC_FILE=
-         pmi_ram_dpXbnonesadr3253232532p1329d5d2__PMIP__32__32__32B
-    -Contains EBR pmi_ram_dpXbnonesadr3253232532p1329d5d2_0_0_1:  TYPE= PDPW8KC,
-         Width= 18,  Depth_R= 32,  Depth_W= 32,  REGMODE= OUTREG,  RESETMODE=
-         ASYNC,  ASYNC_RESET_RELEASE= ASYNC,  GSR= DISABLED,  MEM_LPC_FILE=
-         pmi_ram_dpXbnonesadr3253232532p1329d5d2__PMIP__32__32__32B
-/top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/genblk1.te_tt_ebr_ram:
-    EBRs: 1
-    RAM SLICEs: 0
-    Logic SLICEs: 0
-    PFU Registers: 0
-    -Contains EBR pmi_ram_dpXbnonesadr112112p12e1aace_0_0_0:  TYPE= DP8KC,
-
-         Width_B= 1,  Depth_A= 2,  Depth_B= 2,  REGMODE_A= OUTREG,  REGMODE_B=
-         OUTREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= ASYNC,  WRITEMODE_A=
-         NORMAL,  WRITEMODE_B= NORMAL,  GSR= DISABLED,  MEM_LPC_FILE=
-         pmi_ram_dpXbnonesadr112112p12e1aace__PMIP__2__1__1B
 
 Power Controller Summary
 ------------------------
@@ -665,6 +299,7 @@ Power Controller Summary
               Bypass:                               ENABLED
   Standby Options:
         Turn Off POR:                               ENABLED
+
         Turn Off Bandgap:                           ENABLED
 
      
@@ -703,7 +338,6 @@ PLL 1:                                     Pin/Node Value
   PLL Data In bus Data2:                            NONE
   PLL Data In bus Data3:                            NONE
   PLL Data In bus Data4:                            NONE
-
   PLL Data In bus Data5:                            NONE
   PLL Data In bus Data6:                            NONE
   PLL Data In bus Data7:                            NONE
@@ -724,6 +358,7 @@ PLL 1:                                     Pin/Node Value
   CLKOP Post Divider A Input:                       DIVA
   CLKOS Post Divider B Input:                       DIVB
   CLKOS2 Post Divider C Input:                      DIVC
+
   CLKOS3 Post Divider D Input:                      DIVD
   Pre Divider A Input:                              VCO_PHASE
   Pre Divider B Input:                              DIVD
@@ -760,7 +395,6 @@ OSC 1:                                     Pin/Node Value
   OSC Output:                              PIN,NODE osc_clk_c
   OSC Nominal Frequency (MHz):                      7.00
 
-
 Embedded Functional Block Connection Summary:
 ---------------------------------------------
 
@@ -781,6 +415,7 @@ Embedded Functional Block Connection Summary:
       None
    SPI Function Summary:
    --------------------
+
       SPI Mode:               BOTH
       SPI Data Order:         MSB to LSB
       SPI Clock Inversion:    DISABLED
@@ -800,12 +435,6 @@ Embedded Functional Block Connection Summary:
 
            WID		EBR Instance
       ---		------------
-      0b0000000001	top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/genblk
-     1.te_tt_ebr_ram/pmi_ram_dpXbnonesadr112112p12e1aace_0_0_0
-      0b0000000001	top_reveal_coretop_instance/top_la0_inst_0/tm_u/genblk4.tr_me
-     m/pmi_ram_dpXbnonesadr3253232532p1329d5d2_0_1_0
-      0b0000000001	top_reveal_coretop_instance/top_la0_inst_0/tm_u/genblk4.tr_me
-     m/pmi_ram_dpXbnonesadr3253232532p1329d5d2_0_0_1
 
 
 
@@ -821,18 +450,6 @@ Instance Name: pcm1/PCNTR_Inst0
          Type: PCNTR
 Instance Name: pll_inst/PLLInst_0
          Type: EHXPLLJ
-
-Instance Name: top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/genblk1.te
-     _tt_ebr_ram/pmi_ram_dpXbnonesadr112112p12e1aace_0_0_0
-         Type: DP8KC
-Instance Name: top_reveal_coretop_instance/top_la0_inst_0/tm_u/genblk4.tr_mem/pm
-     i_ram_dpXbnonesadr3253232532p1329d5d2_0_1_0
-         Type: PDPW8KC
-Instance Name: top_reveal_coretop_instance/top_la0_inst_0/tm_u/genblk4.tr_mem/pm
-     i_ram_dpXbnonesadr3253232532p1329d5d2_0_0_1
-         Type: PDPW8KC
-Instance Name: xo2chub/genblk7.jtagf_u
-         Type: JTAGF
 
 
 
@@ -858,13 +475,10 @@ GSR Component:
      'reset' via the local reset on the component and not the GSR component.
 
      Type and number of components of the type: 
-   Register = 2 
    EFB = 1
 
+
      Type and instance name of component: 
-   Register :
-        top_reveal_coretop_instance/top_la0_inst_0/trig_u/tu_0/input_a_d1[0]
-   Register : top_reveal_coretop_instance/top_la0_inst_0/tm_u/trace_din_d[0]
    EFB : efb_inst/EFBInst_0
 
 
@@ -873,9 +487,48 @@ GSR Component:
 -------------------------
 
    Total CPU Time: 0 secs  
-   Total REAL Time: 2 secs  
-   Peak Memory Usage: 195 MB
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 190 MB
         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

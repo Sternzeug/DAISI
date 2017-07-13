@@ -33,14 +33,16 @@
             <Dynamic>pcm1/PCNTR_Inst0</Dynamic>
         </Message>
         <Message>
-            <ID>51001051</ID>
+            <ID>51001102</ID>
             <Severity>Warning</Severity>
-            <Dynamic>top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/genblk1.te_tt_ebr_ram/pmi_ram_dpXbnonesadr112112p12e1aace_0_0_0</Dynamic>
+            <Dynamic>102</Dynamic>
+            <Dynamic>clock_00_0096</Dynamic>
         </Message>
         <Message>
-            <ID>51001104</ID>
+            <ID>1103694</ID>
             <Severity>Warning</Severity>
-            <Dynamic>40</Dynamic>
+            <Dynamic>Semantic error in &quot;LOCATE COMP &quot;clock_00_0096&quot; SITE &quot;102&quot; ;&quot;: </Dynamic>
+            <Dynamic>102</Dynamic>
         </Message>
         <Message>
             <ID>1103805</ID>
@@ -64,12 +66,6 @@
             <ID>1103805</ID>
             <Severity>Warning</Severity>
             <Dynamic>In &quot;LOCATE COMP &quot;spi_csn&quot; SITE &quot;40&quot; ;&quot;: </Dynamic>
-            <Dynamic>40</Dynamic>
-        </Message>
-        <Message>
-            <ID>1103805</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>In &quot;LOCATE COMP &quot;osc_clk&quot; SITE &quot;40&quot; ;&quot;: </Dynamic>
             <Dynamic>40</Dynamic>
         </Message>
     </Task>
@@ -102,158 +98,29 @@
     </Task>
     <Task name="Translate">
         <Message>
-            <ID>1166052</ID>
+            <ID>1121028</ID>
             <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/te_precnt_cry_0_S0[0]</Dynamic>
-            <Navigation>top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/te_precnt_cry_0_S0[0]</Navigation>
+            <Dynamic>IDLE_2</Dynamic>
         </Message>
         <Message>
-            <ID>1166052</ID>
+            <ID>1121028</ID>
             <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/te_precnt_s_0_S1[15]</Dynamic>
-            <Navigation>top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/te_precnt_s_0_S1[15]</Navigation>
+            <Dynamic>WAIT_FOR_ACK_2</Dynamic>
         </Message>
         <Message>
-            <ID>1166052</ID>
+            <ID>1121028</ID>
             <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/te_precnt_s_0_COUT[15]</Dynamic>
-            <Navigation>top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/te_precnt_s_0_COUT[15]</Navigation>
+            <Dynamic>WRITE_ADDR_DATA_2</Dynamic>
         </Message>
         <Message>
-            <ID>1166052</ID>
+            <ID>1121028</ID>
             <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>top_reveal_coretop_instance/top_la0_inst_0/trig_u/GND</Dynamic>
-            <Navigation>top_reveal_coretop_instance/top_la0_inst_0/trig_u/GND</Navigation>
+            <Dynamic>WAIT_FOR_ACK</Dynamic>
         </Message>
         <Message>
-            <ID>1166052</ID>
+            <ID>1121028</ID>
             <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>top_reveal_coretop_instance/top_la0_inst_0/trig_u/rd_dout_tcnt[4]</Dynamic>
-            <Navigation>top_reveal_coretop_instance/top_la0_inst_0/trig_u/rd_dout_tcnt[4]</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>top_reveal_coretop_instance/top_la0_inst_0/trig_u/VCC</Dynamic>
-            <Navigation>top_reveal_coretop_instance/top_la0_inst_0/trig_u/VCC</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>top_reveal_coretop_instance/top_la0_inst_0/trig_u/rd_dout_tu[3]</Dynamic>
-            <Navigation>top_reveal_coretop_instance/top_la0_inst_0/trig_u/rd_dout_tu[3]</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/bit_cnt_cry_0_S0[0]</Dynamic>
-            <Navigation>top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/bit_cnt_cry_0_S0[0]</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/bit_cnt_s_0_S1[5]</Dynamic>
-            <Navigation>top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/bit_cnt_s_0_S1[5]</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/bit_cnt_s_0_COUT[5]</Dynamic>
-            <Navigation>top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/bit_cnt_s_0_COUT[5]</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/tr_dout_bit_cnt_cry_0_S0[0]</Dynamic>
-            <Navigation>top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/tr_dout_bit_cnt_cry_0_S0[0]</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/tr_dout_bit_cnt_cry_0_COUT[3]</Dynamic>
-            <Navigation>top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/tr_dout_bit_cnt_cry_0_COUT[3]</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>top_reveal_coretop_instance/top_la0_inst_0/tm_u/pre_trig_cntr_cry_0_S0[0]</Dynamic>
-            <Navigation>top_reveal_coretop_instance/top_la0_inst_0/tm_u/pre_trig_cntr_cry_0_S0[0]</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>top_reveal_coretop_instance/top_la0_inst_0/tm_u/pre_trig_cntr_cry_0_COUT[3]</Dynamic>
-            <Navigation>top_reveal_coretop_instance/top_la0_inst_0/tm_u/pre_trig_cntr_cry_0_COUT[3]</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>top_reveal_coretop_instance/top_la0_inst_0/tm_u/tm_wr_addr_cntr_cry_0_S0[0]</Dynamic>
-            <Navigation>top_reveal_coretop_instance/top_la0_inst_0/tm_u/tm_wr_addr_cntr_cry_0_S0[0]</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>top_reveal_coretop_instance/top_la0_inst_0/tm_u/tm_wr_addr_cntr_cry_0_COUT[3]</Dynamic>
-            <Navigation>top_reveal_coretop_instance/top_la0_inst_0/tm_u/tm_wr_addr_cntr_cry_0_COUT[3]</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>top_reveal_coretop_instance/top_la0_inst_0/tm_u/tm_rd_addr_cntr_cry_0_S0[0]</Dynamic>
-            <Navigation>top_reveal_coretop_instance/top_la0_inst_0/tm_u/tm_rd_addr_cntr_cry_0_S0[0]</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>top_reveal_coretop_instance/top_la0_inst_0/tm_u/tm_rd_addr_cntr_cry_0_COUT[3]</Dynamic>
-            <Navigation>top_reveal_coretop_instance/top_la0_inst_0/tm_u/tm_rd_addr_cntr_cry_0_COUT[3]</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>top_reveal_coretop_instance/top_la0_inst_0/tm_u/post_trig_cntr_cry_0_S0[0]</Dynamic>
-            <Navigation>top_reveal_coretop_instance/top_la0_inst_0/tm_u/post_trig_cntr_cry_0_S0[0]</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>top_reveal_coretop_instance/top_la0_inst_0/tm_u/post_trig_cntr_cry_0_COUT[3]</Dynamic>
-            <Navigation>top_reveal_coretop_instance/top_la0_inst_0/tm_u/post_trig_cntr_cry_0_COUT[3]</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>top_reveal_coretop_instance/top_la0_inst_0/GND</Dynamic>
-            <Navigation>top_reveal_coretop_instance/top_la0_inst_0/GND</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>top_reveal_coretop_instance/top_la0_inst_0/VCC</Dynamic>
-            <Navigation>top_reveal_coretop_instance/top_la0_inst_0/VCC</Navigation>
+            <Dynamic>WRITE_ADDR_DATA</Dynamic>
         </Message>
         <Message>
             <ID>1166052</ID>
@@ -263,346 +130,12 @@
             <Navigation>OSCH_inst_SEDSTDBY</Navigation>
         </Message>
         <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>xo2chub/tdoa</Dynamic>
-            <Navigation>xo2chub/tdoa</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>xo2chub/cdn</Dynamic>
-            <Navigation>xo2chub/cdn</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>xo2chub/ip_enable[15]</Dynamic>
-            <Navigation>xo2chub/ip_enable[15]</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>xo2chub/genblk7.un1_jtagf_u</Dynamic>
-            <Navigation>xo2chub/genblk7.un1_jtagf_u</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>xo2chub/genblk7.un1_jtagf_u_1</Dynamic>
-            <Navigation>xo2chub/genblk7.un1_jtagf_u_1</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>xo2chub/bit_count_cry_0_S0[0]</Dynamic>
-            <Navigation>xo2chub/bit_count_cry_0_S0[0]</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>xo2chub/bit_count_cry_0_COUT[3]</Dynamic>
-            <Navigation>xo2chub/bit_count_cry_0_COUT[3]</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>xo2chub/rom_rd_addr_cry_0_S0[0]</Dynamic>
-            <Navigation>xo2chub/rom_rd_addr_cry_0_S0[0]</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>xo2chub/rom_rd_addr_s_0_S1[7]</Dynamic>
-            <Navigation>xo2chub/rom_rd_addr_s_0_S1[7]</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>xo2chub/rom_rd_addr_s_0_COUT[7]</Dynamic>
-            <Navigation>xo2chub/rom_rd_addr_s_0_COUT[7]</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>xo2chub/jtdo2_int_prm_16_0_0_S0</Dynamic>
-            <Navigation>xo2chub/jtdo2_int_prm_16_0_0_S0</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>xo2chub/jtdo2_int_prm_16_0_0_S1</Dynamic>
-            <Navigation>xo2chub/jtdo2_int_prm_16_0_0_S1</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>xo2chub/jtdo2_int_prm_15_0_0_S0</Dynamic>
-            <Navigation>xo2chub/jtdo2_int_prm_15_0_0_S0</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>xo2chub/jtdo2_int_prm_15_0_0_S1</Dynamic>
-            <Navigation>xo2chub/jtdo2_int_prm_15_0_0_S1</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>xo2chub/jtdo2_int_prm_13_0_0_S0</Dynamic>
-            <Navigation>xo2chub/jtdo2_int_prm_13_0_0_S0</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>xo2chub/jtdo2_int_prm_13_0_0_S1</Dynamic>
-            <Navigation>xo2chub/jtdo2_int_prm_13_0_0_S1</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>xo2chub/jtdo2_int_prm_11_0_0_S0</Dynamic>
-            <Navigation>xo2chub/jtdo2_int_prm_11_0_0_S0</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>xo2chub/jtdo2_int_prm_11_0_0_S1</Dynamic>
-            <Navigation>xo2chub/jtdo2_int_prm_11_0_0_S1</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>xo2chub/jtdo2_int_prm_9_0_0_S0</Dynamic>
-            <Navigation>xo2chub/jtdo2_int_prm_9_0_0_S0</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>xo2chub/jtdo2_int_prm_9_0_0_S1</Dynamic>
-            <Navigation>xo2chub/jtdo2_int_prm_9_0_0_S1</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>xo2chub/jtdo2_int_prm_7_0_0_S0</Dynamic>
-            <Navigation>xo2chub/jtdo2_int_prm_7_0_0_S0</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>xo2chub/jtdo2_int_prm_7_0_0_S1</Dynamic>
-            <Navigation>xo2chub/jtdo2_int_prm_7_0_0_S1</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>xo2chub/jtdo2_int_prm_5_0_0_S0</Dynamic>
-            <Navigation>xo2chub/jtdo2_int_prm_5_0_0_S0</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>xo2chub/jtdo2_int_prm_5_0_0_S1</Dynamic>
-            <Navigation>xo2chub/jtdo2_int_prm_5_0_0_S1</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>xo2chub/jtdo2_int_prm_3_0_0_S0</Dynamic>
-            <Navigation>xo2chub/jtdo2_int_prm_3_0_0_S0</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>xo2chub/jtdo2_int_prm_3_0_0_S1</Dynamic>
-            <Navigation>xo2chub/jtdo2_int_prm_3_0_0_S1</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>xo2chub/jtdo2_int_prm_1_0_0_S0</Dynamic>
-            <Navigation>xo2chub/jtdo2_int_prm_1_0_0_S0</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>xo2chub/jtdo2_int_prm_1_0_0_COUT</Dynamic>
-            <Navigation>xo2chub/jtdo2_int_prm_1_0_0_COUT</Navigation>
-        </Message>
-        <Message>
             <ID>1163101</ID>
             <Severity>Warning</Severity>
-            <Dynamic>51</Dynamic>
+            <Dynamic>1</Dynamic>
         </Message>
     </Task>
     <Task name="Synplify_Synthesis">
-        <Message>
-            <ID>2120344</ID>
-            <Severity>Info</Severity>
-            <Dynamic>3</Dynamic>
-        </Message>
-        <Message>
-            <ID>2120346</ID>
-            <Severity>Info</Severity>
-            <Dynamic>0</Dynamic>
-        </Message>
-        <Message>
-            <ID>35901018</ID>
-            <Severity>Info</Severity>
-            <Dynamic>/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v(1): </Dynamic>
-            <Dynamic>top</Dynamic>
-            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v</Navigation>
-            <Navigation>1</Navigation>
-        </Message>
-        <Message>
-            <ID>35909000</ID>
-            <Severity>Info</Severity>
-            <Dynamic>/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v(170): </Dynamic>
-            <Dynamic>top</Dynamic>
-            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v</Navigation>
-            <Navigation>170</Navigation>
-        </Message>
-        <Message>
-            <ID>35909000</ID>
-            <Severity>Info</Severity>
-            <Dynamic>/media/sf_Downloads/Code/DAISI/CPLD Firmware/pll.v(98): </Dynamic>
-            <Dynamic>pll_uniq_1</Dynamic>
-            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/pll.v</Navigation>
-            <Navigation>98</Navigation>
-        </Message>
-        <Message>
-            <ID>35909000</ID>
-            <Severity>Info</Severity>
-            <Dynamic>/media/sf_Downloads/Code/DAISI/CPLD Firmware/pwr_cntrllr.v(33): </Dynamic>
-            <Dynamic>pwr_cntrllr_uniq_1</Dynamic>
-            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/pwr_cntrllr.v</Navigation>
-            <Navigation>33</Navigation>
-        </Message>
-        <Message>
-            <ID>35909000</ID>
-            <Severity>Info</Severity>
-            <Dynamic>/media/sf_Downloads/Code/DAISI/CPLD Firmware/efb.v(134): </Dynamic>
-            <Dynamic>efb_uniq_1</Dynamic>
-            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/efb.v</Navigation>
-            <Navigation>134</Navigation>
-        </Message>
-        <Message>
-            <ID>35909000</ID>
-            <Severity>Info</Severity>
-            <Dynamic>/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v(114): </Dynamic>
-            <Dynamic>spi_controller_uniq_1</Dynamic>
-            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v</Navigation>
-            <Navigation>114</Navigation>
-        </Message>
-        <Message>
-            <ID>35909000</ID>
-            <Severity>Info</Severity>
-            <Dynamic>/media/sf_Downloads/Code/DAISI/CPLD Firmware/data_buffer.v(22): </Dynamic>
-            <Dynamic>data_buffer_uniq_1</Dynamic>
-            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/data_buffer.v</Navigation>
-            <Navigation>22</Navigation>
-        </Message>
-        <Message>
-            <ID>35909000</ID>
-            <Severity>Info</Severity>
-            <Dynamic>/media/sf_Downloads/Code/DAISI/CPLD Firmware/data_buffer.v(22): </Dynamic>
-            <Dynamic>data_buffer_uniq_2</Dynamic>
-            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/data_buffer.v</Navigation>
-            <Navigation>22</Navigation>
-        </Message>
-        <Message>
-            <ID>35909000</ID>
-            <Severity>Info</Severity>
-            <Dynamic>/media/sf_Downloads/Code/DAISI/CPLD Firmware/data_formatter.v(22): </Dynamic>
-            <Dynamic>data_formatter_uniq_1</Dynamic>
-            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/data_formatter.v</Navigation>
-            <Navigation>22</Navigation>
-        </Message>
-        <Message>
-            <ID>35909000</ID>
-            <Severity>Info</Severity>
-            <Dynamic>/media/sf_Downloads/Code/DAISI/CPLD Firmware/storage_interface.v(22): </Dynamic>
-            <Dynamic>storage_interface_uniq_1</Dynamic>
-            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/storage_interface.v</Navigation>
-            <Navigation>22</Navigation>
-        </Message>
-        <Message>
-            <ID>35909000</ID>
-            <Severity>Info</Severity>
-            <Dynamic>/media/sf_Downloads/Code/DAISI/CPLD Firmware/rs232_decoder_encoder.v(37): </Dynamic>
-            <Dynamic>rs232_decoder_encoder_uniq_1</Dynamic>
-            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/rs232_decoder_encoder.v</Navigation>
-            <Navigation>37</Navigation>
-        </Message>
-        <Message>
-            <ID>35909000</ID>
-            <Severity>Info</Severity>
-            <Dynamic>/media/sf_Downloads/Code/DAISI/CPLD Firmware/rs232_command_processor.v(22): </Dynamic>
-            <Dynamic>rs232_command_processor_uniq_1</Dynamic>
-            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/rs232_command_processor.v</Navigation>
-            <Navigation>22</Navigation>
-        </Message>
-        <Message>
-            <ID>35909000</ID>
-            <Severity>Info</Severity>
-            <Dynamic>/media/sf_Downloads/Code/DAISI/CPLD Firmware/pseudo_adc.v(22): </Dynamic>
-            <Dynamic>pseudo_adc_uniq_1</Dynamic>
-            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/pseudo_adc.v</Navigation>
-            <Navigation>22</Navigation>
-        </Message>
-        <Message>
-            <ID>35909000</ID>
-            <Severity>Info</Severity>
-            <Dynamic>/media/sf_Downloads/Code/DAISI/CPLD Firmware/regulator_control.v(22): </Dynamic>
-            <Dynamic>regulator_control_uniq_1</Dynamic>
-            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/regulator_control.v</Navigation>
-            <Navigation>22</Navigation>
-        </Message>
-        <Message>
-            <ID>35909000</ID>
-            <Severity>Info</Severity>
-            <Dynamic>/media/sf_Downloads/Code/DAISI/CPLD Firmware/sensor_interface.v(22): </Dynamic>
-            <Dynamic>sensor_interface_uniq_1</Dynamic>
-            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/sensor_interface.v</Navigation>
-            <Navigation>22</Navigation>
-        </Message>
-        <Message>
-            <ID>35909000</ID>
-            <Severity>Info</Severity>
-            <Dynamic>/media/sf_Downloads/Code/DAISI/CPLD Firmware/thermal_controller.v(22): </Dynamic>
-            <Dynamic>thermal_controller_uniq_1</Dynamic>
-            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/thermal_controller.v</Navigation>
-            <Navigation>22</Navigation>
-        </Message>
         <Message>
             <ID>2011000</ID>
             <Severity>Info</Severity>
@@ -610,503 +143,472 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v&quot;:910:4:910:9|Optimizing register bit wb_adr[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v&quot;:22:0:22:5|Optimizing register bit wb_adr[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
-            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
-            <Navigation>910</Navigation>
-            <Navigation>4</Navigation>
-            <Navigation>910</Navigation>
-            <Navigation>9</Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>5</Navigation>
             <Navigation>Optimizing register bit wb_adr[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v&quot;:910:4:910:9|Optimizing register bit wb_adr[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v&quot;:22:0:22:5|Optimizing register bit wb_adr[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
-            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
-            <Navigation>910</Navigation>
-            <Navigation>4</Navigation>
-            <Navigation>910</Navigation>
-            <Navigation>9</Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>5</Navigation>
             <Navigation>Optimizing register bit wb_adr[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v&quot;:910:4:910:9|Optimizing register bit wb_adr[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v&quot;:22:0:22:5|Optimizing register bit wb_adr[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
-            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
-            <Navigation>910</Navigation>
-            <Navigation>4</Navigation>
-            <Navigation>910</Navigation>
-            <Navigation>9</Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>5</Navigation>
             <Navigation>Optimizing register bit wb_adr[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v&quot;:910:4:910:9|Optimizing register bit wb_dat_i[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v&quot;:22:0:22:5|Optimizing register bit wb_dat_i[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
-            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
-            <Navigation>910</Navigation>
-            <Navigation>4</Navigation>
-            <Navigation>910</Navigation>
-            <Navigation>9</Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>5</Navigation>
             <Navigation>Optimizing register bit wb_dat_i[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v&quot;:910:4:910:9|Optimizing register bit wb_dat_i[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v&quot;:22:0:22:5|Optimizing register bit wb_dat_i[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
-            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
-            <Navigation>910</Navigation>
-            <Navigation>4</Navigation>
-            <Navigation>910</Navigation>
-            <Navigation>9</Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>5</Navigation>
             <Navigation>Optimizing register bit wb_dat_i[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v&quot;:910:4:910:9|Optimizing register bit wb_dat_i[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v&quot;:22:0:22:5|Optimizing register bit wb_dat_i[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
-            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
-            <Navigation>910</Navigation>
-            <Navigation>4</Navigation>
-            <Navigation>910</Navigation>
-            <Navigation>9</Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>5</Navigation>
             <Navigation>Optimizing register bit wb_dat_i[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v&quot;:910:4:910:9|Optimizing register bit wb_dat_i[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v&quot;:22:0:22:5|Optimizing register bit wb_dat_i[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
-            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
-            <Navigation>910</Navigation>
-            <Navigation>4</Navigation>
-            <Navigation>910</Navigation>
-            <Navigation>9</Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>5</Navigation>
             <Navigation>Optimizing register bit wb_dat_i[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v&quot;:910:4:910:9|Optimizing register bit wb_dat_i[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v&quot;:22:0:22:5|Optimizing register bit wb_dat_i[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
-            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
-            <Navigation>910</Navigation>
-            <Navigation>4</Navigation>
-            <Navigation>910</Navigation>
-            <Navigation>9</Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>5</Navigation>
             <Navigation>Optimizing register bit wb_dat_i[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL260 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v&quot;:910:4:910:9|Pruning register bit 7 of wb_adr[7:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Dynamic>CL260 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v&quot;:22:0:22:5|Pruning register bit 7 of wb_adr[7:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
             <Navigation>CL260</Navigation>
-            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
-            <Navigation>910</Navigation>
-            <Navigation>4</Navigation>
-            <Navigation>910</Navigation>
-            <Navigation>9</Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>5</Navigation>
             <Navigation>Pruning register bit 7 of wb_adr[7:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL260 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v&quot;:910:4:910:9|Pruning register bit 5 of wb_adr[7:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Dynamic>CL260 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v&quot;:22:0:22:5|Pruning register bit 5 of wb_adr[7:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
             <Navigation>CL260</Navigation>
-            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
-            <Navigation>910</Navigation>
-            <Navigation>4</Navigation>
-            <Navigation>910</Navigation>
-            <Navigation>9</Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>5</Navigation>
             <Navigation>Pruning register bit 5 of wb_adr[7:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL260 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v&quot;:910:4:910:9|Pruning register bit 2 of wb_adr[7:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Dynamic>CL260 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v&quot;:22:0:22:5|Pruning register bit 2 of wb_adr[7:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
             <Navigation>CL260</Navigation>
-            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
-            <Navigation>910</Navigation>
-            <Navigation>4</Navigation>
-            <Navigation>910</Navigation>
-            <Navigation>9</Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>5</Navigation>
             <Navigation>Pruning register bit 2 of wb_adr[7:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL279 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v&quot;:910:4:910:9|Pruning register bits 6 to 5 of wb_dat_i[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Dynamic>CL279 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v&quot;:22:0:22:5|Pruning register bits 6 to 5 of wb_dat_i[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
             <Navigation>CL279</Navigation>
-            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
-            <Navigation>910</Navigation>
-            <Navigation>4</Navigation>
-            <Navigation>910</Navigation>
-            <Navigation>9</Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>5</Navigation>
             <Navigation>Pruning register bits 6 to 5 of wb_dat_i[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL279 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v&quot;:910:4:910:9|Pruning register bits 3 to 1 of wb_dat_i[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Dynamic>CL279 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v&quot;:22:0:22:5|Pruning register bits 3 to 1 of wb_dat_i[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
             <Navigation>CL279</Navigation>
-            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
-            <Navigation>910</Navigation>
-            <Navigation>4</Navigation>
-            <Navigation>910</Navigation>
-            <Navigation>9</Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>5</Navigation>
             <Navigation>Pruning register bits 3 to 1 of wb_dat_i[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG360 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v&quot;:15:29:15:39|Removing wire trigger_out, as there is no assignment to it.</Dynamic>
-            <Navigation>CG360</Navigation>
-            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
-            <Navigation>15</Navigation>
-            <Navigation>29</Navigation>
-            <Navigation>15</Navigation>
-            <Navigation>39</Navigation>
-            <Navigation>Removing wire trigger_out, as there is no assignment to it.</Navigation>
+            <Dynamic>CL265 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/rs232_decoder_encoder.v&quot;:14:0:14:5|Removing unused bit 0 of incoming_data[9:0]. Either assign all bits or reduce the width of the signal.</Dynamic>
+            <Navigation>CL265</Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/rs232_decoder_encoder.v</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Removing unused bit 0 of incoming_data[9:0]. Either assign all bits or reduce the width of the signal.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL168 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v&quot;:144:30:144:52|Removing instance thermal_controller_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Dynamic>
+            <Dynamic>CL190 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/rs232_decoder_encoder.v&quot;:51:0:51:5|Optimizing register bit outgoing_data[9] to a constant 1. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/rs232_decoder_encoder.v</Navigation>
+            <Navigation>51</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>51</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Optimizing register bit outgoing_data[9] to a constant 1. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/rs232_decoder_encoder.v&quot;:51:0:51:5|Pruning register bit 9 of outgoing_data[9:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/rs232_decoder_encoder.v</Navigation>
+            <Navigation>51</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>51</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 9 of outgoing_data[9:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL168 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v&quot;:167:19:167:41|Removing instance thermal_controller_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Dynamic>
             <Navigation>CL168</Navigation>
-            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
-            <Navigation>144</Navigation>
-            <Navigation>30</Navigation>
-            <Navigation>144</Navigation>
-            <Navigation>52</Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v</Navigation>
+            <Navigation>167</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>167</Navigation>
+            <Navigation>41</Navigation>
             <Navigation>Removing instance thermal_controller_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL168 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v&quot;:143:28:143:48|Removing instance sensor_interface_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Dynamic>
+            <Dynamic>CL168 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v&quot;:162:17:162:37|Removing instance sensor_interface_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Dynamic>
             <Navigation>CL168</Navigation>
-            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
-            <Navigation>143</Navigation>
-            <Navigation>28</Navigation>
-            <Navigation>143</Navigation>
-            <Navigation>48</Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v</Navigation>
+            <Navigation>162</Navigation>
+            <Navigation>17</Navigation>
+            <Navigation>162</Navigation>
+            <Navigation>37</Navigation>
             <Navigation>Removing instance sensor_interface_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL168 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v&quot;:142:29:142:50|Removing instance regulator_control_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Dynamic>
+            <Dynamic>CL168 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v&quot;:157:18:157:39|Removing instance regulator_control_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Dynamic>
             <Navigation>CL168</Navigation>
-            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
-            <Navigation>142</Navigation>
-            <Navigation>29</Navigation>
-            <Navigation>142</Navigation>
-            <Navigation>50</Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v</Navigation>
+            <Navigation>157</Navigation>
+            <Navigation>18</Navigation>
+            <Navigation>157</Navigation>
+            <Navigation>39</Navigation>
             <Navigation>Removing instance regulator_control_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL168 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v&quot;:141:22:141:36|Removing instance pseudo_adc_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Dynamic>
+            <Dynamic>CL168 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v&quot;:152:11:152:25|Removing instance pseudo_adc_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Dynamic>
             <Navigation>CL168</Navigation>
-            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
-            <Navigation>141</Navigation>
-            <Navigation>22</Navigation>
-            <Navigation>141</Navigation>
-            <Navigation>36</Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v</Navigation>
+            <Navigation>152</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>152</Navigation>
+            <Navigation>25</Navigation>
             <Navigation>Removing instance pseudo_adc_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL168 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v&quot;:140:35:140:62|Removing instance rs232_command_processor_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Dynamic>
+            <Dynamic>CL168 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v&quot;:147:24:147:51|Removing instance rs232_command_processor_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Dynamic>
             <Navigation>CL168</Navigation>
-            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
-            <Navigation>140</Navigation>
-            <Navigation>35</Navigation>
-            <Navigation>140</Navigation>
-            <Navigation>62</Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v</Navigation>
+            <Navigation>147</Navigation>
+            <Navigation>24</Navigation>
+            <Navigation>147</Navigation>
+            <Navigation>51</Navigation>
             <Navigation>Removing instance rs232_command_processor_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL168 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v&quot;:138:29:138:50|Removing instance storage_interface_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Dynamic>
+            <Dynamic>CL168 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v&quot;:135:18:135:39|Removing instance storage_interface_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Dynamic>
             <Navigation>CL168</Navigation>
-            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
-            <Navigation>138</Navigation>
-            <Navigation>29</Navigation>
-            <Navigation>138</Navigation>
-            <Navigation>50</Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v</Navigation>
+            <Navigation>135</Navigation>
+            <Navigation>18</Navigation>
+            <Navigation>135</Navigation>
+            <Navigation>39</Navigation>
             <Navigation>Removing instance storage_interface_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL168 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v&quot;:137:23:137:40|Removing instance data_buffer_inst_2 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Dynamic>
+            <Dynamic>CL168 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v&quot;:130:12:130:29|Removing instance data_buffer_inst_2 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Dynamic>
             <Navigation>CL168</Navigation>
-            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
-            <Navigation>137</Navigation>
-            <Navigation>23</Navigation>
-            <Navigation>137</Navigation>
-            <Navigation>40</Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v</Navigation>
+            <Navigation>130</Navigation>
+            <Navigation>12</Navigation>
+            <Navigation>130</Navigation>
+            <Navigation>29</Navigation>
             <Navigation>Removing instance data_buffer_inst_2 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL168 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v&quot;:136:26:136:44|Removing instance data_formatter_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Dynamic>
+            <Dynamic>CL168 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v&quot;:125:15:125:33|Removing instance data_formatter_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Dynamic>
             <Navigation>CL168</Navigation>
-            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
-            <Navigation>136</Navigation>
-            <Navigation>26</Navigation>
-            <Navigation>136</Navigation>
-            <Navigation>44</Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v</Navigation>
+            <Navigation>125</Navigation>
+            <Navigation>15</Navigation>
+            <Navigation>125</Navigation>
+            <Navigation>33</Navigation>
             <Navigation>Removing instance data_formatter_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL168 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v&quot;:135:23:135:40|Removing instance data_buffer_inst_1 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Dynamic>
+            <Dynamic>CL168 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v&quot;:120:12:120:29|Removing instance data_buffer_inst_1 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Dynamic>
             <Navigation>CL168</Navigation>
-            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
-            <Navigation>135</Navigation>
-            <Navigation>23</Navigation>
-            <Navigation>135</Navigation>
-            <Navigation>40</Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v</Navigation>
+            <Navigation>120</Navigation>
+            <Navigation>12</Navigation>
+            <Navigation>120</Navigation>
+            <Navigation>29</Navigation>
             <Navigation>Removing instance data_buffer_inst_1 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL157 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v&quot;:1100:11:1100:12|*Output tx has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.</Dynamic>
-            <Navigation>CL157</Navigation>
-            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
-            <Navigation>1100</Navigation>
-            <Navigation>11</Navigation>
-            <Navigation>1100</Navigation>
-            <Navigation>12</Navigation>
-            <Navigation>*Output tx has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CL260 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v&quot;:910:4:910:9|Pruning register bit 4 of wb_adr[4:3]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Dynamic>CL260 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v&quot;:22:0:22:5|Pruning register bit 4 of wb_adr[4:3]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
             <Navigation>CL260</Navigation>
-            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
-            <Navigation>910</Navigation>
-            <Navigation>4</Navigation>
-            <Navigation>910</Navigation>
-            <Navigation>9</Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>5</Navigation>
             <Navigation>Pruning register bit 4 of wb_adr[4:3]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v&quot;:910:4:910:9|Removing sequential instance spi_controller_inst.wb_dat_i_1[7] because it is equivalent to instance spi_controller_inst.wb_dat_i_1[4]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v&quot;:22:0:22:5|Removing sequential instance spi_controller_inst.wb_dat_i_1[7] because it is equivalent to instance spi_controller_inst.wb_dat_i_1[4]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
-            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
-            <Navigation>910</Navigation>
-            <Navigation>4</Navigation>
-            <Navigation>910</Navigation>
-            <Navigation>9</Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>5</Navigation>
             <Navigation>Removing sequential instance spi_controller_inst.wb_dat_i_1[7] because it is equivalent to instance spi_controller_inst.wb_dat_i_1[4]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v&quot;:910:4:910:9|Removing sequential instance spi_controller_inst.wb_we because it is equivalent to instance spi_controller_inst.wb_dat_i_1[4]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v&quot;:22:0:22:5|Removing sequential instance spi_controller_inst.wb_we because it is equivalent to instance spi_controller_inst.wb_dat_i_1[4]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
-            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
-            <Navigation>910</Navigation>
-            <Navigation>4</Navigation>
-            <Navigation>910</Navigation>
-            <Navigation>9</Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>5</Navigation>
             <Navigation>Removing sequential instance spi_controller_inst.wb_we because it is equivalent to instance spi_controller_inst.wb_dat_i_1[4]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v&quot;:910:4:910:9|Removing sequential instance spi_controller_inst.wb_dat_i_1[4] because it is equivalent to instance spi_controller_inst.wb_dat_i_1[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v&quot;:22:0:22:5|Removing sequential instance spi_controller_inst.wb_dat_i_1[4] because it is equivalent to instance spi_controller_inst.wb_dat_i_1[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
-            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
-            <Navigation>910</Navigation>
-            <Navigation>4</Navigation>
-            <Navigation>910</Navigation>
-            <Navigation>9</Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>5</Navigation>
             <Navigation>Removing sequential instance spi_controller_inst.wb_dat_i_1[4] because it is equivalent to instance spi_controller_inst.wb_dat_i_1[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v&quot;:910:4:910:9|Removing sequential instance spi_controller_inst.wb_adr_1[6] because it is equivalent to instance spi_controller_inst.wb_adr_1[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v&quot;:22:0:22:5|Removing sequential instance spi_controller_inst.wb_adr_1[6] because it is equivalent to instance spi_controller_inst.wb_adr_1[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
-            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
-            <Navigation>910</Navigation>
-            <Navigation>4</Navigation>
-            <Navigation>910</Navigation>
-            <Navigation>9</Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>5</Navigation>
             <Navigation>Removing sequential instance spi_controller_inst.wb_adr_1[6] because it is equivalent to instance spi_controller_inst.wb_adr_1[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v&quot;:910:4:910:9|Removing sequential instance spi_controller_inst.wb_stb because it is equivalent to instance spi_controller_inst.wb_adr_1[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v&quot;:22:0:22:5|Removing sequential instance spi_controller_inst.wb_stb because it is equivalent to instance spi_controller_inst.wb_adr_1[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
-            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
-            <Navigation>910</Navigation>
-            <Navigation>4</Navigation>
-            <Navigation>910</Navigation>
-            <Navigation>9</Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>5</Navigation>
             <Navigation>Removing sequential instance spi_controller_inst.wb_stb because it is equivalent to instance spi_controller_inst.wb_adr_1[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v&quot;:910:4:910:9|Removing sequential instance spi_controller_inst.wb_cyc because it is equivalent to instance spi_controller_inst.wb_adr_1[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v&quot;:22:0:22:5|Removing sequential instance spi_controller_inst.wb_cyc because it is equivalent to instance spi_controller_inst.wb_adr_1[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
-            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
-            <Navigation>910</Navigation>
-            <Navigation>4</Navigation>
-            <Navigation>910</Navigation>
-            <Navigation>9</Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>5</Navigation>
             <Navigation>Removing sequential instance spi_controller_inst.wb_cyc because it is equivalent to instance spi_controller_inst.wb_adr_1[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>MT529 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v&quot;:110:4:110:9|Found inferred clock pll_uniq_1|CLKOS_inferred_clock which controls 1 sequential elements including clock_00_0096. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Dynamic>MT529 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v&quot;:75:0:75:5|Found inferred clock pll|CLKOS_inferred_clock which controls 1 sequential elements including clock_00_0096. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
             <Navigation>MT529</Navigation>
-            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
-            <Navigation>110</Navigation>
-            <Navigation>4</Navigation>
-            <Navigation>110</Navigation>
-            <Navigation>9</Navigation>
-            <Navigation>Found inferred clock pll_uniq_1|CLKOS_inferred_clock which controls 1 sequential elements including clock_00_0096. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v</Navigation>
+            <Navigation>75</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>75</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Found inferred clock pll|CLKOS_inferred_clock which controls 1 sequential elements including clock_00_0096. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>MT529 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v&quot;:910:4:910:9|Found inferred clock pll_uniq_1|CLKOP_inferred_clock which controls 152 sequential elements including spi_controller_inst.state[2:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Dynamic>MT529 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v&quot;:22:0:22:5|Found inferred clock pll|CLKOP_inferred_clock which controls 10 sequential elements including spi_controller_inst.wb_adr_1[3]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
             <Navigation>MT529</Navigation>
-            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
-            <Navigation>910</Navigation>
-            <Navigation>4</Navigation>
-            <Navigation>910</Navigation>
-            <Navigation>9</Navigation>
-            <Navigation>Found inferred clock pll_uniq_1|CLKOP_inferred_clock which controls 152 sequential elements including spi_controller_inst.state[2:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Found inferred clock pll|CLKOP_inferred_clock which controls 10 sequential elements including spi_controller_inst.wb_adr_1[3]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v&quot;:910:4:910:9|Removing instance spi_controller_inst.wb_adr_1[3] because it is equivalent to instance spi_controller_inst.wb_adr_1[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v&quot;:22:0:22:5|Removing instance spi_controller_inst.wb_adr_1[3] because it is equivalent to instance spi_controller_inst.wb_adr_1[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
-            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
-            <Navigation>910</Navigation>
-            <Navigation>4</Navigation>
-            <Navigation>910</Navigation>
-            <Navigation>9</Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>5</Navigation>
             <Navigation>Removing instance spi_controller_inst.wb_adr_1[3] because it is equivalent to instance spi_controller_inst.wb_adr_1[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>MT246 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v&quot;:874:8:874:16|Blackbox EFB is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
+            <Dynamic>MT246 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/efb.v&quot;:98:8:98:16|Blackbox EFB is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
             <Navigation>MT246</Navigation>
-            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
-            <Navigation>874</Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/efb.v</Navigation>
+            <Navigation>98</Navigation>
             <Navigation>8</Navigation>
-            <Navigation>874</Navigation>
+            <Navigation>98</Navigation>
             <Navigation>16</Navigation>
             <Navigation>Blackbox EFB is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) </Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>MT246 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v&quot;:780:10:780:20|Blackbox PCNTR is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
+            <Dynamic>MT246 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/pwr_cntrllr.v&quot;:24:10:24:20|Blackbox PCNTR is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
             <Navigation>MT246</Navigation>
-            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
-            <Navigation>780</Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/pwr_cntrllr.v</Navigation>
+            <Navigation>24</Navigation>
             <Navigation>10</Navigation>
-            <Navigation>780</Navigation>
+            <Navigation>24</Navigation>
             <Navigation>20</Navigation>
             <Navigation>Blackbox PCNTR is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) </Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>MT246 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v&quot;:744:12:744:20|Blackbox EHXPLLJ is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
+            <Dynamic>MT246 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/pll.v&quot;:66:12:66:20|Blackbox EHXPLLJ is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
             <Navigation>MT246</Navigation>
-            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
-            <Navigation>744</Navigation>
+            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/pll.v</Navigation>
+            <Navigation>66</Navigation>
             <Navigation>12</Navigation>
-            <Navigation>744</Navigation>
+            <Navigation>66</Navigation>
             <Navigation>20</Navigation>
             <Navigation>Blackbox EHXPLLJ is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) </Navigation>
         </Message>
         <Message>
-            <ID>2019991</ID>
+            <ID>2019993</ID>
             <Severity>Warning</Severity>
-            <Dynamic>MT246 :&quot;/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v&quot;:61:15:61:31|Blackbox jtagconn16 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
-            <Navigation>MT246</Navigation>
-            <Navigation>/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
-            <Navigation>61</Navigation>
-            <Navigation>15</Navigation>
-            <Navigation>61</Navigation>
-            <Navigation>31</Navigation>
-            <Navigation>Blackbox jtagconn16 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) </Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>MT246 :&quot;/usr/local/diamond/3.9_x64/module/reveal/src/ertl/ertl.v&quot;:1192:8:1192:20|Blackbox pmi_ram_dp_Z2 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
-            <Navigation>MT246</Navigation>
-            <Navigation>/usr/local/diamond/3.9_x64/module/reveal/src/ertl/ertl.v</Navigation>
-            <Navigation>1192</Navigation>
-            <Navigation>8</Navigation>
-            <Navigation>1192</Navigation>
-            <Navigation>20</Navigation>
-            <Navigation>Blackbox pmi_ram_dp_Z2 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) </Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>MT246 :&quot;/usr/local/diamond/3.9_x64/module/reveal/src/ertl/ertl.v&quot;:2159:8:2159:13|Blackbox pmi_ram_dp_Z4 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
-            <Navigation>MT246</Navigation>
-            <Navigation>/usr/local/diamond/3.9_x64/module/reveal/src/ertl/ertl.v</Navigation>
-            <Navigation>2159</Navigation>
-            <Navigation>8</Navigation>
-            <Navigation>2159</Navigation>
-            <Navigation>13</Navigation>
-            <Navigation>Blackbox pmi_ram_dp_Z4 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) </Navigation>
+            <Dynamic>MT420 |Found inferred clock pll|CLKOP_inferred_clock with period 1000.00ns. Please declare a user-defined clock on object &quot;n:pll_inst.CLKOP&quot;</Dynamic>
+            <Navigation>MT420</Navigation>
+            <Navigation>Found inferred clock pll|CLKOP_inferred_clock with period 1000.00ns. Please declare a user-defined clock on object &quot;n:pll_inst.CLKOP&quot;</Navigation>
         </Message>
         <Message>
             <ID>2019993</ID>
             <Severity>Warning</Severity>
-            <Dynamic>MT420 |Found inferred clock pll_uniq_1|CLKOP_inferred_clock with period 1000.00ns. Please declare a user-defined clock on object &quot;n:pll_inst.CLKOP&quot;</Dynamic>
+            <Dynamic>MT420 |Found inferred clock pll|CLKOS_inferred_clock with period 1000.00ns. Please declare a user-defined clock on object &quot;n:pll_inst.CLKOS&quot;</Dynamic>
             <Navigation>MT420</Navigation>
-            <Navigation>Found inferred clock pll_uniq_1|CLKOP_inferred_clock with period 1000.00ns. Please declare a user-defined clock on object &quot;n:pll_inst.CLKOP&quot;</Navigation>
-        </Message>
-        <Message>
-            <ID>2019993</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>MT420 |Found inferred clock pll_uniq_1|CLKOS_inferred_clock with period 1000.00ns. Please declare a user-defined clock on object &quot;n:pll_inst.CLKOS&quot;</Dynamic>
-            <Navigation>MT420</Navigation>
-            <Navigation>Found inferred clock pll_uniq_1|CLKOS_inferred_clock with period 1000.00ns. Please declare a user-defined clock on object &quot;n:pll_inst.CLKOS&quot;</Navigation>
-        </Message>
-        <Message>
-            <ID>2019993</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>MT420 |Found inferred clock reveal_coretop|jtck_inferred_clock[0] with period 1000.00ns. Please declare a user-defined clock on object &quot;n:top_reveal_coretop_instance.jtck[0]&quot;</Dynamic>
-            <Navigation>MT420</Navigation>
-            <Navigation>Found inferred clock reveal_coretop|jtck_inferred_clock[0] with period 1000.00ns. Please declare a user-defined clock on object &quot;n:top_reveal_coretop_instance.jtck[0]&quot;</Navigation>
+            <Navigation>Found inferred clock pll|CLKOS_inferred_clock with period 1000.00ns. Please declare a user-defined clock on object &quot;n:pll_inst.CLKOS&quot;</Navigation>
         </Message>
     </Task>
 </BaliMessageLog>

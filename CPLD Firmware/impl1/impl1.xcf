@@ -20,8 +20,8 @@
 				<BScanVal>0</BScanVal>
 			</Bypass>
 			<File>/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/DAISI_impl1.jed</File>
-			<FileTime>06/27/17 22:33:29</FileTime>
-			<JedecChecksum>0x6054</JedecChecksum>
+			<FileTime>07/05/17 23:18:23</FileTime>
+			<JedecChecksum>0xC466</JedecChecksum>
 			<Operation>FLASH Erase,Program,Verify</Operation>
 			<Option>
 				<SVFVendor>JTAG STANDARD</SVFVendor>

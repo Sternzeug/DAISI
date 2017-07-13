@@ -4,7 +4,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
-Wed Jun 28 23:11:36 2017
+Wed Jul 12 20:48:52 2017
 
 /usr/local/diamond/3.9_x64/ispfpga/bin/lin64/par -f DAISI_impl1.p2t
 DAISI_impl1_map.ncd DAISI_impl1.dir DAISI_impl1.prf -gui -msgset
@@ -16,11 +16,11 @@ Preference file: DAISI_impl1.prf.
 Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
 Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
 ----------   --------     -----        ------       -----------  -----------  ----         ------
-5_1   *      0            2.406        0            0.326        0            14           Complete
+5_1   *      0            6.889        0            0.384        0            08           Complete
 
 
 * : Design saved.
 
-Total (real) run time for 1-seed: 14 secs 
+Total (real) run time for 1-seed: 8 secs 
 
 par done!

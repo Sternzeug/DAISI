@@ -1,7 +1,7 @@
 # Synopsys Constraint Checker, version maplat, Build 1682R, built Mar 10 2017
 # Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
 
-# Written on Wed Jun 28 23:11:25 2017
+# Written on Wed Jul 12 20:48:43 2017
 
 
 ##### DESIGN INFO #######################################################
@@ -24,22 +24,17 @@ Found 0 issues in 0 out of 0 constraints
 Clock Relationships
 *******************
 
-Starting                                  Ending                                    |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-System                                    System                                    |     1000.000         |     No paths         |     No paths         |     No paths                         
-System                                    pll_uniq_1|CLKOS_inferred_clock           |     1000.000         |     No paths         |     No paths         |     No paths                         
-System                                    reveal_coretop|jtck_inferred_clock[0]     |     No paths         |     No paths         |     1000.000         |     No paths                         
-System                                    pll_uniq_1|CLKOP_inferred_clock           |     1000.000         |     No paths         |     No paths         |     No paths                         
-System                                    top|clock_00_0096_derived_clock           |     1000.000         |     No paths         |     No paths         |     No paths                         
-pll_uniq_1|CLKOS_inferred_clock           pll_uniq_1|CLKOS_inferred_clock           |     1000.000         |     No paths         |     No paths         |     No paths                         
-reveal_coretop|jtck_inferred_clock[0]     System                                    |     No paths         |     No paths         |     No paths         |     1000.000                         
-reveal_coretop|jtck_inferred_clock[0]     reveal_coretop|jtck_inferred_clock[0]     |     No paths         |     1000.000         |     No paths         |     No paths                         
-reveal_coretop|jtck_inferred_clock[0]     pll_uniq_1|CLKOP_inferred_clock           |     No paths         |     No paths         |     No paths         |     Diff grp                         
-pll_uniq_1|CLKOP_inferred_clock           System                                    |     1000.000         |     No paths         |     No paths         |     No paths                         
-pll_uniq_1|CLKOP_inferred_clock           reveal_coretop|jtck_inferred_clock[0]     |     No paths         |     No paths         |     Diff grp         |     No paths                         
-pll_uniq_1|CLKOP_inferred_clock           pll_uniq_1|CLKOP_inferred_clock           |     1000.000         |     No paths         |     No paths         |     No paths                         
-top|clock_00_0096_derived_clock           top|clock_00_0096_derived_clock           |     1000.000         |     No paths         |     No paths         |     No paths                         
-===============================================================================================================================================================================================
+Starting                            Ending                              |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                              System                              |     1000.000         |     No paths         |     No paths         |     No paths                         
+System                              pll|CLKOS_inferred_clock            |     1000.000         |     No paths         |     No paths         |     No paths                         
+System                              pll|CLKOP_inferred_clock            |     1000.000         |     No paths         |     No paths         |     No paths                         
+System                              top|clock_00_0096_derived_clock     |     1000.000         |     No paths         |     No paths         |     No paths                         
+pll|CLKOS_inferred_clock            pll|CLKOS_inferred_clock            |     1000.000         |     No paths         |     No paths         |     No paths                         
+pll|CLKOP_inferred_clock            System                              |     1000.000         |     No paths         |     No paths         |     No paths                         
+pll|CLKOP_inferred_clock            pll|CLKOP_inferred_clock            |     1000.000         |     No paths         |     No paths         |     No paths                         
+top|clock_00_0096_derived_clock     top|clock_00_0096_derived_clock     |     1000.000         |     No paths         |     No paths         |     No paths                         
+===================================================================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
 
@@ -68,6 +63,7 @@ p:spi_mosi (bidir start point)
 p:stdby1
 p:stdby_in
 p:switch0
+p:switch0_gnd
 
 
 Inapplicable constraints

@@ -1,4 +1,4 @@
-module top ( 	stdby_in, stdby1, switch0, osc_clk, clock_84_0000, clock_00_0192, clock_00_0096, 
+module top ( 	stdby_in, stdby1, switch0, switch0_gnd, osc_clk, clock_84_0000, clock_00_0192, clock_00_0096, 
 				led0, led1, led2, led3, led4, led5, led6, led7, 
 				spi_clk, spi_miso, spi_mosi, spi_csn,
 				rs_232_rx, rs_232_tx );
@@ -7,6 +7,7 @@ input		stdby_in;
 output		stdby1, osc_clk;
 
 input		switch0;
+output		switch0_gnd;
 output		led0, led1, led2, led3, led4, led5, led6, led7;
 
 inout		spi_clk, spi_miso, spi_mosi;
@@ -19,6 +20,8 @@ output		rs_232_tx;
 output		clock_84_0000;
 output    	clock_00_0192;
 output reg	clock_00_0096;
+
+assign		switch0_gnd = 1'b0;
 
 wire		stby_flag ;
 wire		clock_lock;
@@ -59,15 +62,15 @@ wire regulator_control_signal;
 wire sensor_interface_signal;
 wire thermal_controller_signal;
 
-assign led0 = rs_232_rx_byte[0];
-assign led1 = rs_232_rx_byte[1];
-assign led2 = rs_232_rx_byte[2];
-assign led3 = rs_232_rx_byte[3];
+assign led0 = ~rs_232_rx_byte[0];
+assign led1 = ~rs_232_rx_byte[1];
+assign led2 = ~rs_232_rx_byte[2];
+assign led3 = ~rs_232_rx_byte[3];
 
-assign led4 = rs_232_rx_byte[4];
-assign led5 = rs_232_rx_byte[5];
-assign led6 = rs_232_rx_byte[6];
-assign led7 = rs_232_rx_byte[7];//1'b1; // Off
+assign led4 = ~rs_232_rx_byte[4];
+assign led5 = ~rs_232_rx_byte[5];
+assign led6 = ~rs_232_rx_byte[6];
+assign led7 = ~rs_232_rx_byte[7];//1'b1; // Off
 
 always@(posedge clock_00_0192 or posedge reset)
 	begin

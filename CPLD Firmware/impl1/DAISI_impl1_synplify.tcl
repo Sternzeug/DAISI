@@ -22,7 +22,7 @@ set_option -disable_io_insertion false
 set_option -retiming false; set_option -pipe true
 set_option -force_gsr false
 set_option -compiler_compatible 0
-set_option -dup 1
+set_option -dup false
 set_option -frequency 1
 set_option -default_enum_encoding default
 
@@ -44,14 +44,20 @@ set_option -resolve_multiple_driver 0
 
 #-- add_file options
 set_option -include_path {/media/sf_Downloads/Code/DAISI/CPLD Firmware}
-add_file -verilog {/usr/local/diamond/3.9_x64/cae_library/synthesis/verilog/pmi_def.v}
-add_file -verilog {/usr/local/diamond/3.9_x64/module/reveal/src/ertl/ertl.v}
-add_file -verilog {/usr/local/diamond/3.9_x64/module/reveal/src/rvl_j2w_module/rvl_j2w_module.v}
-add_file -verilog {/usr/local/diamond/3.9_x64/module/reveal/src/rvl_j2w_module/wb2sci.v}
-add_file -verilog {/usr/local/diamond/3.9_x64/module/reveal/src/ertl/JTAG_SOFT.v}
-add_file -verilog {/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_la0_trig_gen.v}
-add_file -verilog {/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_la0_gen.v}
-add_file -verilog {/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v}
+add_file -verilog {/media/sf_Downloads/Code/DAISI/CPLD Firmware/top.v}
+add_file -verilog {/media/sf_Downloads/Code/DAISI/CPLD Firmware/pwr_cntrllr.v}
+add_file -verilog {/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v}
+add_file -verilog {/media/sf_Downloads/Code/DAISI/CPLD Firmware/data_buffer.v}
+add_file -verilog {/media/sf_Downloads/Code/DAISI/CPLD Firmware/data_formatter.v}
+add_file -verilog {/media/sf_Downloads/Code/DAISI/CPLD Firmware/storage_interface.v}
+add_file -verilog {/media/sf_Downloads/Code/DAISI/CPLD Firmware/rs232_decoder_encoder.v}
+add_file -verilog {/media/sf_Downloads/Code/DAISI/CPLD Firmware/rs232_command_processor.v}
+add_file -verilog {/media/sf_Downloads/Code/DAISI/CPLD Firmware/pseudo_adc.v}
+add_file -verilog {/media/sf_Downloads/Code/DAISI/CPLD Firmware/regulator_control.v}
+add_file -verilog {/media/sf_Downloads/Code/DAISI/CPLD Firmware/sensor_interface.v}
+add_file -verilog {/media/sf_Downloads/Code/DAISI/CPLD Firmware/thermal_controller.v}
+add_file -verilog {/media/sf_Downloads/Code/DAISI/CPLD Firmware/pll.v}
+add_file -verilog {/media/sf_Downloads/Code/DAISI/CPLD Firmware/efb.v}
 
 #-- top module name
 set_option -top_module top

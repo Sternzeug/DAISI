@@ -19,7 +19,6 @@ Package Status:                     Final          Version 1.39.
 Performance Hardware Data Status:   Final          Version 34.4.
 
 Running DRC.
-INFO: Design contains EBR with ASYNC Reset Mode that has a limitation: The use of the EBR block asynchronous reset requires that certain timing be met between the clock and the reset within the memory block. See the device specific data sheet for additional details.
 WARNING - chipcheck: The STDBY port on the Oscillator OSCH_inst is conntected to the Power Controller. The I2C, SPI, Wishbone and SED features will not be available for use when the Oscillator is disabled.
 DRC detected 0 errors and 1 warnings.
 Reading Preference File from DAISI_impl1.prf.

@@ -1,0 +1,16 @@
+
+fsm_encoding {8220221} original
+
+fsm_state_encoding {8220221} WRITE_ADDR_DATA {000}
+
+fsm_state_encoding {8220221} WAIT_FOR_ACK {001}
+
+fsm_state_encoding {8220221} IDLE {010}
+
+fsm_state_encoding {8220221} WRITE_ADDR_DATA_2 {011}
+
+fsm_state_encoding {8220221} WAIT_FOR_ACK_2 {101}
+
+fsm_state_encoding {8220221} IDLE_2 {110}
+
+fsm_registers {8220221} {state[2]}  {state[1]}  {state[0]} 

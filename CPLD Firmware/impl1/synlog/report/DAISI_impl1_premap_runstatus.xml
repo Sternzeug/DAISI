@@ -13,7 +13,7 @@ The file contains the job information from mapper to be displayed as part of the
 </job_status>
 <job_info>
 <info name="Notes">
-<data>3</data>
+<data>2</data>
 <report_link name="more">
 <data>/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/synlog/report/DAISI_impl1_premap_notes.txt</data>
 </report_link>
@@ -37,10 +37,10 @@ The file contains the job information from mapper to be displayed as part of the
 <data>0h:00m:00s</data>
 </info>
 <info name="Peak Memory">
-<data>143MB</data>
+<data>141MB</data>
 </info>
 <info name="Date &amp; Time">
-<data type="timestamp">1498716685</data>
+<data type="timestamp">1499917723</data>
 </info>
 </job_info>
 </job_run_status>

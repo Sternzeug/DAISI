@@ -42,7 +42,3 @@ VHDL2008 = false
 [HDL_Defines]
 SBP_SYNTHESIS=
 [HDL_Param]
-[Generated]
-/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_la0_trig_gen.v=Verilog
-/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_la0_gen.v=Verilog
-/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/reveal_workspace/tmpreveal/top_rvl.v=Verilog,work
