@@ -1,0 +1,15 @@
+#Ignore impl1 directory
+impl1/
+
+#Ignore .recovery file
+/.recovery
+
+#Ignore DAISI_tcr.dir directory
+DAISI_tcr.dir/
+
+#Ignore DAISI_tcl.html file
+/DAISI_tcl.html
+
+#Ignore promote.xml file
+/promote.xml
+

@@ -27,6 +27,8 @@ wire		stby_flag ;
 wire		clock_lock;
 
 wire [7:0]  rs_232_rx_byte;
+wire		rs_232_rx_valid;
+wire [7:0]  rs_232_rx_command_valid;
 
 // Internal Oscillator
 defparam OSCH_inst.NOM_FREQ = "7";		//  This is the default frequency
@@ -62,15 +64,15 @@ wire regulator_control_signal;
 wire sensor_interface_signal;
 wire thermal_controller_signal;
 
-assign led0 = ~rs_232_rx_byte[0];
-assign led1 = ~rs_232_rx_byte[1];
-assign led2 = ~rs_232_rx_byte[2];
-assign led3 = ~rs_232_rx_byte[3];
+assign led0 = ~rs_232_rx_command_valid[0];
+assign led1 = ~rs_232_rx_command_valid[1];
+assign led2 = ~rs_232_rx_command_valid[2];
+assign led3 = ~rs_232_rx_command_valid[3];
 
-assign led4 = ~rs_232_rx_byte[4];
-assign led5 = ~rs_232_rx_byte[5];
-assign led6 = ~rs_232_rx_byte[6];
-assign led7 = ~rs_232_rx_byte[7];//1'b1; // Off
+assign led4 = ~rs_232_rx_command_valid[4];
+assign led5 = ~rs_232_rx_command_valid[5];
+assign led6 = ~rs_232_rx_command_valid[6];
+assign led7 = ~rs_232_rx_command_valid[7];//1'b1; // Off
 
 always@(posedge clock_00_0192 or posedge reset)
 	begin
@@ -142,12 +144,15 @@ rs232_decoder_encoder rs232_decoder_encoder_inst(
 					.reset(reset ),
 					.rx(rs_232_rx ),
 					.tx(rs_232_tx ),
+					.rx_valid(rs_232_rx_valid),
 					.rx_byte(rs_232_rx_byte));
 					
 rs232_command_processor rs232_command_processor_inst(	
 					.clock(clock_84_0000 ),
 					.reset(reset ),
-					.signal(rs232_command_processor_signal ));
+					.rx_valid(rs_232_rx_valid),
+					.rx_byte(rs_232_rx_byte),
+					.command_valid(rs_232_rx_command_valid));
 					
 pseudo_adc pseudo_adc_inst(	
 					.clock(osc_clk ),
