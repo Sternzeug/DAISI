@@ -1,6 +1,0 @@
-@W: BN132 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/spi_controller.v":22:0:22:5|Removing instance spi_controller_inst.wb_adr_1[3] because it is equivalent to instance spi_controller_inst.wb_adr_1[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: MT246 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/efb.v":98:8:98:16|Blackbox EFB is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
-@W: MT246 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/pwr_cntrllr.v":24:10:24:20|Blackbox PCNTR is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
-@W: MT246 :"/media/sf_Downloads/Code/DAISI/CPLD Firmware/pll.v":66:12:66:20|Blackbox EHXPLLJ is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
-@W: MT420 |Found inferred clock pll|CLKOP_inferred_clock with period 1000.00ns. Please declare a user-defined clock on object "n:pll_inst.CLKOP"
-@W: MT420 |Found inferred clock pll|CLKOS_inferred_clock with period 1000.00ns. Please declare a user-defined clock on object "n:pll_inst.CLKOS"

@@ -1,2 +1,0 @@
-WARNING - chipcheck: The STDBY port on the Oscillator OSCH_inst is conntected to the Power Controller. The I2C, SPI, Wishbone and SED features will not be available for use when the Oscillator is disabled.
-DRC detected 0 errors and 1 warnings.

@@ -1,2 +1,0 @@
-CKID0001:@|S:pll_inst.PLLInst_0@|E:clock_00_0096@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 
-CKID0002:@|S:pll_inst.PLLInst_0@|E:spi_controller_inst.state[2]@|F:@syn_sample_clock_path1==CKID0002@|M:ClockId0002 

@@ -1,7 +1,0 @@
-/usr/local/diamond/3.9_x64/synpbase/bin/syn_nfilter  -link  -top  top  -multisrs  "/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/synwork/DAISI_impl1_comp.srs"  -osyn  "/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/synwork/DAISI_impl1_mult.srs"  -log  "/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/synlog/DAISI_impl1_multi_srs_gen.srr" 
-rc:0 success:1 runtime:0
-file:/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/synwork/DAISI_impl1_comp.srs|io:i|time:1499917721|size:22883|exec:0
-file:/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/synwork/DAISI_impl1_mult.srs|io:o|time:1499917722|size:5213|exec:0
-file:/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/synlog/DAISI_impl1_multi_srs_gen.srr|io:o|time:1499917722|size:505|exec:0
-file:/usr/local/diamond/3.9_x64/synpbase/linux_a_64/syn_nfilter|io:i|time:1493194293|size:11473624|exec:1
-file:/usr/local/diamond/3.9_x64/synpbase/bin/syn_nfilter|io:i|time:1493194294|size:366|exec:1
