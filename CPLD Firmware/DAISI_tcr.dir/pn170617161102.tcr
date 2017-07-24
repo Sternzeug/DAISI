@@ -1,6 +1,0 @@
-#Start recording tcl command: 6/17/2017 16:00:58
-#Project Location: /media/sf_Downloads/Code/DAISI/CPLD Firmware; Project name: DAISI
-prj_project open "/media/sf_Downloads/Code/DAISI/CPLD Firmware/DAISI.ldf"
-prj_run Export -impl impl1 -task Jedecgen -forceAll
-prj_run Export -impl impl1 -task Jedecgen -forceAll
-#Stop recording: 6/17/2017 16:11:02

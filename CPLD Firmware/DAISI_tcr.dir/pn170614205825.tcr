@@ -1,5 +1,0 @@
-#Start recording tcl command: 6/14/2017 20:55:39
-#Project Location: C:/Users/neera_000/Documents/GitHub/DAISI/CPLD Firmware; Project name: DAISI
-prj_project open "C:/Users/neera_000/Documents/GitHub/DAISI/CPLD Firmware/DAISI.ldf"
-prj_project close
-#Stop recording: 6/14/2017 20:58:25

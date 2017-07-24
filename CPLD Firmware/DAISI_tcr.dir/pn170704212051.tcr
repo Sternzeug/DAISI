@@ -1,6 +1,0 @@
-#Start recording tcl command: 7/4/2017 21:20:14
-#Project Location: /media/sf_Downloads/Code/DAISI/CPLD Firmware; Project name: DAISI
-prj_project open "/media/sf_Downloads/Code/DAISI/CPLD Firmware/DAISI.ldf"
-pgr_project open "/media/sf_Downloads/Code/DAISI/CPLD Firmware/impl1/impl1.xcf"
-pgr_project close
-#Stop recording: 7/4/2017 21:20:51
