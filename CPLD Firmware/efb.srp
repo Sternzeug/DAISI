@@ -1,5 +1,5 @@
 SCUBA, Version Diamond (64-bit) 3.9.1.119
-Sun Jun 25 20:51:41 2017
+Sun Oct 22 20:43:47 2017
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -7,13 +7,13 @@ Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
 
-    Issued command   : /usr/local/diamond/3.9_x64/ispfpga/bin/lin64/scuba -w -n efb -lang verilog -synth synplify -bus_exp 7 -bb -type efb -arch xo2c00 -freq 84 -spi -spi_mode Both -spi_freq 28 -spi_cs 1 -wb -dev 7000 
+    Issued command   : /usr/local/diamond/3.9_x64/ispfpga/bin/lin64/scuba -w -n efb -lang verilog -synth synplify -bus_exp 7 -bb -type efb -arch xo2c00 -freq 84 -spi -spi_mode Both -spi_freq 1 -spi_cs 3 -wb -dev 7000 
     Circuit name     : efb
     Module type      : efb
     Module Version   : 1.2
     Ports            : 
 	Inputs       : wb_clk_i, wb_rst_i, wb_cyc_i, wb_stb_i, wb_we_i, wb_adr_i[7:0], wb_dat_i[7:0], spi_scsn
-	Outputs      : wb_dat_o[7:0], wb_ack_o, spi_csn[0:0]
+	Outputs      : wb_dat_o[7:0], wb_ack_o, spi_csn[2:0]
 	Inouts       : spi_clk, spi_miso, spi_mosi
     I/O buffer       : not inserted
     EDIF output      : efb.edn

@@ -2,7 +2,7 @@
 <BaliProject version="3.2" title="DAISI" device="LCMXO2-7000HE-4TG144C" default_implementation="impl1">
     <Options/>
     <Implementation title="impl1" dir="impl1" description="impl1" synthesis="synplify" default_strategy="Strategy1">
-        <Options top="top"/>
+        <Options def_top="top" top="top"/>
         <Source name="top.v" type="Verilog" type_short="Verilog">
             <Options top_module="top"/>
         </Source>
@@ -45,16 +45,22 @@
         <Source name="efb.ipx" type="IPX_Module" type_short="IPX">
             <Options/>
         </Source>
+        <Source name="fifo_buffer.lpc" type="LPC_Module" type_short="LPC">
+            <Options/>
+        </Source>
         <Source name="DAISI.lpf" type="Logic Preference" type_short="LPF">
             <Options/>
         </Source>
         <Source name="impl1/impl1.xcf" type="Programming Project File" type_short="Programming">
             <Options/>
         </Source>
-        <Source name="reveal.rva" type="Reveal Analyzer Project File" type_short="RVA" excluded="TRUE">
+        <Source name="reveal.rva" type="Reveal Analyzer Project File" type_short="RVA">
             <Options/>
         </Source>
-        <Source name="reveal.rvl" type="Reveal" type_short="Reveal" excluded="TRUE">
+        <Source name="reveal.rvl" type="Reveal" type_short="Reveal">
+            <Options/>
+        </Source>
+        <Source name="reveal_.rva" type="Reveal Analyzer Project File" type_short="RVA">
             <Options/>
         </Source>
     </Implementation>

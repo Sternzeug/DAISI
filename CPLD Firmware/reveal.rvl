@@ -1,10 +1,10 @@
-<Project ModBy="Inserter" SigType="0" Name="/media/sf_Downloads/Code/DAISI/CPLD Firmware/reveal.rvl" Date="2017-07-05">
+<Project ModBy="Inserter" SigType="0" Name="/media/sf_Downloads/Code/DAISI/CPLD Firmware/reveal.rvl" Date="2017-10-22">
     <IP Version="1_5_062609"/>
     <Design DesignEntry="Schematic/Verilog HDL" Synthesis="synplify" DeviceFamily="MachXO2" DesignName="DAISI"/>
-    <Core InsertDataset="0" Insert="1" Reveal_sig="97204681" Name="top_LA0" ID="0">
+    <Core InsertDataset="0" Insert="1" Reveal_sig="112024169" Name="top_LA0" ID="0">
         <Setting>
             <Clock SampleClk="spi_controller_inst/clock" SampleEnable="0" EnableClk="" EnableClk_Pri="0"/>
-            <TraceBuffer Implementation="0" BitTimeStamp="0" hasTimeStamp="0" IncTrigSig="0" BufferDepth="128"/>
+            <TraceBuffer Implementation="0" BitTimeStamp="0" hasTimeStamp="0" IncTrigSig="0" BufferDepth="1024"/>
             <Capture Mode="1" MinSamplesPerTrig="8"/>
             <Event CntEnable="0" MaxEventCnt="8"/>
             <TrigOut Polarity="0" MinPulseWidth="0" TrigOutNetType="1" EnableTrigOut="0" TrigOutNet="reveal_debug_top_LA0_net"/>
@@ -12,41 +12,235 @@
         </Setting>
         <Dataset Name="Base">
             <Trace>
-                <Sig Type="SIG" Name="rs232_decoder_encoder_inst/clock"/>
-                <Sig Type="SIG" Name="rs232_decoder_encoder_inst/rx"/>
-                <Bus Name="rs232_decoder_encoder_inst/count">
-                    <Sig Type="SIG" Name="rs232_decoder_encoder_inst/count:0"/>
-                    <Sig Type="SIG" Name="rs232_decoder_encoder_inst/count:1"/>
-                    <Sig Type="SIG" Name="rs232_decoder_encoder_inst/count:2"/>
-                    <Sig Type="SIG" Name="rs232_decoder_encoder_inst/count:3"/>
+                <Sig Type="SIG" Name="spi_controller_inst/reset"/>
+                <Bus Name="spi_controller_inst/command_iteration">
+                    <Sig Type="SIG" Name="spi_controller_inst/command_iteration:0"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/command_iteration:1"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/command_iteration:2"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/command_iteration:3"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/command_iteration:4"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/command_iteration:5"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/command_iteration:6"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/command_iteration:7"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/command_iteration:8"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/command_iteration:9"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/command_iteration:10"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/command_iteration:11"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/command_iteration:12"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/command_iteration:13"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/command_iteration:14"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/command_iteration:15"/>
                 </Bus>
-                <Bus Name="rs232_decoder_encoder_inst/incoming_data">
-                    <Sig Type="SIG" Name="rs232_decoder_encoder_inst/incoming_data:0"/>
-                    <Sig Type="SIG" Name="rs232_decoder_encoder_inst/incoming_data:1"/>
-                    <Sig Type="SIG" Name="rs232_decoder_encoder_inst/incoming_data:2"/>
-                    <Sig Type="SIG" Name="rs232_decoder_encoder_inst/incoming_data:3"/>
-                    <Sig Type="SIG" Name="rs232_decoder_encoder_inst/incoming_data:4"/>
-                    <Sig Type="SIG" Name="rs232_decoder_encoder_inst/incoming_data:5"/>
-                    <Sig Type="SIG" Name="rs232_decoder_encoder_inst/incoming_data:6"/>
-                    <Sig Type="SIG" Name="rs232_decoder_encoder_inst/incoming_data:7"/>
-                    <Sig Type="SIG" Name="rs232_decoder_encoder_inst/incoming_data:8"/>
-                    <Sig Type="SIG" Name="rs232_decoder_encoder_inst/incoming_data:9"/>
+                <Bus Name="spi_controller_inst/transaction_state">
+                    <Sig Type="SIG" Name="spi_controller_inst/transaction_state:0"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/transaction_state:1"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/transaction_state:2"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/transaction_state:3"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/transaction_state:4"/>
                 </Bus>
-                <Bus Name="rs232_decoder_encoder_inst/rx_byte">
-                    <Sig Type="SIG" Name="rs232_decoder_encoder_inst/rx_byte:0"/>
-                    <Sig Type="SIG" Name="rs232_decoder_encoder_inst/rx_byte:1"/>
-                    <Sig Type="SIG" Name="rs232_decoder_encoder_inst/rx_byte:2"/>
-                    <Sig Type="SIG" Name="rs232_decoder_encoder_inst/rx_byte:3"/>
-                    <Sig Type="SIG" Name="rs232_decoder_encoder_inst/rx_byte:4"/>
-                    <Sig Type="SIG" Name="rs232_decoder_encoder_inst/rx_byte:5"/>
-                    <Sig Type="SIG" Name="rs232_decoder_encoder_inst/rx_byte:6"/>
-                    <Sig Type="SIG" Name="rs232_decoder_encoder_inst/rx_byte:7"/>
+                <Bus Name="spi_controller_inst/transaction_read_bytes">
+                    <Sig Type="SIG" Name="spi_controller_inst/transaction_read_bytes:0"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/transaction_read_bytes:1"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/transaction_read_bytes:2"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/transaction_read_bytes:3"/>
+                </Bus>
+                <Bus Name="spi_controller_inst/transaction_write_bytes">
+                    <Sig Type="SIG" Name="spi_controller_inst/transaction_write_bytes:0"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/transaction_write_bytes:1"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/transaction_write_bytes:2"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/transaction_write_bytes:3"/>
+                </Bus>
+                <Sig Type="SIG" Name="spi_controller_inst/transaction_start"/>
+                <Bus Name="spi_controller_inst/write_data_0">
+                    <Sig Type="SIG" Name="spi_controller_inst/write_data_0:0"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/write_data_0:1"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/write_data_0:2"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/write_data_0:3"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/write_data_0:4"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/write_data_0:5"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/write_data_0:6"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/write_data_0:7"/>
+                </Bus>
+                <Bus Name="spi_controller_inst/write_data_1">
+                    <Sig Type="SIG" Name="spi_controller_inst/write_data_1:0"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/write_data_1:1"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/write_data_1:2"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/write_data_1:3"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/write_data_1:4"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/write_data_1:5"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/write_data_1:6"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/write_data_1:7"/>
+                </Bus>
+                <Bus Name="spi_controller_inst/write_data_2">
+                    <Sig Type="SIG" Name="spi_controller_inst/write_data_2:0"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/write_data_2:1"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/write_data_2:2"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/write_data_2:3"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/write_data_2:4"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/write_data_2:5"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/write_data_2:6"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/write_data_2:7"/>
+                </Bus>
+                <Bus Name="spi_controller_inst/write_data_3">
+                    <Sig Type="SIG" Name="spi_controller_inst/write_data_3:0"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/write_data_3:1"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/write_data_3:2"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/write_data_3:3"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/write_data_3:4"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/write_data_3:5"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/write_data_3:6"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/write_data_3:7"/>
+                </Bus>
+                <Bus Name="spi_controller_inst/write_data_4">
+                    <Sig Type="SIG" Name="spi_controller_inst/write_data_4:0"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/write_data_4:1"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/write_data_4:2"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/write_data_4:3"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/write_data_4:4"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/write_data_4:5"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/write_data_4:6"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/write_data_4:7"/>
+                </Bus>
+                <Bus Name="spi_controller_inst/write_data_5">
+                    <Sig Type="SIG" Name="spi_controller_inst/write_data_5:0"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/write_data_5:1"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/write_data_5:2"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/write_data_5:3"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/write_data_5:4"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/write_data_5:5"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/write_data_5:6"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/write_data_5:7"/>
+                </Bus>
+                <Bus Name="spi_controller_inst/read_data_0">
+                    <Sig Type="SIG" Name="spi_controller_inst/read_data_0:0"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/read_data_0:1"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/read_data_0:2"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/read_data_0:3"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/read_data_0:4"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/read_data_0:5"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/read_data_0:6"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/read_data_0:7"/>
+                </Bus>
+                <Bus Name="spi_controller_inst/read_data_1">
+                    <Sig Type="SIG" Name="spi_controller_inst/read_data_1:0"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/read_data_1:1"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/read_data_1:2"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/read_data_1:3"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/read_data_1:4"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/read_data_1:5"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/read_data_1:6"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/read_data_1:7"/>
+                </Bus>
+                <Bus Name="spi_controller_inst/read_data_2">
+                    <Sig Type="SIG" Name="spi_controller_inst/read_data_2:0"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/read_data_2:1"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/read_data_2:2"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/read_data_2:3"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/read_data_2:4"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/read_data_2:5"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/read_data_2:6"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/read_data_2:7"/>
+                </Bus>
+                <Bus Name="spi_controller_inst/read_data_3">
+                    <Sig Type="SIG" Name="spi_controller_inst/read_data_3:0"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/read_data_3:1"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/read_data_3:2"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/read_data_3:3"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/read_data_3:4"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/read_data_3:5"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/read_data_3:6"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/read_data_3:7"/>
+                </Bus>
+                <Bus Name="spi_controller_inst/read_data_4">
+                    <Sig Type="SIG" Name="spi_controller_inst/read_data_4:0"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/read_data_4:1"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/read_data_4:2"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/read_data_4:3"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/read_data_4:4"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/read_data_4:5"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/read_data_4:6"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/read_data_4:7"/>
+                </Bus>
+                <Bus Name="spi_controller_inst/read_data_5">
+                    <Sig Type="SIG" Name="spi_controller_inst/read_data_5:0"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/read_data_5:1"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/read_data_5:2"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/read_data_5:3"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/read_data_5:4"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/read_data_5:5"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/read_data_5:6"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/read_data_5:7"/>
+                </Bus>
+                <Sig Type="SIG" Name="spi_controller_inst/adc_drdy"/>
+                <Bus Name="spi_controller_inst/spi_device">
+                    <Sig Type="SIG" Name="spi_controller_inst/spi_device:0"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/spi_device:1"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/spi_device:2"/>
                 </Bus>
             </Trace>
             <Trigger>
-                <TU Serialbits="0" Type="0" ID="1" Sig="rs232_decoder_encoder_inst/clock,"/>
-                <TU Serialbits="0" Type="0" ID="2" Sig="(BUS)rs232_decoder_encoder_inst/count[3:0],"/>
+                <TU Serialbits="0" Type="0" ID="1" Sig="spi_controller_inst/reset,"/>
+                <TU Serialbits="0" Type="0" ID="2" Sig="spi_controller_inst/done,"/>
+                <TU Serialbits="0" Type="0" ID="3" Sig="(BUS)spi_controller_inst/command_iteration[15:0],"/>
+                <TU Serialbits="0" Type="0" ID="4" Sig="(BUS)spi_controller_inst/transaction_state[4:0],"/>
                 <TE MaxSequence="1" MaxEvnCnt="1" ID="1" Resource="1"/>
+            </Trigger>
+        </Dataset>
+    </Core>
+    <Core InsertDataset="0" Insert="1" Reveal_sig="112024170" Name="top_LA1" ID="1">
+        <Setting>
+            <Clock SampleClk="spi_controller_inst/clock" SampleEnable="0" EnableClk="" EnableClk_Pri="0"/>
+            <TraceBuffer Implementation="0" BitTimeStamp="0" hasTimeStamp="0" IncTrigSig="0" BufferDepth="1024"/>
+            <Capture Mode="1" MinSamplesPerTrig="8"/>
+            <Event CntEnable="0" MaxEventCnt="8"/>
+            <TrigOut Polarity="0" MinPulseWidth="0" TrigOutNetType="1" EnableTrigOut="0" TrigOutNet="reveal_debug_top_LA1_net"/>
+            <DistRAM Disable="0"/>
+        </Setting>
+        <Dataset Name="Base">
+            <Trace>
+                <Sig Type="SIG" Name="spi_controller_inst/adc_drdy"/>
+                <Bus Name="spi_controller_inst/adc_data">
+                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:0"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:1"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:2"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:3"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:4"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:5"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:6"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:7"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:8"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:9"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:10"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:11"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:12"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:13"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:14"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:15"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:16"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:17"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:18"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:19"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:20"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:21"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:22"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:23"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:24"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:25"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:26"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:27"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:28"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:29"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:30"/>
+                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:31"/>
+                </Bus>
+                <Sig Type="SIG" Name="spi_controller_inst/buffer_write_enable"/>
+                <Sig Type="SIG" Name="spi_controller_inst/buffer_full"/>
+                <Sig Type="SIG" Name="buffer_half_filled"/>
+            </Trace>
+            <Trigger>
+                <TU Serialbits="0" Type="0" ID="1" Sig="spi_controller_inst/reset,"/>
+                <TU Serialbits="0" Type="0" ID="2" Sig="spi_controller_inst/buffer_write_enable,"/>
+                <TE MaxSequence="2" MaxEvnCnt="1" ID="1" Resource="0"/>
             </Trigger>
         </Dataset>
     </Core>

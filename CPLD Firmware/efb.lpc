@@ -16,8 +16,8 @@ CoreRevision=1.2
 ModuleName=efb
 SourceFormat=Verilog HDL
 ParameterFileVersion=1.0
-Date=06/25/2017
-Time=20:51:41
+Date=10/22/2017
+Time=20:43:47
 
 [Parameters]
 Verilog=1
@@ -47,9 +47,9 @@ pll=0
 pll_cnt=1
 spi=1
 spi_clkinv=0
-spi_cs=1
+spi_cs=3
 spi_en=0
-spi_freq=28
+spi_freq=1
 spi_lsb=0
 spi_mode=Both
 spi_ib=0
@@ -87,4 +87,4 @@ ufm_dt=hex
 wb=1
 
 [Command]
-cmd_line= -w -n efb -lang verilog -synth synplify -bus_exp 7 -bb -type efb -arch xo2c00 -freq 84 -spi -spi_mode Both -spi_freq 28 -spi_cs 1 -wb -dev 7000
+cmd_line= -w -n efb -lang verilog -synth synplify -bus_exp 7 -bb -type efb -arch xo2c00 -freq 84 -spi -spi_mode Both -spi_freq 1 -spi_cs 3 -wb -dev 7000

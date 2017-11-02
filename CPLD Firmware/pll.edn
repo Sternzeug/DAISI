@@ -4,9 +4,9 @@
   (keywordMap (keywordLevel 0))
   (status
     (written
-      (timestamp 2017 6 25 21 56 55)
+      (timestamp 2017 9 17 21 48 26)
       (program "SCUBA" (version "Diamond (64-bit) 3.9.1.119"))))
-      (comment "/usr/local/diamond/3.9_x64/ispfpga/bin/lin64/scuba -w -n pll -lang verilog -synth synplify -arch xo2c00 -type pll -fin 7 -fclkop 84 -fclkop_tol 10.0 -fclkos 0.0192 -fclkos_tol 0.0 -trimp 0 -phasep 0 -trimp_r -trims 0 -phases 0 -trims_r -phase_cntl STATIC -fb_mode 1 -lock ")
+      (comment "/usr/local/diamond/3.9_x64/ispfpga/bin/lin64/scuba -w -n pll -lang verilog -synth synplify -arch xo2c00 -type pll -fin 7 -fclkop 84 -fclkop_tol 10.0 -fclkos 0.0384 -fclkos_tol 0.0 -trimp 0 -phasep 0 -trimp_r -trims 0 -phases 0 -trims_r -phase_cntl STATIC -fb_mode 1 -lock ")
   (library ORCLIB
     (edifLevel 0)
     (technology
@@ -179,7 +179,7 @@
             (property CLKOP_FPHASE
               (string "0"))
             (property CLKOP_CPHASE
-              (string "2"))
+              (string "5"))
             (property PLL_LOCK_MODE
               (string "0"))
             (property CLKOS_TRIM_DELAY
@@ -211,7 +211,7 @@
             (property CLKOS2_ENABLE
               (string "DISABLED"))
             (property FREQUENCY_PIN_CLKOS
-              (string "0.019200"))
+              (string "0.038400"))
             (property OUTDIVIDER_MUXB2
               (string "DIVB"))
             (property PREDIVIDER_MUXB1
@@ -233,9 +233,9 @@
             (property FREQUENCY_PIN_CLKI
               (string "7.000000"))
             (property ICP_CURRENT
-              (string "8"))
+              (string "9"))
             (property LPF_RESISTOR
-              (string "68"))
+              (string "72"))
             (property CLKOS3_DIV
               (string "105"))
             (property CLKOS2_DIV
@@ -243,7 +243,7 @@
             (property CLKOS_DIV
               (string "125"))
             (property CLKOP_DIV
-              (string "3"))
+              (string "6"))
             (property CLKFB_DIV
               (string "12"))
             (property CLKI_DIV

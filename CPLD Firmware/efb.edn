@@ -4,9 +4,9 @@
   (keywordMap (keywordLevel 0))
   (status
     (written
-      (timestamp 2017 6 25 20 51 42)
+      (timestamp 2017 10 22 20 43 47)
       (program "SCUBA" (version "Diamond (64-bit) 3.9.1.119"))))
-      (comment "/usr/local/diamond/3.9_x64/ispfpga/bin/lin64/scuba -w -n efb -lang verilog -synth synplify -bus_exp 7 -bb -type efb -arch xo2c00 -freq 84 -spi -spi_mode Both -spi_freq 28 -spi_cs 1 -wb -dev 7000 ")
+      (comment "/usr/local/diamond/3.9_x64/ispfpga/bin/lin64/scuba -w -n efb -lang verilog -synth synplify -bus_exp 7 -bb -type efb -arch xo2c00 -freq 84 -spi -spi_mode Both -spi_freq 1 -spi_cs 3 -wb -dev 7000 ")
   (library ORCLIB
     (edifLevel 0)
     (technology
@@ -292,7 +292,7 @@
             (direction INOUT))
           (port spi_scsn
             (direction INPUT))
-          (port (array (rename spi_csn "spi_csn(0:0)") 1)
+          (port (array (rename spi_csn "spi_csn(2:0)") 3)
             (direction OUTPUT)))
         (property NGD_DRC_MASK (integer 1))
         (contents
@@ -379,7 +379,7 @@
             (property SPI_LSB_FIRST
               (string "DISABLED"))
             (property SPI_CLK_DIVIDER
-              (string "3"))
+              (string "50"))
             (property SPI_MODE
               (string "BOTH"))
             (property EFB_SPI
@@ -482,9 +482,17 @@
               (portRef I2C2SCLI (instanceRef EFBInst_0))
               (portRef I2C1SDAI (instanceRef EFBInst_0))
               (portRef I2C1SCLI (instanceRef EFBInst_0))))
-          (net spi_csn0
+          (net spi_csn2
             (joined
               (portRef (member spi_csn 0))
+              (portRef SPIMCSN2 (instanceRef EFBInst_0))))
+          (net spi_csn1
+            (joined
+              (portRef (member spi_csn 1))
+              (portRef SPIMCSN1 (instanceRef EFBInst_0))))
+          (net spi_csn0
+            (joined
+              (portRef (member spi_csn 2))
               (portRef SPIMCSN0 (instanceRef EFBInst_0))))
           (net spi_scsn
             (joined
