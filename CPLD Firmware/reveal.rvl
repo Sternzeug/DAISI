@@ -1,7 +1,7 @@
-<Project ModBy="Inserter" SigType="0" Name="/media/sf_Downloads/Code/DAISI/CPLD Firmware/reveal.rvl" Date="2017-10-22">
+<Project ModBy="Inserter" SigType="0" Name="/media/sf_Downloads/Code/DAISI/CPLD Firmware/reveal.rvl" Date="2017-11-05">
     <IP Version="1_5_062609"/>
     <Design DesignEntry="Schematic/Verilog HDL" Synthesis="synplify" DeviceFamily="MachXO2" DesignName="DAISI"/>
-    <Core InsertDataset="0" Insert="1" Reveal_sig="112024169" Name="top_LA0" ID="0">
+    <Core InsertDataset="0" Insert="1" Reveal_sig="113986607" Name="top_LA0" ID="0">
         <Setting>
             <Clock SampleClk="spi_controller_inst/clock" SampleEnable="0" EnableClk="" EnableClk_Pri="0"/>
             <TraceBuffer Implementation="0" BitTimeStamp="0" hasTimeStamp="0" IncTrigSig="0" BufferDepth="1024"/>
@@ -187,9 +187,9 @@
             </Trigger>
         </Dataset>
     </Core>
-    <Core InsertDataset="0" Insert="1" Reveal_sig="112024170" Name="top_LA1" ID="1">
+    <Core InsertDataset="0" Insert="1" Reveal_sig="113986608" Name="top_LA1" ID="1">
         <Setting>
-            <Clock SampleClk="spi_controller_inst/clock" SampleEnable="0" EnableClk="" EnableClk_Pri="0"/>
+            <Clock SampleClk="clock_84_0000" SampleEnable="0" EnableClk="" EnableClk_Pri="0"/>
             <TraceBuffer Implementation="0" BitTimeStamp="0" hasTimeStamp="0" IncTrigSig="0" BufferDepth="1024"/>
             <Capture Mode="1" MinSamplesPerTrig="8"/>
             <Event CntEnable="0" MaxEventCnt="8"/>
@@ -198,48 +198,103 @@
         </Setting>
         <Dataset Name="Base">
             <Trace>
-                <Sig Type="SIG" Name="spi_controller_inst/adc_drdy"/>
-                <Bus Name="spi_controller_inst/adc_data">
-                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:0"/>
-                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:1"/>
-                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:2"/>
-                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:3"/>
-                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:4"/>
-                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:5"/>
-                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:6"/>
-                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:7"/>
-                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:8"/>
-                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:9"/>
-                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:10"/>
-                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:11"/>
-                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:12"/>
-                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:13"/>
-                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:14"/>
-                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:15"/>
-                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:16"/>
-                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:17"/>
-                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:18"/>
-                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:19"/>
-                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:20"/>
-                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:21"/>
-                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:22"/>
-                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:23"/>
-                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:24"/>
-                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:25"/>
-                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:26"/>
-                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:27"/>
-                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:28"/>
-                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:29"/>
-                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:30"/>
-                    <Sig Type="SIG" Name="spi_controller_inst/adc_data:31"/>
+                <Sig Type="SIG" Name="adc_drdy"/>
+                <Bus Name="adc_data">
+                    <Sig Type="SIG" Name="adc_data:0"/>
+                    <Sig Type="SIG" Name="adc_data:1"/>
+                    <Sig Type="SIG" Name="adc_data:2"/>
+                    <Sig Type="SIG" Name="adc_data:3"/>
+                    <Sig Type="SIG" Name="adc_data:4"/>
+                    <Sig Type="SIG" Name="adc_data:5"/>
+                    <Sig Type="SIG" Name="adc_data:6"/>
+                    <Sig Type="SIG" Name="adc_data:7"/>
+                    <Sig Type="SIG" Name="adc_data:8"/>
+                    <Sig Type="SIG" Name="adc_data:9"/>
+                    <Sig Type="SIG" Name="adc_data:10"/>
+                    <Sig Type="SIG" Name="adc_data:11"/>
+                    <Sig Type="SIG" Name="adc_data:12"/>
+                    <Sig Type="SIG" Name="adc_data:13"/>
+                    <Sig Type="SIG" Name="adc_data:14"/>
+                    <Sig Type="SIG" Name="adc_data:15"/>
+                    <Sig Type="SIG" Name="adc_data:16"/>
+                    <Sig Type="SIG" Name="adc_data:17"/>
+                    <Sig Type="SIG" Name="adc_data:18"/>
+                    <Sig Type="SIG" Name="adc_data:19"/>
+                    <Sig Type="SIG" Name="adc_data:20"/>
+                    <Sig Type="SIG" Name="adc_data:21"/>
+                    <Sig Type="SIG" Name="adc_data:22"/>
+                    <Sig Type="SIG" Name="adc_data:23"/>
+                    <Sig Type="SIG" Name="adc_data:24"/>
+                    <Sig Type="SIG" Name="adc_data:25"/>
+                    <Sig Type="SIG" Name="adc_data:26"/>
+                    <Sig Type="SIG" Name="adc_data:27"/>
+                    <Sig Type="SIG" Name="adc_data:28"/>
+                    <Sig Type="SIG" Name="adc_data:29"/>
+                    <Sig Type="SIG" Name="adc_data:30"/>
+                    <Sig Type="SIG" Name="adc_data:31"/>
                 </Bus>
-                <Sig Type="SIG" Name="spi_controller_inst/buffer_write_enable"/>
-                <Sig Type="SIG" Name="spi_controller_inst/buffer_full"/>
+                <Sig Type="SIG" Name="buffer_write_enable"/>
+                <Sig Type="SIG" Name="buffer_full"/>
                 <Sig Type="SIG" Name="buffer_half_filled"/>
             </Trace>
             <Trigger>
-                <TU Serialbits="0" Type="0" ID="1" Sig="spi_controller_inst/reset,"/>
-                <TU Serialbits="0" Type="0" ID="2" Sig="spi_controller_inst/buffer_write_enable,"/>
+                <TU Serialbits="0" Type="0" ID="1" Sig="reset,"/>
+                <TU Serialbits="0" Type="0" ID="2" Sig="buffer_write_enable,"/>
+                <TE MaxSequence="2" MaxEvnCnt="1" ID="1" Resource="0"/>
+            </Trigger>
+        </Dataset>
+    </Core>
+    <Core InsertDataset="0" Insert="1" Reveal_sig="113986609" Name="top_LA2" ID="2">
+        <Setting>
+            <Clock SampleClk="adc_serial_interface_inst/clock" SampleEnable="0" EnableClk="" EnableClk_Pri="0"/>
+            <TraceBuffer Implementation="0" BitTimeStamp="0" hasTimeStamp="0" IncTrigSig="0" BufferDepth="1024"/>
+            <Capture Mode="1" MinSamplesPerTrig="8"/>
+            <Event CntEnable="0" MaxEventCnt="8"/>
+            <TrigOut Polarity="0" MinPulseWidth="0" TrigOutNetType="1" EnableTrigOut="0" TrigOutNet="reveal_debug_top_LA2_net"/>
+            <DistRAM Disable="0"/>
+        </Setting>
+        <Dataset Name="Base">
+            <Trace>
+                <Sig Type="SIG" Name="adc_serial_interface_inst/buffer_write_enable"/>
+                <Sig Type="SIG" Name="adc_serial_interface_inst/adc_data_ready_reg"/>
+                <Bus Name="adc_serial_interface_inst/adc_channel_data">
+                    <Sig Type="SIG" Name="adc_serial_interface_inst/adc_channel_data:0"/>
+                    <Sig Type="SIG" Name="adc_serial_interface_inst/adc_channel_data:1"/>
+                    <Sig Type="SIG" Name="adc_serial_interface_inst/adc_channel_data:2"/>
+                    <Sig Type="SIG" Name="adc_serial_interface_inst/adc_channel_data:3"/>
+                    <Sig Type="SIG" Name="adc_serial_interface_inst/adc_channel_data:4"/>
+                    <Sig Type="SIG" Name="adc_serial_interface_inst/adc_channel_data:5"/>
+                    <Sig Type="SIG" Name="adc_serial_interface_inst/adc_channel_data:6"/>
+                    <Sig Type="SIG" Name="adc_serial_interface_inst/adc_channel_data:7"/>
+                    <Sig Type="SIG" Name="adc_serial_interface_inst/adc_channel_data:8"/>
+                    <Sig Type="SIG" Name="adc_serial_interface_inst/adc_channel_data:9"/>
+                    <Sig Type="SIG" Name="adc_serial_interface_inst/adc_channel_data:10"/>
+                    <Sig Type="SIG" Name="adc_serial_interface_inst/adc_channel_data:11"/>
+                    <Sig Type="SIG" Name="adc_serial_interface_inst/adc_channel_data:12"/>
+                    <Sig Type="SIG" Name="adc_serial_interface_inst/adc_channel_data:13"/>
+                    <Sig Type="SIG" Name="adc_serial_interface_inst/adc_channel_data:14"/>
+                    <Sig Type="SIG" Name="adc_serial_interface_inst/adc_channel_data:15"/>
+                    <Sig Type="SIG" Name="adc_serial_interface_inst/adc_channel_data:16"/>
+                    <Sig Type="SIG" Name="adc_serial_interface_inst/adc_channel_data:17"/>
+                    <Sig Type="SIG" Name="adc_serial_interface_inst/adc_channel_data:18"/>
+                    <Sig Type="SIG" Name="adc_serial_interface_inst/adc_channel_data:19"/>
+                    <Sig Type="SIG" Name="adc_serial_interface_inst/adc_channel_data:20"/>
+                    <Sig Type="SIG" Name="adc_serial_interface_inst/adc_channel_data:21"/>
+                    <Sig Type="SIG" Name="adc_serial_interface_inst/adc_channel_data:22"/>
+                    <Sig Type="SIG" Name="adc_serial_interface_inst/adc_channel_data:23"/>
+                    <Sig Type="SIG" Name="adc_serial_interface_inst/adc_channel_data:24"/>
+                    <Sig Type="SIG" Name="adc_serial_interface_inst/adc_channel_data:25"/>
+                    <Sig Type="SIG" Name="adc_serial_interface_inst/adc_channel_data:26"/>
+                    <Sig Type="SIG" Name="adc_serial_interface_inst/adc_channel_data:27"/>
+                    <Sig Type="SIG" Name="adc_serial_interface_inst/adc_channel_data:28"/>
+                    <Sig Type="SIG" Name="adc_serial_interface_inst/adc_channel_data:29"/>
+                    <Sig Type="SIG" Name="adc_serial_interface_inst/adc_channel_data:30"/>
+                    <Sig Type="SIG" Name="adc_serial_interface_inst/adc_channel_data:31"/>
+                </Bus>
+            </Trace>
+            <Trigger>
+                <TU Serialbits="0" Type="0" ID="1" Sig="adc_serial_interface_inst/adc_data_ready_reg,"/>
+                <TU Serialbits="0" Type="0" ID="2" Sig="adc_serial_interface_inst/buffer_write_enable,"/>
                 <TE MaxSequence="2" MaxEvnCnt="1" ID="1" Resource="0"/>
             </Trigger>
         </Dataset>

@@ -224,9 +224,10 @@
     </TraceSignal>
     <TraceSignal IsHidden="false" Name="spi_controller_inst/spi_device:0" NodeType="2" PortIndex="128"/>
     <TraceSignal IsHidden="false" Name="spi_controller_inst/spi_device:1" NodeType="2" PortIndex="129"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/spi_device:2" NodeType="2" PortIndex="130"/>
    </TraceSigTreeData>
    <TriggerUI UserSelect="1" PreSelectType="0" PreSelect="0" UserSelectPos="1"/>
-   <CoreRun Run="true"/>
+   <CoreRun Run="false"/>
    <CoreWndUIData>
     <ClockFrequency Unit="ns" Frequency="-1.0"/>
    </CoreWndUIData>

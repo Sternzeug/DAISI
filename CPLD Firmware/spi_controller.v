@@ -1,5 +1,5 @@
 module spi_controller ( clock, reset, wb_cyc, wb_stb, wb_we, wb_adr, wb_dat_i, wb_dat_o, wb_ack, adc_drdy, 
-                        adc_data, buffer_write_enable, buffer_read_enable, buffer_data, buffer_full, buffer_half_filled);
+                        adc_sample_start, adc_data, buffer_write_enable, buffer_read_enable, buffer_data, buffer_full, buffer_half_filled);
 
 input				clock;
 input				reset;
@@ -13,6 +13,7 @@ input				wb_ack;
 
 input               adc_drdy;
 
+output reg          adc_sample_start;
 output reg [31:0]   adc_data;
 output reg          buffer_write_enable;
 output reg          buffer_read_enable;
@@ -22,35 +23,36 @@ input               buffer_half_filled;
 
 // Transaction state machine = advances from one SPI transaction to the next, as the SPI controller completes
 
-parameter TRANSACTION_START		    = 5'h00;
-parameter TRANSACTION_ADC_RST_EN    = 5'h01;
-parameter TRANSACTION_ADC_RST	    = 5'h02;
-parameter TRANSACTION_ADC_WAIT      = 5'h03;
-parameter TRANSACTION_ADC_EN	    = 5'h04;
-parameter ADC_WAIT_FOR_DRDY         = 5'h05;
-parameter TRANSACTION_ADC_SAMP	    = 5'h06;
-parameter TRANSACTION_SD_CLK_INIT   = 5'h07;
-parameter TRANSACTION_SD_CMD0       = 5'h08;
-parameter TRANSACTION_SD_CMD8       = 5'h09;
-parameter TRANSACTION_SD_CMD_CLK    = 5'h0A;
-parameter TRANSACTION_SD_CMD55      = 5'h0B;
-parameter TRANSACTION_SD_ACMD41     = 5'h0C;
-parameter TRANSACTION_SD_CMD_CLK_2  = 5'h0D;
-parameter TRANSACTION_SD_CMD1       = 5'h0E;
-parameter TRANSACTION_SD_CMD58      = 5'h0F;
-parameter TRANSACTION_SD_CMD_CLK_3  = 5'h10;
-parameter TRANSACTION_SD_CMD24      = 5'h11;
-parameter TRANSACTION_SD_CMD24_TOK  = 5'h12;
-parameter TRANSACTION_SD_CMD24_DATA = 5'h13;
-parameter TRANSACTION_SD_CMD24_CRC  = 5'h14;
-parameter TRANSACTION_SD_CMD_CLK_4  = 5'h15;
-parameter TRANSACTION_SD_CMD17      = 5'h16;
-parameter TRANSACTION_SD_CMD17_CONT = 5'h17;
-parameter TRANSACTION_SD_CMD_CLK_5  = 5'h18;
-parameter TRANSACTION_DONE		    = 5'h19;
+parameter TRANSACTION_START		            = 5'h00;
+parameter TRANSACTION_ADC_RST_EN            = 5'h01;
+parameter TRANSACTION_ADC_RST	            = 5'h02;
+parameter TRANSACTION_ADC_WAIT              = 5'h03;
+parameter TRANSACTION_ADC_EN	            = 5'h04;
+parameter ADC_WAIT_FOR_DRDY                 = 5'h05;
+parameter TRANSACTION_ADC_SAMP	            = 5'h06;
+parameter TRANSACTION_SD_CLK_INIT           = 5'h07;
+parameter TRANSACTION_SD_CMD0               = 5'h08;
+parameter TRANSACTION_SD_CMD8               = 5'h09;
+parameter TRANSACTION_SD_CMD_CLK            = 5'h0A;
+parameter TRANSACTION_SD_CMD55              = 5'h0B;
+parameter TRANSACTION_SD_ACMD41             = 5'h0C;
+parameter TRANSACTION_SD_CMD_CLK_2          = 5'h0D;
+parameter TRANSACTION_SD_CMD1               = 5'h0E;
+parameter TRANSACTION_SD_CMD58              = 5'h0F;
+parameter TRANSACTION_WAIT_FOR_BUFFER_FULL  = 5'h10;
+parameter TRANSACTION_SD_CMD_CLK_3          = 5'h11;
+parameter TRANSACTION_SD_CMD24              = 5'h12;
+parameter TRANSACTION_SD_CMD24_TOK          = 5'h13;
+parameter TRANSACTION_SD_CMD24_DATA         = 5'h14;
+parameter TRANSACTION_SD_CMD24_CRC          = 5'h15;
+parameter TRANSACTION_SD_CMD_CLK_4          = 5'h16;
+parameter TRANSACTION_SD_CMD17              = 5'h17;
+parameter TRANSACTION_SD_CMD17_CONT         = 5'h18;
+parameter TRANSACTION_SD_CMD_CLK_5          = 5'h19;
+parameter TRANSACTION_DONE		            = 5'h1A;
 
 parameter TRANSACTION_SD_INIT       = TRANSACTION_SD_CLK_INIT;
-parameter TRANSACTION_SD_WRITE      = TRANSACTION_SD_CMD_CLK_3;
+parameter TRANSACTION_SD_WRITE      = TRANSACTION_WAIT_FOR_BUFFER_FULL;
 parameter TRANSACTION_ADC_INIT      = TRANSACTION_ADC_RST_EN;
 parameter TRANSACTION_ADC_READ      = ADC_WAIT_FOR_DRDY;
 
@@ -62,6 +64,7 @@ parameter SPI_DEVICE_3              = 3'b100;
 parameter SPI_SD_SLOW               = 8'd49; // 84 MHz / (49 + 1) =  1.68 MHz
 parameter SPI_SD_FAST               = 8'd06; // 84 MHz / ( 6 + 1) = 12.00 MHz
 
+reg         done;
 	
 reg	[4:0]	transaction_state;
 reg         transaction_start;
@@ -92,7 +95,7 @@ reg [15:0]  command_iteration;
 reg         continue_transaction;
 reg         last_transaction;
 
-
+reg [31:0]  sd_write_address;
 
 
 always@(posedge clock or posedge reset)
@@ -109,6 +112,7 @@ always@(posedge clock or posedge reset)
             spi_clock_divider       <= SPI_SD_SLOW;
             
             adc_drdy_reg            <= 1'b0;
+            adc_sample_start        <= 1'b0;
             
             command_iteration       <= 15'h0000;
             
@@ -117,6 +121,8 @@ always@(posedge clock or posedge reset)
             
             buffer_write_enable     <= 1'b0;
             buffer_read_enable      <= 1'b0;
+            
+            sd_write_address        <= 32'h0000;
 		end
 	else
 		begin
@@ -395,6 +401,24 @@ always@(posedge clock or posedge reset)
                         write_data_5            <= 8'hFF;
                         transaction_read_bytes  <= 4'h6;
 					end
+				TRANSACTION_WAIT_FOR_BUFFER_FULL : 
+					begin
+					    if(buffer_half_filled)
+					        transaction_state		<= TRANSACTION_SD_CMD_CLK_3;
+                        else
+                            transaction_state		<= TRANSACTION_WAIT_FOR_BUFFER_FULL;
+                        spi_device              <= SPI_DEVICE_3;
+                        spi_clock_divider       <= SPI_SD_FAST;
+                        transaction_start       <= 1'b0;
+                        transaction_write_bytes <= 4'h0;
+                        write_data_0            <= 8'hFF;
+                        write_data_1            <= 8'hFF;
+                        write_data_2            <= 8'hFF;
+                        write_data_3            <= 8'hFF;
+                        write_data_4            <= 8'hFF;
+                        write_data_5            <= 8'hFF;
+                        transaction_read_bytes  <= 4'h0;
+					end
 				TRANSACTION_SD_CMD_CLK_3 : 
 					begin
 					    if(done)
@@ -445,10 +469,10 @@ always@(posedge clock or posedge reset)
                         spi_clock_divider       <= SPI_SD_FAST;
                         transaction_write_bytes <= 4'h6;
                         write_data_0            <= 8'h58; // {2'b01, 6'b<command index>}
-                        write_data_1            <= 8'h00;
-                        write_data_2            <= 8'h00;
-                        write_data_3            <= 8'h00;
-                        write_data_4            <= 8'h00;
+                        write_data_1            <= sd_write_address[31:24];
+                        write_data_2            <= sd_write_address[23:16];
+                        write_data_3            <= sd_write_address[15: 8];
+                        write_data_4            <= sd_write_address[ 7: 0];
                         write_data_5            <= 8'hFF;
                         transaction_read_bytes  <= 4'h6;
                         continue_transaction    <= 1'b1;
@@ -553,8 +577,11 @@ always@(posedge clock or posedge reset)
 					begin
 					    if(done)
 					        begin
-                                transaction_state		<= TRANSACTION_DONE;
+                                //transaction_state		<= TRANSACTION_DONE;
+                                transaction_state		<= TRANSACTION_WAIT_FOR_BUFFER_FULL;
                                 transaction_start       <= 1'b0;
+                                
+                                sd_write_address        <= sd_write_address + 1;
                             end
                         else
                             begin
@@ -690,6 +717,8 @@ always@(posedge clock or posedge reset)
                         write_data_4            <= 8'hFF;
                         write_data_5            <= 8'hFF;
                         transaction_read_bytes  <= 4'h0;
+                        
+                        adc_sample_start        <= 1'b0;
 					end
 				TRANSACTION_ADC_RST : 
 					begin
@@ -746,7 +775,11 @@ always@(posedge clock or posedge reset)
 					        begin
                                 //transaction_state		<= ADC_WAIT_FOR_DRDY;     //<--------
                                 
-                                transaction_state       <= TRANSACTION_ADC_READ;
+                                //transaction_state       <= TRANSACTION_ADC_READ;
+                                
+                                transaction_state       <= TRANSACTION_SD_WRITE;
+                                
+                                adc_sample_start        <= 1'b1;
                                 transaction_start       <= 1'b0;
                                 command_iteration       <= 16'h0000;
                             end
@@ -759,14 +792,15 @@ always@(posedge clock or posedge reset)
                         spi_clock_divider       <= SPI_SD_FAST;
                         transaction_write_bytes <= 4'h2;
                         write_data_0            <= 8'h13;
-                        write_data_1            <= 8'h90;
+                        //write_data_1            <= 8'h90; // Enable ADC sample via SPI
+                        write_data_1            <= 8'h80; // Enable ADC sample via ADC serial interface
                         write_data_2            <= 8'hFF;
                         write_data_3            <= 8'hFF;
                         write_data_4            <= 8'hFF;
                         write_data_5            <= 8'hFF;
                         transaction_read_bytes  <= 4'h0;
 					end
-				ADC_WAIT_FOR_DRDY: 
+				ADC_WAIT_FOR_DRDY: // Read ADC sample via SPI
 					begin
 					    if((adc_drdy_reg == 1'b1) && (adc_drdy == 1'b0))
 					        transaction_state		<= TRANSACTION_ADC_SAMP;
@@ -872,7 +906,6 @@ reg	[3:0]	state;
 reg	[3:0]	next_state;
 reg [3:0]   write_byte;
 reg [3:0]   read_byte;
-reg         done;
 
 reg         transaction_in_progress;
 

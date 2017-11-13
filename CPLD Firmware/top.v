@@ -1,10 +1,10 @@
-module top ( 	stdby_in, stdby1, switch0, switch0_gnd, osc_clk, clock_84_0000, clock_00_0384, clock_00_0096, 
+module top ( 	stdby_in, stdby1, switch0, switch0_gnd, clock_84_0000, clock_00_0384, clock_00_0096, 
 				led0, led1, led2, led3, led4, led5, led6, led7, 
-				spi_clk, spi_miso, spi_mosi, spi_csn0, spi_csn1, adc_drdy,
+				spi_clk, spi_miso, spi_mosi, spi_csn0, spi_csn1, adc_drdy, adc_clock, adc_data_0,
 				rs_232_rx, rs_232_tx );
 
 input		stdby_in;
-output		stdby1, osc_clk;
+output		stdby1;
 
 input		switch0;
 output		switch0_gnd;
@@ -13,7 +13,7 @@ output		led0, led1, led2, led3, led4, led5, led6, led7;
 inout		spi_clk, spi_miso, spi_mosi;
 output		spi_csn0, spi_csn1;
 
-input       adc_drdy;
+input       adc_drdy, adc_clock, adc_data_0;
 
 input		rs_232_rx;
 output		rs_232_tx;
@@ -148,7 +148,8 @@ efb efb_inst (
 					.spi_scsn(1'b1),
 					.spi_csn(spi_csn)
 					);
-					
+
+wire        adc_sample_start;					
 wire [31:0]	adc_data;
 wire [31:0] buffer_data;
 wire        buffer_write_enable;
@@ -169,12 +170,24 @@ spi_controller spi_controller_inst (
 					.wb_dat_o(wb_dat_o),
 					.wb_ack(wb_ack),
 					.adc_drdy(adc_drdy),
-					.adc_data(adc_data),
-					.buffer_write_enable(buffer_write_enable),
+					//.adc_data(adc_data),
+					//.buffer_write_enable(buffer_write_enable),
+					.adc_sample_start(adc_sample_start),
 					.buffer_read_enable(buffer_read_enable),
 					.buffer_data(buffer_data),
 					.buffer_full(buffer_full),
 					.buffer_half_filled(buffer_half_filled));
+					
+adc_serial_interface adc_serial_interface_inst (	
+					.clock(clock_84_0000 ),
+					.reset(reset ),
+					.start(adc_sample_start),
+					.adc_data_ready(adc_drdy),
+					.adc_clock(adc_clock),
+					.adc_data_0(adc_data_0),
+					.adc_channel_data(adc_data),
+					.buffer_write_enable(buffer_write_enable),
+					.buffer_full(buffer_full));					
 					
 fifo_buffer fifo_buffer_inst (
                     .Data(adc_data), 
