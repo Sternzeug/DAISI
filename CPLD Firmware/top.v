@@ -218,7 +218,7 @@ storage_interface storage_interface_inst(
 					.reset(reset ),
 					.signal(storage_interface_signal ));
 
-parameter MAX_BYTES	= 6;
+parameter MAX_BYTES	= 11;
 					
 wire [MAX_BYTES*8-1:0]    tx_bytes;
 wire [3:0]                tx_num_bytes;
@@ -245,7 +245,9 @@ rs232_command_processor rs232_command_processor_inst(
 					.command_valid(rs_232_rx_command_valid),
 					.tx_bytes(tx_bytes),
 					.tx_num_bytes(tx_num_bytes),
-					.tx_valid(tx_valid));
+					.tx_valid(tx_valid),
+					.adc_data(adc_data),
+					.adc_data_valid(buffer_write_enable));
 					
 pseudo_adc pseudo_adc_inst(	
 					.clock(osc_clk ),

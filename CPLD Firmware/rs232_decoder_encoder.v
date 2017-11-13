@@ -1,6 +1,6 @@
 module rs232_decoder_encoder ( clock, clock_4x, reset, rx, tx, rx_byte, rx_valid, tx_bytes, tx_num_bytes, tx_valid);
 
-parameter MAX_BYTES	= 6;
+parameter MAX_BYTES	= 11;
 
 input				clock;
 input               clock_4x;
