@@ -29,7 +29,7 @@ module tb;
        Data <= 0;
       #100;
       @(Reset == 1'b0);
-      for (i1 = 0; i1 < 259; i1 = i1 + 1) begin
+      for (i1 = 0; i1 < 515; i1 = i1 + 1) begin
         @(posedge WrClock);
         #1  Data <= Data + 1'b1;
       end
@@ -45,7 +45,7 @@ module tb;
        WrEn <= 1'b0;
       #100;
       @(Reset == 1'b0);
-      for (i4 = 0; i4 < 259; i4 = i4 + 1) begin
+      for (i4 = 0; i4 < 515; i4 = i4 + 1) begin
         @(posedge WrClock);
         #1  WrEn <= 1'b1;
       end
@@ -57,7 +57,7 @@ module tb;
       @(Reset == 1'b0);
       @(WrEn == 1'b1);
       @(WrEn == 1'b0);
-      for (i5 = 0; i5 < 259; i5 = i5 + 1) begin
+      for (i5 = 0; i5 < 515; i5 = i5 + 1) begin
         @(posedge RdClock);
         #1  RdEn <= 1'b1;
       end

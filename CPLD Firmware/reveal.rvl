@@ -1,7 +1,7 @@
-<Project ModBy="Inserter" SigType="0" Name="/media/sf_Downloads/Code/DAISI/CPLD Firmware/reveal.rvl" Date="2017-11-05">
+<Project ModBy="Inserter" SigType="0" Name="/media/sf_Downloads/Code/DAISI/CPLD Firmware/reveal.rvl" Date="2017-12-09">
     <IP Version="1_5_062609"/>
     <Design DesignEntry="Schematic/Verilog HDL" Synthesis="synplify" DeviceFamily="MachXO2" DesignName="DAISI"/>
-    <Core InsertDataset="0" Insert="1" Reveal_sig="113986607" Name="top_LA0" ID="0">
+    <Core InsertDataset="0" Insert="1" Reveal_sig="118705153" Name="top_LA0" ID="0">
         <Setting>
             <Clock SampleClk="spi_controller_inst/clock" SampleEnable="0" EnableClk="" EnableClk_Pri="0"/>
             <TraceBuffer Implementation="0" BitTimeStamp="0" hasTimeStamp="0" IncTrigSig="0" BufferDepth="1024"/>
@@ -12,6 +12,7 @@
         </Setting>
         <Dataset Name="Base">
             <Trace>
+                <Sig Type="SIG" Name="buffer_full"/>
                 <Sig Type="SIG" Name="spi_controller_inst/reset"/>
                 <Bus Name="spi_controller_inst/command_iteration">
                     <Sig Type="SIG" Name="spi_controller_inst/command_iteration:0"/>
@@ -171,23 +172,18 @@
                     <Sig Type="SIG" Name="spi_controller_inst/read_data_5:6"/>
                     <Sig Type="SIG" Name="spi_controller_inst/read_data_5:7"/>
                 </Bus>
-                <Sig Type="SIG" Name="spi_controller_inst/adc_drdy"/>
-                <Bus Name="spi_controller_inst/spi_device">
-                    <Sig Type="SIG" Name="spi_controller_inst/spi_device:0"/>
-                    <Sig Type="SIG" Name="spi_controller_inst/spi_device:1"/>
-                    <Sig Type="SIG" Name="spi_controller_inst/spi_device:2"/>
-                </Bus>
             </Trace>
             <Trigger>
                 <TU Serialbits="0" Type="0" ID="1" Sig="spi_controller_inst/reset,"/>
                 <TU Serialbits="0" Type="0" ID="2" Sig="spi_controller_inst/done,"/>
                 <TU Serialbits="0" Type="0" ID="3" Sig="(BUS)spi_controller_inst/command_iteration[15:0],"/>
                 <TU Serialbits="0" Type="0" ID="4" Sig="(BUS)spi_controller_inst/transaction_state[4:0],"/>
+                <TU Serialbits="0" Type="0" ID="5" Sig="buffer_full,"/>
                 <TE MaxSequence="1" MaxEvnCnt="1" ID="1" Resource="1"/>
             </Trigger>
         </Dataset>
     </Core>
-    <Core InsertDataset="0" Insert="1" Reveal_sig="113986608" Name="top_LA1" ID="1">
+    <Core InsertDataset="0" Insert="1" Reveal_sig="118705154" Name="top_LA1" ID="1">
         <Setting>
             <Clock SampleClk="clock_84_0000" SampleEnable="0" EnableClk="" EnableClk_Pri="0"/>
             <TraceBuffer Implementation="0" BitTimeStamp="0" hasTimeStamp="0" IncTrigSig="0" BufferDepth="1024"/>
@@ -244,7 +240,7 @@
             </Trigger>
         </Dataset>
     </Core>
-    <Core InsertDataset="0" Insert="1" Reveal_sig="113986609" Name="top_LA2" ID="2">
+    <Core InsertDataset="0" Insert="1" Reveal_sig="118705155" Name="top_LA2" ID="2">
         <Setting>
             <Clock SampleClk="adc_serial_interface_inst/clock" SampleEnable="0" EnableClk="" EnableClk_Pri="0"/>
             <TraceBuffer Implementation="0" BitTimeStamp="0" hasTimeStamp="0" IncTrigSig="0" BufferDepth="1024"/>

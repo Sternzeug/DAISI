@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiamondModule name="fifo_buffer" module="fifo_buffer" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2017 12 09 19:18:38.205" version="5.8" type="Module" synthesis="synplify" source_format="Verilog HDL">
+  <Package>
+		<File name="fifo_buffer.lpc" type="lpc" modified="2017 12 09 19:18:36.000"/>
+		<File name="fifo_buffer.v" type="top_level_verilog" modified="2017 12 09 19:18:36.000"/>
+		<File name="fifo_buffer_tmpl.v" type="template_verilog" modified="2017 12 09 19:18:36.000"/>
+		<File name="tb_fifo_buffer_tmpl.v" type="testbench_verilog" modified="2017 12 09 19:18:36.000"/>
+  </Package>
+</DiamondModule>

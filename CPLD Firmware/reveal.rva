@@ -26,208 +26,201 @@
   <LACoreCount>1</LACoreCount>
   <WinUI CoreIndex="0">
    <TraceSigTreeData>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/reset" NodeType="0" PortIndex="0"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/command_iteration" NodeType="1" PortIndex="1">
-     <BusRadix Radix="3"/>
+    <TraceSignal IsHidden="false" Name="buffer_full" NodeType="0" PortIndex="0"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/reset" NodeType="0" PortIndex="1"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/command_iteration" NodeType="1" PortIndex="2">
+     <BusRadix Radix="0"/>
      <IsExpanded Expand="false"/>
     </TraceSignal>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/command_iteration:0" NodeType="2" PortIndex="1"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/command_iteration:1" NodeType="2" PortIndex="2"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/command_iteration:2" NodeType="2" PortIndex="3"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/command_iteration:3" NodeType="2" PortIndex="4"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/command_iteration:4" NodeType="2" PortIndex="5"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/command_iteration:5" NodeType="2" PortIndex="6"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/command_iteration:6" NodeType="2" PortIndex="7"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/command_iteration:7" NodeType="2" PortIndex="8"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/command_iteration:8" NodeType="2" PortIndex="9"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/command_iteration:9" NodeType="2" PortIndex="10"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/command_iteration:10" NodeType="2" PortIndex="11"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/command_iteration:11" NodeType="2" PortIndex="12"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/command_iteration:12" NodeType="2" PortIndex="13"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/command_iteration:13" NodeType="2" PortIndex="14"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/command_iteration:14" NodeType="2" PortIndex="15"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/command_iteration:15" NodeType="2" PortIndex="16"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/transaction_state" NodeType="1" PortIndex="17">
-     <BusRadix Radix="3"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/command_iteration:0" NodeType="2" PortIndex="2"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/command_iteration:1" NodeType="2" PortIndex="3"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/command_iteration:2" NodeType="2" PortIndex="4"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/command_iteration:3" NodeType="2" PortIndex="5"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/command_iteration:4" NodeType="2" PortIndex="6"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/command_iteration:5" NodeType="2" PortIndex="7"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/command_iteration:6" NodeType="2" PortIndex="8"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/command_iteration:7" NodeType="2" PortIndex="9"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/command_iteration:8" NodeType="2" PortIndex="10"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/command_iteration:9" NodeType="2" PortIndex="11"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/command_iteration:10" NodeType="2" PortIndex="12"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/command_iteration:11" NodeType="2" PortIndex="13"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/command_iteration:12" NodeType="2" PortIndex="14"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/command_iteration:13" NodeType="2" PortIndex="15"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/command_iteration:14" NodeType="2" PortIndex="16"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/command_iteration:15" NodeType="2" PortIndex="17"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/transaction_state" NodeType="1" PortIndex="18">
+     <BusRadix Radix="0"/>
      <IsExpanded Expand="false"/>
     </TraceSignal>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/transaction_state:0" NodeType="2" PortIndex="17"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/transaction_state:1" NodeType="2" PortIndex="18"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/transaction_state:2" NodeType="2" PortIndex="19"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/transaction_state:3" NodeType="2" PortIndex="20"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/transaction_state:4" NodeType="2" PortIndex="21"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/transaction_read_bytes" NodeType="1" PortIndex="22">
-     <BusRadix Radix="3"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/transaction_state:0" NodeType="2" PortIndex="18"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/transaction_state:1" NodeType="2" PortIndex="19"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/transaction_state:2" NodeType="2" PortIndex="20"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/transaction_state:3" NodeType="2" PortIndex="21"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/transaction_state:4" NodeType="2" PortIndex="22"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/transaction_read_bytes" NodeType="1" PortIndex="23">
+     <BusRadix Radix="0"/>
      <IsExpanded Expand="false"/>
     </TraceSignal>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/transaction_read_bytes:0" NodeType="2" PortIndex="22"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/transaction_read_bytes:1" NodeType="2" PortIndex="23"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/transaction_read_bytes:2" NodeType="2" PortIndex="24"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/transaction_read_bytes:3" NodeType="2" PortIndex="25"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/transaction_write_bytes" NodeType="1" PortIndex="26">
-     <BusRadix Radix="3"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/transaction_read_bytes:0" NodeType="2" PortIndex="23"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/transaction_read_bytes:1" NodeType="2" PortIndex="24"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/transaction_read_bytes:2" NodeType="2" PortIndex="25"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/transaction_read_bytes:3" NodeType="2" PortIndex="26"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/transaction_write_bytes" NodeType="1" PortIndex="27">
+     <BusRadix Radix="0"/>
      <IsExpanded Expand="false"/>
     </TraceSignal>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/transaction_write_bytes:0" NodeType="2" PortIndex="26"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/transaction_write_bytes:1" NodeType="2" PortIndex="27"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/transaction_write_bytes:2" NodeType="2" PortIndex="28"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/transaction_write_bytes:3" NodeType="2" PortIndex="29"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/transaction_start" NodeType="0" PortIndex="30"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_0" NodeType="1" PortIndex="31">
-     <BusRadix Radix="3"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/transaction_write_bytes:0" NodeType="2" PortIndex="27"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/transaction_write_bytes:1" NodeType="2" PortIndex="28"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/transaction_write_bytes:2" NodeType="2" PortIndex="29"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/transaction_write_bytes:3" NodeType="2" PortIndex="30"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/transaction_start" NodeType="0" PortIndex="31"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_0" NodeType="1" PortIndex="32">
+     <BusRadix Radix="0"/>
      <IsExpanded Expand="false"/>
     </TraceSignal>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_0:0" NodeType="2" PortIndex="31"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_0:1" NodeType="2" PortIndex="32"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_0:2" NodeType="2" PortIndex="33"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_0:3" NodeType="2" PortIndex="34"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_0:4" NodeType="2" PortIndex="35"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_0:5" NodeType="2" PortIndex="36"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_0:6" NodeType="2" PortIndex="37"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_0:7" NodeType="2" PortIndex="38"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_1" NodeType="1" PortIndex="39">
-     <BusRadix Radix="3"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_0:0" NodeType="2" PortIndex="32"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_0:1" NodeType="2" PortIndex="33"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_0:2" NodeType="2" PortIndex="34"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_0:3" NodeType="2" PortIndex="35"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_0:4" NodeType="2" PortIndex="36"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_0:5" NodeType="2" PortIndex="37"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_0:6" NodeType="2" PortIndex="38"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_0:7" NodeType="2" PortIndex="39"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_1" NodeType="1" PortIndex="40">
+     <BusRadix Radix="0"/>
      <IsExpanded Expand="false"/>
     </TraceSignal>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_1:0" NodeType="2" PortIndex="39"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_1:1" NodeType="2" PortIndex="40"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_1:2" NodeType="2" PortIndex="41"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_1:3" NodeType="2" PortIndex="42"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_1:4" NodeType="2" PortIndex="43"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_1:5" NodeType="2" PortIndex="44"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_1:6" NodeType="2" PortIndex="45"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_1:7" NodeType="2" PortIndex="46"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_2" NodeType="1" PortIndex="47">
-     <BusRadix Radix="3"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_1:0" NodeType="2" PortIndex="40"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_1:1" NodeType="2" PortIndex="41"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_1:2" NodeType="2" PortIndex="42"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_1:3" NodeType="2" PortIndex="43"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_1:4" NodeType="2" PortIndex="44"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_1:5" NodeType="2" PortIndex="45"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_1:6" NodeType="2" PortIndex="46"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_1:7" NodeType="2" PortIndex="47"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_2" NodeType="1" PortIndex="48">
+     <BusRadix Radix="0"/>
      <IsExpanded Expand="false"/>
     </TraceSignal>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_2:0" NodeType="2" PortIndex="47"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_2:1" NodeType="2" PortIndex="48"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_2:2" NodeType="2" PortIndex="49"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_2:3" NodeType="2" PortIndex="50"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_2:4" NodeType="2" PortIndex="51"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_2:5" NodeType="2" PortIndex="52"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_2:6" NodeType="2" PortIndex="53"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_2:7" NodeType="2" PortIndex="54"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_3" NodeType="1" PortIndex="55">
-     <BusRadix Radix="3"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_2:0" NodeType="2" PortIndex="48"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_2:1" NodeType="2" PortIndex="49"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_2:2" NodeType="2" PortIndex="50"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_2:3" NodeType="2" PortIndex="51"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_2:4" NodeType="2" PortIndex="52"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_2:5" NodeType="2" PortIndex="53"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_2:6" NodeType="2" PortIndex="54"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_2:7" NodeType="2" PortIndex="55"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_3" NodeType="1" PortIndex="56">
+     <BusRadix Radix="0"/>
      <IsExpanded Expand="false"/>
     </TraceSignal>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_3:0" NodeType="2" PortIndex="55"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_3:1" NodeType="2" PortIndex="56"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_3:2" NodeType="2" PortIndex="57"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_3:3" NodeType="2" PortIndex="58"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_3:4" NodeType="2" PortIndex="59"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_3:5" NodeType="2" PortIndex="60"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_3:6" NodeType="2" PortIndex="61"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_3:7" NodeType="2" PortIndex="62"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_4" NodeType="1" PortIndex="63">
-     <BusRadix Radix="3"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_3:0" NodeType="2" PortIndex="56"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_3:1" NodeType="2" PortIndex="57"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_3:2" NodeType="2" PortIndex="58"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_3:3" NodeType="2" PortIndex="59"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_3:4" NodeType="2" PortIndex="60"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_3:5" NodeType="2" PortIndex="61"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_3:6" NodeType="2" PortIndex="62"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_3:7" NodeType="2" PortIndex="63"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_4" NodeType="1" PortIndex="64">
+     <BusRadix Radix="0"/>
      <IsExpanded Expand="false"/>
     </TraceSignal>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_4:0" NodeType="2" PortIndex="63"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_4:1" NodeType="2" PortIndex="64"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_4:2" NodeType="2" PortIndex="65"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_4:3" NodeType="2" PortIndex="66"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_4:4" NodeType="2" PortIndex="67"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_4:5" NodeType="2" PortIndex="68"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_4:6" NodeType="2" PortIndex="69"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_4:7" NodeType="2" PortIndex="70"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_5" NodeType="1" PortIndex="71">
-     <BusRadix Radix="3"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_4:0" NodeType="2" PortIndex="64"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_4:1" NodeType="2" PortIndex="65"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_4:2" NodeType="2" PortIndex="66"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_4:3" NodeType="2" PortIndex="67"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_4:4" NodeType="2" PortIndex="68"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_4:5" NodeType="2" PortIndex="69"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_4:6" NodeType="2" PortIndex="70"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_4:7" NodeType="2" PortIndex="71"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_5" NodeType="1" PortIndex="72">
+     <BusRadix Radix="0"/>
      <IsExpanded Expand="false"/>
     </TraceSignal>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_5:0" NodeType="2" PortIndex="71"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_5:1" NodeType="2" PortIndex="72"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_5:2" NodeType="2" PortIndex="73"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_5:3" NodeType="2" PortIndex="74"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_5:4" NodeType="2" PortIndex="75"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_5:5" NodeType="2" PortIndex="76"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_5:6" NodeType="2" PortIndex="77"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_5:7" NodeType="2" PortIndex="78"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_0" NodeType="1" PortIndex="79">
-     <BusRadix Radix="3"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_5:0" NodeType="2" PortIndex="72"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_5:1" NodeType="2" PortIndex="73"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_5:2" NodeType="2" PortIndex="74"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_5:3" NodeType="2" PortIndex="75"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_5:4" NodeType="2" PortIndex="76"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_5:5" NodeType="2" PortIndex="77"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_5:6" NodeType="2" PortIndex="78"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/write_data_5:7" NodeType="2" PortIndex="79"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_0" NodeType="1" PortIndex="80">
+     <BusRadix Radix="0"/>
      <IsExpanded Expand="false"/>
     </TraceSignal>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_0:0" NodeType="2" PortIndex="79"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_0:1" NodeType="2" PortIndex="80"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_0:2" NodeType="2" PortIndex="81"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_0:3" NodeType="2" PortIndex="82"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_0:4" NodeType="2" PortIndex="83"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_0:5" NodeType="2" PortIndex="84"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_0:6" NodeType="2" PortIndex="85"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_0:7" NodeType="2" PortIndex="86"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_1" NodeType="1" PortIndex="87">
-     <BusRadix Radix="3"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_0:0" NodeType="2" PortIndex="80"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_0:1" NodeType="2" PortIndex="81"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_0:2" NodeType="2" PortIndex="82"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_0:3" NodeType="2" PortIndex="83"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_0:4" NodeType="2" PortIndex="84"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_0:5" NodeType="2" PortIndex="85"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_0:6" NodeType="2" PortIndex="86"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_0:7" NodeType="2" PortIndex="87"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_1" NodeType="1" PortIndex="88">
+     <BusRadix Radix="0"/>
      <IsExpanded Expand="false"/>
     </TraceSignal>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_1:0" NodeType="2" PortIndex="87"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_1:1" NodeType="2" PortIndex="88"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_1:2" NodeType="2" PortIndex="89"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_1:3" NodeType="2" PortIndex="90"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_1:4" NodeType="2" PortIndex="91"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_1:5" NodeType="2" PortIndex="92"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_1:6" NodeType="2" PortIndex="93"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_1:7" NodeType="2" PortIndex="94"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_2" NodeType="1" PortIndex="95">
-     <BusRadix Radix="3"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_1:0" NodeType="2" PortIndex="88"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_1:1" NodeType="2" PortIndex="89"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_1:2" NodeType="2" PortIndex="90"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_1:3" NodeType="2" PortIndex="91"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_1:4" NodeType="2" PortIndex="92"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_1:5" NodeType="2" PortIndex="93"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_1:6" NodeType="2" PortIndex="94"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_1:7" NodeType="2" PortIndex="95"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_2" NodeType="1" PortIndex="96">
+     <BusRadix Radix="0"/>
      <IsExpanded Expand="false"/>
     </TraceSignal>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_2:0" NodeType="2" PortIndex="95"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_2:1" NodeType="2" PortIndex="96"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_2:2" NodeType="2" PortIndex="97"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_2:3" NodeType="2" PortIndex="98"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_2:4" NodeType="2" PortIndex="99"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_2:5" NodeType="2" PortIndex="100"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_2:6" NodeType="2" PortIndex="101"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_2:7" NodeType="2" PortIndex="102"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_3" NodeType="1" PortIndex="103">
-     <BusRadix Radix="3"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_2:0" NodeType="2" PortIndex="96"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_2:1" NodeType="2" PortIndex="97"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_2:2" NodeType="2" PortIndex="98"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_2:3" NodeType="2" PortIndex="99"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_2:4" NodeType="2" PortIndex="100"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_2:5" NodeType="2" PortIndex="101"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_2:6" NodeType="2" PortIndex="102"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_2:7" NodeType="2" PortIndex="103"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_3" NodeType="1" PortIndex="104">
+     <BusRadix Radix="0"/>
      <IsExpanded Expand="false"/>
     </TraceSignal>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_3:0" NodeType="2" PortIndex="103"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_3:1" NodeType="2" PortIndex="104"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_3:2" NodeType="2" PortIndex="105"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_3:3" NodeType="2" PortIndex="106"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_3:4" NodeType="2" PortIndex="107"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_3:5" NodeType="2" PortIndex="108"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_3:6" NodeType="2" PortIndex="109"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_3:7" NodeType="2" PortIndex="110"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_4" NodeType="1" PortIndex="111">
-     <BusRadix Radix="3"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_3:0" NodeType="2" PortIndex="104"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_3:1" NodeType="2" PortIndex="105"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_3:2" NodeType="2" PortIndex="106"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_3:3" NodeType="2" PortIndex="107"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_3:4" NodeType="2" PortIndex="108"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_3:5" NodeType="2" PortIndex="109"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_3:6" NodeType="2" PortIndex="110"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_3:7" NodeType="2" PortIndex="111"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_4" NodeType="1" PortIndex="112">
+     <BusRadix Radix="0"/>
      <IsExpanded Expand="false"/>
     </TraceSignal>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_4:0" NodeType="2" PortIndex="111"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_4:1" NodeType="2" PortIndex="112"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_4:2" NodeType="2" PortIndex="113"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_4:3" NodeType="2" PortIndex="114"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_4:4" NodeType="2" PortIndex="115"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_4:5" NodeType="2" PortIndex="116"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_4:6" NodeType="2" PortIndex="117"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_4:7" NodeType="2" PortIndex="118"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_5" NodeType="1" PortIndex="119">
-     <BusRadix Radix="3"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_4:0" NodeType="2" PortIndex="112"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_4:1" NodeType="2" PortIndex="113"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_4:2" NodeType="2" PortIndex="114"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_4:3" NodeType="2" PortIndex="115"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_4:4" NodeType="2" PortIndex="116"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_4:5" NodeType="2" PortIndex="117"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_4:6" NodeType="2" PortIndex="118"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_4:7" NodeType="2" PortIndex="119"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_5" NodeType="1" PortIndex="120">
+     <BusRadix Radix="0"/>
      <IsExpanded Expand="false"/>
     </TraceSignal>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_5:0" NodeType="2" PortIndex="119"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_5:1" NodeType="2" PortIndex="120"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_5:2" NodeType="2" PortIndex="121"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_5:3" NodeType="2" PortIndex="122"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_5:4" NodeType="2" PortIndex="123"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_5:5" NodeType="2" PortIndex="124"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_5:6" NodeType="2" PortIndex="125"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_5:7" NodeType="2" PortIndex="126"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/adc_drdy" NodeType="0" PortIndex="127"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/spi_device" NodeType="1" PortIndex="128">
-     <BusRadix Radix="3"/>
-     <IsExpanded Expand="false"/>
-    </TraceSignal>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/spi_device:0" NodeType="2" PortIndex="128"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/spi_device:1" NodeType="2" PortIndex="129"/>
-    <TraceSignal IsHidden="false" Name="spi_controller_inst/spi_device:2" NodeType="2" PortIndex="130"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_5:0" NodeType="2" PortIndex="120"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_5:1" NodeType="2" PortIndex="121"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_5:2" NodeType="2" PortIndex="122"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_5:3" NodeType="2" PortIndex="123"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_5:4" NodeType="2" PortIndex="124"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_5:5" NodeType="2" PortIndex="125"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_5:6" NodeType="2" PortIndex="126"/>
+    <TraceSignal IsHidden="false" Name="spi_controller_inst/read_data_5:7" NodeType="2" PortIndex="127"/>
    </TraceSigTreeData>
    <TriggerUI UserSelect="1" PreSelectType="0" PreSelect="0" UserSelectPos="1"/>
-   <CoreRun Run="false"/>
+   <CoreRun Run="true"/>
    <CoreWndUIData>
     <ClockFrequency Unit="ns" Frequency="-1.0"/>
    </CoreWndUIData>

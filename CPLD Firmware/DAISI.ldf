@@ -2,7 +2,7 @@
 <BaliProject version="3.2" title="DAISI" device="LCMXO2-7000HE-4TG144C" default_implementation="impl1">
     <Options/>
     <Implementation title="impl1" dir="impl1" description="impl1" synthesis="synplify" default_strategy="Strategy1">
-        <Options top="top"/>
+        <Options def_top="top" top="top"/>
         <Source name="top.v" type="Verilog" type_short="Verilog">
             <Options top_module="top"/>
         </Source>
@@ -16,9 +16,6 @@
             <Options/>
         </Source>
         <Source name="data_formatter.v" type="Verilog" type_short="Verilog">
-            <Options/>
-        </Source>
-        <Source name="storage_interface.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
         <Source name="rs232_decoder_encoder.v" type="Verilog" type_short="Verilog">
@@ -64,9 +61,6 @@
             <Options/>
         </Source>
         <Source name="reveal.rvl" type="Reveal" type_short="Reveal">
-            <Options/>
-        </Source>
-        <Source name="reveal_.rva" type="Reveal Analyzer Project File" type_short="RVA">
             <Options/>
         </Source>
     </Implementation>

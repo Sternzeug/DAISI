@@ -1,4 +1,4 @@
-<Project ModBy="Analyzer" Name="/media/sf_Downloads/Code/DAISI/CPLD Firmware/reveal.rvs" Date="2017-11-05">
+<Project ModBy="Analyzer" Name="/media/sf_Downloads/Code/DAISI/CPLD Firmware/reveal.rvs" Date="2017-12-09">
  <Core Name="top_LA0">
   <Setting>
    <Capture SamplesPerTrig="8" NumTrigsCap="128"/>
@@ -7,6 +7,7 @@
   </Setting>
   <Dataset Name="Base">
    <Trace>
+    <Sig Name="buffer_full"/>
     <Sig Name="spi_controller_inst/reset"/>
     <Bus Name="spi_controller_inst/command_iteration" Radix="0">
      <Sig Name="spi_controller_inst/command_iteration:0"/>
@@ -166,19 +167,14 @@
      <Sig Name="spi_controller_inst/read_data_5:6"/>
      <Sig Name="spi_controller_inst/read_data_5:7"/>
     </Bus>
-    <Sig Name="spi_controller_inst/adc_drdy"/>
-    <Bus Name="spi_controller_inst/spi_device" Radix="0">
-     <Sig Name="spi_controller_inst/spi_device:0"/>
-     <Sig Name="spi_controller_inst/spi_device:1"/>
-     <Sig Name="spi_controller_inst/spi_device:2"/>
-    </Bus>
    </Trace>
    <Trigger>
     <TU Operator="0" Name="TU1" ID="1" Value="0" Radix="0"/>
     <TU Operator="0" Name="TU2" ID="2" Value="1" Radix="0"/>
     <TU Operator="2" Name="TU3" ID="3" Value="FFEF" Radix="3"/>
-    <TU Operator="3" Name="TU4" ID="4" Value="13" Radix="3"/>
-    <TE Enable="1" Expression="TU1 &amp; TU2 &amp; TU4" Name="TE1" ID="1"/>
+    <TU Operator="3" Name="TU4" ID="4" Value="15" Radix="3"/>
+    <TU Operator="0" Name="TU5" ID="5" Value="1" Radix="0"/>
+    <TE Enable="1" Expression="TU1 &amp; TU2 &amp; TU5" Name="TE1" ID="1"/>
    </Trigger>
   </Dataset>
  </Core>

@@ -1,5 +1,6 @@
-module spi_controller ( clock, reset, wb_cyc, wb_stb, wb_we, wb_adr, wb_dat_i, wb_dat_o, wb_ack, adc_drdy, 
-                        adc_sample_start, adc_data, buffer_write_enable, buffer_read_enable, buffer_data, buffer_full, buffer_half_filled);
+module spi_controller ( clock, reset, wb_cyc, wb_stb, wb_we, wb_adr, wb_dat_i, wb_dat_o, wb_ack, 
+                        adc_sample_start, buffer_read_enable, buffer_data, buffer_half_filled,
+                        adc_init, sd_init, sd_write_error);
 
 input				clock;
 input				reset;
@@ -11,50 +12,46 @@ output reg	[7:0]	wb_dat_i;
 input		[7:0]	wb_dat_o;
 input				wb_ack;
 
-input               adc_drdy;
-
 output reg          adc_sample_start;
-output reg [31:0]   adc_data;
-output reg          buffer_write_enable;
 output reg          buffer_read_enable;
 input      [31:0]   buffer_data;
-input               buffer_full;
 input               buffer_half_filled;
+
+output reg          adc_init;
+output reg          sd_init;
+output reg          sd_write_error;
 
 // Transaction state machine = advances from one SPI transaction to the next, as the SPI controller completes
 
-parameter TRANSACTION_START		            = 5'h00;
-parameter TRANSACTION_ADC_RST_EN            = 5'h01;
-parameter TRANSACTION_ADC_RST	            = 5'h02;
-parameter TRANSACTION_ADC_WAIT              = 5'h03;
-parameter TRANSACTION_ADC_EN	            = 5'h04;
-parameter ADC_WAIT_FOR_DRDY                 = 5'h05;
-parameter TRANSACTION_ADC_SAMP	            = 5'h06;
-parameter TRANSACTION_SD_CLK_INIT           = 5'h07;
-parameter TRANSACTION_SD_CMD0               = 5'h08;
-parameter TRANSACTION_SD_CMD8               = 5'h09;
-parameter TRANSACTION_SD_CMD_CLK            = 5'h0A;
-parameter TRANSACTION_SD_CMD55              = 5'h0B;
-parameter TRANSACTION_SD_ACMD41             = 5'h0C;
-parameter TRANSACTION_SD_CMD_CLK_2          = 5'h0D;
-parameter TRANSACTION_SD_CMD1               = 5'h0E;
-parameter TRANSACTION_SD_CMD58              = 5'h0F;
-parameter TRANSACTION_WAIT_FOR_BUFFER_FULL  = 5'h10;
-parameter TRANSACTION_SD_CMD_CLK_3          = 5'h11;
-parameter TRANSACTION_SD_CMD24              = 5'h12;
-parameter TRANSACTION_SD_CMD24_TOK          = 5'h13;
-parameter TRANSACTION_SD_CMD24_DATA         = 5'h14;
-parameter TRANSACTION_SD_CMD24_CRC          = 5'h15;
-parameter TRANSACTION_SD_CMD_CLK_4          = 5'h16;
-parameter TRANSACTION_SD_CMD17              = 5'h17;
-parameter TRANSACTION_SD_CMD17_CONT         = 5'h18;
-parameter TRANSACTION_SD_CMD_CLK_5          = 5'h19;
-parameter TRANSACTION_DONE		            = 5'h1A;
+parameter TRANSACTION_START		                = 5'h00;
+parameter TRANSACTION_ADC_RST_EN                = 5'h01;
+parameter TRANSACTION_ADC_RST	                = 5'h02;
+parameter TRANSACTION_ADC_WAIT                  = 5'h03;
+parameter TRANSACTION_ADC_FORMAT                = 5'h04;
+parameter TRANSACTION_ADC_EN	                = 5'h05;
+parameter TRANSACTION_SD_CLK_INIT               = 5'h06;
+parameter TRANSACTION_SD_CMD0                   = 5'h07;
+parameter TRANSACTION_SD_CMD8                   = 5'h08;
+parameter TRANSACTION_SD_CMD_CLK                = 5'h09;
+parameter TRANSACTION_SD_CMD55                  = 5'h0A;
+parameter TRANSACTION_SD_ACMD41                 = 5'h0B;
+parameter TRANSACTION_SD_CMD_CLK_2              = 5'h0C;
+parameter TRANSACTION_SD_CMD1                   = 5'h0D;
+parameter TRANSACTION_SD_CMD58                  = 5'h0E;
+parameter TRANSACTION_SD_CMD_CLK_3              = 5'h0F;
+parameter TRANSACTION_SD_CMD24                  = 5'h10;
+parameter TRANSACTION_WAIT_FOR_BUFFER_FULL      = 5'h11;
+parameter TRANSACTION_SD_CMD24_TOK              = 5'h12;
+parameter TRANSACTION_SD_CMD24_DATA             = 5'h13;
+parameter TRANSACTION_SD_CMD24_CRC              = 5'h14;
+parameter TRANSACTION_SD_CMD24_RESP             = 5'h15;
+parameter TRANSACTION_SD_WAIT_FOR_WRITE_READY   = 5'h16;
+parameter TRANSACTION_DONE		                = 5'h17;
 
 parameter TRANSACTION_SD_INIT       = TRANSACTION_SD_CLK_INIT;
-parameter TRANSACTION_SD_WRITE      = TRANSACTION_WAIT_FOR_BUFFER_FULL;
+parameter TRANSACTION_SD_WRITE      = TRANSACTION_SD_CMD_CLK_3;
+parameter TRANSACTION_SD_WRITE_CONT = TRANSACTION_WAIT_FOR_BUFFER_FULL;
 parameter TRANSACTION_ADC_INIT      = TRANSACTION_ADC_RST_EN;
-parameter TRANSACTION_ADC_READ      = ADC_WAIT_FOR_DRDY;
 
 parameter SPI_DEVICE_NONE           = 3'b000;
 parameter SPI_DEVICE_1              = 3'b001;
@@ -62,7 +59,7 @@ parameter SPI_DEVICE_2              = 3'b010;
 parameter SPI_DEVICE_3              = 3'b100;
 
 parameter SPI_SD_SLOW               = 8'd49; // 84 MHz / (49 + 1) =  1.68 MHz
-parameter SPI_SD_FAST               = 8'd06; // 84 MHz / ( 6 + 1) = 12.00 MHz
+parameter SPI_SD_FAST               = 8'd03; // 84 MHz / ( 3 + 1) = 21.00 MHz
 
 reg         done;
 	
@@ -119,14 +116,17 @@ always@(posedge clock or posedge reset)
             continue_transaction    <= 1'b0;
             last_transaction        <= 1'b0;
             
-            buffer_write_enable     <= 1'b0;
             buffer_read_enable      <= 1'b0;
             
             sd_write_address        <= 32'h0000;
+            
+            adc_init                <= 1'b0;
+            sd_init                 <= 1'b0;
+            
+            sd_write_error          <= 1'b0;
 		end
 	else
 		begin
-		    adc_drdy_reg    <= adc_drdy;
 			case(transaction_state)
 				TRANSACTION_START : 
 					begin
@@ -148,15 +148,25 @@ always@(posedge clock or posedge reset)
                         command_iteration       <= 16'h0000;
                         continue_transaction    <= 1'b0;
                         last_transaction        <= 1'b0;
-                        buffer_write_enable     <= 1'b0;
                         buffer_read_enable      <= 1'b0;
 					end
 				TRANSACTION_SD_CLK_INIT : 
 					begin
 					    if(done)
 					        begin
-                                transaction_state		<= TRANSACTION_SD_CMD0;
                                 transaction_start       <= 1'b0;
+                                sd_init                 <= 1'b0;
+                                
+                                if(command_iteration == 16'h3FFF)
+					                begin
+                                        transaction_state		<= TRANSACTION_SD_CMD0;
+                                        command_iteration       <= 16'h0;
+                                    end
+                                else
+                                    begin
+                                        transaction_state		<= TRANSACTION_SD_CLK_INIT;
+                                        command_iteration       <= command_iteration + 1;
+                                    end
                             end
                         else
                             begin
@@ -376,6 +386,8 @@ always@(posedge clock or posedge reset)
                                         //transaction_state		<= TRANSACTION_SD_CMD_CLK_3;   //<-------
                                         
                                         transaction_state       <= TRANSACTION_ADC_INIT;
+                                        sd_init                 <= 1'b1;
+                                        sd_write_error          <= 1'b0;
                                         //command_iteration       <= 16'h0;
                                 //    end
                                 //else
@@ -401,24 +413,7 @@ always@(posedge clock or posedge reset)
                         write_data_5            <= 8'hFF;
                         transaction_read_bytes  <= 4'h6;
 					end
-				TRANSACTION_WAIT_FOR_BUFFER_FULL : 
-					begin
-					    if(buffer_half_filled)
-					        transaction_state		<= TRANSACTION_SD_CMD_CLK_3;
-                        else
-                            transaction_state		<= TRANSACTION_WAIT_FOR_BUFFER_FULL;
-                        spi_device              <= SPI_DEVICE_3;
-                        spi_clock_divider       <= SPI_SD_FAST;
-                        transaction_start       <= 1'b0;
-                        transaction_write_bytes <= 4'h0;
-                        write_data_0            <= 8'hFF;
-                        write_data_1            <= 8'hFF;
-                        write_data_2            <= 8'hFF;
-                        write_data_3            <= 8'hFF;
-                        write_data_4            <= 8'hFF;
-                        write_data_5            <= 8'hFF;
-                        transaction_read_bytes  <= 4'h0;
-					end
+				/////////////////////////
 				TRANSACTION_SD_CMD_CLK_3 : 
 					begin
 					    if(done)
@@ -447,17 +442,8 @@ always@(posedge clock or posedge reset)
 					begin
 					    if(done)
 					        begin
-					            //if(command_iteration == 16'h0FFF)
-					                //begin
-                                        transaction_state		<= TRANSACTION_SD_CMD24_TOK;
-                                        command_iteration       <= 16'h0000;
-                                        
-                                    //end
-                                //else
-                                    //begin
-                                    //    transaction_state		<= TRANSACTION_SD_CMD17;
-                                    //    command_iteration       <= command_iteration + 1;
-                                    //end
+					            transaction_state		<= TRANSACTION_WAIT_FOR_BUFFER_FULL;
+                                command_iteration       <= 16'h0000;
                                 transaction_start       <= 1'b0;
                             end
                         else
@@ -468,16 +454,35 @@ always@(posedge clock or posedge reset)
                         spi_device              <= SPI_DEVICE_2;
                         spi_clock_divider       <= SPI_SD_FAST;
                         transaction_write_bytes <= 4'h6;
-                        write_data_0            <= 8'h58; // {2'b01, 6'b<command index>}
+                        write_data_0            <= 8'h59; // {2'b01, 6'b<command index>}
                         write_data_1            <= sd_write_address[31:24];
                         write_data_2            <= sd_write_address[23:16];
                         write_data_3            <= sd_write_address[15: 8];
                         write_data_4            <= sd_write_address[ 7: 0];
                         write_data_5            <= 8'hFF;
                         transaction_read_bytes  <= 4'h6;
+                        
+					end
+				TRANSACTION_WAIT_FOR_BUFFER_FULL : 
+					begin
+					    if(buffer_half_filled)
+					        transaction_state		<= TRANSACTION_SD_CMD24_TOK;
+                        else
+                            transaction_state		<= TRANSACTION_WAIT_FOR_BUFFER_FULL;
+                        spi_device              <= SPI_DEVICE_3;
+                        spi_clock_divider       <= SPI_SD_FAST;
+                        transaction_start       <= 1'b0;
+                        transaction_write_bytes <= 4'h0;
+                        write_data_0            <= 8'hFF;
+                        write_data_1            <= 8'hFF;
+                        write_data_2            <= 8'hFF;
+                        write_data_3            <= 8'hFF;
+                        write_data_4            <= 8'hFF;
+                        write_data_5            <= 8'hFF;
+                        transaction_read_bytes  <= 4'h0;
                         continue_transaction    <= 1'b1;
                         last_transaction        <= 1'b0;
-					end
+					end	
 				TRANSACTION_SD_CMD24_TOK : 
 					begin
 					    if(done)
@@ -495,7 +500,7 @@ always@(posedge clock or posedge reset)
                         spi_device              <= SPI_DEVICE_2;
                         spi_clock_divider       <= SPI_SD_FAST;
                         transaction_write_bytes <= 4'h1;
-                        write_data_0            <= 8'hFE;
+                        write_data_0            <= 8'hFC;
                         write_data_1            <= 8'hFF;
                         write_data_2            <= 8'hFF;
                         write_data_3            <= 8'hFF;
@@ -513,7 +518,6 @@ always@(posedge clock or posedge reset)
 					                begin
                                         transaction_state		<= TRANSACTION_SD_CMD24_CRC;
                                         command_iteration       <= 16'h0000;
-                                        last_transaction        <= 1'b1;
                                         buffer_read_enable      <= 1'b0;
                                     end
                                 else
@@ -547,14 +551,14 @@ always@(posedge clock or posedge reset)
                         write_data_5            <= 8'hFF;
                         transaction_read_bytes  <= 4'h0;
                         continue_transaction    <= 1'b1;
+                        last_transaction        <= 1'b0;
 					end
 				TRANSACTION_SD_CMD24_CRC : 
 					begin
 					    if(done)
 					        begin
-                                transaction_state		<= TRANSACTION_SD_CMD_CLK_4;
+                                transaction_state		<= TRANSACTION_SD_CMD24_RESP;
                                 transaction_start       <= 1'b0;
-                                continue_transaction    <= 1'b0;
                             end
                         else
                             begin
@@ -570,93 +574,65 @@ always@(posedge clock or posedge reset)
                         write_data_3            <= 8'hFF;
                         write_data_4            <= 8'hFF;
                         write_data_5            <= 8'hFF;
-                        transaction_read_bytes  <= 4'h6;
+                        transaction_read_bytes  <= 4'h0;
+                        continue_transaction    <= 1'b1;
                         last_transaction        <= 1'b0;
 					end
-				TRANSACTION_SD_CMD_CLK_4 : 
+				TRANSACTION_SD_CMD24_RESP : 
 					begin
 					    if(done)
 					        begin
-                                //transaction_state		<= TRANSACTION_DONE;
-                                transaction_state		<= TRANSACTION_WAIT_FOR_BUFFER_FULL;
-                                transaction_start       <= 1'b0;
-                                
-                                sd_write_address        <= sd_write_address + 1;
+					            if((read_data_0[4] == 1'b0) && (read_data_0[0] == 1'b1))
+					                begin
+                                        //transaction_state		<= TRANSACTION_DONE;
+                                        transaction_state		<= TRANSACTION_SD_WAIT_FOR_WRITE_READY;
+                                        transaction_start       <= 1'b0;
+                                        
+                                        if(read_data_0[3:1] != 3'b010)
+                                            sd_write_error      <= 1'b1;
+                                        
+                                        sd_write_address        <= sd_write_address + 1;
+                                        
+                                        last_transaction        <= 1'b1;
+                                        continue_transaction    <= 1'b0;
+                                    end
                             end
                         else
                             begin
-                                transaction_state		<= TRANSACTION_SD_CMD_CLK_4;
+                                transaction_state		<= TRANSACTION_SD_CMD24_RESP;
                                 transaction_start       <= 1'b1;
+                                continue_transaction    <= 1'b1;
+                                last_transaction        <= 1'b0;
                             end
-                        spi_device              <= SPI_DEVICE_3;
+                        spi_device              <= SPI_DEVICE_2;
                         spi_clock_divider       <= SPI_SD_FAST;
-                        transaction_write_bytes <= 4'h4;
+                        transaction_write_bytes <= 4'h0;
                         write_data_0            <= 8'hFF;
                         write_data_1            <= 8'hFF;
                         write_data_2            <= 8'hFF;
                         write_data_3            <= 8'hFF;
                         write_data_4            <= 8'hFF;
                         write_data_5            <= 8'hFF;
-                        transaction_read_bytes  <= 4'h0;
+                        transaction_read_bytes  <= 4'h1;
 					end
-				TRANSACTION_SD_CMD17 : 
+				TRANSACTION_SD_WAIT_FOR_WRITE_READY : 
 					begin
 					    if(done)
 					        begin
-					            //if(command_iteration == 16'h0FFF)
-					                //begin
-                                        transaction_state		<= TRANSACTION_SD_CMD17_CONT;
-                                        command_iteration       <= 16'h0000;
-                                        
-                                    //end
-                                //else
-                                    //begin
-                                    //    transaction_state		<= TRANSACTION_SD_CMD17;
-                                    //    command_iteration       <= command_iteration + 1;
-                                    //end
-                                transaction_start       <= 1'b0;
-                            end
-                        else
-                            begin
-                                transaction_state		<= TRANSACTION_SD_CMD17;
-                                transaction_start       <= 1'b1;
-                            end
-                        spi_device              <= SPI_DEVICE_2;
-                        spi_clock_divider       <= SPI_SD_FAST;
-                        transaction_write_bytes <= 4'h6;
-                        write_data_0            <= 8'h51; // {2'b01, 6'b<command index>}
-                        write_data_1            <= 8'h00;
-                        write_data_2            <= 8'h00;
-                        write_data_3            <= 8'h00;
-                        write_data_4            <= 8'h00;
-                        write_data_5            <= 8'hFF;
-                        transaction_read_bytes  <= 4'h6;
-                        continue_transaction    <= 1'b1;
-                        last_transaction        <= 1'b0;
-					end
-				TRANSACTION_SD_CMD17_CONT : 
-					begin
-					    if(done)
-					        begin
-					            if(command_iteration == 16'h00B8)
+					            if(read_data_0 == 8'hFF)
 					                begin
-                                        transaction_state		<= TRANSACTION_SD_CMD_CLK_4;
-                                        command_iteration       <= 16'h0000;
-                                        continue_transaction    <= 1'b0;
+                                        transaction_state		<= TRANSACTION_SD_WRITE_CONT;
                                     end
                                 else
                                     begin
-                                        transaction_state		<= TRANSACTION_SD_CMD17_CONT;
-                                        command_iteration       <= command_iteration + 1;
-                                        if(command_iteration == (16'h00B8-1))
-                                            last_transaction        <= 1'b1;
-                                        
+                                        transaction_state		<= TRANSACTION_SD_WAIT_FOR_WRITE_READY;
                                     end
                                 transaction_start       <= 1'b0;
+                                last_transaction        <= 1'b1;
                             end
                         else
                             begin
-                                transaction_state		<= TRANSACTION_SD_CMD17_CONT;
+                                transaction_state		<= TRANSACTION_SD_WAIT_FOR_WRITE_READY;
                                 transaction_start       <= 1'b1;
                             end
                         spi_device              <= SPI_DEVICE_2;
@@ -668,30 +644,7 @@ always@(posedge clock or posedge reset)
                         write_data_3            <= 8'hFF;
                         write_data_4            <= 8'hFF;
                         write_data_5            <= 8'hFF;
-                        transaction_read_bytes  <= 4'h6;
-					end
-				TRANSACTION_SD_CMD_CLK_4 : 
-					begin
-					    if(done)
-					        begin
-                                transaction_state		<= TRANSACTION_DONE;
-                                transaction_start       <= 1'b0;
-                            end
-                        else
-                            begin
-                                transaction_state		<= TRANSACTION_SD_CMD_CLK_4;
-                                transaction_start       <= 1'b1;
-                            end
-                        spi_device              <= SPI_DEVICE_3;
-                        spi_clock_divider       <= SPI_SD_FAST;
-                        transaction_write_bytes <= 4'h4;
-                        write_data_0            <= 8'hFF;
-                        write_data_1            <= 8'hFF;
-                        write_data_2            <= 8'hFF;
-                        write_data_3            <= 8'hFF;
-                        write_data_4            <= 8'hFF;
-                        write_data_5            <= 8'hFF;
-                        transaction_read_bytes  <= 4'h0;
+                        transaction_read_bytes  <= 4'h1;
 					end
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////					
@@ -701,6 +654,7 @@ always@(posedge clock or posedge reset)
 					        begin
                                 transaction_state		<= TRANSACTION_ADC_RST;
                                 transaction_start       <= 1'b0;
+                                adc_init                <= 1'b0;
                             end
                         else
                             begin
@@ -748,7 +702,7 @@ always@(posedge clock or posedge reset)
 					    if(done)
 					        begin
 					            if(read_data_0 == 8'h24)
-                                    transaction_state		<= TRANSACTION_ADC_EN;
+                                    transaction_state		<= TRANSACTION_ADC_FORMAT;
                                 else
                                     transaction_state		<= TRANSACTION_ADC_WAIT;
                                 transaction_start       <= 1'b0;
@@ -769,15 +723,35 @@ always@(posedge clock or posedge reset)
                         write_data_5            <= 8'hFF;
                         transaction_read_bytes  <= 4'h1;
 					end
-				TRANSACTION_ADC_EN : 
+			    TRANSACTION_ADC_FORMAT : 
 					begin
 					    if(done)
 					        begin
-                                //transaction_state		<= ADC_WAIT_FOR_DRDY;     //<--------
-                                
-                                //transaction_state       <= TRANSACTION_ADC_READ;
-                                
+					            transaction_state		<= TRANSACTION_ADC_EN;
+                                transaction_start       <= 1'b0;
+                            end
+                        else
+                            begin
+                                transaction_state		<= TRANSACTION_ADC_FORMAT;
+                                transaction_start       <= 1'b1;
+                            end
+                        spi_device              <= SPI_DEVICE_1;
+                        spi_clock_divider       <= SPI_SD_FAST;
+                        transaction_write_bytes <= 4'h2;
+                        write_data_0            <= 8'h14;
+                        write_data_1            <= 8'hE0;
+                        write_data_2            <= 8'hFF;
+                        write_data_3            <= 8'hFF;
+                        write_data_4            <= 8'hFF;
+                        write_data_5            <= 8'hFF;
+                        transaction_read_bytes  <= 4'h0;
+					end
+				TRANSACTION_ADC_EN : 
+					begin
+					    if(done)
+					        begin 
                                 transaction_state       <= TRANSACTION_SD_WRITE;
+                                adc_init                <= 1'b1;
                                 
                                 adc_sample_start        <= 1'b1;
                                 transaction_start       <= 1'b0;
@@ -792,69 +766,12 @@ always@(posedge clock or posedge reset)
                         spi_clock_divider       <= SPI_SD_FAST;
                         transaction_write_bytes <= 4'h2;
                         write_data_0            <= 8'h13;
-                        //write_data_1            <= 8'h90; // Enable ADC sample via SPI
                         write_data_1            <= 8'h80; // Enable ADC sample via ADC serial interface
                         write_data_2            <= 8'hFF;
                         write_data_3            <= 8'hFF;
                         write_data_4            <= 8'hFF;
                         write_data_5            <= 8'hFF;
                         transaction_read_bytes  <= 4'h0;
-					end
-				ADC_WAIT_FOR_DRDY: // Read ADC sample via SPI
-					begin
-					    if((adc_drdy_reg == 1'b1) && (adc_drdy == 1'b0))
-					        transaction_state		<= TRANSACTION_ADC_SAMP;
-                        else
-                            transaction_state		<= ADC_WAIT_FOR_DRDY;
-                        spi_device              <= SPI_DEVICE_1;
-                        spi_clock_divider       <= SPI_SD_FAST;
-                        transaction_start       <= 1'b0;
-                        transaction_write_bytes <= 4'h0;
-                        write_data_0            <= 8'h00;
-                        write_data_1            <= 8'h00;
-                        write_data_2            <= 8'hFF;
-                        write_data_3            <= 8'hFF;
-                        write_data_4            <= 8'hFF;
-                        write_data_5            <= 8'hFF;
-                        transaction_read_bytes  <= 4'h0;
-                        buffer_write_enable     <= 1'b0;
-					end
-				TRANSACTION_ADC_SAMP : 
-					begin
-					    if(done)
-					        begin
-					            //if(command_iteration == 16'h007F)
-					            if(buffer_half_filled)
-					                begin
-					                    //transaction_state		<= TRANSACTION_DONE;
-					                    transaction_state       <= TRANSACTION_SD_WRITE;
-					                    command_iteration       <= 16'h0000;
-					                end
-					            else
-					                begin
-					                    transaction_state		<= ADC_WAIT_FOR_DRDY;
-					                    command_iteration       <= command_iteration + 1;   
-					                end
-					            
-                                transaction_start       <= 1'b0;
-                                adc_data                <= {read_data_0[7:0],read_data_1[7:0],read_data_2[7:0],read_data_3[7:0]};
-                                if(buffer_full == 1'b0)
-                                    buffer_write_enable     <= 1'b1;
-                            end
-                        else
-                            begin
-                                transaction_start       <= 1'b1;
-                            end
-                        spi_device              <= SPI_DEVICE_1;
-                        spi_clock_divider       <= SPI_SD_FAST;
-                        transaction_write_bytes <= 4'h0;
-                        write_data_0            <= 8'h80;
-                        write_data_1            <= 8'h00;
-                        write_data_2            <= 8'hFF;
-                        write_data_3            <= 8'hFF;
-                        write_data_4            <= 8'hFF;
-                        write_data_5            <= 8'hFF;
-                        transaction_read_bytes  <= 4'h4;
 					end
 				TRANSACTION_DONE : 
 					begin
@@ -871,7 +788,6 @@ always@(posedge clock or posedge reset)
                         write_data_4            <= 8'h00;
                         write_data_5            <= 8'h00;
                         continue_transaction    <= 1'b0;
-                        buffer_write_enable     <= 1'b0;
                         buffer_read_enable      <= 1'b0;
 					end
 				default : 
@@ -1100,8 +1016,7 @@ always@(posedge clock or posedge reset)
 							            read_data_4 <= 8'h00;
 							            read_data_5 <= 8'h00;
 							        end
-							        
-							    if((write_byte == transaction_write_bytes) && (read_byte == transaction_read_bytes))
+							    if((write_byte == transaction_write_bytes) && (read_byte >= transaction_read_bytes))
 							        begin
 							            if(continue_transaction & ~last_transaction)
 							                begin
@@ -1113,7 +1028,7 @@ always@(posedge clock or posedge reset)
 								    end
 								else
 								    begin
-								    next_state	<= WRITE_TXDR;
+								        next_state	<= WRITE_TXDR;
 								    end
 							end
 						else

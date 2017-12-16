@@ -1,5 +1,5 @@
 SCUBA, Version Diamond (64-bit) 3.9.1.119
-Sun Oct 22 20:43:47 2017
+Sat Dec  9 19:18:36 2017
   
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -9,22 +9,23 @@ Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
   
 BEGIN SCUBA Module Synthesis
   
-    Issued command   : /usr/local/diamond/3.9_x64/ispfpga/bin/lin64/scuba -w -n efb -lang verilog -synth synplify -bus_exp 7 -bb -type efb -arch xo2c00 -freq 84 -spi -spi_mode Both -spi_freq 1 -spi_cs 3 -wb -dev 7000 
-    Circuit name     : efb
-    Module type      : efb
-    Module Version   : 1.2
+    Issued command   : /usr/local/diamond/3.9_x64/ispfpga/bin/lin64/scuba -w -n fifo_buffer -lang verilog -synth synplify -bus_exp 7 -bb -arch xo2c00 -type ebfifo -depth 512 -width 32 -rwidth 32 -no_enable -pe 10 -pf 128 
+    Circuit name     : fifo_buffer
+    Module type      : ebfifo
+    Module Version   : 5.8
     Ports            : 
-    Inputs       : wb_clk_i, wb_rst_i, wb_cyc_i, wb_stb_i, wb_we_i, wb_adr_i[7:0], wb_dat_i[7:0], spi_scsn
-    Outputs      : wb_dat_o[7:0], wb_ack_o, spi_csn[2:0]
-    Inouts       : spi_clk, spi_miso, spi_mosi
+    Inputs       : Data[31:0], WrClock, RdClock, WrEn, RdEn, Reset, RPReset
+    Outputs      : Q[31:0], Empty, Full, AlmostEmpty, AlmostFull
     I/O buffer       : not inserted
-    EDIF output      : efb.edn
-    Verilog output   : efb.v
-    Verilog template : efb_tmpl.v
+    EDIF output      : fifo_buffer.edn
+    Verilog output   : fifo_buffer.v
+    Verilog template : fifo_buffer_tmpl.v
+    Verilog testbench: tb_fifo_buffer_tmpl.v
     Verilog purpose  : for synthesis and simulation
     Bus notation     : big endian
-    Report output    : efb.srp
+    Report output    : fifo_buffer.srp
     Estimated Resource Usage:
+            EBR : 2
   
 END   SCUBA Module Synthesis
 

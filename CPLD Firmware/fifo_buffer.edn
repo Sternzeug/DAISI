@@ -4,9 +4,9 @@
   (keywordMap (keywordLevel 0))
   (status
     (written
-      (timestamp 2017 10 7 22 12 18)
+      (timestamp 2017 12 9 19 18 36)
       (program "SCUBA" (version "Diamond (64-bit) 3.9.1.119"))))
-      (comment "/usr/local/diamond/3.9_x64/ispfpga/bin/lin64/scuba -w -n fifo_buffer -lang verilog -synth synplify -bus_exp 7 -bb -arch xo2c00 -type ebfifo -depth 256 -width 32 -rwidth 32 -no_enable -pe 10 -pf 128 ")
+      (comment "/usr/local/diamond/3.9_x64/ispfpga/bin/lin64/scuba -w -n fifo_buffer -lang verilog -synth synplify -bus_exp 7 -bb -arch xo2c00 -type ebfifo -depth 512 -width 32 -rwidth 32 -no_enable -pe 10 -pf 128 ")
   (library ORCLIB
     (edifLevel 0)
     (technology
@@ -171,9 +171,9 @@
             (viewRef view1 
               (cellRef FIFO8KB))
             (property FULLPOINTER1
-              (string "0b00111111110000"))
+              (string "0b01111111110000"))
             (property FULLPOINTER
-              (string "0b01000000000000"))
+              (string "0b10000000000000"))
             (property AFPOINTER1
               (string "0b00011111110000"))
             (property AFPOINTER

@@ -1,6 +1,6 @@
 module rs232_decoder_encoder ( clock, clock_4x, reset, rx, tx, rx_byte, rx_valid, tx_bytes, tx_num_bytes, tx_valid);
 
-parameter MAX_BYTES	= 11;
+parameter MAX_BYTES	= 14;
 
 input				clock;
 input               clock_4x;
@@ -16,7 +16,7 @@ output reg 			rx_valid;
 reg [9:0] incoming_data;
 reg [3:0] rx_count;
 
-reg       rx_reg;
+reg [1:0] rx_reg;
 reg [2:0] rx_sample_count;
 reg [2:0] rx_sample_time;
 
@@ -36,8 +36,8 @@ always@(posedge clock_4x or posedge reset)
             end
         else
             begin
-                rx_reg  <= rx;
-                if((rx_reg != rx) || (rx_sample_count == rx_sample_time))
+                rx_reg  <= {rx_reg[0],rx};
+                if((rx_reg[1] != rx_reg[0]) || (rx_sample_count == rx_sample_time))
                     begin
                         rx_sample_count <= 3'h0;
                         if(rx_reg != rx)
@@ -45,7 +45,7 @@ always@(posedge clock_4x or posedge reset)
                         else 
                             rx_sample_time  <= 3'h3;
                    
-                        incoming_data[9:0] <= {rx, incoming_data[9:1]};
+                        incoming_data[9:0] <= {rx_reg[0], incoming_data[9:1]};
 			            if((incoming_data[9] == 1'b0) && (incoming_data[8] == 1'b1) && (rx_count == 0))
 				            begin
 					            rx_count    <= 1;

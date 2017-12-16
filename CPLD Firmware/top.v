@@ -60,23 +60,38 @@ pwr_cntrllr pcm1 (
 					.SFLAG(stby_flag ));
 
 
+reg  buffer_full_latch;
+
+always@(posedge clock_84_0000 or posedge reset)
+	begin
+	if(reset)
+	    buffer_full_latch <= 1'b0;
+	else
+	    if(buffer_full == 1'b1)
+	        buffer_full_latch <= 1'b1;
+	end
+
 wire data_formatter_signal;
 wire data_buffer_signal;
-wire storage_interface_signal;
 wire pseudo_adc_signal;
 wire regulator_control_signal;
 wire sensor_interface_signal;
 wire thermal_controller_signal;
 
+wire adc_init;
+wire sd_init;
+wire sd_write_error;
+
+//          LEDs 1'b1 = Off, 1'b0 = On
 assign led0 = ~rs_232_rx_command_valid[0];
 assign led1 = ~rs_232_rx_command_valid[1];
 assign led2 = ~rs_232_rx_command_valid[2];
 assign led3 = ~rs_232_rx_command_valid[3];
 
-assign led4 = ~rs_232_rx_command_valid[4];
-assign led5 = ~rs_232_rx_command_valid[5];
-assign led6 = ~rs_232_rx_command_valid[6];
-assign led7 = ~rs_232_rx_command_valid[7];//1'b1; // Off
+assign led4 = ~adc_init;
+assign led5 = ~sd_init;
+assign led6 = ~(buffer_half_filled | buffer_full_latch);
+assign led7 = ~sd_write_error;                              
 
 reg [1:0] clk_div;
 
@@ -151,6 +166,23 @@ efb efb_inst (
 
 wire        adc_sample_start;					
 wire [31:0]	adc_data;
+wire [31:0]	adc_data_ch1;
+wire [31:0]	adc_data_ch2;
+wire [31:0]	adc_data_ch3;
+wire [31:0]	adc_data_ch4;
+wire [31:0]	adc_data_ch5;
+wire [31:0]	adc_data_ch6;
+wire [31:0]	adc_data_ch7;
+wire [31:0]	adc_data_ch8;
+wire        adc_data_ready_ch1;
+wire        adc_data_ready_ch2;
+wire        adc_data_ready_ch3;
+wire        adc_data_ready_ch4;
+wire        adc_data_ready_ch5;
+wire        adc_data_ready_ch6;
+wire        adc_data_ready_ch7;
+wire        adc_data_ready_ch8;
+
 wire [31:0] buffer_data;
 wire        buffer_write_enable;
 wire        buffer_read_enable;
@@ -160,7 +192,6 @@ wire        buffer_half_filled;
 					
 spi_controller spi_controller_inst (	
 					.clock(clock_84_0000 ),
-					//.clock(osc_clk ),
 					.reset(reset ),
 					.wb_cyc(wb_cyc),
 					.wb_stb(wb_stb),
@@ -169,14 +200,13 @@ spi_controller spi_controller_inst (
 					.wb_dat_i(wb_dat_i),
 					.wb_dat_o(wb_dat_o),
 					.wb_ack(wb_ack),
-					.adc_drdy(adc_drdy),
-					//.adc_data(adc_data),
-					//.buffer_write_enable(buffer_write_enable),
 					.adc_sample_start(adc_sample_start),
 					.buffer_read_enable(buffer_read_enable),
 					.buffer_data(buffer_data),
-					.buffer_full(buffer_full),
-					.buffer_half_filled(buffer_half_filled));
+					.buffer_half_filled(buffer_half_filled),
+					.adc_init(adc_init),
+					.sd_init(sd_init),
+					.sd_write_error(sd_write_error));
 					
 adc_serial_interface adc_serial_interface_inst (	
 					.clock(clock_84_0000 ),
@@ -186,6 +216,22 @@ adc_serial_interface adc_serial_interface_inst (
 					.adc_clock(adc_clock),
 					.adc_data_0(adc_data_0),
 					.adc_channel_data(adc_data),
+					.adc_channel_data_ch1(adc_data_ch1),
+					.adc_channel_data_ch2(adc_data_ch2),
+					.adc_channel_data_ch3(adc_data_ch3),
+					.adc_channel_data_ch4(adc_data_ch4),
+					.adc_channel_data_ch5(adc_data_ch5),
+					.adc_channel_data_ch6(adc_data_ch6),
+					.adc_channel_data_ch7(adc_data_ch7),
+					.adc_channel_data_ch8(adc_data_ch8),
+					.adc_channel_data_ready_ch1(adc_data_ready_ch1),
+					.adc_channel_data_ready_ch2(adc_data_ready_ch2),
+					.adc_channel_data_ready_ch3(adc_data_ready_ch3),
+					.adc_channel_data_ready_ch4(adc_data_ready_ch4),
+					.adc_channel_data_ready_ch5(adc_data_ready_ch5),
+					.adc_channel_data_ready_ch6(adc_data_ready_ch6),
+					.adc_channel_data_ready_ch7(adc_data_ready_ch7),
+					.adc_channel_data_ready_ch8(adc_data_ready_ch8),
 					.buffer_write_enable(buffer_write_enable),
 					.buffer_full(buffer_full));					
 					
@@ -213,12 +259,8 @@ data_buffer data_buffer_inst(
 					.reset(reset ),
 					.signal(data_buffer_signal ));
 					
-storage_interface storage_interface_inst(	
-					.clock(osc_clk ),
-					.reset(reset ),
-					.signal(storage_interface_signal ));
 
-parameter MAX_BYTES	= 11;
+parameter MAX_BYTES	= 14;
 					
 wire [MAX_BYTES*8-1:0]    tx_bytes;
 wire [3:0]                tx_num_bytes;
@@ -246,8 +288,22 @@ rs232_command_processor rs232_command_processor_inst(
 					.tx_bytes(tx_bytes),
 					.tx_num_bytes(tx_num_bytes),
 					.tx_valid(tx_valid),
-					.adc_data(adc_data),
-					.adc_data_valid(buffer_write_enable));
+					.adc_data_ch1(adc_data_ch1),
+					.adc_data_ch2(adc_data_ch2),
+					.adc_data_ch3(adc_data_ch3),
+					.adc_data_ch4(adc_data_ch4),
+					.adc_data_ch5(adc_data_ch5),
+					.adc_data_ch6(adc_data_ch6),
+					.adc_data_ch7(adc_data_ch7),
+					.adc_data_ch8(adc_data_ch8),
+					.adc_data_ready_ch1(adc_data_ready_ch1),
+					.adc_data_ready_ch2(adc_data_ready_ch2),
+					.adc_data_ready_ch3(adc_data_ready_ch3),
+					.adc_data_ready_ch4(adc_data_ready_ch4),
+					.adc_data_ready_ch5(adc_data_ready_ch5),
+					.adc_data_ready_ch6(adc_data_ready_ch6),
+					.adc_data_ready_ch7(adc_data_ready_ch7),
+					.adc_data_ready_ch8(adc_data_ready_ch8));
 					
 pseudo_adc pseudo_adc_inst(	
 					.clock(osc_clk ),
