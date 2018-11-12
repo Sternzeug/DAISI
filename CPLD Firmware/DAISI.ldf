@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<BaliProject version="3.2" title="DAISI" device="LCMXO2-7000HE-4TG144C" default_implementation="impl1">
+<BaliProject version="3.2" title="DAISI" device="LCMXO2-7000HC-6TG144I" default_implementation="impl1">
     <Options/>
     <Implementation title="impl1" dir="impl1" description="impl1" synthesis="synplify" default_strategy="Strategy1">
         <Options def_top="top" top="top"/>
@@ -12,25 +12,13 @@
         <Source name="spi_controller.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
-        <Source name="data_buffer.v" type="Verilog" type_short="Verilog">
-            <Options/>
-        </Source>
-        <Source name="data_formatter.v" type="Verilog" type_short="Verilog">
-            <Options/>
-        </Source>
         <Source name="rs232_decoder_encoder.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
-        <Source name="rs232_command_processor.v" type="Verilog" type_short="Verilog">
+        <Source name="temp_decoder_encoder.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
-        <Source name="pseudo_adc.v" type="Verilog" type_short="Verilog">
-            <Options/>
-        </Source>
-        <Source name="regulator_control.v" type="Verilog" type_short="Verilog">
-            <Options/>
-        </Source>
-        <Source name="sensor_interface.v" type="Verilog" type_short="Verilog">
+        <Source name="command_processor.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
         <Source name="thermal_controller.v" type="Verilog" type_short="Verilog">
@@ -42,25 +30,22 @@
         <Source name="efb.ipx" type="IPX_Module" type_short="IPX">
             <Options/>
         </Source>
-        <Source name="fifo_buffer.lpc" type="LPC_Module" type_short="LPC">
-            <Options/>
-        </Source>
         <Source name="adc_serial_interface.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
-        <Source name="value_to_ascii.v" type="Verilog" type_short="Verilog">
+        <Source name="fifo_buffer.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
+        <Source name="fifo_buffer_rs232_tx.lpc" type="LPC_Module" type_short="LPC">
+            <Options/>
+        </Source>
+        <Source name="event_detect.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="pseudo_adc.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
         <Source name="DAISI.lpf" type="Logic Preference" type_short="LPF">
-            <Options/>
-        </Source>
-        <Source name="impl1/impl1.xcf" type="Programming Project File" type_short="Programming">
-            <Options/>
-        </Source>
-        <Source name="reveal.rva" type="Reveal Analyzer Project File" type_short="RVA">
-            <Options/>
-        </Source>
-        <Source name="reveal.rvl" type="Reveal" type_short="Reveal">
             <Options/>
         </Source>
     </Implementation>

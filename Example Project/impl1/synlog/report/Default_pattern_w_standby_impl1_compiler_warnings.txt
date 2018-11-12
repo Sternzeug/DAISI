@@ -1,4 +1,0 @@
-@W: CG360 :"C:\Users\neera_000\Documents\GitHub\DAISI\Example Project\impl1\reveal_workspace\tmpreveal\Default_w_standby_top_rvl.v":15:29:15:39|Removing wire trigger_out, as there is no assignment to it.
-@W: CL169 :"C:\Users\neera_000\Documents\GitHub\DAISI\Example Project\impl1\reveal_workspace\tmpreveal\Default_w_standby_top_rvl.v":114:4:114:9|Pruning unused register slow_clk. Make sure that there are no unused intermediate registers.
-@W: CL157 :"C:\Users\neera_000\Documents\GitHub\DAISI\Example Project\impl1\reveal_workspace\tmpreveal\Default_w_standby_top_rvl.v":94:11:94:14|*Output trig has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
-

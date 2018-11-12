@@ -1,0 +1,53 @@
+[Device]
+Family=machxo2
+PartType=LCMXO2-7000HC
+PartName=LCMXO2-7000HC-6TG144I
+SpeedGrade=6
+Package=TQFP144
+OperatingCondition=IND
+Status=S
+
+[IP]
+VendorName=Lattice Semiconductor Corporation
+CoreType=LPM
+CoreStatus=Demo
+CoreName=FIFO_DC
+CoreRevision=5.8
+ModuleName=fifo_buffer_rs232_tx
+SourceFormat=Verilog HDL
+ParameterFileVersion=1.0
+Date=07/22/2018
+Time=15:40:15
+
+[Parameters]
+Verilog=1
+VHDL=0
+EDIF=1
+Destination=Synplicity
+Expression=BusA(0 to 7)
+Order=Big Endian [MSB:LSB]
+IO=0
+FIFOImp=EBR Only
+RDepth=128
+RWidth=8
+WDepth=128
+WWidth=8
+regout=0
+CtrlByRdEn=0
+ClockEn=0
+EmpFlg=1
+PeMode=Static - Single Threshold
+PeAssert=8
+PeDeassert=12
+FullFlg=1
+PfMode=Static - Single Threshold
+PfAssert=120
+PfDeassert=506
+Reset=Async
+Reset1=Sync
+RDataCount=0
+WDataCount=0
+EnECC=0
+
+[Command]
+cmd_line= -w -n fifo_buffer_rs232_tx -lang verilog -synth synplify -bus_exp 7 -bb -arch xo2c00 -type ebfifo -depth 128 -width 8 -rwidth 8 -no_enable -pe 8 -pf 120

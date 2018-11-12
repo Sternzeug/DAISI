@@ -1,326 +1,0 @@
-<HTML>
-<HEAD><TITLE>Lattice Map TRACE Report</TITLE>
-<STYLE TYPE="text/css">
-<!--
- body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
--->
-</STYLE>
-</HEAD>
-<PRE><A name="Map_Twr"></A><B><U><big>Map TRACE Report</big></U></B>
-
-Loading design for application trce from file default_pattern_w_standby_impl1_map.ncd.
-Design name: Default_w_standby_top
-NCD version: 3.3
-Vendor:      LATTICE
-Device:      LCMXO2-7000HE
-Package:     TQFP144
-Performance: 4
-Loading device for application trce from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.9_x64/ispfpga.
-Package Status:                     Final          Version 1.39.
-Performance Hardware Data Status:   Final          Version 34.4.
-Setup and Hold Report
-
---------------------------------------------------------------------------------
-<A name="Map_Twr_setup"></A><B><U><big>Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.9.0.99.2</big></U></B>
-Sat Jun 03 15:26:02 2017
-
-Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
-Copyright (c) 1995 AT&T Corp.   All rights reserved.
-Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
-Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
-
-<A name="mtw1_set_ri"></A><B><U><big>Report Information</big></U></B>
-------------------
-Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o Default_pattern_w_standby_impl1.tw1 -gui -msgset C:/Users/neera_000/Documents/GitHub/DAISI/Example Project/promote.xml Default_pattern_w_standby_impl1_map.ncd Default_pattern_w_standby_impl1.prf 
-Design file:     default_pattern_w_standby_impl1_map.ncd
-Preference file: default_pattern_w_standby_impl1.prf
-Device,speed:    LCMXO2-7000HE,4
-Report level:    verbose report, limited to 1 item per preference
---------------------------------------------------------------------------------
-
-<A name="mtw1_set_ps"></A><B><U><big>Preference Summary</big></U></B>
-
-<LI><A href='#map_twr_pref_0_0' Target='right'>FREQUENCY NET "osc_clk_c" 2.080000 MHz (0 errors)</A></LI>            4096 items scored, 0 timing errors detected.
-Report:  100.472MHz is the maximum frequency for this preference.
-
-BLOCK ASYNCPATHS
-BLOCK RESETPATHS
-BLOCK JTAG PATHS
---------------------------------------------------------------------------------
-
-
-Derating parameters
--------------------
-VCCIO Voltage:
-                   3.300 V (Bank 0)
-                   3.300 V (Bank 1, defined by PAR)
-                   3.300 V (Bank 2, defined by PAR)
-                   3.300 V (Bank 3, defined by PAR)
-
-
-
-================================================================================
-<A name="map_twr_pref_0_0"></A>Preference: FREQUENCY NET "osc_clk_c" 2.080000 MHz ;
-            4096 items scored, 0 timing errors detected.
---------------------------------------------------------------------------------
-
-
-Passed: The following path meets requirements by 470.816ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/tu_0/mask_reg[0][0]  (from osc_clk_c +)
-   Destination:    FF         Data in        Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/tu_0/tu_out  (to osc_clk_c +)
-
-   Delay:               9.787ns  (39.7% logic, 60.3% route), 8 logic levels.
-
- Constraint Details:
-
-      9.787ns physical path delay Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_507 to Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/tu_0/SLICE_292 meets
-    480.769ns delay constraint less
-      0.166ns DIN_SET requirement (totaling 480.603ns) by 470.816ns
-
- Physical Path Details:
-
-      Data path Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_507 to Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/tu_0/SLICE_292:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452 *SLICE_507.CLK to */SLICE_507.Q0 Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_507 (from osc_clk_c)
-ROUTE         3   e 1.234 */SLICE_507.Q0 to */SLICE_466.C1 Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/tu_0/mask_reg[0][0]
-CTOF_DEL    ---     0.495 */SLICE_466.C1 to */SLICE_466.F1 Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/tu_0/SLICE_466
-ROUTE         1   e 1.234 */SLICE_466.F1 to */SLICE_391.D0 Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/tu_0/un1_falling_edge[0]
-CTOF_DEL    ---     0.495 */SLICE_391.D0 to */SLICE_391.F0 Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_391
-ROUTE         1   e 0.480 */SLICE_391.F0 to */SLICE_391.A1 Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/tu_0/falling_edge_7
-CTOF_DEL    ---     0.495 */SLICE_391.A1 to */SLICE_391.F1 Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/SLICE_391
-ROUTE         1   e 1.234 */SLICE_391.F1 to */SLICE_364.A1 Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/tu_0/falling_edge_12_1
-CTOF_DEL    ---     0.495 */SLICE_364.A1 to */SLICE_364.F1 Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/tu_0/SLICE_364
-ROUTE         1   e 0.480 */SLICE_364.F1 to */SLICE_364.D0 Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/tu_0/falling_edge_12
-CTOF_DEL    ---     0.495 */SLICE_364.D0 to */SLICE_364.F0 Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/tu_0/SLICE_364
-ROUTE         1   e 1.234 */SLICE_364.F0 to */SLICE_292.C1 Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/tu_0/falling_edge_15
-CTOOFX_DEL  ---     0.721 */SLICE_292.C1 to *LICE_292.OFX0 Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/tu_0/SLICE_292
-ROUTE         1   e 0.001 *LICE_292.OFX0 to *SLICE_292.FXB Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/tu_0/N_374
-FXTOOFX_DE  ---     0.241 *SLICE_292.FXB to *LICE_292.OFX1 Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/tu_0/SLICE_292
-ROUTE         1   e 0.001 *LICE_292.OFX1 to *SLICE_292.DI1 Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/trig_u/tu_0/c (to osc_clk_c)
-                  --------
-                    9.787   (39.7% logic, 60.3% route), 8 logic levels.
-
-Report:  100.472MHz is the maximum frequency for this preference.
-
-<A name="mtw1_set_rs"></A><B><U><big>Report Summary</big></U></B>
---------------
-----------------------------------------------------------------------------
-Preference                              |   Constraint|       Actual|Levels
-----------------------------------------------------------------------------
-                                        |             |             |
-FREQUENCY NET "osc_clk_c" 2.080000 MHz  |             |             |
-;                                       |    2.080 MHz|  100.472 MHz|   8  
-                                        |             |             |
-----------------------------------------------------------------------------
-
-
-All preferences were met.
-
-
-<A name="mtw1_set_clkda"></A><B><U><big>Clock Domains Analysis</big></U></B>
-------------------------
-
-Found 2 clocks:
-
-Clock Domain: osc_clk_c   Source: OSCH_inst.OSC   Loads: 170
-   Covered under: FREQUENCY NET "osc_clk_c" 2.080000 MHz ;
-
-   Data transfers from:
-   Clock Domain: jtaghub16_jtck   Source: xo2chub/genblk7.jtagf_u.JTCK
-
-Clock Domain: jtaghub16_jtck   Source: xo2chub/genblk7.jtagf_u.JTCK   Loads: 136
-   No transfer within this clock domain is found
-
-
-<A name="mtw1_set_ts"></A><B><U><big>Timing summary (Setup):</big></U></B>
----------------
-
-Timing errors: 0  Score: 0
-Cumulative negative slack: 0
-
-Constraints cover 4247 paths, 1 nets, and 3542 connections (99.41% coverage)
-
---------------------------------------------------------------------------------
-<A name="Map_Twr_hold"></A><B><U><big>Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.9.0.99.2</big></U></B>
-Sat Jun 03 15:26:03 2017
-
-Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
-Copyright (c) 1995 AT&T Corp.   All rights reserved.
-Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
-Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
-
-<A name="mtw1_hold_ri"></A><B><U><big>Report Information</big></U></B>
-------------------
-Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o Default_pattern_w_standby_impl1.tw1 -gui -msgset C:/Users/neera_000/Documents/GitHub/DAISI/Example Project/promote.xml Default_pattern_w_standby_impl1_map.ncd Default_pattern_w_standby_impl1.prf 
-Design file:     default_pattern_w_standby_impl1_map.ncd
-Preference file: default_pattern_w_standby_impl1.prf
-Device,speed:    LCMXO2-7000HE,M
-Report level:    verbose report, limited to 1 item per preference
---------------------------------------------------------------------------------
-
-<A name="mtw1_hold_ps"></A><B><U><big>Preference Summary</big></U></B>
-
-<LI><A href='#map_twr_pref_1_0' Target='right'>FREQUENCY NET "osc_clk_c" 2.080000 MHz (0 errors)</A></LI>            4096 items scored, 0 timing errors detected.
-
-BLOCK ASYNCPATHS
-BLOCK RESETPATHS
-BLOCK JTAG PATHS
---------------------------------------------------------------------------------
-
-
-Derating parameters
--------------------
-VCCIO Voltage:
-                   3.300 V (Bank 0)
-                   3.300 V (Bank 1, defined by PAR)
-                   3.300 V (Bank 2, defined by PAR)
-                   3.300 V (Bank 3, defined by PAR)
-
-
-
-================================================================================
-<A name="map_twr_pref_1_0"></A>Preference: FREQUENCY NET "osc_clk_c" 2.080000 MHz ;
-            4096 items scored, 0 timing errors detected.
---------------------------------------------------------------------------------
-
-
-Passed: The following path meets requirements by 0.351ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/jtag_int_u/capture_reclk[0]  (from osc_clk_c +)
-   Destination:    FF         Data in        Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/jtag_int_u/capture_reclk[1]  (to osc_clk_c +)
-
-   Delay:               0.332ns  (40.1% logic, 59.9% route), 1 logic levels.
-
- Constraint Details:
-
-      0.332ns physical path delay Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/jtag_int_u/SLICE_111 to Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/jtag_int_u/SLICE_111 meets
-     -0.019ns M_HLD and
-      0.000ns delay constraint requirement (totaling -0.019ns) by 0.351ns
-
- Physical Path Details:
-
-      Data path Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/jtag_int_u/SLICE_111 to Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/jtag_int_u/SLICE_111:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133 *SLICE_111.CLK to */SLICE_111.Q0 Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/jtag_int_u/SLICE_111 (from osc_clk_c)
-ROUTE         1   e 0.199 */SLICE_111.Q0 to */SLICE_111.M1 Default_w_standby_top_reveal_coretop_instance/default_w_standby_top_la0_inst_0/jtag_int_u/capture_reclk[0] (to osc_clk_c)
-                  --------
-                    0.332   (40.1% logic, 59.9% route), 1 logic levels.
-
-<A name="mtw1_hold_rs"></A><B><U><big>Report Summary</big></U></B>
---------------
-----------------------------------------------------------------------------
-Preference(MIN Delays)                  |   Constraint|       Actual|Levels
-----------------------------------------------------------------------------
-                                        |             |             |
-FREQUENCY NET "osc_clk_c" 2.080000 MHz  |             |             |
-;                                       |     0.000 ns|     0.351 ns|   1  
-                                        |             |             |
-----------------------------------------------------------------------------
-
-
-All preferences were met.
-
-
-<A name="mtw1_hold_clkda"></A><B><U><big>Clock Domains Analysis</big></U></B>
-------------------------
-
-Found 3 clocks:
-
-Clock Domain: osc_clk_c   Source: OSCH_inst.OSC   Loads: 170
-   Covered under: FREQUENCY NET "osc_clk_c" 2.080000 MHz ;
-
-   Data transfers from:
-   Clock Domain: jtaghub16_jtck   Source: xo2chub/genblk7.jtagf_u.JTCK
-
-Clock Domain: pcm1/GND   Source: SLICE_353.F1   Loads: 1
-   No transfer within this clock domain is found
-
-Clock Domain: jtaghub16_jtck   Source: xo2chub/genblk7.jtagf_u.JTCK   Loads: 136
-   No transfer within this clock domain is found
-
-
-<A name="mtw1_hold_ts"></A><B><U><big>Timing summary (Hold):</big></U></B>
----------------
-
-Timing errors: 0  Score: 0
-Cumulative negative slack: 0
-
-Constraints cover 4247 paths, 1 nets, and 3542 connections (99.41% coverage)
-
-
-
-<A name="mtw1_ts"></A><B><U><big>Timing summary (Setup and Hold):</big></U></B>
----------------
-
-Timing errors: 0 (setup), 0 (hold)
-Score: 0 (setup), 0 (hold)
-Cumulative negative slack: 0 (0+0)
---------------------------------------------------------------------------------
-
---------------------------------------------------------------------------------
-
-
-
-
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-</PRE></FONT>
-</BODY>
-</HTML>

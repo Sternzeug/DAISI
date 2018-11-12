@@ -1,7 +1,0 @@
-#Start recording tcl command: 5/31/2017 23:09:08
-#Project Location: C:/Users/neera_000/Documents/GitHub/DAISI/Example Project; Project name: Default_pattern_w_standby
-prj_project open "C:/Users/neera_000/Documents/GitHub/DAISI/Example Project/Default_pattern_w_standby.ldf"
-prj_run Synthesis -impl impl1 -forceOne
-prj_run Synthesis -impl impl1 -forceOne
-prj_run Synthesis -impl impl1 -forceOne
-#Stop recording: 5/31/2017 23:09:50

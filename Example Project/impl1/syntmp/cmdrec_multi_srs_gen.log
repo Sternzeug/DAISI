@@ -1,7 +1,0 @@
-C:\lscc\diamond\3.7_x64\synpbase\bin64\syn_nfilter.exe  -link  -top  Default_w_standby_top  -incremental_debug  -multisrs  "C:\Users\neera_000\Documents\GitHub\DAISI\Example Project\impl1\synwork\Default_pattern_w_standby_impl1_comp.srs"  -osyn  "C:\Users\neera_000\Documents\GitHub\DAISI\Example Project\impl1\synwork\Default_pattern_w_standby_impl1_mult.srs"  -log  "C:\Users\neera_000\Documents\GitHub\DAISI\Example Project\impl1\synlog\Default_pattern_w_standby_impl1_multi_srs_gen.srr" 
-rc:0 success:1 runtime:0
-C:\Users\neera_000\Documents\GitHub\DAISI\Example Project\impl1\synwork\Default_pattern_w_standby_impl1_comp.srs|i|1497456682|125239
-C:\Users\neera_000\Documents\GitHub\DAISI\Example Project\impl1\synwork\Default_pattern_w_standby_impl1_mult.srs|o|1497456684|6017
-C:\Users\neera_000\Documents\GitHub\DAISI\Example Project\impl1\synlog\Default_pattern_w_standby_impl1_multi_srs_gen.srr|o|1497456684|550
-C:\lscc\diamond\3.7_x64\synpbase\bin\syn_nfilter.exe|i|1449741474|3110400
-C:\lscc\diamond\3.7_x64\synpbase\bin64\syn_nfilter.exe|i|1449741676|4182528

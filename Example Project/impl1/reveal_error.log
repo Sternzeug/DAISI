@@ -1,8 +1,0 @@
-all messages logged in file C:/Users/neera_000/Documents/GitHub/DAISI/Example Project/impl1/reveal_error.log
-Analyzing Verilog file C:/Users/neera_000/Documents/GitHub/DAISI/Example Project/impl1/reveal_workspace/tmpreveal/Default_w_standby_top_reveal_coretop.v (VERI-1482)
-Analyzing Verilog file C:/Users/neera_000/Documents/GitHub/DAISI/Example Project/impl1/source/pwr_cntrllr.v (VERI-1482)
-Analyzing Verilog file C:/Users/neera_000/Documents/GitHub/DAISI/Example Project/impl1/source/switch_led.v (VERI-1482)
-INFO: C:/Users/neera_000/Documents/GitHub/DAISI/Example Project/impl1/source/switch_led.v(1): compiling module Default_w_standby_top (VERI-1018)
-INFO: C:/Users/neera_000/Documents/GitHub/DAISI/Example Project/impl1/source/switch_led.v(52): elaborating module 'Default_w_standby_top' (VERI-9000)
-INFO: C:/Users/neera_000/Documents/GitHub/DAISI/Example Project/impl1/source/pwr_cntrllr.v(33): elaborating module 'pwr_cntrllr_uniq_1' (VERI-9000)
-Pretty printing all modules in library work to file C:/Users/neera_000/Documents/GitHub/DAISI/Example Project/impl1/reveal_workspace/tmpreveal/Default_w_standby_top_rvl.v (VERI-1491)
