@@ -1,0 +1,2 @@
+schematics adc.sch cpld.sch db9_osc_sd_xcvr.sch regulators.sch signal_filtering.sch thermal_reg.sch micro_sd.sch
+output-name DAISI_PCB

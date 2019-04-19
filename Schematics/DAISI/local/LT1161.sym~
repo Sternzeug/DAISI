@@ -1,0 +1,58 @@
+v 20130925 2
+P 0 500 300 500 1 0 0
+{
+T 200 550 5 8 1 1 0 6 1
+pinnumber=1
+T 200 450 5 8 0 1 0 8 1
+pinseq=1
+T 350 500 9 8 1 1 0 0 1
+pinlabel=P1
+T 350 500 5 8 0 1 0 2 1
+pintype=io
+}
+P 0 200 300 200 1 0 0
+{
+T 200 250 5 8 1 1 0 6 1
+pinnumber=2
+T 200 150 5 8 0 1 0 8 1
+pinseq=2
+T 350 200 9 8 1 1 0 0 1
+pinlabel=P2
+T 350 200 5 8 0 1 0 2 1
+pintype=io
+}
+P 1700 500 2000 500 1 0 1
+{
+T 1800 550 5 8 1 1 0 0 1
+pinnumber=3
+T 1800 450 5 8 0 1 0 2 1
+pinseq=3
+T 1650 500 9 8 1 1 0 6 1
+pinlabel=P3
+T 1650 500 5 8 0 1 0 8 1
+pintype=io
+}
+P 1700 200 2000 200 1 0 1
+{
+T 1800 250 5 8 1 1 0 0 1
+pinnumber=4
+T 1800 150 5 8 0 1 0 2 1
+pinseq=4
+T 1650 200 9 8 1 1 0 6 1
+pinlabel=P4
+T 1650 200 5 8 0 1 0 8 1
+pintype=io
+}
+B 300 0 1400 700 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+T 300 950 5 10 0 0 0 0 1
+device=DEVICE
+T 1700 800 8 10 1 1 0 6 1
+refdes=U?
+T 300 1150 5 10 0 0 0 0 1
+footprint=FOOTPRINT
+T 300 1350 5 10 0 0 0 0 1
+description=TEXT
+T 300 1550 5 10 0 0 0 0 1
+numslots=0
+T 300 750 9 10 1 0 0 0 1
+DEVICE
